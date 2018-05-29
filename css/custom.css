@@ -12,3 +12,21 @@ a {color: #d2000a;}
 .adv-img-button-content .caption i, .social-line .social-group i.circle:hover {
     color: #d2000a !important;
 }
+
+/**
+* CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
+
+ACTUALITÉ
+CAHIER
+ARTICLE CAHIER
+CARNET
+ENTREE CARNET
+
+*/
+#block-minimal-page-title {
+  display: none;
+}
+
+#toolbar-item-administration-tray {
+  /* z-index: */
+}
