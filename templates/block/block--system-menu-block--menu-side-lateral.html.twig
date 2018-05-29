@@ -1,0 +1,8 @@
+{% set classes_nav = ['sidebar-nav','scroll-content'] %}
+<nav {{ attributes.addClass(classes_nav) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</nav>

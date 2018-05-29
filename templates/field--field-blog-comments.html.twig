@@ -1,0 +1,67 @@
+{% if blog_style == 'style1' or blog_style == 'style5 '%}
+    <div class="col-md-6">
+        <div class="comment-list">
+            <h4>{{ 'POST COMMENTS'|t }}</h4>
+            <hr class="space s" />
+            {{ comments }}
+        </div>
+    </div>
+    {% if comment_form %}
+    <div class="col-md-6 minimal-form-comment">
+        <div class="form-box">
+            <h4>{{ 'LEAVE A COMMENT'|t }}</h4>
+            <hr class="space m" />
+            {{ comment_form }}
+        </div>
+    </div>
+    {% endif %}
+{% elseif blog_style == 'style2' %}
+    <div class="col-md-2">
+        <div class="title-base text-right">
+            <hr />
+            <h4>{{ 'LEAVE A COMMENT'|t }}</h4>
+        </div>
+    </div>
+    {% if comment_form %}
+    <div class="col-md-5 minimal-form-comment">
+        <div class="form-box">
+            {{ comment_form }}
+        </div>
+    </div>
+    {% endif %}
+    <div class="col-md-5">
+        <div class="comment-list">
+            {{ comments }}
+        </div>
+    </div>
+{% elseif blog_style == 'style3' %}
+    {% if comment_form %}
+    <div class="form-box minimal-form-comment">
+        <h4>{{ 'LEAVE A COMMENT'|t }}</h4>
+        <hr class="space m" />
+        {{ comment_form }}
+    </div>
+    {% endif %}
+    <hr class="space" />
+    <div class="comment-list">
+        <h4>{{ 'COMMENTS'|t }}</h4>
+        {{ comments }}
+    </div>
+{% else %}
+    <div class="col-md-6">
+        <div class="comment-list">
+            <h4>{{ 'POST COMMENTS'|t }}</h4>
+            <hr class="space s" />
+            {{ comments }}
+        </div>
+    </div>
+    {% if comment_form %}
+    <div class="col-md-6 minimal-form-comment">
+        <div class="form-box">
+            <h4>{{ 'LEAVE A COMMENT'|t }}</h4>
+            <hr class="space m" />
+            {{ comment_form }}
+        </div>
+    </div>
+    {% endif %}
+{% endif %}

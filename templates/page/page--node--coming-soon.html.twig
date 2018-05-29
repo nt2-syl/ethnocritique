@@ -1,0 +1,63 @@
+{% set header_style = node.field_header_style.0.value %}
+{% if header_style == '' %}
+  {% set header_style = 'style1' %}
+{% endif %}
+
+{% set sub_title = node.field_sub_title.0.value %}
+
+{% set image_bg = file_url(node.field_header_background_image.0.entity.uri.value) %}
+
+{% set image = file_url(node.field_image.0.entity.uri.value) %}
+
+{% set date_time = node.field_date_time.0.value %}
+
+{% if header_style == 'style2' %}
+    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+{% elseif header_style == 'style3' %}
+    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+{% elseif header_style == 'style4' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+{% elseif header_style == 'style5' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+{% elseif header_style == 'style6' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+{% elseif header_style == 'style7' %}
+    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+{% elseif header_style == 'style8' %}
+    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+{% elseif header_style == 'style9' %}
+    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+{% elseif header_style == 'style10' %}
+    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+{% else %}
+    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+{% endif %}
+
+<div class="background-page" style="background-image:url({{ image_bg }})">
+    <div class="bg-overlay transparent-dark"></div>
+</div>
+<div class="overlay-content">
+    <div class="container content text-center white box-middle-container full-screen-size" data-sub-height="100">
+        <div class="box-middle">
+            {% if node.field_image.0.value %}<img src="{{ image }}" alt="{{ node.getTitle() }}" />{% endif %}
+            <hr class="space" />
+            {{ page.content_full_bar }}
+            {% if sub_title %}<h1 class="text-color">{{ sub_title }}</h1>{% endif %}
+            <hr class="space s" />
+            {% if date_time %}
+            <div class="icon-box icon-box-top-bottom col-center">
+                <div class="icon-box-cell">
+                    <div class="countdown" data-time="{{ date_time }}" data-utc-offset="-5">
+                        <span class="days countdown-values text-m">00</span><span class="countdown-label"> Days</span>
+                        <span class="hours countdown-values text-m">00</span><span class="countdown-label"> Hours</span>
+                        <span class="minutes countdown-values text-m">00</span><span class="countdown-label"> Minutes</span>
+                        <span class="seconds countdown-values text-m">00</span><span class="countdown-label"> Seconds</span>
+                    </div>
+                </div>
+            </div>
+        	{% endif %}
+            <hr class="space" />
+            {{ page.content }}
+        </div>
+    </div>
+</div>

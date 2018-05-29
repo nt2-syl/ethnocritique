@@ -1,0 +1,59 @@
+minimal-lib:
+  version: VERSION
+  css:
+    theme:
+      rip/plugins/bootstrap/css/bootstrap.css: {}
+      rip/style.css: {}
+      rip/css/content-box.css: {}
+      rip/css/image-box.css: {}
+      rip/css/animations.css: {}
+      rip/plugins/jquery.bootgrid.css: {}
+      rip/css/components.css: {}
+      rip/plugins/flexslider/flexslider.css: {}
+      rip/plugins/magnific-popup.css: {}
+      rip/plugins/jquery.flipster.min.css: {}
+      rip/plugins/php/contact-form.css: {}
+      rip/plugins/social.stream.css: {}
+      rip/skin.css: {}
+      rip/plugins/iconsmind/line-icons.css: {}
+      rip/css/update.css: {}
+      css/custom.css: {}
+  js:
+    rip/plugins/jquery.min.2.1.4.js: {}
+    rip/script.js: {}
+    rip/plugins/metismenu.jquery.min.js: {}
+    rip/plugins/bootstrap/js/bootstrap.min.js: {}
+    rip/plugins/jquery.twbsPagination.min.js: {}
+    rip/plugins/imagesloaded.min.js: {}
+    rip/plugins/parallax.min.js: {}
+    rip/plugins/flexslider/jquery.flexslider-min.js: {}
+    rip/plugins/isotope.min.js: {}
+    rip/plugins/jquery.progress-counter.js: {}
+    rip/plugins/jquery.spritely.min.js: {}
+    rip/plugins/jquery.tab-accordion.js: {}
+    rip/plugins/bootstrap/js/bootstrap.popover.min.js: {}
+    rip/plugins/jquery.magnific-popup.min.js: {}
+    rip/plugins/jquery.flipster.min.js: {}
+    rip/plugins/jquery.bootgrid.min.js: {}
+    rip/plugins/social.stream.min.js: {}
+    rip/plugins/jquery.slimscroll.min.js: {}
+    #js/custom.js{}
+  dependencies:
+    - core/jquery
+
+minimal-fullpage:
+  version: VERSION
+  css:
+    theme:
+      rip/plugins/jquery.fullPage.css: {}
+  js:
+    rip/plugins/jquery.fullPage.min.js: {}
+
+minimal-two-side-page:
+  version: VERSION
+  css:
+    theme:
+      rip/css/fullpage.twoside.css: {}
+  js:
+    rip/plugins/fullpage.twoside.js: {}
+

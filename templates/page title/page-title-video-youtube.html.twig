@@ -1,0 +1,28 @@
+{% if node.field_header_background_image %}
+    {% set imageoneURL = file_url(node.field_header_background_image.0.entity.uri.value) %}
+{% else %}
+    {% set imageoneURL = page_title_image_bg %}
+{% endif %}
+{% if node.field_id_youtube %}
+    {% set id_youtube = node.field_id_youtube.0.value %}
+{% else %}
+    {% set id_youtube = page_title_id_video %}
+{% endif %}
+{% set sub_title = node.field_sub_title.0.value %}
+<div class="header-video white">
+    <div class="videobox">
+        <div data-video-youtube="{{ id_youtube }}"></div>
+        <div class="mobile-poster" style="background-image:url('{{ image_bg_url }}')"></div>
+    </div>
+    <div class="overlaybox">
+        <div class="container">
+            <div class="title-base">
+                <hr class="anima" />
+                <h1>{{ title }}</h1>
+                {% if sub_title %}
+                <p>{{ sub_title|raw }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

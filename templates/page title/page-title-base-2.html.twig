@@ -1,0 +1,20 @@
+{% set sub_title = node.field_sub_title.0.value %}
+<div class="header-base">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="title-base text-left">
+                    <h1>{{ title }}</h1>
+                    {% if sub_title %}
+                    <p>{{ sub_title|raw }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3">
+                {% if page.breadcrumb %}
+                    {{ page.breadcrumb }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,415 @@
+{% set header_style = node.field_header_style.0.value %}
+{% if header_style == '' %}
+  {% set header_style = 'style1' %}
+{% endif %}
+
+{% set page_title = node.field_page_title.0.value %}
+{% if page_title == '' %}
+  {% set page_title = 'style1' %}
+{% endif %}
+
+{% set page_special_layout = node.field_page_special_layout.0.value %}
+{% if page_special_layout == '' %}
+  {% set page_special_layout = 'style1' %}
+{% endif %}
+
+{% set footer_style = node.field_footer_style.0.value %}
+{% if footer_style == '' %}
+  {% set footer_style = 'footer1' %}
+{% endif %}
+
+{% set video_bg = file_url(node.field_background_page_video.0.entity.uri.value) %}
+
+{% if page_special_layout == 'style1' %}
+	{% if node.field_background_page_slider.0.value %}
+	<div class="background-page overlay-container">
+	    <div class="flexslider slider" data-options="directionNav:false,animation:fade">
+	        <ul class="slides">
+	        	{% for img in node.field_background_page_slider %}
+				{% set image_bg = file_url(img.entity.uri.value) %}
+					<li>
+					    <div class="bg-cover" style="background-image:url('{{ image_bg }}')"></div>
+					</li>
+				{% endfor %}
+	        </ul>
+	    </div>
+	</div>
+	{% endif %}
+{% else %}
+	{% if node.field_background_page_slider.0.value or node.field_background_page_video.0.value %}
+	{% set image_bg = file_url(node.field_background_page_slider.0.entity.uri.value) %}
+	<div class="background-page overlay-container">
+	    <video autoplay="autoplay" loop muted poster="{{ image_bg }}" class="background-fullscreen">
+	        <source src="{{ video_bg }}" type="video/mp4">
+	    </video>
+	</div>
+	{% endif %}
+{% endif %}
+
+{% if footer_style == 'footer1' %}
+    <div class="footer-parallax-container">
+		<div class="overlay-content">
+		    {% if header_style == 'style2' %}
+			    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+			{% elseif header_style == 'style3' %}
+			    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+			{% elseif header_style == 'style4' %}
+			    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+			{% elseif header_style == 'style5' %}
+			    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+			{% elseif header_style == 'style6' %}
+			    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+			{% elseif header_style == 'style7' %}
+			    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+			{% elseif header_style == 'style8' %}
+			    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+			{% elseif header_style == 'style9' %}
+			    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+			{% elseif header_style == 'style10' %}
+			    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+			{% else %}
+			    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+			{% endif %}
+
+			{% if page_title == 'style1' %}
+			    {% include theme_path ~ "/templates/page title/page-title-image.html.twig" %}
+			{% elseif page_title == 'style2' %}
+			    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen.html.twig" %}
+			{% elseif page_title == 'style3' %}
+			    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen-parallax.html.twig" %}
+			{% elseif page_title == 'style4' %}
+			    {% include theme_path ~ "/templates/page title/page-title-image-parallax.html.twig" %}
+			{% elseif page_title == 'style5' %}
+			    {% include theme_path ~ "/templates/page title/page-title-image-parallax-ken-burn.html.twig" %}
+			{% elseif page_title == 'style6' %}
+			    {% include theme_path ~ "/templates/page title/page-title-video-mp4.html.twig" %}
+			{% elseif page_title == 'style7' %}
+			    {% include theme_path ~ "/templates/page title/page-title-video-youtube.html.twig" %}
+			{% elseif page_title == 'style8' %}
+			    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen.html.twig" %}
+			{% elseif page_title == 'style9' %}
+			    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen-parallax.html.twig" %}
+			{% elseif page_title == 'style10' %}
+			    {% include theme_path ~ "/templates/page title/page-title-video-parallax.html.twig" %}
+			{% elseif page_title == 'style11' %}
+			    {% include theme_path ~ "/templates/page title/page-title-animation.html.twig" %}
+			{% elseif page_title == 'style12' %}
+			    {% include theme_path ~ "/templates/page title/page-title-animation-parallax.html.twig" %}
+			{% elseif page_title == 'style13' %}
+			    {% include theme_path ~ "/templates/page title/page-title-base-1.html.twig" %}
+			{% elseif page_title == 'style14' %}
+			    {% include theme_path ~ "/templates/page title/page-title-base-2.html.twig" %}
+			{% elseif page_title == 'style15' %}
+			    {% include theme_path ~ "/templates/page title/page-title-bootstrap.html.twig" %}
+			{% elseif page_title == 'style16' %}
+			    {% include theme_path ~ "/templates/page title/page-title-slider.html.twig" %}
+			{% elseif page_title == 'style17' %}
+			    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen.html.twig" %}
+			{% elseif page_title == 'style18' %}
+			    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen-parallax.html.twig" %}
+			{% elseif page_title == 'style19' %}
+			    {% include theme_path ~ "/templates/page title/page-title-slider-parallax.html.twig" %}
+			{% else %}
+			{% endif %}
+		    {{ page.content_full_bar }}
+		    {% if page.section %}
+		    	{{ page.section }}
+		    {% endif %}
+		    {% if page.content %}
+				{{ page.content }}
+			{% endif %}
+		</div>
+    </div>
+    {% include theme_path ~ "/templates/footer/footer-parallax.html.twig" %}
+{% elseif footer_style == 'footer2' %}
+	<div class="overlay-content">
+	    {% if header_style == 'style2' %}
+		    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+		{% elseif header_style == 'style3' %}
+		    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+		{% elseif header_style == 'style4' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+		{% elseif header_style == 'style5' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+		{% elseif header_style == 'style6' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+		{% elseif header_style == 'style7' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+		{% elseif header_style == 'style8' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+		{% elseif header_style == 'style9' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+		{% elseif header_style == 'style10' %}
+		    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+		{% else %}
+		    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+		{% endif %}
+
+		{% if page_title == 'style1' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image.html.twig" %}
+		{% elseif page_title == 'style2' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen.html.twig" %}
+		{% elseif page_title == 'style3' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style4' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-parallax.html.twig" %}
+		{% elseif page_title == 'style5' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-parallax-ken-burn.html.twig" %}
+		{% elseif page_title == 'style6' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-mp4.html.twig" %}
+		{% elseif page_title == 'style7' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-youtube.html.twig" %}
+		{% elseif page_title == 'style8' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen.html.twig" %}
+		{% elseif page_title == 'style9' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style10' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-parallax.html.twig" %}
+		{% elseif page_title == 'style11' %}
+		    {% include theme_path ~ "/templates/page title/page-title-animation.html.twig" %}
+		{% elseif page_title == 'style12' %}
+		    {% include theme_path ~ "/templates/page title/page-title-animation-parallax.html.twig" %}
+		{% elseif page_title == 'style13' %}
+		    {% include theme_path ~ "/templates/page title/page-title-base-1.html.twig" %}
+		{% elseif page_title == 'style14' %}
+		    {% include theme_path ~ "/templates/page title/page-title-base-2.html.twig" %}
+		{% elseif page_title == 'style15' %}
+		    {% include theme_path ~ "/templates/page title/page-title-bootstrap.html.twig" %}
+		{% elseif page_title == 'style16' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider.html.twig" %}
+		{% elseif page_title == 'style17' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen.html.twig" %}
+		{% elseif page_title == 'style18' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style19' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-parallax.html.twig" %}
+		{% else %}
+		{% endif %}
+	    {{ page.content_full_bar }}
+	    {% if page.section %}
+	    	{{ page.section }}
+	    {% endif %}
+	    {% if page.content %}
+			{{ page.content }}
+		{% endif %}
+	</div>
+    {% include theme_path ~ "/templates/footer/footer-minimal.html.twig" %}
+{% elseif footer_style == 'footer3' %}
+	<div class="overlay-content">
+	    {% if header_style == 'style2' %}
+		    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+		{% elseif header_style == 'style3' %}
+		    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+		{% elseif header_style == 'style4' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+		{% elseif header_style == 'style5' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+		{% elseif header_style == 'style6' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+		{% elseif header_style == 'style7' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+		{% elseif header_style == 'style8' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+		{% elseif header_style == 'style9' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+		{% elseif header_style == 'style10' %}
+		    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+		{% else %}
+		    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+		{% endif %}
+
+		{% if page_title == 'style1' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image.html.twig" %}
+		{% elseif page_title == 'style2' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen.html.twig" %}
+		{% elseif page_title == 'style3' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style4' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-parallax.html.twig" %}
+		{% elseif page_title == 'style5' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-parallax-ken-burn.html.twig" %}
+		{% elseif page_title == 'style6' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-mp4.html.twig" %}
+		{% elseif page_title == 'style7' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-youtube.html.twig" %}
+		{% elseif page_title == 'style8' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen.html.twig" %}
+		{% elseif page_title == 'style9' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style10' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-parallax.html.twig" %}
+		{% elseif page_title == 'style11' %}
+		    {% include theme_path ~ "/templates/page title/page-title-animation.html.twig" %}
+		{% elseif page_title == 'style12' %}
+		    {% include theme_path ~ "/templates/page title/page-title-animation-parallax.html.twig" %}
+		{% elseif page_title == 'style13' %}
+		    {% include theme_path ~ "/templates/page title/page-title-base-1.html.twig" %}
+		{% elseif page_title == 'style14' %}
+		    {% include theme_path ~ "/templates/page title/page-title-base-2.html.twig" %}
+		{% elseif page_title == 'style15' %}
+		    {% include theme_path ~ "/templates/page title/page-title-bootstrap.html.twig" %}
+		{% elseif page_title == 'style16' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider.html.twig" %}
+		{% elseif page_title == 'style17' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen.html.twig" %}
+		{% elseif page_title == 'style18' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style19' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-parallax.html.twig" %}
+		{% else %}
+		{% endif %}
+	    {{ page.content_full_bar }}
+	    {% if page.section %}
+	    	{{ page.section }}
+	    {% endif %}
+	    {% if page.content %}
+			{{ page.content }}
+		{% endif %}
+	</div>
+    {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
+{% elseif footer_style == 'footer4' %}
+    <div class="overlay-content">
+	    {% if header_style == 'style2' %}
+		    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+		{% elseif header_style == 'style3' %}
+		    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+		{% elseif header_style == 'style4' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+		{% elseif header_style == 'style5' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+		{% elseif header_style == 'style6' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+		{% elseif header_style == 'style7' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+		{% elseif header_style == 'style8' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+		{% elseif header_style == 'style9' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+		{% elseif header_style == 'style10' %}
+		    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+		{% else %}
+		    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+		{% endif %}
+
+		{% if page_title == 'style1' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image.html.twig" %}
+		{% elseif page_title == 'style2' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen.html.twig" %}
+		{% elseif page_title == 'style3' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style4' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-parallax.html.twig" %}
+		{% elseif page_title == 'style5' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-parallax-ken-burn.html.twig" %}
+		{% elseif page_title == 'style6' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-mp4.html.twig" %}
+		{% elseif page_title == 'style7' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-youtube.html.twig" %}
+		{% elseif page_title == 'style8' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen.html.twig" %}
+		{% elseif page_title == 'style9' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style10' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-parallax.html.twig" %}
+		{% elseif page_title == 'style11' %}
+		    {% include theme_path ~ "/templates/page title/page-title-animation.html.twig" %}
+		{% elseif page_title == 'style12' %}
+		    {% include theme_path ~ "/templates/page title/page-title-animation-parallax.html.twig" %}
+		{% elseif page_title == 'style13' %}
+		    {% include theme_path ~ "/templates/page title/page-title-base-1.html.twig" %}
+		{% elseif page_title == 'style14' %}
+		    {% include theme_path ~ "/templates/page title/page-title-base-2.html.twig" %}
+		{% elseif page_title == 'style15' %}
+		    {% include theme_path ~ "/templates/page title/page-title-bootstrap.html.twig" %}
+		{% elseif page_title == 'style16' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider.html.twig" %}
+		{% elseif page_title == 'style17' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen.html.twig" %}
+		{% elseif page_title == 'style18' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style19' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-parallax.html.twig" %}
+		{% else %}
+		{% endif %}
+	    {{ page.content_full_bar }}
+	    {% if page.section %}
+	    	{{ page.section }}
+	    {% endif %}
+	    {% if page.content %}
+			{{ page.content }}
+		{% endif %}
+	</div>
+    {% include theme_path ~ "/templates/footer/footer-minimal-2.html.twig" %}
+{% else %}
+    <div class="overlay-content">
+	    {% if header_style == 'style2' %}
+		    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+		{% elseif header_style == 'style3' %}
+		    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+		{% elseif header_style == 'style4' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+		{% elseif header_style == 'style5' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+		{% elseif header_style == 'style6' %}
+		    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+		{% elseif header_style == 'style7' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+		{% elseif header_style == 'style8' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+		{% elseif header_style == 'style9' %}
+		    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+		{% elseif header_style == 'style10' %}
+		    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+		{% else %}
+		    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+		{% endif %}
+
+		{% if page_title == 'style1' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image.html.twig" %}
+		{% elseif page_title == 'style2' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen.html.twig" %}
+		{% elseif page_title == 'style3' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style4' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-parallax.html.twig" %}
+		{% elseif page_title == 'style5' %}
+		    {% include theme_path ~ "/templates/page title/page-title-image-parallax-ken-burn.html.twig" %}
+		{% elseif page_title == 'style6' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-mp4.html.twig" %}
+		{% elseif page_title == 'style7' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-youtube.html.twig" %}
+		{% elseif page_title == 'style8' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen.html.twig" %}
+		{% elseif page_title == 'style9' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style10' %}
+		    {% include theme_path ~ "/templates/page title/page-title-video-parallax.html.twig" %}
+		{% elseif page_title == 'style11' %}
+		    {% include theme_path ~ "/templates/page title/page-title-animation.html.twig" %}
+		{% elseif page_title == 'style12' %}
+		    {% include theme_path ~ "/templates/page title/page-title-animation-parallax.html.twig" %}
+		{% elseif page_title == 'style13' %}
+		    {% include theme_path ~ "/templates/page title/page-title-base-1.html.twig" %}
+		{% elseif page_title == 'style14' %}
+		    {% include theme_path ~ "/templates/page title/page-title-base-2.html.twig" %}
+		{% elseif page_title == 'style15' %}
+		    {% include theme_path ~ "/templates/page title/page-title-bootstrap.html.twig" %}
+		{% elseif page_title == 'style16' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider.html.twig" %}
+		{% elseif page_title == 'style17' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen.html.twig" %}
+		{% elseif page_title == 'style18' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen-parallax.html.twig" %}
+		{% elseif page_title == 'style19' %}
+		    {% include theme_path ~ "/templates/page title/page-title-slider-parallax.html.twig" %}
+		{% else %}
+		{% endif %}
+	    {{ page.content_full_bar }}
+	    {% if page.section %}
+	    	{{ page.section }}
+	    {% endif %}
+	    {% if page.content %}
+			{{ page.content }}
+		{% endif %}
+	</div>
+{% endif %}

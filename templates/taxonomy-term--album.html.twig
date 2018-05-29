@@ -1,0 +1,12 @@
+{% if not page %}
+<div class="album-box col-md-4">
+    <div class="img-box scale adv-img adv-img-half-content" data-anima="fade-left" data-trigger="hover">
+        <a href="{{ url }}" class="img-box anima-scale-up anima minimal-img-album">
+            {{ content.field_image_album.0 }}
+        </a>
+        <div class="caption">
+            <h2 class="album-name">{{ name }}</h2>
+        </div>
+    </div>
+</div>
+{% endif %}

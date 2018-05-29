@@ -1,0 +1,18 @@
+{% import _self as menus %}
+{{ menus.menu_links(items, attributes, 0) }}
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% set classes_menu = ['nav','navbar-nav','over'] %}
+    <ul {{ attributes.addClass(classes_menu) }} id="fullpage-menu">
+    {% for item in items %}
+      <li{{ item.attributes }}>
+          <a href="{{ item.url }}">{{ item.title|raw }}</a>
+          {% if item.below %}
+            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+          {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

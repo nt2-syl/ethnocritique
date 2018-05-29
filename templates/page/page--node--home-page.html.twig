@@ -1,0 +1,73 @@
+{% set header_style = node.field_header_style.0.value %}
+{% if header_style == '' %}
+  {% set header_style = 'style1' %}
+{% endif %}
+
+{% set footer_style = node.field_footer_style.0.value %}
+{% if footer_style == '' %}
+  {% set footer_style = 'footer1' %}
+{% endif %}
+
+{% if header_style == 'style2' %}
+    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+{% elseif header_style == 'style3' %}
+    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+{% elseif header_style == 'style4' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+{% elseif header_style == 'style5' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+{% elseif header_style == 'style6' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+{% elseif header_style == 'style7' %}
+    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+{% elseif header_style == 'style8' %}
+    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+{% elseif header_style == 'style9' %}
+    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+{% elseif header_style == 'style10' %}
+    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+{% else %}
+    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+{% endif %}
+
+{% if page.slider %}
+	{{ page.slider }}
+{% endif %}	
+
+{% if footer_style == 'footer1' %}
+    <div class="footer-parallax-container">
+		{{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{{ page.content }}
+	</div>
+    {% include theme_path ~ "/templates/footer/footer-parallax.html.twig" %}
+{% elseif footer_style == 'footer2' %}
+    {{ page.content_full_bar }}
+	{% if page.section %}
+		{{ page.section }}
+	{% endif %}
+	{{ page.content }}
+    {% include theme_path ~ "/templates/footer/footer-minimal.html.twig" %}
+{% elseif footer_style == 'footer3' %}
+	{{ page.content_full_bar }}
+	{% if page.section %}
+		{{ page.section }}
+	{% endif %}
+	{{ page.content }}
+    {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
+{% elseif footer_style == 'footer4' %}
+    {{ page.content_full_bar }}
+	{% if page.section %}
+		{{ page.section }}
+	{% endif %}
+	{{ page.content }}
+    {% include theme_path ~ "/templates/footer/footer-minimal-2.html.twig" %}
+{% else %}
+    {{ page.content_full_bar }}
+	{% if page.section %}
+		{{ page.section }}
+	{% endif %}
+	{{ page.content }}
+{% endif %}

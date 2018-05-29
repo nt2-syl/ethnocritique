@@ -1,0 +1,179 @@
+{% set footer_style = node.field_footer_style.0.value %}
+{% if footer_style == '' %}
+  {% set footer_style = 'footer1' %}
+{% endif %}
+
+{% set one_page_layout = node.field_one_page_layout.0.value %}
+{% if one_page_layout == '' %}
+  {% set one_page_layout = 'style1' %}
+{% endif %}
+
+{% if one_page_layout == 'style1' %}
+	{% include theme_path ~ "/templates/header/header-menu-one-page-three.html.twig" %}
+	{% if footer_style == 'footer1' %}
+	    <div class="footer-parallax-container">
+			{{ page.content_full_bar }}
+			{% if page.section %}
+				{{ page.section }}
+			{% endif %}
+			{% if page.contact %}
+			<div class="section-empty">
+			    <div class="container content">
+			        <div class="row">
+			           {{ page.contact }}
+			        </div>
+			    </div>
+			</div>
+			{% endif %}
+			{{ page.content }}
+	    </div>
+	    {% include theme_path ~ "/templates/footer/footer-parallax.html.twig" %}
+	{% elseif footer_style == 'footer2' %}
+	    {{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{% if page.contact %}
+		<div class="section-empty">
+		    <div class="container content">
+		        <div class="row">
+		           {{ page.contact }}
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+		{{ page.content }}
+	    {% include theme_path ~ "/templates/footer/footer-minimal.html.twig" %}
+	{% elseif footer_style == 'footer3' %}
+	    {{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{% if page.contact %}
+		<div class="section-empty">
+		    <div class="container content">
+		        <div class="row">
+		           {{ page.contact }}
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+		{{ page.content }}
+	    {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
+	{% elseif footer_style == 'footer4' %}
+	    {{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{% if page.contact %}
+		<div class="section-empty">
+		    <div class="container content">
+		        <div class="row">
+		           {{ page.contact }}
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+		{{ page.content }}
+	    {% include theme_path ~ "/templates/footer/footer-minimal-2.html.twig" %}
+	{% else %}
+	    {{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{% if page.contact %}
+		<div class="section-empty">
+		    <div class="container content">
+		        <div class="row">
+		           {{ page.contact }}
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+		{{ page.content }}
+	{% endif %}
+{% else %}
+	{% include theme_path ~ "/templates/header/header-menu-one-page-four.html.twig" %}
+	{% if footer_style == 'footer1' %}
+	    <div class="footer-parallax-container">
+			{{ page.content_full_bar }}
+			{% if page.section %}
+				{{ page.section }}
+			{% endif %}
+			{% if page.contact %}
+			<div class="section-bg-color">
+			    <div class="container content">
+			        <div class="row">
+			           {{ page.contact }}
+			        </div>
+			    </div>
+			</div>
+			{% endif %}
+			{{ page.content }}
+	    </div>
+	    {% include theme_path ~ "/templates/footer/footer-parallax.html.twig" %}
+	{% elseif footer_style == 'footer2' %}
+	    {{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{% if page.contact %}
+		<div class="section-bg-color">
+		    <div class="container content">
+		        <div class="row">
+		           {{ page.contact }}
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+		{{ page.content }}
+	    {% include theme_path ~ "/templates/footer/footer-minimal.html.twig" %}
+	{% elseif footer_style == 'footer3' %}
+	    {{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{% if page.contact %}
+		<div class="section-bg-color">
+		    <div class="container content">
+		        <div class="row">
+		           {{ page.contact }}
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+		{{ page.content }}
+	    {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
+	{% elseif footer_style == 'footer4' %}
+	    {{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{% if page.contact %}
+		<div class="section-bg-color">
+		    <div class="container content">
+		        <div class="row">
+		           {{ page.contact }}
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+		{{ page.content }}
+	    {% include theme_path ~ "/templates/footer/footer-minimal-2.html.twig" %}
+	{% else %}
+	    {{ page.content_full_bar }}
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{% if page.contact %}
+		<div class="section-bg-color">
+		    <div class="container content">
+		        <div class="row">
+		           {{ page.contact }}
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+		{{ page.content }}
+	{% endif %}
+{% endif %}

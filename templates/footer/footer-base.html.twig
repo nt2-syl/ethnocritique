@@ -1,0 +1,24 @@
+<footer class="footer-base">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                {% if page.footer_base_column_1 %}
+                    {{ page.footer_base_column_1 }}
+                {% endif %}
+                {% if page.footer_base_column_2 %}
+                    {{ page.footer_base_column_2 }}
+                {% endif %}
+                {% if page.footer_base_column_3 %}
+                    {{ page.footer_base_column_3 }}
+                {% endif %}
+            </div>
+        </div>
+        {% if copyright_text %}
+        <div class="copy-row">
+            <div class="copy-text">
+                {{ copyright_text|t }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</footer>

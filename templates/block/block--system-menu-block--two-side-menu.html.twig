@@ -1,0 +1,10 @@
+{% set classes_div = ['half-side','right'] %}
+<div {{ attributes.addClass(classes_div) }}>
+    <div class="content">
+		{{ title_prefix }}
+		{{ title_suffix }}
+		{% block content %}
+		{{ content }}
+		{% endblock %}
+    </div>
+</div>

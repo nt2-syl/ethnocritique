@@ -1,0 +1,18 @@
+<footer class="footer-center footer-parallax">
+    <div class="content">
+        <div class="container">
+            {% if page.footer_parallax %}
+                {{ page.footer_parallax }}
+            {% endif %}
+            {% if copyright_text %}
+            <div class="row copy-row">
+                <div class="col-md-12 copy-text">
+                    <div class="tag-row">
+                        {{ copyright_text|t }}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</footer>

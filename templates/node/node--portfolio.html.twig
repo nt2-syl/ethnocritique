@@ -1,0 +1,490 @@
+{% set portfolio_style = node.field_portfolio_style.0.value %}
+{% if portfolio_style == '' %}
+  {% set portfolio_style = 'style1' %}
+{% endif %}
+
+{% if portfolio_style == 'style1' %}
+	<div class="row">
+	    <div class="col-md-8">
+	        <div class="grid-list gallery">
+	            <div class="grid-box row" data-lightbox-anima="fade-bottom">
+	            	{% set arr_image = node.field_portfolio_image %}
+	            	{% for image in arr_image %}
+					    {% set imageURL_ori = file_url(image.entity.uri.value) %}
+					    {% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_600x500') %}
+					    <div class="grid-item col-md-6">
+		                    <a class="img-box i-center img-scale-up" href="{{ imageURL_ori }}">
+		                        <i class="fa fa-camera"></i>
+		                        <img src="{{ imageURL }}" alt="{{ node.getTitle() }}" />
+		                    </a>
+		                </div>       
+					{% endfor %}
+	            </div>
+	        </div>
+	    </div>
+	    <div class="col-md-4 portfolio-details fixed-area" data-topscroll="80" data-bottom="500">
+	    	<h4>{{ 'DETAILS'|t }}</h4>
+            <hr class="space m" />
+	        {{ content.body }}
+	        <hr class="space m" />
+	        <ul class="fa-ul ">
+	            {% if node.field_client.0.value is not null and content.field_client is not empty %}<li><i class="fa-li im-business-man"></i><b>{{ content.field_client['#title'] }}</b> {{ content.field_client }}</li>{% endif %}
+
+	            {% if node.field_status.0.value is not null and content.field_status is not empty %}<li><i class="fa-li im-structure"></i><b>{{ content.field_status['#title'] }}</b> {{ content.field_status }}</li>{% endif %}
+
+	            {% if node.field_completed.0.value is not null and content.field_completed is not empty %}<li><i class="fa-li im-calendar"></i><b>{{ content.field_completed['#title'] }}</b> {{ content.field_completed }}</li>{% endif %}
+
+	            {% if node.field_copyright.0.value is not null and content.field_copyright is not empty %}<li><i class="fa-li im-copyright"></i><b>{{ content.field_copyright['#title'] }}</b> {{ content.field_copyright }}</li>{% endif %}
+
+	            {% if node.field_localtion.0.value is not null and content.field_localtion is not empty %}<li><i class="fa-li im-map"></i><b>{{ content.field_localtion['#title'] }}</b> {{ content.field_localtion }}</li>{% endif %}
+
+	            {% if node.field_surface_area.0.value is not null and content.field_surface_area is not empty %}<li><i class="fa-li im-home"></i><b>{{ content.field_surface_area['#title'] }}</b> {{ content.field_surface_area }}</li>{% endif %}
+
+	            {% if node.field_value.0.value is not null and content.field_value is not empty %}<li><i class="fa-li im-money"></i><b>{{ content.field_value['#title'] }}</b> {{ content.field_value }}</li>{% endif %}
+
+	            {% if node.field_architect.0.value is not null and content.field_architect is not empty %}<li><i class="fa-li im-worker"></i><b>{{ content.field_architect['#title'] }}</b> {{ content.field_architect }}</li>{% endif %}
+	        </ul>
+	        <hr class="space m" />
+	        <div class="btn-group social-group">
+	            <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank" data-social="share-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+	                <i class="fa fa-facebook text-s circle"></i>
+	            </a>
+	            <a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank" data-social="share-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+	                <i class="fa fa-twitter text-s circle"></i>
+	            </a>
+	            <a onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank" data-toggle="tooltip" data-placement="top" title="Google+">
+	                <i class="fa fa-google-plus text-s circle"></i>
+	            </a>
+	            <a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank" data-social="share-linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+	                <i class="fa fa-linkedin text-s circle"></i>
+	            </a>
+	        </div>
+	    </div>
+	</div>
+	<hr class="space" />
+	<div class="row porfolio-bar">
+	    <div class="col-md-4">
+	        {{ prev_por|raw }}
+	    </div>
+	    <div class="col-md-4 text-right">
+	        {{ next_por|raw }}
+	    </div>
+	</div>
+{% elseif portfolio_style == 'style2' %}
+	<div class="row">
+	    <div class="col-md-2">
+		    <div class="title-base text-right">
+		        <hr />
+		        <h2>{{ 'DESCRIPTION'|t }}</h2>
+		    </div>
+		</div>
+		<div class="col-md-7">
+		    {{ content.body }}
+		</div>
+	    <div class="col-md-3">
+	        <ul class="list-texts">
+	            {% if node.field_client.0.value is not null and content.field_client is not empty %}<li><b>{{ content.field_client['#title'] }}:</b> {{ content.field_client }}</li>{% endif %}
+
+	            {% if node.field_status.0.value is not null and content.field_status is not empty %}<li><b>{{ content.field_status['#title'] }}:</b> {{ content.field_status }}</li>{% endif %}
+
+	            {% if node.field_completed.0.value is not null and content.field_completed is not empty %}<li><b>{{ content.field_completed['#title'] }}:</b> {{ content.field_completed }}</li>{% endif %}
+
+	            {% if node.field_copyright.0.value is not null and content.field_copyright is not empty %}<li><b>{{ content.field_copyright['#title'] }}:</b> {{ content.field_copyright }}</li>{% endif %}
+
+	            {% if node.field_localtion.0.value is not null and content.field_localtion is not empty %}<li><b>{{ content.field_localtion['#title'] }}:</b> {{ content.field_localtion }}</li>{% endif %}
+
+	            {% if node.field_surface_area.0.value is not null and content.field_surface_area is not empty %}<li><b>{{ content.field_surface_area['#title'] }}:</b> {{ content.field_surface_area }}</li>{% endif %}
+
+	            {% if node.field_value.0.value is not null and content.field_value is not empty %}<li><b>{{ content.field_value['#title'] }}:</b> {{ content.field_value }}</li>{% endif %}
+	            	
+	            {% if node.field_architect.0.value is not null and content.field_architect is not empty %}<li><b>{{ content.field_architect['#title'] }}:</b> {{ content.field_architect }}</li>{% endif %}
+	        </ul>
+	        <hr class="space m" />
+	        {% if node.field_project_link.0.value %}<a href="{{ node.field_project_link.0.uri }}" class="btn btn-sm">{{ 'Visit website'|t }}</a>{% endif %}       
+	    </div>
+	</div>
+	<hr class="space" />
+	<div class="row">
+	    <div class="col-md-2">
+	        <div class="title-base text-right">
+	            <hr />
+	            <h2>{{ 'THE GALLERY'|t }}</h2>
+	        </div>
+	    </div>
+	    <div class="col-md-10">
+	        <div class="flexslider carousel nav-inner nav-middle-mobile" data-options="">
+			    <ul class="slides">
+			    	{% set arr_image = node.field_portfolio_image %}
+					{% for image in arr_image %}
+						
+					    {% set imageURL_ori = file_url(image.entity.uri.value) %}
+					    {% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_600x500') %}
+					    <li>
+				            <a class="img-box lightbox" href="{{ imageURL_ori }}" data-lightbox-anima="show-scale">
+				                <img src="{{ imageURL }}" alt="{{ node.getTitle() }}">
+				            </a>
+				        </li>   
+					{% endfor %}
+			    </ul>
+			</div>
+	    </div>
+	</div>
+	<hr class="space" />
+	<div class="row porfolio-bar">
+	    <div class="col-md-6">
+	        {{ prev_por|raw }}
+	    </div>
+	    <div class="col-md-6 text-right">
+	        {{ next_por|raw }}
+	    </div>
+	</div>
+{% elseif portfolio_style == 'style3' %}
+	<div class="section-empty section-item section-bg-color-2">
+	    <hr class="space xs" />
+	    <div class="flexslider nav-inner carousel row-17" data-options="numItems:6,itemMargin:10">
+	        <ul class="slides">
+	        	{% set arr_image = node.field_portfolio_image %}
+				{% for image in arr_image %}
+					{% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_600x500') %}
+				    {% set imageURL_ori = file_url(image.entity.uri.value) %}
+				    <li>
+				        <a class="img-box lightbox" href="{{ imageURL_ori }}" data-lightbox-anima="show-scale">
+				            <img src="{{ imageURL }}" alt="{{ node.getTitle() }}">
+				        </a>
+				    </li>   
+				{% endfor %}
+	        </ul>
+	    </div>
+	    <hr class="space xs" />
+	</div>
+	<div class="section-empty">
+	    <div class="container content">
+	        <div class="row">
+	            <div class="col-md-8">
+	            	<h4>{{ 'PROJECT DESCRIPTION'|t }}</h4>
+                    <hr class="space s" />
+	                {{ content.body }}
+	                <hr class="space s" />
+	                <div class="btn-group social-group btn-group-icons">
+	                    <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank" data-social="share-facebook"><i class="fa fa-facebook"></i></a>
+
+	                    <a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank" data-social="share-twitter"><i class="fa fa-twitter"></i></a>
+
+	                    <a onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank" data-social="share-google"><i class="fa fa-google-plus"></i></a>
+
+	                    <a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank" data-social="share-linkedin"><i class="fa fa-linkedin"></i></a>
+	                </div>
+	            </div>
+	            <div class="col-md-4 boxed white portfolio-details">
+	                <ul class="fa-ul ">
+	                    {% if node.field_client.0.value is not null and content.field_client is not empty %}<li><i class="fa-li im-business-man"></i><b>{{ content.field_client['#title'] }}</b> {{ content.field_client }}</li>{% endif %}
+
+						{% if node.field_status.0.value is not null and content.field_status is not empty %}<li><i class="fa-li im-structure"></i><b>{{ content.field_status['#title'] }}</b> {{ content.field_status }}</li>{% endif %}
+
+						{% if node.field_completed.0.value is not null and content.field_completed is not empty %}<li><i class="fa-li im-calendar"></i><b>{{ content.field_completed['#title'] }}</b> {{ content.field_completed }}</li>{% endif %}
+
+						{% if node.field_copyright.0.value is not null and content.field_copyright is not empty %}<li><i class="fa-li im-copyright"></i><b>{{ content.field_copyright['#title'] }}</b> {{ content.field_copyright }}</li>{% endif %}
+
+						{% if node.field_localtion.0.value is not null and content.field_localtion is not empty %}<li><i class="fa-li im-map"></i><b>{{ content.field_localtion['#title'] }}</b> {{ content.field_localtion }}</li>{% endif %}
+
+						{% if node.field_surface_area.0.value is not null and content.field_surface_area is not empty %}<li><i class="fa-li im-home"></i><b>{{ content.field_surface_area['#title'] }}</b> {{ content.field_surface_area }}</li>{% endif %}
+
+						{% if node.field_value.0.value is not null and content.field_value is not empty %}<li><i class="fa-li im-money"></i><b>{{ content.field_value['#title'] }}</b> {{ content.field_value }}</li>{% endif %}
+
+						{% if node.field_architect.0.value is not null and content.field_architect is not empty %}<li><i class="fa-li im-worker"></i><b>{{ content.field_architect['#title'] }}</b> {{ content.field_architect }}</li>{% endif %}
+	                </ul>
+	                <hr class="space s" />
+	                {% if node.field_project_link.0.value %}<a href="{{ node.field_project_link.0.uri }}" class="btn btn-sm">{{ 'CLIENT WEBSITE'|t }}</a>{% endif %}
+	            </div>
+	        </div>
+	        <hr class="space" />
+	    </div>
+	</div>
+	<div class="section-empty">
+	    <div class="container content">
+	        <div class="row porfolio-bar">
+			    <div class="col-md-6">
+			        {{ prev_por|raw }}
+			    </div>
+			    <div class="col-md-6 text-right">
+			        {{ next_por|raw }}
+			    </div>
+			</div>
+	    </div>
+	</div>
+{% elseif portfolio_style == 'style4' %}
+	<div class="row">
+	    <div class="col-md-9">
+	        <div class="grid-list gallery">
+	            <div class="grid-box row" data-lightbox-anima="show-scale">
+	            	{% set arr_image = node.field_portfolio_image %}
+					{% for image in arr_image %}
+						{% set imageURL_ori = file_url(image.entity.uri.value) %}
+						{% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_600x500') %}
+					    <div class="grid-item col-md-4">
+		                    <a class="img-box i-center img-scale-up" href="{{ imageURL_ori }}">
+		                        <i class="fa fa-camera"></i>
+		                        <img src="{{ imageURL }}" alt="{{ node.getTitle() }}" />
+		                    </a>
+		                </div>       
+					{% endfor %}
+	            </div>
+	        </div>
+	    </div>
+	    <div class="col-md-3 portfolio-details">
+	    	<div class="title-base text-left">
+                <hr />
+                <h4>{{ 'DETAILS'|t }}</h4>
+            </div>
+	        <ul class="fa-ul ">
+	           	{% if node.field_client.0.value is not null and content.field_client is not empty %}<li><i class="fa-li im-business-man"></i>{{ content.field_client }}</li>{% endif %}
+
+				{% if node.field_status.0.value is not null and content.field_status is not empty %}<li><i class="fa-li im-structure"></i>{{ content.field_status }}</li>{% endif %}
+
+				{% if node.field_completed.0.value is not null and content.field_completed is not empty %}<li><i class="fa-li im-calendar"></i>{{ content.field_completed }}</li>{% endif %}
+
+				{% if node.field_copyright.0.value is not null and content.field_copyright is not empty %}<li><i class="fa-li im-copyright"></i>{{ content.field_copyright }}</li>{% endif %}
+
+				{% if node.field_localtion.0.value is not null and content.field_localtion is not empty %}<li><i class="fa-li im-map"></i>{{ content.field_localtion }}</li>{% endif %}
+
+				{% if node.field_surface_area.0.value is not null and content.field_surface_area is not empty %}<li><i class="fa-li im-home"></i>{{ content.field_surface_area }}</li>{% endif %}
+
+				{% if node.field_value.0.value is not null and content.field_value is not empty %}<li><i class="fa-li im-money"></i>{{ content.field_value }}</li>{% endif %}
+
+				{% if node.field_architect.0.value is not null and content.field_architect is not empty %}<li><i class="fa-li im-worker"></i>{{ content.field_architect }}</li>{% endif %}
+	        </ul>
+	        <hr class="space s" />
+	        {% if node.field_project_link.0.value %}<a href="{{ node.field_project_link.0.uri }}" class="btn-sm btn">{{ 'View project'|t }}</a>{% endif %}
+	    </div>
+	</div>
+	<hr class="space" />
+	<div class="row">
+	    <div class="col-md-9">
+	        {{ content.body }}
+	    </div>
+	    <div class="col-md-3 portfolio-details">
+	        <div class="title-base text-left">
+	            <hr />
+	            <h4>{{ 'DESCRIPTION'|t }}</h4>
+	        </div>
+	    </div>
+	</div>
+	<hr class="space" />
+	<div class="row porfolio-bar">
+	    <div class="col-md-6">
+	        {{ prev_por|raw }}
+	    </div>
+	    <div class="col-md-6 text-right">
+	        {{ next_por|raw }}
+	    </div>
+	</div>
+{% elseif portfolio_style == 'style5' %}
+	<div class="row">
+	    <div class="col-md-8">
+	        <div class="flexslider nav-inner carousel white row-15">
+	            <ul class="slides">
+	            	{% set arr_image = node.field_portfolio_image %}
+					{% for image in arr_image %}
+						{% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_600x500') %}
+					    {% set imageURL_ori = file_url(image.entity.uri.value) %}
+					    <li>
+		                    <a class="img-box lightbox" href="{{ imageURL_ori }}" data-lightbox-anima="show-scale">
+		                        <img src="{{ imageURL }}" alt="{{ node.getTitle() }}">
+		                    </a>
+		                </li>       
+					{% endfor %}
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="col-md-4 boxed white row-15 portfolio-details">
+	        <h4>{{ 'DETAILS'|t }}</h4>
+	        <hr class="space m" />
+	        <ul class="fa-ul ">
+	            {% if node.field_client.0.value is not null and content.field_client is not empty %}<li><i class="fa-li im-business-man"></i>{{ content.field_client }}</li>{% endif %}
+
+				{% if node.field_status.0.value is not null and content.field_status is not empty %}<li><i class="fa-li im-structure"></i>{{ content.field_status }}</li>{% endif %}
+
+				{% if node.field_completed.0.value is not null and content.field_completed is not empty %}<li><i class="fa-li im-calendar"></i>{{ content.field_completed }}</li>{% endif %}
+
+				{% if node.field_copyright.0.value is not null and content.field_copyright is not empty %}<li><i class="fa-li im-copyright"></i>{{ content.field_copyright }}</li>{% endif %}
+
+				{% if node.field_localtion.0.value is not null and content.field_localtion is not empty %}<li><i class="fa-li im-map"></i>{{ content.field_localtion }}</li>{% endif %}
+
+				{% if node.field_surface_area.0.value is not null and content.field_surface_area is not empty %}<li><i class="fa-li im-home"></i>{{ content.field_surface_area }}</li>{% endif %}
+
+				{% if node.field_value.0.value is not null and content.field_value is not empty %}<li><i class="fa-li im-money"></i>{{ content.field_value }}</li>{% endif %}
+
+				{% if node.field_architect.0.value is not null and content.field_architect is not empty %}<li><i class="fa-li im-worker"></i>{{ content.field_architect }}</li>{% endif %}
+	        </ul>
+	        <hr class="space m" />
+	        {% if node.field_project_link.0.value %}<a href="{{ node.field_project_link.0.uri }}" class="btn btn-sm">{{ 'CLIENT WEBSITE'|t }}</a>{% endif %}
+	    </div>
+	</div>
+	<hr class="space" />
+	<div class="row">
+		<div class="col-md-12">
+		    <h4>{{ 'PROJECT DETAILS'|t }}</h4>
+		    <hr class="space m" />
+		    {{ content.body }}
+		</div>
+	</div>
+	<hr class="space" />
+	<div class="row">
+	    <div class="col-md-12 text-center">
+	        <div class="btn-group social-group btn-group-icons">
+	            <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank" data-social="share-facebook"><i class="fa fa-facebook"></i></a>
+
+				<a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank" data-social="share-twitter"><i class="fa fa-twitter"></i></a>
+
+				<a onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank" data-social="share-google"><i class="fa fa-google-plus"></i></a>
+
+				<a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank" data-social="share-linkedin"><i class="fa fa-linkedin"></i></a>
+	        </div>
+	    </div>
+	</div>
+	<hr class="space" />
+	<div class="row porfolio-bar">
+	    <div class="col-md-6">
+	        {{ prev_por|raw }}
+	    </div>
+	    <div class="col-md-6 text-right">
+	        {{ next_por|raw }}
+	    </div>
+	</div>	
+{% elseif portfolio_style == 'style6' %}
+	<div class="row proporzional-row">
+	    <div class="col-md-8 boxed-inverse">
+	        <h4>{{ 'PROJECT DESCRIPTION'|t }}</h4>
+			<hr class="space m" />
+			{{ content.body }}
+	    </div>
+	    <div class="col-md-4 boxed white portfolio-details">
+	        <h4>{{ 'DETAILS'|t }}</h4>
+	        <hr class="space m" />
+	        <ul class="fa-ul ">
+	            {% if node.field_client.0.value is not null and content.field_client is not empty %}<li><i class="fa-li im-business-man"></i>{{ content.field_client }}</li>{% endif %}
+
+				{% if node.field_status.0.value is not null and content.field_status is not empty %}<li><i class="fa-li im-structure"></i>{{ content.field_status }}</li>{% endif %}
+
+				{% if node.field_completed.0.value is not null and content.field_completed is not empty %}<li><i class="fa-li im-calendar"></i>{{ content.field_completed }}</li>{% endif %}
+
+				{% if node.field_copyright.0.value is not null and content.field_copyright is not empty %}<li><i class="fa-li im-copyright"></i>{{ content.field_copyright }}</li>{% endif %}
+
+				{% if node.field_localtion.0.value is not null and content.field_localtion is not empty %}<li><i class="fa-li im-map"></i>{{ content.field_localtion }}</li>{% endif %}
+
+				{% if node.field_surface_area.0.value is not null and content.field_surface_area is not empty %}<li><i class="fa-li im-home"></i>{{ content.field_surface_area }}</li>{% endif %}
+
+				{% if node.field_value.0.value is not null and content.field_value is not empty %}<li><i class="fa-li im-money"></i>{{ content.field_value }}</li>{% endif %}
+
+				{% if node.field_architect.0.value is not null and content.field_architect is not empty %}<li><i class="fa-li im-worker"></i>{{ content.field_architect }}</li>{% endif %}
+	        </ul>
+	        <hr class="space m" />
+	        {% if node.field_project_link.0.value %}<a href="{{ node.field_project_link.0.uri }}" class="btn btn-sm">{{ 'CLIENT WEBSITE'|t }}</a>{% endif %}
+	    </div>
+	</div>
+	<hr class="space s" /><hr class="space xs" />
+	<div class="flexslider nav-inner carousel white row-19" data-options="itemMargin:30">
+	    <ul class="slides">
+			{% set arr_image = node.field_portfolio_image %}
+			{% for image in arr_image %}
+			    {% set imageURL_ori = file_url(image.entity.uri.value) %}
+			    {% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_600x500') %}
+			    <li>
+			        <a class="img-box lightbox" href="{{ imageURL_ori }}" data-lightbox-anima="show-scale">
+			            <img src="{{ imageURL }}" alt="{{ node.getTitle() }}">
+			        </a>
+			    </li>   
+			{% endfor %}
+	    </ul>
+	</div>
+	<hr class="space" />
+	<div class="row porfolio-bar">
+	    <div class="col-md-6">
+	        {{ prev_por|raw }}
+	    </div>
+	    <div class="col-md-6 text-right">
+	        {{ next_por|raw }}
+	    </div>
+	</div>
+{% else %}
+	<div class="row">
+	    <div class="col-md-8">
+	        <div class="flexslider slider white nav-inner">
+	            <ul class="slides">
+	                {% set arr_image = node.field_portfolio_image %}
+					{% for image in arr_image %}
+					    {% set imageURL_ori = file_url(image.entity.uri.value) %}
+					    {% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_600x500') %}
+					    <li>
+					        <a class="img-box lightbox" href="{{ imageURL_ori }}" data-lightbox-anima="show-scale">
+					            <img src="{{ imageURL }}" alt="{{ node.getTitle() }}">
+					        </a>
+					    </li>   
+					{% endfor %}
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="col-md-4 portfolio-details">
+	    	<div class="title-base text-left">
+                <hr />
+                <h2>{{ 'DETAILS'|t }}</h2>
+            </div>
+	        <hr class="space m" />
+	        <ul class="fa-ul ">
+				{% if node.field_client.0.value is not null and content.field_client is not empty %}<li><i class="fa-li im-business-man"></i>{{ content.field_client }}</li>{% endif %}
+
+				{% if node.field_status.0.value is not null and content.field_status is not empty %}<li><i class="fa-li im-structure"></i>{{ content.field_status }}</li>{% endif %}
+
+				{% if node.field_completed.0.value is not null and content.field_completed is not empty %}<li><i class="fa-li im-calendar"></i>{{ content.field_completed }}</li>{% endif %}
+
+				{% if node.field_copyright.0.value is not null and content.field_copyright is not empty %}<li><i class="fa-li im-copyright"></i>{{ content.field_copyright }}</li>{% endif %}
+
+				{% if node.field_localtion.0.value is not null and content.field_localtion is not empty %}<li><i class="fa-li im-map"></i>{{ content.field_localtion }}</li>{% endif %}
+
+				{% if node.field_surface_area.0.value is not null and content.field_surface_area is not empty %}<li><i class="fa-li im-home"></i>{{ content.field_surface_area }}</li>{% endif %}
+
+				{% if node.field_value.0.value is not null and content.field_value is not empty %}<li><i class="fa-li im-money"></i>{{ content.field_value }}</li>{% endif %}
+
+				{% if node.field_architect.0.value is not null and content.field_architect is not empty %}<li><i class="fa-li im-worker"></i>{{ content.field_architect }}</li>{% endif %}
+	        </ul>
+	        <hr class="space s" />
+	        {% if node.field_project_link.0.value %}<a href="{{ node.field_project_link.0.uri }}" class="btn btn-sm">{{ 'CLIENT WEBSITE'|t }}</a>{% endif %}
+	    </div>
+	</div>
+	<hr class="space m" />
+	<div class="row">
+	    <div class="col-md-2">
+	        <div class="title-base text-right">
+	            <hr />
+	            <h2>{{ 'INFORMATIONS'|t }}</h2>
+	        </div>
+	    </div>
+	    <div class="col-md-10">
+	        {{ content.body }}
+	        <hr class="space m" />
+			<div class="btn-group social-group">
+			    <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank" data-social="share-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+				    <i class="fa fa-facebook text-s circle"></i>
+				</a>
+				<a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank" data-social="share-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+				    <i class="fa fa-twitter text-s circle"></i>
+				</a>
+				<a onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank" data-toggle="tooltip" data-placement="top" title="Google+">
+				    <i class="fa fa-google-plus text-s circle"></i>
+				</a>
+				<a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank" data-social="share-linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+				    <i class="fa fa-linkedin text-s circle"></i>
+				</a>
+			</div>
+	    </div>
+	</div>
+	<hr class="space" />
+	<div class="row porfolio-bar">
+	    <div class="col-md-6">
+		    {{ prev_por|raw }}
+		</div>
+		<div class="col-md-6 text-right">
+		    {{ next_por|raw }}
+		</div>
+	</div>
+{% endif %}

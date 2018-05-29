@@ -1,0 +1,135 @@
+{% set blog_style = node.field_blog_style.0.value %}
+{% if blog_style == '' %}
+  {% set blog_style = 'style1' %}
+{% endif %}
+{% set full_name = node.getRevisionAuthor().field_full_name.value %}
+{% set user_name = node.getRevisionAuthor().name.value %}
+{% if blog_layout == 'standard' %}
+	<div class="grid-item col-md-12">
+	    <div class="advs-box niche-box-blog">
+	        <div class="block-top">
+	            <div class="block-infos">
+	                <div class="block-data">
+	                    <p class="bd-day">{{ node.created.value|date('d') }}</p>
+	                    <p class="bd-month">{{ node.created.value|date('M Y') }}</p>
+	                </div>
+	            </div>
+	            <div class="block-title">
+	                <h2><a href="{{ url }}">{{ node.getTitle() }}</a></h2>
+	                <div class="tag-row">
+	                    {% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i>{{ content.field_blog_tags }}</span>{% endif %}
+	                    <span class="minimal-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+	                </div>
+	            </div>
+	        </div>
+	        {% set img_url = file_url(node.field_blog_image.0.entity.uri.value) %}
+	        <a class="img-box" href="{{ url }}">
+	            <img src="{{ img_url }}" alt="{{ node.getTitle() }}">
+	        </a>
+	        <p class="excerpt">
+	            {{ node.body.summary|length > 509 ? node.body.summary|slice(0,509) ~ '...' : node.body.summary }}
+	        </p>
+	        <a class="btn btn-sm" href="{{ url }}">Read more </a>
+	        <hr class="space" />
+	    </div>
+	</div>
+{% elseif blog_layout == 'standard_2' %}
+	<div class="grid-item">
+	    <div class="advs-box niche-box-blog  boxed-inverse">
+	        <div class="block-top">
+	            <div class="block-infos">
+	                <div class="block-data">
+	                    <p class="bd-day">{{ node.created.value|date('d') }}</p>
+	                    <p class="bd-month">{{ node.created.value|date('M Y') }}</p>
+	                </div>
+	            </div>
+	            <div class="block-title">
+	                <h2><a href="{{ url }}">{{ node.getTitle() }}</a></h2>
+	                <div class="tag-row">
+	                    {% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i>{{ content.field_blog_tags }}</span>{% endif %}
+						<span class="minimal-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+	                    <div class="social-group-button">
+	                        <div class="social-button" data-anima="pulse-vertical" data-trigger="hover">
+	                            <i class="fa fa-share-alt"></i>
+	                        </div>
+	                        <div class="btn-group social-group">
+	                            <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank">
+	                                <i data-social="share-facebook" class="fa fa-facebook circle"></i>
+	                            </a>
+	                            <a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank">
+	                                <i data-social="share-twitter" class="fa fa-twitter circle"></i>
+	                            </a>
+	                            <a onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank">
+	                                <i data-social="share-google" class="fa fa-google circle"></i>
+	                            </a>
+	                            <a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank">
+	                                <i data-social="share-linkedin" class="fa fa-linkedin circle"></i>
+	                            </a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        {% if blog_style == 'style1' %}
+				<div class="flexslider slider visible-dir-nav nav-inner white">
+				    <ul class="slides">
+				    	{% for img in node.field_blog_image %}
+			        	{% set image_url = file_url(img.entity.uri.value) %}
+					        <li>
+					            <img src="{{ image_url }}" alt="{{ node.getTitle() }}" />
+					        </li>
+				    	{% endfor %}
+				    </ul>
+				</div> 
+			{% elseif blog_style == 'style2' %}
+				{% set img_url = file_url(node.field_blog_image.0.entity.uri.value) %}
+				<a class="img-box img-scale-up" href="{{ url }}">
+			        <img src="{{ img_url }}" alt="{{ node.getTitle() }}">
+			    </a>
+			{% elseif blog_style == 'style3' or blog_style == 'style4' %}
+				{% set img_url = file_url(node.field_blog_image.0.entity.uri.value) %}
+			    <a class="img-box" href="{{ url }}">
+			        <img src="{{ img_url }}" alt="{{ node.getTitle() }}">
+			    </a>
+			{% else %}
+				{% if content.field_video_embed %}{{ content.field_video_embed }}{% endif %}
+			{% endif %}
+			<p class="excerpt">
+			    {{ node.body.summary|length > 509 ? node.body.summary|slice(0,509) ~ '...' : node.body.summary }}
+			</p>
+	        <p class="excerpt">
+	            L'orem ipsum dolor, consectetur adipisicing elit, sed
+	            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+	            nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error
+	            sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa
+	            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	        </p>
+	        <a class="btn btn-sm" href="{{ url }}">Read more</a>
+	    </div>
+	    <hr class="space m" />
+	</div>
+{% else %}
+	<div class="grid-item col-md-6 minimal-blog-grid-item">
+	    <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate" data-trigger="hover">
+	        <div class="block-infos">
+	            <div class="block-data">
+	                <p class="bd-day">{{ node.created.value|date('d') }}</p>
+	                <p class="bd-month">{{ node.created.value|date('M Y') }}</p>
+	            </div>
+	        </div>
+	        {% set img_url = getUrlByImageStyle(node.field_blog_image.0.entity.uri.value, 'image_1200x750') %}
+			<a class="img-box" href="{{ url }}"><img class="anima" src="{{ img_url }}" alt="{{ node.getTitle() }}" /></a>
+	        <div class="advs-box-content">
+			    <h2><a href="{{ url }}">{{ node.getTitle() }}</a></h2>
+			    <div class="tag-row">
+			        {% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i>{{ content.field_blog_tags }}</span>{% endif %}
+			        <span class="minimal-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+			    </div>
+			    <p class="niche-box-content">
+			        {{ node.body.summary|length > 509 ? node.body.summary|slice(0,509) ~ '...' : node.body.summary }}
+			    </p>
+			</div>
+	    </div>
+	</div>
+{% endif %}

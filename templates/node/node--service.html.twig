@@ -1,0 +1,49 @@
+{% set services_layout = node.field_services_layout.0.value %}
+{% if services_layout == '' %}
+  {% set services_layout = 'style1' %}
+{% endif %}
+
+{% if services_layout == 'style1' %}
+	<div class="row vertical-row">
+	    <div class="col-md-6 text-right">
+	        {{ content.body }}
+	    </div>
+	    <div class="col-md-6">
+	        <div class="maso-box maso-mask row">
+	        	{% set arr_image = node.field_image_services %}
+				{% for image in arr_image %}
+				    {% set imageURL_ori = file_url(image.entity.uri.value) %}
+				    {% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_600x500') %}
+				    <div class="maso-item col-md-4 row-8">
+		                <a class="img-box lightbox img-scale-up" href="{{ imageURL_ori }}" data-lightbox-anima="fade-top">
+		                    <img src="{{ imageURL }}" alt="{{ node.getTitle() }}">
+		                </a>
+		            </div>       
+				{% endfor %}
+	            <div class="clear"></div>
+	        </div>
+	    </div>
+	</div>
+{% else %}
+	<div class="row">
+	    <div class="col-md-6">
+	        <div class="flexslider slider white always-visible-nav">
+	            <ul class="slides">
+	            	{% set arr_image = node.field_image_services %}
+					{% for image in arr_image %}
+					    {% set imageURL_ori = file_url(image.entity.uri.value) %}
+					    {% set imageURL = getUrlByImageStyle(image.entity.uri.value, 'image_750x383') %}
+					    <li>
+		                    <a class="img-box lightbox" href="{{ imageURL_ori }}" data-lightbox-anima="fade-bottom">
+		                        <img src="{{ imageURL }}" alt="{{ node.getTitle() }}">
+		                    </a>
+		                </li>      
+					{% endfor %}
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="col-md-6">
+	        {{ content.body }}
+	    </div>
+	</div>
+{% endif %}

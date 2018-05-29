@@ -1,0 +1,28 @@
+{% set sub_title = node.field_sub_title.0.value %}
+<div class="header-bootstrap">
+    <div class="title">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row vertical-row">
+                        <div class="col-md-2">
+                            <i class="im-angel-smiley anima icon text-xl"></i>
+                        </div>
+                        <div class="col-md-10">
+                            {% if sub_title %}
+                            <span>{{ sub_title }}</span>
+                            {% endif %}
+                            <h1>{{ title }}</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    {% if page.breadcrumb %}
+                        {{ page.breadcrumb }}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

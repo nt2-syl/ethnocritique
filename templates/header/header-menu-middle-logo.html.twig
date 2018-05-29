@@ -1,0 +1,16 @@
+<header data-menu-anima="fade-in">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-main navbar-middle mega-menu-fullwidth minimal-middle-logo">
+            <div class="container">
+                {% if page.header %}
+                    {{ page.header }}
+                {% endif %} 
+                <div class="collapse navbar-collapse ">
+                    {% if page.main_menu %}
+                        {{ page.main_menu }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

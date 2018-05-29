@@ -1,0 +1,368 @@
+{% if header_style == 'style2' %}
+    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+{% elseif header_style == 'style3' %}
+    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+{% elseif header_style == 'style4' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+{% elseif header_style == 'style5' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+{% elseif header_style == 'style6' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+{% elseif header_style == 'style7' %}
+    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+{% elseif header_style == 'style8' %}
+    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+{% elseif header_style == 'style9' %}
+    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+{% elseif header_style == 'style10' %}
+    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+{% else %}
+    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+{% endif %}
+
+<!-- Page Title Begins -->
+{% if page_title_style == 'style1' %}
+    {% include theme_path ~ "/templates/page title/page-title-image.html.twig" %}  
+{% elseif page_title_style == 'style2' %}
+    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen.html.twig" %}
+{% elseif page_title_style == 'style3' %}
+    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen-parallax.html.twig" %}
+{% elseif page_title_style == 'style4' %}
+    {% include theme_path ~ "/templates/page title/page-title-image-parallax.html.twig" %}
+{% elseif page_title_style == 'style5' %}
+    {% include theme_path ~ "/templates/page title/page-title-image-parallax-ken-burn.html.twig" %}
+{% elseif page_title_style == 'style6' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-mp4.html.twig" %}
+{% elseif page_title_style == 'style7' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-youtube.html.twig" %}
+{% elseif page_title_style == 'style8' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen.html.twig" %}
+{% elseif page_title_style == 'style9' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen-parallax.html.twig" %}
+{% elseif page_title_style == 'style10' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-parallax.html.twig" %}
+{% elseif page_title_style == 'style11' %}
+    {% include theme_path ~ "/templates/page title/page-title-animation.html.twig" %}
+{% elseif page_title_style == 'style12' %}
+    {% include theme_path ~ "/templates/page title/page-title-animation-parallax.html.twig" %}
+{% elseif page_title_style == 'style13' %}
+    {% include theme_path ~ "/templates/page title/page-title-base-1.html.twig" %}
+{% elseif page_title_style == 'style14' %}
+    {% include theme_path ~ "/templates/page title/page-title-base-2.html.twig" %}
+{% elseif page_title_style == 'style15' %}
+    {% include theme_path ~ "/templates/page title/page-title-bootstrap.html.twig" %}
+{% else %}
+           
+{% endif %}
+{% if footer_style == 'footer1' %}
+    <div class="footer-parallax-container">
+        {% set term_machine_name = current_term.vid.value.0.target_id %}
+        {% if term_machine_name == 'blog_categories' %}
+            <div class="section-empty">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12">
+                            <div class="grid-list one-row-list">
+                                <div class="grid-box row">
+                                    {{ page.content_full_bar }}
+                                    {{ page.content }}
+                                </div>
+                                                                   
+                            </div>
+                        </div>
+                        {% if page.sidebar %}
+                        <div class="col-md-3 col-sm-12 widget">
+                            {{ page.sidebar }}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% elseif term_machine_name == 'album' %}
+            <div class="section-empty">
+                <div class="container content">
+                    <div class="album-main">
+                        <div class="cont-album-box">
+                            <div class="maso-list gallery no-margins">
+                                <div class="maso-box row no-margins">
+                                    {{ page.content_full_bar }}
+                                    {{ page.content }}
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="section-empty">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12">
+                            <div class="grid-list one-row-list">
+                                <div class="grid-box row">
+                                    {{ page.content_full_bar }}
+                                    {{ page.content }}
+                                </div>
+                                                                   
+                            </div>
+                        </div>
+                        {% if page.sidebar %}
+                        <div class="col-md-3 col-sm-12 widget">
+                            {{ page.sidebar }}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    {% include theme_path ~ "/templates/footer/footer-parallax.html.twig" %}
+{% elseif footer_style == 'footer2' %}
+    {% set term_machine_name = current_term.vid.value.0.target_id %}
+    {% if term_machine_name == 'blog_categories' %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="grid-list one-row-list">
+                            <div class="grid-box row">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                            </div>
+                                                               
+                        </div>
+                    </div>
+                    {% if page.sidebar %}
+                    <div class="col-md-3 col-sm-12 widget">
+                        {{ page.sidebar }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% elseif term_machine_name == 'album' %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="album-main">
+                    <div class="cont-album-box">
+                        <div class="maso-list gallery no-margins">
+                            <div class="maso-box row no-margins">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="grid-list one-row-list">
+                            <div class="grid-box row">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                            </div>
+                                                               
+                        </div>
+                    </div>
+                    {% if page.sidebar %}
+                    <div class="col-md-3 col-sm-12 widget">
+                        {{ page.sidebar }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% include theme_path ~ "/templates/footer/footer-minimal.html.twig" %}
+{% elseif footer_style == 'footer3' %}
+    {% set term_machine_name = current_term.vid.value.0.target_id %}
+    {% if term_machine_name == 'blog_categories' %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="grid-list one-row-list">
+                            <div class="grid-box row">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                            </div>
+                                                               
+                        </div>
+                    </div>
+                    {% if page.sidebar %}
+                    <div class="col-md-3 col-sm-12 widget">
+                        {{ page.sidebar }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% elseif term_machine_name == 'album' %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="album-main">
+                    <div class="cont-album-box">
+                        <div class="maso-list gallery no-margins">
+                            <div class="maso-box row no-margins">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="grid-list one-row-list">
+                            <div class="grid-box row">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                            </div>
+                                                               
+                        </div>
+                    </div>
+                    {% if page.sidebar %}
+                    <div class="col-md-3 col-sm-12 widget">
+                        {{ page.sidebar }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
+{% elseif footer_style == 'footer4' %}
+    {% set term_machine_name = current_term.vid.value.0.target_id %}
+    {% if term_machine_name == 'blog_categories' %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="grid-list one-row-list">
+                            <div class="grid-box row">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                            </div>
+                                                               
+                        </div>
+                    </div>
+                    {% if page.sidebar %}
+                    <div class="col-md-3 col-sm-12 widget">
+                        {{ page.sidebar }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% elseif term_machine_name == 'album' %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="album-main">
+                    <div class="cont-album-box">
+                        <div class="maso-list gallery no-margins">
+                            <div class="maso-box row no-margins">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="grid-list one-row-list">
+                            <div class="grid-box row">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                            </div>
+                                                               
+                        </div>
+                    </div>
+                    {% if page.sidebar %}
+                    <div class="col-md-3 col-sm-12 widget">
+                        {{ page.sidebar }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% include theme_path ~ "/templates/footer/footer-minimal-2.html.twig" %}
+{% else %}
+    {% set term_machine_name = current_term.vid.value.0.target_id %}
+    {% if term_machine_name == 'blog_categories' %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="grid-list one-row-list">
+                            <div class="grid-box row">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                            </div>
+                                                               
+                        </div>
+                    </div>
+                    {% if page.sidebar %}
+                    <div class="col-md-3 col-sm-12 widget">
+                        {{ page.sidebar }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% elseif term_machine_name == 'album' %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="album-main">
+                    <div class="cont-album-box">
+                        <div class="maso-list gallery no-margins">
+                            <div class="maso-box row no-margins">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="grid-list one-row-list">
+                            <div class="grid-box row">
+                                {{ page.content_full_bar }}
+                                {{ page.content }}
+                            </div>
+                                                               
+                        </div>
+                    </div>
+                    {% if page.sidebar %}
+                    <div class="col-md-3 col-sm-12 widget">
+                        {{ page.sidebar }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endif %}

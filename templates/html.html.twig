@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+    {% if general_setting_tracking_code != '' %}
+      {{ general_setting_tracking_code|t }}
+    {% endif %}
+    {% if custom_css != '' %}
+      <style type="text/css" media="all">
+        {{ custom_css|t }}
+      </style>
+    {% endif %}
+</head>
+{% set body_class = [
+  node_type ? 'page-node-type-' ~ node_type|clean_class,
+  current_term ? 'page-taxonomy-type-' ~current_term.getVocabularyId()|clean_class
+] %}
+{% if header_style == 'style7' or header_style == 'style8' or header_style == 'style9' or one_page_layout == 'style2' %}
+    {% set body_class = 'side-menu-container' %}
+{% endif %}
+<body {{ attributes.addClass(body_class) }}>
+    <div id="preloader"></div>
+    <a href="#main-content" class="visually-hidden focusable">
+      {{ 'Skip to main content'|t }}
+    </a>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <!--Scripts-->
+    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+</body>
+</html>

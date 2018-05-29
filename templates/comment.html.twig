@@ -1,0 +1,10 @@
+<div class="item row minimal-comment-item">
+    {% if user_picture %}
+		{{ user_picture }}
+	{% endif %}
+    <div class="col-md-10">
+        <p class="name minimal-name">{{ author }} {{ new_indicator_timestamp|date('d M, Y')}}</p>
+        <p class="msg">{{ content.field_comment_body }}</p>
+        {{ content.links }}
+    </div>
+</div>

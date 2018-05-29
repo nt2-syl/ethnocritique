@@ -1,0 +1,29 @@
+<header class="fixed-top" data-menu-anima="fade-in">
+    <div class="navbar navbar-default navbar-fixed-top mega-menu-fullwidth minimal-middle-box" role="navigation">
+        <div class="navbar-mini scroll-hide">
+            <div class="container">
+                {% if page.search_top_menu %}
+                    {{ page.search_top_menu }}
+                {% endif %}
+                {% if page.top_menu %}
+                    {{ page.top_menu }}
+                {% endif %}
+            </div>
+        </div>
+        <div class="navbar navbar-main middle-box-menu">
+            <div class="container">
+                {% if page.header %}
+                    {{ page.header }}
+                {% endif %}
+                <div class="collapse navbar-collapse">
+                    {% if page.main_menu %}
+                        {{ page.main_menu }}
+                    {% endif %}
+                </div>
+            </div>
+            {% if page.bottom_menu %}
+                {{ page.bottom_menu }}
+            {% endif %}
+        </div>
+    </div>
+</header>

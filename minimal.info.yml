@@ -1,0 +1,39 @@
+name: 'Minimal'
+type: 'theme'
+description: 'Minimal - Professional HTML5 Templates'
+core: '8.x'
+screenshot: 'screenshot.png'
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+  - core/assets/vendor/normalize-css/normalize.css
+  - core/modules/system/css/system.module.css
+  - core/modules/system/css/system.theme.css
+  - core/modules/views/css/views.module.css
+regions:
+  section: 'Section content'
+  search: 'Header search'
+  search_top_menu: 'Search Top Menu'
+  header: 'Header'
+  top_menu: 'Top menu'
+  main_menu: 'Main menu'
+  bottom_menu: 'Bottom menu'
+  right_menu: 'Right Menu'
+  side_menu: 'Menu Side'
+  menu_side_lateral: 'Side Menu Lateral'
+  menu_side_simple: 'Side Menu Simple'
+  menu_one_page: 'Menu One Page'
+  menu_dots: 'Menu dots'
+  breadcrumb: 'Breadcrumbs'
+  slider: 'Slider'
+  content_full_bar: 'Content full bar'
+  content: 'Main content'
+  sidebar: 'Sidebar'
+  contact: 'Contact'
+  contact_map: 'Map Contact'
+  footer_parallax: 'Footer Parallax'
+  footer_minimal: 'Footer Minimal'
+  footer_minimal_2: 'Footer Minimal 2'
+  footer_base_column_1: 'Footer Base Column 1'
+  footer_base_column_2: 'Footer Base Column 2'
+  footer_base_column_3: 'Footer Base Column 3'

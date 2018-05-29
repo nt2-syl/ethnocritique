@@ -1,0 +1,31 @@
+<header data-menu-anima="fade-top">
+    <div class="navbar navbar-default navbar-big-logo minimal-big-logo" role="navigation">
+        <div class="navbar-mini">
+            <div class="container">
+                 {% if page.top_menu %}
+                    {{ page.top_menu }}
+                {% endif %}
+            </div>
+        </div>
+        <div class="navbar navbar-main  mega-menu-fullwidth">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('<front>') }}"><img src="{{ logo_image_header_3 }}" alt="logo" /> </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    {% if page.main_menu %}
+                        {{ page.main_menu }}
+                    {% endif %}
+                    <div class="nav navbar-nav navbar-right">
+                        {% if page.search_top_menu %}
+                            {{ page.search_top_menu }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

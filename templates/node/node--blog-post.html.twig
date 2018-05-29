@@ -1,0 +1,305 @@
+{% set full_name = node.getRevisionAuthor().field_full_name.value %}
+{% set user_name = node.getRevisionAuthor().name.value %}
+{% if page %}	
+	{% if blog_style == 'style1' %}
+		<div class="section-empty">
+		    <div class="container content">
+		        <div class="flexslider slider row-17">
+		            <ul class="slides">
+		                {% for img in node.field_blog_image %}
+		            	{% set image_url = getUrlByImageStyle(img.entity.uri.value, 'image_1200x750') %}
+							<li>
+			                    <img src="{{ image_url }}" alt="{{ node.getTitle() }}" />
+			                </li>
+						{% endfor %}
+		            </ul>
+		        </div>
+		        <hr class="space m" />
+		        <div class="row">
+		            <div class="col-md-2">
+		                <div class="title-base text-right">
+		                    <hr />
+		                    <h4>{{ node.getTitle() }}</h4>
+		                </div>
+		            </div>
+		            <div class="col-md-10">
+		                {{ content.body }}
+		                <hr class="space s" />
+		                <div class="row">
+		                    <div class="col-md-6">
+		                        <hr class="space s" />
+		                        <div class="tag-row">
+		                        	<span class="minimal-blog-date"><i class="fa fa-calendar"></i> {{ node.created.value|date('d / m / Y') }}</span>
+									{% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i> {{ content.field_blog_tags }}</span>{% endif %}
+									<span class="minimal-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+		                        </div>
+		                    </div>
+		                    <div class="col-md-6 text-right">
+		                        <div class="btn-group social-group">
+		                            <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank"><i class="fa fa-facebook text-s circle"></i></a>
+
+									<a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank"><i class="fa fa-twitter text-s circle"></i></a>
+
+									<a target="_blank" onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank"><i class="fa fa-google-plus text-s circle"></i></a>
+
+		                            <a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank"><i class="fa fa-linkedin text-s circle"></i></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="section-bg-color">
+		    <div class="container content">
+		        <div class="row">
+		            {{ content.field_blog_comments }}
+		        </div>
+		    </div>
+		</div>
+	{% elseif blog_style == 'style2' %}
+		<div class="section-empty">
+		    <div class="container content">
+		        <div class="row">
+		            <div class="col-md-2">
+		                <div class="title-base text-right">
+		                    <hr />
+		                    <h4>{{ node.getTitle() }}</h4>
+		                </div>
+		            </div>
+		            <div class="col-md-7">
+		                {{ content.body }}
+		                <hr class="space s" />
+		                <div class="row">
+		                    <div class="col-md-8">
+		                        <hr class="space s" />
+		                        <div class="tag-row">
+		                            <span class="minimal-blog-date"><i class="fa fa-calendar"></i> {{ node.created.value|date('d / m / Y') }}</span>
+									{% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i> {{ content.field_blog_tags }}</span>{% endif %}
+									<span class="minimal-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+		                        </div>
+		                    </div>
+		                    <div class="col-md-4 text-right">
+		                        <div class="btn-group social-group">
+		                            <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank"><i class="fa fa-facebook text-s circle"></i></a>
+		                            <a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank"><i class="fa fa-twitter text-s circle"></i></a>
+		                            <a target="_blank" onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank"><i class="fa fa-google-plus text-s circle"></i></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            {% if  node.field_blog_image|length >= 1 %}
+					    <div class="col-md-3">
+					    	{% for img in node.field_blog_image %}
+					    	{% set image_url_ori = file_url(img.entity.uri.value) %}
+					    	{% set image_url = getUrlByImageStyle(img.entity.uri.value, 'image_1200x750') %}
+								<a class="img-box lightbox" href="{{ image_url_ori }}" data-lightbox-anima="show-scale">
+					                <img src="{{ image_url }}" alt="{{ node.getTitle() }}">
+					            </a>
+					            <hr class="space m" />
+							{% endfor %}
+					    </div>
+					{% endif %}
+		        </div>
+		    </div>
+		</div>
+		<div class="section-bg-color">
+		    <div class="container content">
+		        <div class="row">
+		            {{ content.field_blog_comments }}
+		        </div>
+		    </div>
+		</div>
+		{% if is_exist_rp %}
+		<div class="section-empty">
+		    <div class="container content">
+		        <div class="flexslider carousel outer-navs" data-options="minWidth:150,itemMargin:30,numItems:3">
+		            <ul class="slides">
+		                {{ related_posts|t }}
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+		{% endif %}
+	{% elseif blog_style == 'style3' %}
+		<div class="row">
+		    <div class="col-md-6">
+			    <hr class="space xs" />
+			    <div class="tag-row">
+			        <span class="minimal-blog-date"><i class="fa fa-calendar"></i> {{ node.created.value|date('d / m / Y') }}</span>
+					{% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i> {{ content.field_blog_tags }}</span>{% endif %}
+			    </div>
+			</div>
+			<div class="col-md-6">
+			    <div class="btn-group social-group btn-group-icons">
+			        <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank"><i class="fa fa-facebook"></i></a>
+
+			        <a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank"><i class="fa fa-twitter"></i></a>
+
+			        <a onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank"><i class="fa fa-google-plus"></i></a>
+
+			        <a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank"><i class="fa fa-linkedin"></i></a>
+			    </div>
+			</div>
+		    {{ content.body }}
+		</div>
+		<hr class="space" />           
+		{{ content.field_blog_comments }}
+	{% elseif blog_style == 'style4' %}
+		<div class="section-two-blocks" style="height:750px;">
+		    <div class="row">
+		    	<div class="col-md-6">
+			        {% set image_url = file_url(node.field_blog_image.0.entity.uri.value) %}
+					<div class="img-box minimal-image-blog">
+						<img src="{{ image_url }}" alt="{{ node.getTitle() }}" />
+					</div>
+				</div>
+		        <div class="col-md-6">
+		            <div class="content">
+		                <hr class="space s" />
+		                <div class="row">
+		                    <div class="col-md-12">
+		                        <div class="title-base text-left">
+		                            <hr />
+		                            <h4>{{ node.getTitle() }} </h4>
+		                        </div>
+		                    </div>
+		                    <div class="col-md-12">
+		                        <div class="tag-row">
+		                            <span class="minimal-blog-date"><i class="fa fa-calendar"></i> {{ node.created.value|date('d / m / Y') }}</span>
+									{% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i> {{ content.field_blog_tags }}</span>{% endif %}
+		                        </div>
+		                    </div>
+		                </div>
+		                <hr class="space m" />
+		                {{ content.body }}
+		                <hr class="space s" />
+		                <div class="btn-group social-group">
+		                    <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank"><i class="fa fa-facebook text-s circle"></i></a>
+
+							<a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank"><i class="fa fa-twitter text-s circle"></i></a>
+
+							<a target="_blank" onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank"><i class="fa fa-google-plus text-s circle"></i></a>
+
+							<a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank"><i class="fa fa-linkedin text-s circle"></i></a>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="section-empty">
+		    <div class="container content">
+		        <div class="row">
+		            {{ content.field_blog_comments }}
+		        </div>
+		    </div>
+		</div>
+	{% else %}
+		<div class="section-empty">
+		    <div class="container content">
+		        {% if content.field_video_embed %}{{ content.field_video_embed }}{% endif %}
+		        <hr class="space m" />
+		        <div class="row">
+		            <div class="col-md-2">
+		                <div class="title-base text-right">
+		                    <hr />
+		                    <h4>{{ node.getTitle() }}</h4>
+		                </div>
+		            </div>
+		            <div class="col-md-10">
+		                {{ content.body }}
+		                <hr class="space s" />
+		                <div class="row">
+		                    <div class="col-md-6">
+		                        <hr class="space s" />
+		                        <div class="tag-row">
+		                            <span class="minimal-blog-date"><i class="fa fa-calendar"></i> {{ node.created.value|date('d / m / Y') }}</span>
+									{% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i> {{ content.field_blog_tags }}</span>{% endif %}
+									<span class="minimal-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+		                        </div>
+		                    </div>
+		                    <div class="col-md-6 text-right">
+		                        <div class="btn-group social-group">
+		                            <a onClick="window.open('http://www.facebook.com/sharer.php?url={{ pageURL }}','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?url={{ pageURL }}" target="_blank"><i class="fa fa-facebook text-s circle"></i></a>
+
+									<a onClick="window.open('http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url={{ pageURL }}&amp;text={{ title }}" target="_blank"><i class="fa fa-twitter text-s circle"></i></a>
+
+									<a target="_blank" onClick="window.open('https://plus.google.com/share?url={{ pageURL }}','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url={{ pageURL }}" target="_blank"><i class="fa fa-google-plus text-s circle"></i></a>
+
+		                            <a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ pageURL }}" target="_blank"><i class="fa fa-linkedin text-s circle"></i></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="section-bg-color">
+		    <div class="container content">
+		        <div class="row">
+		            {{ content.field_blog_comments }}
+		        </div>
+		    </div>
+		</div>
+	{% endif %}
+{% elseif vcname == 'blog_categories' %}
+	<div class="grid-item col-md-12">
+	    <div class="advs-box niche-box-blog">
+	        <div class="block-top">
+	            <div class="block-infos">
+	                <div class="block-data">
+	                    <p class="bd-day">{{ node.created.value|date('d') }}</p>
+	                    <p class="bd-month">{{ node.created.value|date('M Y') }}</p>
+	                </div>
+	            </div>
+	            <div class="block-title">
+	                <h2><a href="{{ url }}">{{ node.getTitle() }}</a></h2>
+	                <div class="tag-row">
+	                    {% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i>{{ content.field_blog_tags }}</span>{% endif %}
+	                    <span class="elono-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+	                </div>
+	            </div>
+	        </div>
+			{% set img_url = file_url(node.field_blog_image.0.entity.uri.value) %}
+			<a class="img-box" href="{{ url }}">
+	            <img src="{{ img_url }}" alt="{{ node.getTitle() }}">
+	        </a>
+	        <p class="excerpt">
+	            {{ node.body.summary|length > 509 ? node.body.summary|slice(0,509) ~ '...' : node.body.summary }}
+	        </p>
+	        <a class="btn btn-sm" href="{{ url }}">Read more </a>
+	        <hr class="space" />
+	    </div>
+	</div>
+{% else %}
+	<div class="grid-item col-md-12">
+	    <div class="advs-box niche-box-blog">
+	        <div class="block-top">
+	            <div class="block-infos">
+	                <div class="block-data">
+	                    <p class="bd-day">{{ node.created.value|date('d') }}</p>
+	                    <p class="bd-month">{{ node.created.value|date('M Y') }}</p>
+	                </div>
+	            </div>
+	            <div class="block-title">
+	                <h2><a href="{{ url }}">{{ node.getTitle() }}</a></h2>
+	                <div class="tag-row">
+	                    {% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i>{{ content.field_blog_tags }}</span>{% endif %}
+	                    <span class="elono-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+	                </div>
+	            </div>
+	        </div>
+			{% set img_url = file_url(node.field_blog_image.0.entity.uri.value) %}
+			<a class="img-box" href="{{ url }}">
+	            <img src="{{ img_url }}" alt="{{ node.getTitle() }}">
+	        </a>
+	        <p class="excerpt">
+	            {{ node.body.summary|length > 509 ? node.body.summary|slice(0,509) ~ '...' : node.body.summary }}
+	        </p>
+	        <a class="btn btn-sm" href="{{ url }}">Read more </a>
+	        <hr class="space" />
+	    </div>
+	</div>
+{% endif %}
+
+	

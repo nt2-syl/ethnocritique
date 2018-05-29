@@ -1,0 +1,33 @@
+<header data-menu-anima="fade-in">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-mini">
+            <div class="container">
+                {% if page.top_menu %}
+                    {{ page.top_menu }}
+                {% endif %}
+            </div>
+        </div>
+        <div class="navbar navbar-main mega-menu-fullwidth">
+            <div class="container">
+                {% if page.header %}
+                    {{ page.header }}
+                {% endif %}
+                <div class="collapse navbar-collapse">
+                    {% if page.main_menu %}
+                        {{ page.main_menu }}
+                    {% endif %}
+                    <div class="nav navbar-nav navbar-right">
+                        <div class="search-box-menu">
+                            {% if page.search %}
+                                {{ page.search }}
+                            {% endif %}
+                            <button type="button" class="btn btn-default btn-search">
+                                <span class="fa fa-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

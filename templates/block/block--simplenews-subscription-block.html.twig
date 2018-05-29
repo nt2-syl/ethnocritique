@@ -1,0 +1,25 @@
+<div {{ attributes }}>
+    {{ title_suffix }}
+    <div class="container content">
+        <div class="row" data-anima=" pulse-fast" data-time="400">
+            <div class="col-md-2">
+                <div class="title-base text-right">
+                    <hr />
+                    {% if label %}
+                    <h2>{{ label }}</h2>
+                    {% endif %}
+                </div>
+            </div>
+            {% if content.message %}
+            <div class="col-md-6">
+                {{ content.message }}
+            </div>
+            {% endif %}
+            <div class="col-md-4">
+                {% if content %}
+                  {{ content|without('message') }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

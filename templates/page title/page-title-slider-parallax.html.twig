@@ -1,0 +1,27 @@
+{% set sub_title = node.field_sub_title.0.value %}
+{% set arr_image = node.field_header_background_image %}
+<div class="header-slider header-parallax white">
+    <div class="layer-parallax">
+        <div class="flexslider slider" data-options="directionNav:false,animation:fade,slideshowSpeed:5000">
+            <ul class="slides">
+                {% for image in arr_image %}
+                {% set image_bg_url = file_url(image.entity.uri.value) %}
+                    <li>
+                      <div class="bg-cover" style="background-image:url('{{ image_bg_url }}')"></div>
+                    </li>       
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="overlaybox">
+        <div class="container">
+            <div class="title-base">
+                <hr class="anima" />
+                <h1>{{ title }}</h1>
+                {% if sub_title %}
+                <p>{{ sub_title|raw }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

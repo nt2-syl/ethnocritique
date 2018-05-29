@@ -1,0 +1,28 @@
+<header class="bg-transparent menu-transparent scroll-change " data-menu-anima="fade-right">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-main mega-menu-fullwidth">
+            <div class="container">
+                {% if page.header %}
+                    {{ page.header }}
+                {% endif %}
+                <div class="collapse navbar-collapse">
+                    <div class="nav navbar-nav navbar-right minimal-header-classic-transparent">
+                        {% if page.main_menu %}
+                            {{ page.main_menu }}
+                        {% endif %}
+                        <div class="nav navbar-nav navbar-right">
+                            <div class="search-box-menu">
+                                {% if page.search %}
+                                    {{ page.search }}
+                                {% endif %}
+                                <button type="button" class="btn btn-default btn-search">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

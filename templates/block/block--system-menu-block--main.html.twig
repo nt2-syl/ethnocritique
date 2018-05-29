@@ -1,0 +1,8 @@
+{% set classes_div = ['nav','navbar-nav','minimal-menu-main'] %}
+<div {{ attributes.addClass(classes_div) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

@@ -1,0 +1,28 @@
+<header class="side-menu-header" data-menu-anima="default">
+    <div class="navbar-header">
+        <a class="hamburger-button" data-menu-anima="fade-left">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="navbar-brand" href="{{ path('<front>') }}"><img src="{{ logo_image_header_side }}" alt="logo" /></a>
+    </div>
+    <div class="side-menu-fixed minimal-side-menu">
+        <div class="top-area">
+            <a class="brand" href="{{ path('<front>') }}">
+                <img src="{{ logo_image_header_side }}" alt="logo">
+            </a>
+        </div>
+        <aside class="sidebar mi-menu box-middle-container">
+            {% if page.menu_one_page %}
+                {{ page.menu_one_page }}
+            {% endif %}
+        </aside>
+        <div class="bottom-area">
+            {% if social_network_header %}
+                {{ social_network_header|t }}
+            {% endif %}
+            {% if copyright_text_header %}
+                {{ copyright_text_header|t }}
+            {% endif %}
+        </div>
+    </div>
+</header>

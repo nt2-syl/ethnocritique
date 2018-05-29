@@ -1,0 +1,30 @@
+{% if node.field_background_page_slider.0.value %}
+<div class="background-page">
+    <div class="flexslider slider" data-options="directionNav:false,animation:fade,slideshowSpeed:5000">
+        <ul class="slides">
+            {% for img in node.field_background_page_slider %}
+            {% set image_bg = file_url(img.entity.uri.value) %}
+                <li>
+                    <div class="bg-cover" style="background-image:url('{{ image_bg }}')"><div class="bg-overlay line-45"></div></div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+<div class="sec-twoside">
+    <div class="row">
+        {{ page.content_full_bar }}
+        {% if page.menu_one_page %}
+            {{ page.menu_one_page }}
+        {% endif %}
+        <div id="twosides-main">
+            {% if page.section %}
+                {{ page.section }}
+            {% endif %}
+        </div>
+        {{ page.content }}
+        <div class="center-bg"></div>
+        <div class="close-button"></div>
+    </div>
+</div>

@@ -1,0 +1,167 @@
+{% if node.field_page_title.0.value %}
+    {% set page_title = node.field_page_title.0.value %}
+{% else %}
+    {% set page_title = page_title_style %}
+{% endif %}
+
+{% if node.field_footer_style.0.value %}
+    {% set footer_style = node.field_footer_style.0.value %}
+{% else %}
+    {% set footer_style = footer_style %}
+{% endif %}
+
+{% if header_style == 'style2' %}
+    {% include theme_path ~ "/templates/header/header-menu-classic-transparent.html.twig" %}
+{% elseif header_style == 'style3' %}
+    {% include theme_path ~ "/templates/header/header-menu-big-logo.html.twig" %}
+{% elseif header_style == 'style4' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-logo.html.twig" %}
+{% elseif header_style == 'style5' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-logo-top.html.twig" %}
+{% elseif header_style == 'style6' %}
+    {% include theme_path ~ "/templates/header/header-menu-middle-box.html.twig" %}
+{% elseif header_style == 'style7' %}
+    {% include theme_path ~ "/templates/header/header-menu-side.html.twig" %}
+{% elseif header_style == 'style8' %}
+    {% include theme_path ~ "/templates/header/header-menu-side-lateral.html.twig" %}
+{% elseif header_style == 'style9' %}
+    {% include theme_path ~ "/templates/header/header-menu-side-simple.html.twig" %}
+{% elseif header_style == 'style10' %}
+    {% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+{% else %}
+    {% include theme_path ~ "/templates/header/header-menu-classic.html.twig" %}
+{% endif %}
+
+{% if page_title == 'style1' %}
+    {% include theme_path ~ "/templates/page title/page-title-image.html.twig" %}
+{% elseif page_title == 'style2' %}
+    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen.html.twig" %}
+{% elseif page_title == 'style3' %}
+    {% include theme_path ~ "/templates/page title/page-title-image-fullscreen-parallax.html.twig" %}
+{% elseif page_title == 'style4' %}
+    {% include theme_path ~ "/templates/page title/page-title-image-parallax.html.twig" %}
+{% elseif page_title == 'style5' %}
+    {% include theme_path ~ "/templates/page title/page-title-image-parallax-ken-burn.html.twig" %}
+{% elseif page_title == 'style6' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-mp4.html.twig" %}
+{% elseif page_title == 'style7' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-youtube.html.twig" %}
+{% elseif page_title == 'style8' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen.html.twig" %}
+{% elseif page_title == 'style9' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-fullscreen-parallax.html.twig" %}
+{% elseif page_title == 'style10' %}
+    {% include theme_path ~ "/templates/page title/page-title-video-parallax.html.twig" %}
+{% elseif page_title == 'style11' %}
+    {% include theme_path ~ "/templates/page title/page-title-animation.html.twig" %}
+{% elseif page_title == 'style12' %}
+    {% include theme_path ~ "/templates/page title/page-title-animation-parallax.html.twig" %}
+{% elseif page_title == 'style13' %}
+    {% include theme_path ~ "/templates/page title/page-title-base-1.html.twig" %}
+{% elseif page_title == 'style14' %}
+    {% include theme_path ~ "/templates/page title/page-title-base-2.html.twig" %}
+{% elseif page_title == 'style15' %}
+    {% include theme_path ~ "/templates/page title/page-title-bootstrap.html.twig" %}
+{% elseif page_title == 'style16' %}
+    {% include theme_path ~ "/templates/page title/page-title-slider.html.twig" %}
+{% elseif page_title == 'style17' %}
+    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen.html.twig" %}
+{% elseif page_title == 'style18' %}
+    {% include theme_path ~ "/templates/page title/page-title-slider-fullscreen-parallax.html.twig" %}
+{% elseif page_title == 'style19' %}
+    {% include theme_path ~ "/templates/page title/page-title-slider-parallax.html.twig" %}
+{% else %}
+        
+{% endif %}
+{% if ntype != 'page' %}
+    {% if footer_style == 'footer1' %}
+        <div class="footer-parallax-container">
+            <div class="section-empty section-item">
+                <div class="container content">
+                    <div class="row">
+                        {{ page.content_full_bar }}
+                        {{ page.content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% elseif footer_style == 'footer2' %}
+        <div class="section-empty section-item">
+            <div class="container content">
+                <div class="row">
+                    {{ page.content_full_bar }}
+                    {{ page.content }}
+                </div>
+            </div>
+        </div>
+        {% include theme_path ~ "/templates/footer/footer-minimal.html.twig" %}
+    {% elseif footer_style == 'footer3' %}
+        <div class="section-empty section-item">
+            <div class="container content">
+                <div class="row">
+                    {{ page.content_full_bar }}
+                    {{ page.content }}
+                </div>
+            </div>
+        </div>
+        {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
+    {% elseif footer_style == 'footer4' %}
+        <div class="section-empty section-item">
+            <div class="container content">
+                <div class="row">
+                    {{ page.content_full_bar }}
+                    {{ page.content }}
+                </div>
+            </div>
+        </div>
+        {% include theme_path ~ "/templates/footer/footer-minimal-2.html.twig" %}
+    {% else %}
+        <div class="section-empty section-item">
+            <div class="container content">
+                <div class="row">
+                    {{ page.content_full_bar }}
+                    {{ page.content }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% else %}
+    {% if footer_style == 'footer1' %}
+        <div class="footer-parallax-container">
+            {{ page.content_full_bar }}
+            {{ page.content }}
+            {% if page.section %}
+                {{ page.section }}
+            {% endif %}
+        </div>
+        {% include theme_path ~ "/templates/footer/footer-parallax.html.twig" %}
+    {% elseif footer_style == 'footer2' %}
+        {{ page.content_full_bar }}
+        {{ page.content }}
+        {% if page.section %}
+                {{ page.section }}
+            {% endif %}
+        {% include theme_path ~ "/templates/footer/footer-minimal.html.twig" %}
+    {% elseif footer_style == 'footer3' %}
+        {{ page.content_full_bar }}
+        {{ page.content }}
+        {% if page.section %}
+            {{ page.section }}
+        {% endif %}
+        {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
+    {% elseif footer_style == 'footer4' %}
+        {{ page.content_full_bar }}
+        {{ page.content }}
+        {% if page.section %}
+            {{ page.section }}
+        {% endif %}
+        {% include theme_path ~ "/templates/footer/footer-minimal-2.html.twig" %}
+    {% else %}
+        {{ page.content_full_bar }}
+        {{ page.content }}
+        {% if page.section %}
+            {{ page.section }}
+        {% endif %}
+    {% endif %}
+{% endif %}

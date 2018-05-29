@@ -1,0 +1,17 @@
+{% set imageoneURL = file_url(node.field_image_gallery.0.entity.uri.value) %}
+{% set length_image = node.field_image_gallery|length %}
+
+{% if not page %}
+    {% set length_image = length_image - 1 %}
+    {% for i in 0..length_image %}
+ 	{% set uri_img = node.field_image_gallery[i].entity.uri.value %}
+        <div class="col-md-4 row-15 minimal-img-categories">
+            <a class="img-box i-center" href="{{ file_url(uri_img) }}" data-anima="show-scale" data-trigger="hover" data-anima-out="hide">
+                <i class="fa fa-photo anima"></i>
+                {{ content.field_image_gallery[i] }}
+            </a>
+        </div>
+    {% endfor %}
+{% else %}
+    {{ content }}     
+{% endif %}

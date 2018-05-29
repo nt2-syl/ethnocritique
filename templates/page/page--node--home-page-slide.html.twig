@@ -1,0 +1,78 @@
+{% set home_page_slide_layout = node.field_home_page_slide_layout.0.value %}
+{% if home_page_slide_layout == '' %}
+  {% set home_page_slide_layout = 'style1' %}
+{% endif %}
+
+{% set image_bg = file_url(node.field_background_page_image.0.entity.uri.value) %}
+
+{% set video_bg = file_url(node.field_background_page_video.0.entity.uri.value) %}
+
+{% if home_page_slide_layout == 'style1' %}
+	
+	{% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+	{% if page.menu_dots %}
+		{{ page.menu_dots }}
+	{% endif %}
+	<div class="minimal-page-slide">
+		{{ page.content_full_bar }}
+	</div>
+	<div id="fullpage-main" data-options="verticalCentered:false" class="white">
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{{ page.content }}
+	</div>
+{% elseif home_page_slide_layout == 'style2' %}
+	{% include theme_path ~ "/templates/header/header-menu-one-page-two.html.twig" %}
+	{% if page.menu_dots %}
+		{{ page.menu_dots }}
+	{% endif %}
+	{{ page.content_full_bar }}
+	<div class="footer-parallax-container">
+        <div id="fullpage-main" data-options="verticalCentered:false">
+			{% if page.section %}
+				{{ page.section }}
+			{% endif %}
+			{{ page.content }}
+        </div>
+    </div>
+{% elseif home_page_slide_layout == 'style3' %}
+	{% include theme_path ~ "/templates/header/header-menu-one-page-one.html.twig" %}
+	<div class="minimal-page-slide">
+		{{ page.content_full_bar }}
+	</div>
+	{% if page.menu_dots %}
+		{{ page.menu_dots }}
+	{% endif %}
+	{% if node.field_background_page_image.0.value or node.field_background_page_video.0.value %}
+	<div class="background-page overlay-container">
+		<div class="bg-overlay dotted"></div>
+	    <video autoplay="autoplay" loop muted poster="{{ image_bg }}" class="background-fullscreen">
+	        <source src="{{ video_bg }}" type="video/mp4">
+	    </video>
+	</div>
+	{% endif %}
+	<div id="fullpage-main" data-options="verticalCentered:false">
+		{% if page.section %}
+			{{ page.section }}
+		{% endif %}
+		{{ page.content }}
+	</div>
+{% else %}
+	
+	{% include theme_path ~ "/templates/header/header-menu-white.html.twig" %}
+	<div class="minimal-page-slide">
+		{{ page.content_full_bar }}
+	</div>
+	{% if page.menu_dots %}
+		{{ page.menu_dots }}
+	{% endif %}
+	<div class="section-empty home-fullpage">
+        <div id="fullpage-main" data-options="verticalCentered:false">
+			{% if page.section %}
+				{{ page.section }}
+			{% endif %}
+			{{ page.content }}
+        </div>
+    </div>
+{% endif %}

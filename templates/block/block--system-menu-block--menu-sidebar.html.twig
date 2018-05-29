@@ -1,0 +1,7 @@
+<nav {{ attributes.addClass('sidebar-nav') }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    {% block content %}
+    	{{ content }}
+    {% endblock %}
+</nav>

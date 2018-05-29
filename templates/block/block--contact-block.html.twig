@@ -1,0 +1,11 @@
+<div {{ attributes }}>
+    {{ title_suffix }}
+    {% if label %}
+    <hr class="space m" />
+    <h4>{{ label }}</h4>
+    <hr class="space m" />
+    {% endif %}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+</div>

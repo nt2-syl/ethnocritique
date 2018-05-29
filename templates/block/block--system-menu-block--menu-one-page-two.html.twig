@@ -1,0 +1,8 @@
+{% set classes_nav = ['fullpage-menu','left'] %}
+<nav {{ attributes.addClass(classes_nav) }} id="fullpage-menu">
+    {{ title_prefix }}
+    {{ title_suffix }}
+    {% block content %}
+    {{ content }}
+    {% endblock %}
+</nav>
