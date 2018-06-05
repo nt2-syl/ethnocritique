@@ -132,10 +132,26 @@
           </div>
         </div>
           <div class="col-md-3">
-            <div class="node-field-direction">{{ node.field_direction.value }}</div>
-            <div class="node-field-membres">{{ node.field_membres.value }}</div>
-            <div class="node-field-subvention">{{ node.field_subvention.value }}</div>
-            <div class="node-field-liens">{{ node.ield_lien_s.value }}</div>
+            {% if content.field_direction %}
+              <div class="node-field-direction">
+                {{ content.field_direction }}
+              </div>
+            {% endif %}
+            {% if content.field_membres %}
+              <div class="node-field-membresn">
+                {{ content.field_membres }}
+              </div>
+            {% endif %}
+            {% if content.field_subvention %}
+              <div class="node-field-subvention">
+                {{ content.field_subvention }}
+              </div>
+            {% endif %}
+            {% if content.field_lien_s %}
+              <div class="node-field-liens">
+                {{ content.field_lien_s }}
+              </div>
+            {% endif %}
           </div>
       </div>
     </div>
