@@ -30,3 +30,13 @@ ENTREE CARNET
 #toolbar-item-administration-tray {
   /* z-index: */
 }
+.field_square_wrapper {
+  background-color: #d2000a;
+}
+.field_square {
+  color: #fff;
+}
+.field_square a {
+  color: #fff;
+  text-decoration: underline;
+}
