@@ -30,14 +30,3 @@ ENTREE CARNET
 #toolbar-item-administration-tray {
   /* z-index: */
 }
-
-/**
- * Fix toolbar when using side menu lateral.
- */
-#toolbar-bar, #toolbar-item-administration-tray.toolbar-tray-horizontal {
-  padding-left: 250px;
-}
-
-#toolbar-item-administration-tray.toolbar-tray-vertical {
-  left: 250px;
-}

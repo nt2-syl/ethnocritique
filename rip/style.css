@@ -8,18 +8,18 @@ Author URI: http://www.pixor.it/
 ------------------------------------------------------------------
 Table of contents
 
-1. Global styles  [Row 126] 
-2. Headers \ Menus [Row 427] 
-3. Side menus [Row 1611] 
-4. Footer [Row 2189] 
-5. Titles [Row 2388] 
-6. Templates [Row 2790] 
-7. Components [Row 2991] 
-8. Thypography [Row 4226] 
-9. Sections [Row 4556] 
-10. Skin white [Row 4806] 
-11. Mobile / responsive [Row 4900] 
-12. IE < 10 [Row 5803] 
+1. Global styles  [Row 126]
+2. Headers \ Menus [Row 427]
+3. Side menus [Row 1611]
+4. Footer [Row 2189]
+5. Titles [Row 2388]
+6. Templates [Row 2790]
+7. Components [Row 2991]
+8. Thypography [Row 4226]
+9. Sections [Row 4556]
+10. Skin white [Row 4806]
+11. Mobile / responsive [Row 4900]
+12. IE < 10 [Row 5803]
 -------------------------------------------------------------------
 
 ==============================
@@ -342,9 +342,9 @@ div > p:last-child {
     margin-bottom: 0;
 }
 
-/* 
+/*
 ==============================
-MENU 
+MENU
 ==============================
 */
 header {
@@ -1452,8 +1452,14 @@ header.scroll-css .icon-top .icon-menu .navbar-brand {
     font-size: 30px;
     padding: 4px 15px;
     display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
 }
-
+body.toolbar-fixed .hamburger-button {
+    top: 40px
+}
     .hamburger-button i {
         color: #636363;
     }
@@ -1472,9 +1478,9 @@ header.scroll-css .icon-top .icon-menu .navbar-brand {
     opacity: 0;
 }
 
-/* 
+/*
 ==============================
-FOOTER 
+FOOTER
 ==============================
 */
 footer {
@@ -1638,7 +1644,7 @@ footer.footer-center .content {
     margin-top: 45px;
     float: none;
 }
-/* 
+/*
 ==============================
 MENU STYLE MINIMAL
 ==============================
@@ -1695,9 +1701,9 @@ MENU STYLE MINIMAL
     background-color: #FFF;
     border: 1px solid rgba(255,255,255,0);
 }
-/* 
+/*
 ==============================
-SIDE MENU 
+SIDE MENU
 ==============================
 */
 .side-menu-container, .side-menu-container #fullpage-main, .side-menu-container .footer-parallax {
@@ -2139,10 +2145,10 @@ navbar-fixed-top .side-menu-fixed .brand {
     }
 
     .navbar-header .hamburger-button, .side-menu-header .navbar-header .navbar-brand {
-        display: none;
+        display: block;
     }
 }
-/* 
+/*
 ==============================
 SIDE MENU STYLE SIMPLE
 ==============================
@@ -2163,9 +2169,9 @@ SIDE MENU STYLE SIMPLE
 .side-menu.ms-simple {
     padding: 0;
 }
-/* 
+/*
 ==============================
-INSIDE MENU 
+INSIDE MENU
 ==============================
 */
 .inside-menu .navbar {
@@ -2198,7 +2204,7 @@ INSIDE MENU
 .col-md-3 .inside-menu.scroll-css {
     width: 262.5px;
 }
-/* 
+/*
 ==============================
 BACKGROUND OVERLAY & GRADIENT
 ==============================
@@ -2271,9 +2277,9 @@ BACKGROUND OVERLAY & GRADIENT
     position: relative;
     z-index: 9;
 }
-/* 
+/*
 ==============================
-BACKGROUND IMAGE 
+BACKGROUND IMAGE
 ==============================
 */
 .background-page {
@@ -3356,10 +3362,10 @@ i.cover, i.onlycover {
     .icon-box-top-bottom .icon-box-cell p {
         padding: 5px 0 0 0;
     }
-/* 
-============================== 
-BUTTONS 
-============================== 
+/*
+==============================
+BUTTONS
+==============================
 */
 .btn-default i, .btn i, .btn-text i {
     color: #585858;
@@ -3391,7 +3397,7 @@ BUTTONS
     .btn-text:hover {
         color: #7D7D7D;
     }
-    
+
 .anima-button {
     position: relative;
     overflow: hidden;
@@ -3732,10 +3738,10 @@ span.caption-box {
 .thumb-xl .img-box, .thumb-l figure {
     height: 500px;
 }
-/* 
-============================== 
-GALLERY 
-============================== 
+/*
+==============================
+GALLERY
+==============================
 */
 .gallery {
     width: auto !important;
@@ -3765,10 +3771,10 @@ GALLERY
     .grid-box .img-box > span {
         height: auto;
     }
-/* 
-============================== 
+/*
+==============================
 LIST GRID & MASO
-============================== 
+==============================
 */
 .grid-box.row {
     margin: -5px;
@@ -4086,20 +4092,20 @@ LIST GRID & MASO
     height: 1000px;
 }
 
-/* 
-FIXED AREA ============================== 
+/*
+FIXED AREA ==============================
 */
 .fixed-area {
     z-index: 27;
 }
-/* 
-GOOGLE MAP ============================== 
+/*
+GOOGLE MAP ==============================
 */
 .google-map {
     height: 350px;
 }
-/* 
-MOUSE PARALLAX ============================== 
+/*
+MOUSE PARALLAX ==============================
 */
 .parallax-layer {
     position: absolute;
@@ -4160,8 +4166,8 @@ MOUSE PARALLAX ==============================
         z-index: 15;
         position: relative;
     }
-/* 
-SCROLL BOX ============================== 
+/*
+SCROLL BOX ==============================
 */
 .scroll-box {
     overflow: hidden;
@@ -4193,16 +4199,16 @@ SCROLL BOX ==============================
     .scroll-content.gradient-light:after {
         background: linear-gradient(to top,rgba(255,255,255,0.59) 0%,rgba(0,0,0,0) 100%);
     }
-/* 
-BREADCRUMBS ============================== 
+/*
+BREADCRUMBS ==============================
 */
 .breadcrumb.b {
     background-color: rgba(0,0,0,0);
     padding: 0;
     text-align: right;
 }
-/* 
-WIDGET ============================== 
+/*
+WIDGET ==============================
 */
 .widget .tagbox {
     padding: 15px 0;
@@ -4222,8 +4228,8 @@ WIDGET ==============================
     .tagbox span:hover {
         opacity: 0.7;
     }
-/* 
-BLOCK QUOTES ============================== 
+/*
+BLOCK QUOTES ==============================
 */
 .block-quote, div > p.block-quote:last-child {
     margin: 25px 0;
@@ -4271,13 +4277,13 @@ BLOCK QUOTES ==============================
         color: #ECECEC;
         margin-top: -67px;
     }
-/* 
-============================== 
-TITLES 
-============================== 
+/*
+==============================
+TITLES
+==============================
 */
 
-/* 
+/*
 ------------------------------
 TITLE BASE
 ------------------------------
@@ -4388,7 +4394,7 @@ header .title-base h1, header div.title-base p, .header-base .breadcrumb.b a, .h
     .title-base .scroll-top:hover, .title-modern .scroll-top:hover {
         background-color: #585858;
     }
-/* 
+/*
 ------------------------------
 TITLE MODERN
 ------------------------------
@@ -4430,7 +4436,7 @@ TITLE MODERN
     max-width: 700px;
     margin: 0 auto 13px auto !important;
 }
-/* 
+/*
 ------------------------------
 TITLE ICON
 ------------------------------
@@ -4486,10 +4492,10 @@ TITLE ICON
     color: rgba(150,150,150,0.18) !important;
     padding-right: 0;
 }
-/* 
-============================== 
-DROPCAPS 
-============================== 
+/*
+==============================
+DROPCAPS
+==============================
 */
 .dropcap {
     font-size: 50px;
@@ -4503,9 +4509,9 @@ DROPCAPS
 
     .dropcap.a {
     }
-/* 
+/*
 ==============================
-SEPARATORS  
+SEPARATORS
 ==============================
 */
 hr.space {
@@ -5946,9 +5952,9 @@ button.navbar-toggle {
             width: 100%;
             border: none !important;
         }
-    /* 
+    /*
   ==============================
-  MOBILE - SEPARATORS  
+  MOBILE - SEPARATORS
   ==============================
   */
     hr.space {
@@ -5972,9 +5978,9 @@ button.navbar-toggle {
         margin-left: auto !important;
         margin-right: auto;
     }
-    /* 
+    /*
   ==============================
-  MOBILE - OTHER  
+  MOBILE - OTHER
   ==============================
   */
     .latest-post-list .col-md-8 {

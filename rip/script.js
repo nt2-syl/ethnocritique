@@ -382,7 +382,7 @@ function isScrollView(t) {
         });
 
         //MENU ANIMATIONS
-        if (device_screen_size != "device-xs") {
+        if (device_screen_size != "device-xs" && false) {
             $("[data-menu-anima]").each(function () {
                 var a = $(this).closest("[data-menu-anima]").attr("data-menu-anima");
                 $(this).find("ul:not(.side-menu):first-child li").hover(function () {
@@ -409,15 +409,28 @@ function isScrollView(t) {
             $(".hamburger-menu,.side-menu-fixed").css("visibility", "hidden").css("opacity", "0").removeClass(a);
             $(t).removeClass("active");
             $("body").css("overflow", "");
+            $('header.side-menu-lateral').css('margin-left', '61px');
+            $('nav#toolbar-bar').css('padding-left', '0px');
+            $('body:not(.device-xs) .toolbar-tray.toolbar-tray-horizontal').css('padding-left', '60px');
+            $('body:not(.device-xs) .toolbar-tray.toolbar-tray-horizontal').css('left', '');
+            $('body:not(.device-xs) .toolbar-tray.toolbar-tray-vertical').css('left', '50px');
+            $('body:not(.device-xs) .toolbar-tray.toolbar-tray-vertical').css('padding-left', '');
+            $('body').css('padding-left', '0px')
         }
         function show_mobile_menu(t) {
             var a = $(t).attr("data-menu-anima");
             if (isEmpty(a)) a = "fade-in";
             $(".hamburger-menu,.side-menu-fixed").css("visibility", "visible").showAnima(a);
             $(t).addClass("active");
+            $('body').css('padding-left', '250px')
+            $('header.side-menu-lateral').css('margin-left', '0px');
+            $('nav#toolbar-bar').css('padding-left', '250px');
+            $('body:not(.device-xs) .toolbar-tray.toolbar-tray-horizontal').css('padding-left', '250px').css('left', '');
+            $('body:not(.device-xs) .toolbar-tray.toolbar-tray-vertical').css('left', '250px').css('padding-left', '');
             if (device_screen_size == "device-xs") $("body").css("overflow", "hidden");
         }
-        if (device_screen_size == "device-xs") {
+        hide_mobile_menu($('.hamburger-button'));
+        if (device_screen_size == "device-xs" || true) {
             $(".side-menu li > ul.collapse").each(function () {
                 $(this).css("height", "0px");
             });
