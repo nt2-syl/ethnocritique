@@ -131,18 +131,12 @@
             </div>
           </div>
         </div>
-        {% if  node.field_blog_image|length >= 1 %}
           <div class="col-md-3">
-            {% for img in node.field_blog_image %}
-              {% set image_url_ori = file_url(img.entity.uri.value) %}
-              {% set image_url = img_url_ori %}
-              <a class="img-box lightbox" href="{{ image_url_ori }}" data-lightbox-anima="show-scale">
-                <img src="{{ image_url }}" alt="{{ node.getTitle() }}">
-              </a>
-              <hr class="space m" />
-            {% endfor %}
+            <div class="node-field-direction">{{ node.field_direction.value }}</div>
+            <div class="node-field-membres">{{ node.field_membres.value }}</div>
+            <div class="node-field-subvention">{{ node.field_subvention.value }}</div>
+            <div class="node-field-liens">{{ node.ield_lien_s.value }}</div>
           </div>
-        {% endif %}
       </div>
     </div>
   </div>
