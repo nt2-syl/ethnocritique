@@ -9,7 +9,7 @@ a {color: #d2000a;}
 .side-menu .active > a, .sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a:active, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .advs-box-top-icon .icon,
 .advs-box-top-icon.boxed .btn, .adv-img-full-content i.main-icon, .advs-box-multiple.boxed div i, .advs-box-top-icon.boxed .circle-button, div.call-action-box a, div.call-action-box a.btn, .text-color,
 .boxed .circle-button:hover i, .boxed .circle-button, .tag-row i, .btn-text:hover, .btn-text:hover i, .pagination > .active > a, .pagination > li > a:hover, .datepicker-panel > ul > li:hover,
-.adv-img-button-content .caption i, .social-line .social-group i.circle:hover {
+.adv-img-button-content .caption i, .social-line .social-group i.circle:hover, ul.minimal-primary-tabs li a, ul.minimal-primary-tabs li a.is-active {
     color: #d2000a !important;
 }
 
