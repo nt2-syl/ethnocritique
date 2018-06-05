@@ -2550,7 +2550,12 @@ header.bg-title {
     background-position: center center;
     background-size: cover;
     overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .header-title, .header-animation {
     position: relative;
+  }
 }
 
 @keyframes ken-burn-in {
