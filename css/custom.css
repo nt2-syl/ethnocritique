@@ -3,12 +3,12 @@ a {color: #d2000a;}
 .navbar-nav > li > .dropdown-menu, .tab-box > .panel, .tab-box > .panel-box > .panel, .niche-box-team .content-box hr, hr.e, .datepicker-top-left, .datepicker-top-right {
     color: #d2000a !important;
 }
-.adv-img-classic-box .caption-inner p.sub-text, .nav-tabs > li:hover > a, .nav-tabs > li:hover > a i, .nav-tabs > li.active > a, .nav-tabs > li.active > a i, .list-group-item:not(.active):hover, 
-.icon-menu .navbar-collapse ul.nav > li > a:hover i, header .btn-search:hover, .nav.ms-minimal > li.active > a, .icon-background.boxed-inverse:not(.bg-color) .i-background, .icon-box-cell > i, 
-.advs-box.boxed a.btn, .advs-box.boxed a i, .dropdown.btn-group .active > a, .bootgrid-header .dropdown-item:hover, .navbar-default .navbar-nav > li > a:hover, .white .box-side-icon-small .icon-box i, 
-.side-menu .active > a, .sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a:active, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .advs-box-top-icon .icon, 
-.advs-box-top-icon.boxed .btn, .adv-img-full-content i.main-icon, .advs-box-multiple.boxed div i, .advs-box-top-icon.boxed .circle-button, div.call-action-box a, div.call-action-box a.btn, .text-color, 
-.boxed .circle-button:hover i, .boxed .circle-button, .tag-row i, .btn-text:hover, .btn-text:hover i, .pagination > .active > a, .pagination > li > a:hover, .datepicker-panel > ul > li:hover, 
+.adv-img-classic-box .caption-inner p.sub-text, .nav-tabs > li:hover > a, .nav-tabs > li:hover > a i, .nav-tabs > li.active > a, .nav-tabs > li.active > a i, .list-group-item:not(.active):hover,
+.icon-menu .navbar-collapse ul.nav > li > a:hover i, header .btn-search:hover, .nav.ms-minimal > li.active > a, .icon-background.boxed-inverse:not(.bg-color) .i-background, .icon-box-cell > i,
+.advs-box.boxed a.btn, .advs-box.boxed a i, .dropdown.btn-group .active > a, .bootgrid-header .dropdown-item:hover, .navbar-default .navbar-nav > li > a:hover, .white .box-side-icon-small .icon-box i,
+.side-menu .active > a, .sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a:active, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .advs-box-top-icon .icon,
+.advs-box-top-icon.boxed .btn, .adv-img-full-content i.main-icon, .advs-box-multiple.boxed div i, .advs-box-top-icon.boxed .circle-button, div.call-action-box a, div.call-action-box a.btn, .text-color,
+.boxed .circle-button:hover i, .boxed .circle-button, .tag-row i, .btn-text:hover, .btn-text:hover i, .pagination > .active > a, .pagination > li > a:hover, .datepicker-panel > ul > li:hover,
 .adv-img-button-content .caption i, .social-line .social-group i.circle:hover {
     color: #d2000a !important;
 }
@@ -29,4 +29,15 @@ ENTREE CARNET
 
 #toolbar-item-administration-tray {
   /* z-index: */
+}
+
+/**
+ * Fix toolbar when using side menu lateral.
+ */
+#toolbar-bar, #toolbar-item-administration-tray.toolbar-tray-horizontal {
+  padding-left: 250px;
+}
+
+#toolbar-item-administration-tray.toolbar-tray-vertical {
+  left: 250px;
 }
