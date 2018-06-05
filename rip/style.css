@@ -1460,6 +1460,12 @@ header.scroll-css .icon-top .icon-menu .navbar-brand {
 body.toolbar-fixed .hamburger-button {
     top: 40px
 }
+
+@media (max-width: 611px) {
+  body.toolbar-vertical .hamburger-button {
+    top: 40px;
+  }
+}
     .hamburger-button i {
         color: #636363;
     }

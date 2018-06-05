@@ -415,7 +415,8 @@ function isScrollView(t) {
             $('body:not(.device-xs) .toolbar-tray.toolbar-tray-horizontal').css('left', '');
             $('body:not(.device-xs) .toolbar-tray.toolbar-tray-vertical').css('left', '50px');
             $('body:not(.device-xs) .toolbar-tray.toolbar-tray-vertical').css('padding-left', '');
-            $('body').css('padding-left', '0px')
+            $('body').css('padding-left', '0px');
+            $(t).css('top', '');
         }
         function show_mobile_menu(t) {
             var a = $(t).attr("data-menu-anima");
@@ -427,6 +428,7 @@ function isScrollView(t) {
             $('nav#toolbar-bar').css('padding-left', '250px');
             $('body:not(.device-xs) .toolbar-tray.toolbar-tray-horizontal').css('padding-left', '250px').css('left', '');
             $('body:not(.device-xs) .toolbar-tray.toolbar-tray-vertical').css('left', '250px').css('padding-left', '');
+            $(t).css('top', '0px');
             if (device_screen_size == "device-xs") $("body").css("overflow", "hidden");
         }
         hide_mobile_menu($('.hamburger-button'));
