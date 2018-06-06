@@ -46,6 +46,7 @@ ENTREE CARNET
 #preloader {
   display: none;
 }
+
 /* AFFICHAGE DES CHAMPS - ACTUALITE / INDIVIDU / PROJET RECHERCHE */
 .full_width_content .field--name-field-laboratoire-associe,
 .full_width_content .field--name-field-subvention,
@@ -63,7 +64,10 @@ ENTREE CARNET
 .full_width_content .field--name-field-type-activite,
 .full_width_content .field--name-field-organisation,
 .full_width_content .field--name-field-participation,
-.full_width_content .field--name-field-fichier {
+.full_width_content .field--name-field-fichier,
+.full_width_content .field--name-field-portrait,
+.full_width_content .field--name-field-prenom,
+.full_width_content .field--name-field-nom {
   display: none;
 }
 /* AFFICHAGE DES CHAMPS - LABO RECHERCHE */
