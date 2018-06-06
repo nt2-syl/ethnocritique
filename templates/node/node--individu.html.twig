@@ -113,7 +113,7 @@
         </div>
         <div class="col-md-7">
           <div{{ content_attributes }}>
-            {{ content }}
+            {{ content.body }}
           </div>
           <hr class="space s" />
           <div class="row">
@@ -131,21 +131,21 @@
             </div>
           </div>
         </div>
-          <div class="col-md-3 ">
-          <div class="field_square_wrapper">
-            {% if content.field_direction %}
-              <div class="field_square node-field-direction">
-                {{ content.field_direction }}
+          <div class="col-md-3">
+            {% if content.field_portrait %}
+              <div class="node-field-portrait">
+                {{ content.field_portrait }}
               </div>
             {% endif %}
-            {% if content.field_membres %}
-              <div class="field_square node-field-membres">
-                {{ content.field_membres }}
+            <div class="field_square_wrapper">
+            {% if content.field_affiliation %}
+              <div class="field_square node-field-affiliation">
+                {{ content.field_affiliation }}
               </div>
             {% endif %}
-            {% if content.field_subvention %}
-              <div class="field_square node-field-subvention">
-                {{ content.field_subvention }}
+            {% if content.field_domaines_specialisation %}
+              <div class="field_square node-field_domaines-specialisation">
+                {{ content.field_domaines_specialisation }}
               </div>
             {% endif %}
             {% if content.field_lien_s %}
@@ -159,6 +159,9 @@
     </div>
   </div>
   <div class="grid-item col-md-12 full_width_content">
+    <div{{ content_attributes }}>
+      {{ content }}
+    </div>
   </div>
 {% else %}
   <div class="grid-item col-md-12">
