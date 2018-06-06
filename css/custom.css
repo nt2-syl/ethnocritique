@@ -40,3 +40,7 @@ ENTREE CARNET
   color: #fff;
   text-decoration: underline;
 }
+/* Sur Actualité, couvre la page entière */
+#preloader {
+	display: none;
+}
