@@ -103,47 +103,52 @@
   <div class="section-empty">
     <div class="container content">
       <div class="row">
-        <div class="col-md-2">
-          <div class="title-base text-right">
-            <hr />
-            {{ title_prefix }}
-            <h4>{{ node.getTitle() }}</h4>
-            {{ title_suffix }}
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div{{ content_attributes }}>
-            {{ content }}
-          </div>
-          <hr class="space s" />
-          <div class="row">
-            <div class="col-md-8">
-              <hr class="space s" />
-              <div class="tag-row">
-                <span class="minimal-blog-date"><i class="fa fa-calendar"></i> {{ node.created.value|date('d / m / Y') }}</span>
-                {% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i> {{ content.field_blog_tags }}</span>{% endif %}
-                <span class="minimal-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
+        <div class="col-md-8">
+            {% if content.field_image_couverture %}
+              <div class="node-field-image-couverture">
+                {{ content.field_image_couverture }}
               </div>
-            </div>
-            <div class="col-md-4 text-right">
-              <div class="btn-group social-group">
-              </div>
-            </div>
-          </div>
+            {% endif %}
         </div>
-        {% if  node.field_blog_image|length >= 1 %}
-          <div class="col-md-3">
-            {% for img in node.field_blog_image %}
-              {% set image_url_ori = file_url(img.entity.uri.value) %}
-              {% set image_url = img_url_ori %}
-              <a class="img-box lightbox" href="{{ image_url_ori }}" data-lightbox-anima="show-scale">
-                <img src="{{ image_url }}" alt="{{ node.getTitle() }}">
-              </a>
-              <hr class="space m" />
-            {% endfor %}
-          </div>
-        {% endif %}
+          <div class="col-md-4">
+            <div class="field_square_wrapper">
+            {% if content.field_date_debut %}
+              <div class="field_square node-field-date-debut">
+                {{ content.field_date_debut }}
+              </div>
+            {% endif %}
+            {% if content.field_date_fin %}
+              <div class="field_square node-field-date-fin">
+                {{ content.field_date_fin }}
+              </div>
+            {% endif %}
+            {% if content.field_organisation %}
+              <div class="field_square node-field-organisation">
+                {{ content.field_organisation }}
+              </div>
+            {% endif %}
+            {% if content.field_participation %}
+              <div class="field_square node-field-participation">
+                {{ content.field_participation }}
+              </div>
+            {% endif %}
+            {% if content.field_fichier %}
+              <div class="field_square node-field-fichier">
+                {{ content.field_fichier }}
+              </div>
+            {% endif %}
+            {% if content.field_lien_s %}
+              <div class="field_square node-field-liens">
+                {{ content.field_lien_s }}
+              </div>
+            {% endif %}
+            </div>
       </div>
+    </div>
+  </div>
+  <div class="grid-item col-md-12 full_width_content">
+    <div{{ content_attributes }}>
+      {{ content }}
     </div>
   </div>
 {% else %}
