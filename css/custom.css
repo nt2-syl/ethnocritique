@@ -43,6 +43,13 @@ ENTREE CARNET
   color: #fff;
   text-decoration: underline;
 }
+.block-infos .block-data {
+  background-color: transparent;
+}
+
+
+
+/* Default */
 /* Sur Actualité, couvre la page entière */
 #preloader {
   display: none;
