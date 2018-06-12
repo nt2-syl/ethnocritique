@@ -22,7 +22,7 @@
   current_term ? 'page-taxonomy-type-' ~current_term.getVocabularyId()|clean_class
 ] %}
 {% if header_style == 'style7' or header_style == 'style8' or header_style == 'style9' or one_page_layout == 'style2' %}
-    {% set body_class = 'side-menu-container' %}
+  {% set body_class = body_class|merge(['side-menu-container']) %}
 {% endif %}
 <body {{ attributes.addClass(body_class) }}>
     <div id="preloader"></div>
