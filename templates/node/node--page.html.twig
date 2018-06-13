@@ -1,4 +1,4 @@
-{#
+{# copied from node.html.twig
 /**
  * @file
  * Theme override to display a node.
@@ -70,8 +70,6 @@
  *   in different view modes.
  */
 #}
-{# Original node template #}
-{#
 <article{{ attributes }}>
 
   {{ title_prefix }}
@@ -92,56 +90,12 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes }}>
-    {{ content }}
+  <div class="row">
+    <div class="col-md-12">
+      <div{{ content_attributes }}>
+        {{ content }}
+      </div>
+    </div>
   </div>
 
 </article>
-#}
-{# Copied from node--blog.html.twig (style2) #}
-{% if page %}
-  <div class="section-empty">
-    <div class="container content">
-      <div class="row">
-        <div class="col-md-8">
-        </div>
-        <div class="col-md-4">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="grid-item col-md-12 full_width_content">
-    <div{{ content_attributes }}>
-      {{ content }}
-    </div>
-  </div>
-{% else %}
-  <div class="grid-item col-md-12">
-    <div class="advs-box niche-box-blog">
-      <div class="block-top">
-        <div class="block-infos">
-          <div class="block-data">
-            <p class="bd-day">{{ node.created.value|date('d') }}</p>
-            <p class="bd-month">{{ node.created.value|date('M Y') }}</p>
-          </div>
-        </div>
-        <div class="block-title">
-          <h2><a href="{{ url }}">{{ node.getTitle() }}</a></h2>
-          <div class="tag-row">
-            {% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i>{{ content.field_blog_tags }}</span>{% endif %}
-            <span class="elono-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
-          </div>
-        </div>
-      </div>
-      {% set img_url = file_url(node.field_blog_image.0.entity.uri.value) %}
-      <a class="img-box" href="{{ url }}">
-        <img src="{{ img_url }}" alt="{{ node.getTitle() }}">
-      </a>
-      <p class="excerpt">
-        {{ node.body.summary|length > 509 ? node.body.summary|slice(0,509) ~ '...' : node.body.summary }}
-      </p>
-      <a class="btn btn-sm" href="{{ url }}">Read more </a>
-      <hr class="space" />
-    </div>
-  </div>
-{% endif %}
