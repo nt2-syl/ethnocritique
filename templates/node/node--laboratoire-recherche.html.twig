@@ -133,6 +133,11 @@
         </div>
           <div class="col-md-3 ">
           <div class="field_square_wrapper">
+            {% if content.field_image_couverture %}
+              <div class="node-field-image-couverture">
+                {{ content.field_image_couverture }}
+              </div>
+            {% endif %}
             {% if content.field_direction %}
               <div class="field_square node-field-direction">
                 {{ content.field_direction }}

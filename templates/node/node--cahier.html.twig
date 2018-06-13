@@ -107,7 +107,7 @@
       <div class="col-md-4">
         <div class="advs-box advs-box-side-icon boxed-inverse row-10">
           <div class="caption-box">
-          <h3 class="node-field-responsable-cahier">{% if content.field_responsable_cahier %}
+            <h3 class="node-field-responsable-cahier">{% if content.field_responsable_cahier %}
                 {{ content.field_responsable_cahier }}
             {% endif %}</h3>
             <span class="extra-content">{# Manque champs taxos #}TAXONOMIE</span>
@@ -116,15 +116,15 @@
                 {{ content.field_credits }}
               </div>
             {% endif %}
-</div>
-</div>
-</div>
-          <div class="col-md-8">
-            {% if content.field_image_couverture %}
-              <div class="node-field-image-couverture">
-                {{ content.field_image_couverture }}
-              </div>
-            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        {% if content.field_image_couverture %}
+          <div class="node-field-image-couverture">
+            {{ content.field_image_couverture }}
+          </div>
+        {% endif %}
         </div>
       </div>
     </div>
