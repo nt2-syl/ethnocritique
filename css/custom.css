@@ -75,13 +75,24 @@ ENTREE CARNET
 .full_width_content .field--name-field-fichier,
 .full_width_content .field--name-field-portrait,
 .full_width_content .field--name-field-prenom,
-.full_width_content .field--name-field-nom {
+.full_width_content .field--name-field-nom,
+.page-node-type-article-chapitre {
   display: none;
 }
 /* AFFICHAGE DES CHAMPS - LABO RECHERCHE */
 .col-md-7 .field--name-field-membres,
 .col-md-7 .field--name-field-direction,
 .col-md-7 .field--name-field-lien-s,
-.col-md-7 .field--name-field-subvention {
+.col-md-7 .field--name-field-subvention,
+.col-md-7 .field--name-field-portrait {
+  display: none;
+}
+/* ARTICLE-CHAPITRE */
+/* Bug: le champ credit a pour classe field-auteur-e, comme le champ précédent */
+.page-node-type-chapitre .full_width_content .field--name-body,
+.page-node-type-livre .full_width_content .field--name-body,
+.page-node-type-livre .full_width_content .field--name-field-auteur-e,
+.page-node-type-livre .full_width_content .field--name-field-auteur-e.field--type-text-long,
+.page-node-type-article-chapitre .full_width_content .field--name-body {
   display: none;
 }
