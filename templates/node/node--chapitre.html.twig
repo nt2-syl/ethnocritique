@@ -1,4 +1,4 @@
-{# copied + adapted from node--evenement.html.twig
+{#
 /**
  * @file
  * Theme override to display a node.
@@ -103,35 +103,26 @@
   <div class="section-empty">
     <div class="container content">
       <div class="row">
-        <div class="col-md-8">
-              <div class="field_square node-body">
-                {{ content.body }}
-              </div>
-        </div>
-        <div class="col-md-4">
-                    {% if content.field_image_couverture %}
-              <div class="node-field-image-couverture">
-                {{ content.field_image_couverture }}
-              </div>
-            {% endif %}
-          <div class="field_square_wrapper">
-            {% if content.field_annee_publication %}
-              <div class="field_square node-field-annee-publication">
-                {{ content.field_annee_publication }}
-              </div>
-            {% endif %}
-            {% if content.field_auteur_e%}
-              <div class="field_square node-field-auteur">
-                {{ content.field_auteur_e }}
-              </div>
-            {% endif %}
-            {% if content.field_credits %}
-              <div class="field_square node-field-credits">
-                {{ content.field_credits }}
-              </div>
-            {% endif %}
+        <div class="col-md-2">
+          <div class="title-base text-right">
+            <hr />
+            {{ title_prefix }}
+            <h4>{{ node.getTitle() }}</h4>
+            {{ title_suffix }}
           </div>
-        </div>            
+        </div>
+        <div class="col-md-10">
+          <div{{ content_attributes }}>
+            {% if content.field_livre_referent %}
+              <div class="field_square node-field-livre-referent">
+                {{ content.field_livre_referent }}
+              </div>
+            {% endif %}
+            {{ content.body }}
+          </div>
+
+        </div>
+          </div>
       </div>
     </div>
   </div>
