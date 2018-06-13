@@ -96,3 +96,7 @@ ENTREE CARNET
 .page-node-type-article-chapitre .full_width_content .field--name-body {
   display: none;
 }
+/**/
+.page-node-type-page .full_width_content {
+  z-index: 4;
+}
