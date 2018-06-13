@@ -89,13 +89,15 @@
       </div>
     </footer>
   {% endif %}
-
-  <div class="row">
-    <div class="col-md-12">
-      <div{{ content_attributes }}>
-        {{ content }}
+  <div class="section-empty">
+    <div class="container content">
+      <div class="row">
       </div>
     </div>
   </div>
-
+  <div class="grid-item col-md-12 full_width_content">
+    <div{{ content_attributes }}>
+      {{ content }}
+    </div>
+  </div>
 </article>
