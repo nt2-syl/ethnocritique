@@ -39,6 +39,7 @@ ENTREE CARNET
 }
 .field_square {
   color: #fff;
+  margin-bottom: 1em;
 }
 .field_square a {
   color: #fff;
@@ -57,6 +58,10 @@ ENTREE CARNET
 /* Sur Actualité, couvre la page entière */
 #preloader {
   display: none;
+}
+/**/
+.page-node-type-page .full_width_content {
+  z-index: 4;
 }
 
 /* AFFICHAGE DES CHAMPS - ACTUALITE / INDIVIDU / PROJET RECHERCHE */
@@ -109,7 +114,11 @@ ENTREE CARNET
 .page-node-type-article-chapitre .full_width_content .field--name-body {
   display: none;
 }
-/**/
-.page-node-type-page .full_width_content {
-  z-index: 4;
+
+/* ENTREE CARNET */
+.page-node-type-entree-de-carnet .full_width_content .field--name-field-image-couverture,
+.page-node-type-entree-de-carnet .full_width_content .field--name-field-auteur-e,
+.page-node-type-entree-de-carnet .full_width_content .field--name-field-carnet-referent {
+  display: none;
 }
+
