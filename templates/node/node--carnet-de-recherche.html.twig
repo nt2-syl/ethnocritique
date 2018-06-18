@@ -125,7 +125,11 @@
               </div>
             {% endif %}
             {# TAXONOMIES #}
-            {# POUR CITER #}
+            {% if content.field_citation %}
+              <div class="field_square field-citation">
+                {{ content.field_citation }}
+              </div>
+            {% endif %}
           </div>
           <div class="field_carnet_description">
           {% if content.body %}
@@ -134,7 +138,6 @@
               </div>
             {% endif %}
           </div>
-
         </div>            
       </div>
     </div>

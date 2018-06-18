@@ -35,6 +35,7 @@ ENTREE CARNET
 .field_square_wrapper {
   background-color: #d2000a;
   padding: 20px;
+  margin-bottom: 2em;
 }
 .field_square {
   color: #fff;
@@ -45,6 +46,9 @@ ENTREE CARNET
 }
 .block-infos .block-data {
   background-color: transparent;
+}
+.page-node-type-carnet-de-recherche .field--name-field-image-couverture {
+  margin-bottom: 5em;
 }
 
 
