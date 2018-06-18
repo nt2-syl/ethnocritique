@@ -127,6 +127,14 @@
             {# TAXONOMIES #}
             {# POUR CITER #}
           </div>
+          <div class="field_carnet_description">
+          {% if content.body %}
+              <div class="node-field-body">
+                {{ content.body }}
+              </div>
+            {% endif %}
+          </div>
+
         </div>            
       </div>
     </div>

@@ -81,13 +81,21 @@ ENTREE CARNET
   display: none;
 }
 /* AFFICHAGE DES CHAMPS - LABO RECHERCHE */
-.col-md-7 .field--name-field-membres,
-.col-md-7 .field--name-field-direction,
-.col-md-7 .field--name-field-lien-s,
-.col-md-7 .field--name-field-subvention,
-.col-md-7 .field--name-field-portrait {
+.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-membres,
+.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-direction,
+.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-lien-s,
+.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-subvention,
+.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-portrait {
   display: none;
 }
+
+.page-node-type-carnet-de-recherche .col-md-8 .field--name-body,
+.page-node-type-carnet-de-recherche .col-md-8 .field--name-field-image-couverture,
+.page-node-type-carnet-de-recherche .col-md-8 .field--name-field-responsable-carnet {
+  display: none;
+}
+
+
 /* ARTICLE-CHAPITRE */
 /* Bug: le champ credit a pour classe field-auteur-e, comme le champ précédent */
 .page-node-type-chapitre .full_width_content .field--name-body,
