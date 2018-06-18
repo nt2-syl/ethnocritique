@@ -76,7 +76,8 @@ ENTREE CARNET
 .full_width_content .field--name-field-portrait,
 .full_width_content .field--name-field-prenom,
 .full_width_content .field--name-field-nom,
-.page-node-type-article-chapitre {
+.page-node-type-article-chapitre .field--name-field-auteur-e,
+.page-node-type-article-chapitre .field--name-field-chapitre-referent {
   display: none;
 }
 /* AFFICHAGE DES CHAMPS - LABO RECHERCHE */

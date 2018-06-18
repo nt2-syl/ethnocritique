@@ -109,12 +109,24 @@
           </div>
         </div>
         <div class="col-md-3">
-<aside class="sidebar mi-menu fixed-area one-page-menu" data-topscroll="80" style="width: 263px;">
-<nav class="sidebar-nav">
-TABLE DES MATIÈRES<BR/>
-À VENIR
-</nav>
-</aside>
+                <div class="field_square_wrapper">
+            {% if content.field_chapitre_referent %}
+              <div class="field_square node-field-chapitre-referent">
+                {{ content.field_chapitre_referent }}
+              </div>
+            {% endif %}
+            {% if content.field_auteur_e %}
+              <div class="field_square node-field-auteur">
+                {{ content.field_auteur_e }}
+              </div>
+            {% endif %}
+          </div>
+          <aside class="sidebar mi-menu fixed-area one-page-menu" data-topscroll="80" style="width: 263px;">
+            <nav class="sidebar-nav">
+              TABLE DES MATIÈRES<br />
+              À VENIR
+            </nav>
+          </aside>
           </div>
         </div>            
       </div>
