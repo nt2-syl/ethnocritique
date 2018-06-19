@@ -1,6 +1,14 @@
-/**/
+/*
+vert pale   f6f9f8 => d1a7a9 (d2000a avec saturation 20%)
+vert    56bdbd =>#d2000a
+
+*/
+
+/*
+GENERAL
+*/
 body {
-  max-width: 1200px;
+/*  max-width: 1200px;*/
   margin: 0 auto;
 }
 a {
@@ -17,6 +25,20 @@ a {
 .boxed .circle-button:hover i, .boxed .circle-button, .tag-row i, .btn-text:hover, .btn-text:hover i, .pagination > .active > a, .pagination > li > a:hover, .datepicker-panel > ul > li:hover,
 .adv-img-button-content .caption i, .social-line .social-group i.circle:hover, ul.minimal-primary-tabs li a, ul.minimal-primary-tabs li a.is-active {
   color: #d2000a !important;
+}
+.rouge-pale {
+  background-color: #d1a7a9 !important;
+}
+
+
+.view-class-accueil-actualite,
+.view-class-accueil-livre,
+.view-class-accueil-cahier,
+.view-class-accueil-carnet,
+.view-class-accueil-evenement {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /**
@@ -58,7 +80,7 @@ ENTREE CARNET
 /* MENU */
 .navbar-header {
   /*  width: auto; */
-  min-height: 300px;
+  min-height: 50px;/* temp - accueil seulement */
   float: none;
 }
 /*ACCUEIL-ACTUALITÉS*/
@@ -78,7 +100,7 @@ ENTREE CARNET
 /* footer (dans le contenu) */
 .footer-base {
     min-height: 100px;
-    background: #f00;
+    background: #d2000a;
     clear: both;
 }
 
