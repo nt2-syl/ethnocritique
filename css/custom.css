@@ -1,4 +1,8 @@
 /**/
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 a {
   color: #d2000a;
 }
@@ -51,8 +55,32 @@ ENTREE CARNET
 .page-node-type-carnet-de-recherche .field--name-field-image-couverture {
   margin-bottom: 5em;
 }
-
-
+/* MENU */
+.navbar-header {
+  /*  width: auto; */
+  min-height: 300px;
+  float: none;
+}
+/*ACCUEIL-ACTUALITÉS*/
+.accueil-actualite {
+  width: 50%;
+  margin: 0 auto;
+}
+/*
+.frontpage .contextual-region > h4 {
+  text-align: center;
+}
+*/
+.view-class-accueil-livre {
+  width: 100%;
+  margin: 0 auto !important;
+}
+/* footer (dans le contenu) */
+.footer-base {
+    min-height: 100px;
+    background: #f00;
+    clear: both;
+}
 
 /* Default */
 /* Sur Actualité, couvre la page entière */
