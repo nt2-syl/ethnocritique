@@ -249,7 +249,9 @@ p img {
 .page-node-type-chapitre .full_width_content .field--name-body {
   display: none;
 }
-.page-node-type-article-chapitre .full_width_content .field--name-body {
+.page-node-type-article-chapitre .full_width_content .field--name-body,
+.page-node-type-article-chapitre .full_width_content .field--name-field-bibliographie,
+.page-node-type-article-chapitre .full_width_content .field--name-field-citation {
   display: none;
 }
 

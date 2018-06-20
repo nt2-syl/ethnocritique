@@ -106,6 +106,16 @@
         <div class="col-md-9">
           <div{{ content_attributes }}>
             {{ content.body }}
+             {% if content.field_bibliographie %}
+              <div class="field_square node-field-bibliographie">
+                {{ content.field_bibliographie }}
+              </div>
+            {% endif %}
+            {% if content.field_citation %}
+              <div class="field_square node-field-citation">
+                {{ content.field_citation }}
+              </div>
+            {% endif %}
           </div>
         </div>
         <div class="col-md-3">
