@@ -30,7 +30,9 @@ function minimal_preprocess_block(&$variables) {
 	}else{
 		$variables['region'] = $variables['elements']['#configuration']['region'];
 	}
+    $variables['attributes']['class'][] = \Drupal\Component\Utility\Html::getClass('block-id-' . $variables['plugin_id']);
 }
+
 function minimal_preprocess_html(&$variables){
 	global $base_url;
   	$theme = \Drupal::theme()->getActiveTheme()->getName();
