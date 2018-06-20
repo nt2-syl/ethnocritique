@@ -26,26 +26,39 @@ a {
 .adv-img-button-content .caption i, .social-line .social-group i.circle:hover, ul.minimal-primary-tabs li a, ul.minimal-primary-tabs li a.is-active {
   color: #d2000a !important;
 }
+/* remplacer vert pâle: #56bdbd */
+[class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box, .white .img-box.adv-img-half-content .caption, .header-bootstrap {
+    color: #d1a7a9 !important;
+}
 .rouge-pale {
   background-color: #d1a7a9 !important;
 }
 
-
-.view-class-accueil-actualite,
-.view-class-accueil-livre,
-.view-class-accueil-cahier,
-.view-class-accueil-carnet,
-.view-class-accueil-evenement {
-  margin: 0 auto;
+/* ACCUEIL */
+.block-accueil-actualite,
+.block-accueil-livre,
+.block-accueil-cahier,
+.block-accueil-carnet,
+.block-accueil-evenement {
+  margin: 0 auto 5em;
   width: 100%;
   max-width: 1200px;
 }
+/* SECTIONS */
 .view-class-actualites,
 .view-class-auteurs,
 .view-class-cahiers,
-.view-class-cahiers {
-
+.view-class-carnets,
+.view-class-laboratoires,
+.view-class-livres,
+.view-class-projets,
+.view-class-evenements {
+  
 }
+
+.contextual-region {}
+
+
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
