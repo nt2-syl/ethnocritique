@@ -175,7 +175,8 @@ p img {
 }
 
 /* Espacer rangées dans les sections */
-.row.vertical-row {
+.row.vertical-row,
+.advs-box-side-img > .row {
   margin-bottom: 2em;
 }
 
@@ -261,7 +262,10 @@ p img {
 }
 
 
-/* ENTREE CARNET */
+.page-node-type-carnet-de-recherche .full_width_content .field--name-field-citation {
+  display: none;
+}
+
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-image-couverture,
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-auteur-e,
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-carnet-referent {
