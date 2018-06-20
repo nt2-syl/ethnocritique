@@ -40,7 +40,12 @@ a {
   width: 100%;
   max-width: 1200px;
 }
+.view-class-actualites,
+.view-class-auteurs,
+.view-class-cahiers,
+.view-class-cahiers {
 
+}
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
@@ -97,12 +102,19 @@ ENTREE CARNET
   width: 100%;
   margin: 0 auto !important;
 }
+
+/*header*/
+.header-title {
+    background-color: #d2000a; /* temp; Image doit s'insérer ici; */
+}
 /* footer (dans le contenu) */
 .footer-base {
-    min-height: 100px;
-    background: #d2000a;
-    clear: both;
+  min-height: 100px;
+  background: #d1a7a9; /* Temp - Fond blanc avec blocs contenu */
+  clear: both;
+  height: 100px;
 }
+
 
 /* Default */
 /* Sur Actualité, couvre la page entière */
