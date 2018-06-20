@@ -30,6 +30,9 @@ a {
 [class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box, .white .img-box.adv-img-half-content .caption, .header-bootstrap {
     color: #d1a7a9 !important;
 }
+.view-class-accueil-cahier .boxed {
+    color: #d2000a !important;
+}
 .rouge-pale {
   background-color: #d1a7a9 !important;
 }
