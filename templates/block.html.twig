@@ -1,133 +1,48 @@
 {% if region == 'top_menu' or region == 'bottom_menu' or region == 'right_menu'%}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</div>
+  <div {{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <h4>{{ label }}</h4>
+      <hr class="space s" />
+    {% endif %}
+    {{ title_suffix }}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  </div>
 {% elseif region == 'breadcrumb'%}
-	{% set classes = ['breadcrumb', 'b', 'white', 'right-side'] %}
-	<ol {{ attributes.addClass(classes) }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</ol>
-{% elseif region == 'search' or region == 'search_top_menu' %}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</div>
-{% elseif region == 'section' %}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</div>
-{% elseif region == 'slider' %}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</div>
-{% elseif region == 'menu_dots' %}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</div>
-{% elseif region == 'contact_map' or region == 'contact' %}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</div>
+  {% set classes = ['breadcrumb', 'b', 'white', 'right-side'] %}
+  <ol {{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <h4>{{ label }}</h4>
+      <hr class="space s" />
+    {% endif %}
+    {{ title_suffix }}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  </ol>
 {% elseif region == 'sidebar' %}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <p class="list-group-item active">{{ label }}</p>
-		{% endif %}
-	    {{ title_suffix }}
-		{% if content %}
-		  {{ content }}
-		{% endif %}
-	</div>
-{% elseif region == 'footer_parallax' or region == 'footer_minimal' or region == 'footer_minimal_2' %}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</div>
-{% elseif region == 'footer_base_column_1' or region == 'footer_base_column_2' or region == 'footer_base_column_3' %}
-	<div {{ attributes }}>
-		{{ title_prefix }}
-		{% if label %}
-	    <h4>{{ label }}</h4>
-        <hr class="e" />
-        <hr class="space s" />
-	    {% endif %}
-	    {{ title_suffix }}
-	    {% if content %}
-	      {{ content }}
-	    {% endif %}
-	</div>
+  <div {{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <p class="list-group-item active">{{ label }}</p>
+    {% endif %}
+    {{ title_suffix }}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  </div>
 {% else %}
-<div {{ attributes }}>
-	{{ title_prefix }}
-	{% if label %}
+  <div {{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
     <h4>{{ label }}</h4>
     <hr class="space s" />
     {% endif %}
-	{% if content %}
-	  {{ content }}
-	{% endif %}
+    {% if content %}
+      {{ content }}
+    {% endif %}
 </div>
 {% endif %}
