@@ -70,7 +70,12 @@
  *   in different view modes.
  */
 #}
-<article{{ attributes }}>
+{%
+set classes = [
+  'node-view-mode-' ~ view_mode|clean_class
+]
+%}
+<article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
   {% if not page %}
