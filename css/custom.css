@@ -167,6 +167,13 @@ p img {
   font-weight: bold;
 }
 
+/* Accueil */
+.advs-box-side .livre_auteur,
+.path-livres .livre_auteur  {
+  font-weight: bold;
+}
+.advs-box-side .livre_body,
+.path-livres .livre_body {}
 
 
 /* Default */
@@ -224,13 +231,21 @@ p img {
 
 /* ARTICLE-CHAPITRE */
 /* Bug: le champ credit a pour classe field-auteur-e, comme le champ précédent */
-.page-node-type-chapitre .full_width_content .field--name-body,
+
 .page-node-type-livre .full_width_content .field--name-body,
 .page-node-type-livre .full_width_content .field--name-field-auteur-e,
 .page-node-type-livre .full_width_content .field--name-field-auteur-e.field--type-text-long,
+.page-node-type-livre .full_width_content .field--name-field-credits,
+.page-node-type-livre .full_width_content .field--name-field-annee-publication {
+  display: none;
+}
+.page-node-type-chapitre .full_width_content .field--name-body {
+  display: none;
+}
 .page-node-type-article-chapitre .full_width_content .field--name-body {
   display: none;
 }
+
 
 /* ENTREE CARNET */
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-image-couverture,
