@@ -116,6 +116,31 @@ ENTREE CARNET
 }
 
 
+/* Embed Media */
+/* Manque classes */
+
+p img {
+  /*  width: 50%; Default */
+  float: right;
+  clear: both;
+  margin-left: 20px;
+  border-bottom: 1px solid #e3e0db;
+  border-top: 1px solid #e3e0db;
+  border-bottom: 4px solid #e3e0db;
+  border-top: 4px solid #e3e0db;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.field--name-field-legende-credits {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 10px;
+}
+
+
+
 /* Default */
 /* Sur Actualité, couvre la page entière */
 #preloader {
