@@ -11,6 +11,8 @@ body {
 /*  max-width: 1200px;*/
   margin: 0 auto;
 }
+
+/* COULEURS */
 a {
   color: #d2000a;
 }
@@ -28,14 +30,19 @@ a {
 }
 /* remplacer vert pâle: #56bdbd */
 [class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box, .white .img-box.adv-img-half-content .caption, .header-bootstrap {
-    color: #d1a7a9 !important;
+  color: #d2000a !important;
+}
+i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-base:not(.bg-cover), .timeline > li:hover > .timeline-badge, ul.side-menu li.active::before, #twosides-menu, .subline-bar, .accordion-list .list-group-item::before, .section-bg-color .table > tbody > tr, .advs-box-multiple div.circle, .advs-box.boxed .advs-box-content, .advs-box.boxed, .box-social-page, .advs-box-top-icon-img .icon {
+  color: #d2000a !important;
 }
 .view-class-accueil-cahier .boxed {
-    color: #d2000a !important;
+  color: #d2000a !important;
 }
+
 .rouge-pale {
   background-color: #d1a7a9 !important;
 }
+
 
 /* ACCUEIL */
 .block-accueil-actualite,
