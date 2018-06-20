@@ -1,3 +1,9 @@
+{% set classes = [
+  title ? 'view-title-' ~ title|clean_class,
+  id ? 'view-id-' ~ id|clean_class,
+  display_id ? 'view-display-id-' ~ display_id|clean_class
+] %}
+{% set attribtes = attributes.addClass(classes) %}
 {% if id == '_minimal_taxonomy' %}
 	{% if display_id == 'block_sidebar_categories' %}
 		{{ rows }}
