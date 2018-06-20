@@ -174,6 +174,11 @@ p img {
   font-weight: bold;
 }
 
+/* Espacer rangées dans les sections */
+.row.vertical-row {
+  margin-bottom: 2em;
+}
+
 /* Accueil */
 .advs-box-side .livre_auteur,
 .path-livres .livre_auteur  {
@@ -263,3 +268,9 @@ p img {
   display: none;
 }
 
+.page-node-type-cahier .full_width_content .field--name-field-responsable-cahier,
+.page-node-type-cahier .full_width_content .field--name-field-credits,
+.page-node-type-cahier .full_width_content .field--name-field-numero,
+.page-node-type-cahier .full_width_content .field--name-field-date-publication-annee {
+  display: none;
+}
