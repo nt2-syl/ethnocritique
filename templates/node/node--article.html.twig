@@ -1,3 +1,4 @@
+{# Copied from node--actualite.html.twig  #}
 {#
 /**
  * @file
@@ -112,36 +113,17 @@
         </div>
         <div class="col-md-4">
           <div class="field_square_wrapper">
-            {% if content.field_date_debut %}
-              <div class="field_square node-field-date-debut">
-                {{ content.field_date_debut }}
+            {% if content.field_auteur_e %}
+              <div class="field_square node-field-auteur">
+                {{ content.field_auteur_e }}
               </div>
             {% endif %}
-            {% if content.field_date_fin %}
-              <div class="field_square node-field-date-fin">
-                {{ content.field_date_fin }}
+            {% if content.field_cahier_referent %}
+              <div class="field_square node-field-cahier-referent>
+                {{ content.field_cahier_referent }}
               </div>
             {% endif %}
-            {% if content.field_organisation %}
-              <div class="field_square node-field-organisation">
-                {{ content.field_organisation }}
-              </div>
-            {% endif %}
-            {% if content.field_participation %}
-              <div class="field_square node-field-participation">
-                {{ content.field_participation }}
-              </div>
-            {% endif %}
-            {% if content.field_fichier %}
-              <div class="field_square node-field-fichier">
-                {{ content.field_fichier }}
-              </div>
-            {% endif %}
-            {% if content.field_lien_s %}
-              <div class="field_square node-field-liens">
-                {{ content.field_lien_s }}
-              </div>
-            {% endif %}
+            {# TAXOS #}
           </div>
         </div>
       </div>
