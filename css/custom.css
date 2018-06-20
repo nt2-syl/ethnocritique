@@ -83,10 +83,14 @@ ENTREE CARNET
   margin-bottom: 5em;
 }
 /* MENU */
+header {
+  margin-left: 0 !important;
+}
 .navbar-header {
   /*  width: auto; */
   min-height: 50px;/* temp - accueil seulement */
   float: none;
+  background: #d2000a; /* temp - remplacer par image bandeau */;
 }
 /*ACCUEIL-ACTUALITÉS*/
 .accueil-actualite {
@@ -142,6 +146,9 @@ p img {
 /* Espacer champs du contenus, sauf exceptions */
 .full_width_content .field {
   margin-bottom: 2em;
+}
+.field--label {
+  font-weight: bold;
 }
 
 
