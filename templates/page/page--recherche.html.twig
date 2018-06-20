@@ -60,10 +60,6 @@
     {{ page.slider }}
 {% endif %}
 
-{% if page.sidebar %}
-    {{ page.sidebar }}
-{% endif %}
-
 {% if footer_style == 'footer1' %}
     <div class="footer-parallax-container">
         <div class="section-empty section-item minimal-page-search f1">
@@ -84,8 +80,17 @@
 {% elseif footer_style == 'footer3' %}
     <div class="section-empty section-item minimal-page-search f3">
         <div class="container content">
-            {{ page.content_full_bar }}
-            {{ page.content }}
+            <div class="row">
+                <div class="col-md-8">
+                    {{ page.content_full_bar }}
+                    {{ page.content }}
+                </div>
+                <div class="col-md-4">
+                    {% if page.sidebar %}
+                        {{ page.sidebar }}
+                    {% endif %}
+                </div>
+            </div>
         </div>
     </div>
     {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
