@@ -121,12 +121,17 @@ header {
 .path-frontpage .navbar-header {
   display: block;
 }
+/* logo visible dans menu latéral seulement */
+.navbar-header .navbar-brand img {
+  display: none;
+}
 
 /*header - pages internes */
 .header-title {
   background-color: #d2000a; /* temp; Image doit s'insérer ici; */
   background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif) !important;
 }
+
 
 /*ACCUEIL-ACTUALITÉS*/
 .accueil-actualite {
