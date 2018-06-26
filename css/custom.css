@@ -109,12 +109,25 @@ ENTREE CARNET
 header {
   margin-left: 0 !important;
 }
+/* Accueil */
 .navbar-header {
   /*  width: auto; */
-  min-height: 50px;/* temp - accueil seulement */
+  min-height: 332px;/* temp - accueil seulement */
   float: none;
-  background: #d2000a; /* temp - remplacer par image bandeau */;
+  background: #d2000a; /* temp - remplacer par image bandeau */
+  background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/ETHNOCRITIQUE_LOGO_RGB_RENVERSE%CC%81_ROUGE.jpg);
+  display: none;
 }
+.path-frontpage .navbar-header {
+  display: block;
+}
+
+/*header - pages internes */
+.header-title {
+  background-color: #d2000a; /* temp; Image doit s'insérer ici; */
+  background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif);
+}
+
 /*ACCUEIL-ACTUALITÉS*/
 .accueil-actualite {
   width: 50%;
@@ -130,10 +143,10 @@ header {
   margin: 0 auto !important;
 }
 
-/*header*/
-.header-title {
-    background-color: #d2000a; /* temp; Image doit s'insérer ici; */
-}
+
+
+
+
 /* footer (dans le contenu) */
 .footer-base {
   min-height: 100px;
