@@ -218,6 +218,16 @@ p img {
   width: 100%;
 }
 
+/* Carousel livre */
+.adv-img-classic-box .caption-inner {
+  padding: 0 20px;
+  overflow: visible;
+}
+.adv-img-classic-box .caption-inner h2 {
+  white-space: normal;
+  /*white-space: no-wrap; Ajoute ... */
+}
+
 /* Default */
 /* Sur Actualité, couvre la page entière */
 #preloader {
