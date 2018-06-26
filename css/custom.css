@@ -206,6 +206,10 @@ p img {
   margin-bottom: 1em;
 }
 
+/* SEARCH */
+#edit-search-api-fulltext {
+  width: 100%;
+}
 
 /* Default */
 /* Sur Actualité, couvre la page entière */
