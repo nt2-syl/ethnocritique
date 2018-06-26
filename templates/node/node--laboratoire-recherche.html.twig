@@ -70,6 +70,11 @@
  *   in different view modes.
  */
 #}
+{%
+set classes = [
+  'node-view-mode-' ~ view_mode|clean_class
+]
+%}
 {# Original node template #}
 {#
 <article{{ attributes }}>
@@ -112,7 +117,7 @@
           </div>
         </div>
         <div class="col-md-7">
-          <div{{ content_attributes }}>
+          <div{{ content_attributes.addClass(classes) }}>
             {{ content }}
           </div>
           <hr class="space s" />
