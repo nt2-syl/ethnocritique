@@ -128,8 +128,6 @@ header {
   background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif) !important;
 }
 
-/*test*/
-
 /*ACCUEIL-ACTUALITÉS*/
 .accueil-actualite {
   width: 50%;
@@ -202,6 +200,11 @@ p img {
 }
 .advs-box-side .livre_body,
 .path-livres .livre_body {}
+
+
+.field--name-field-bibliographie .field--item {
+  margin-bottom: 1em;
+}
 
 
 /* Default */
@@ -277,7 +280,7 @@ p img {
 }
 
 
-.page-node-type-carnet-de-recherche .full_width_content .field--name-field-citation {
+.page-node-type-carnet-de-recherche .col-md-8 .field--name-field-citation {
   display: none;
 }
 
