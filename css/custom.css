@@ -125,7 +125,7 @@ header {
 /*header - pages internes */
 .header-title {
   background-color: #d2000a; /* temp; Image doit s'insérer ici; */
-  background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif);
+  background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif) !important;
 }
 
 /*test*/
