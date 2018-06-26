@@ -112,15 +112,15 @@ header {
 /* Accueil */
 .navbar-header {
   /*  width: auto; */
-  min-height: 332px;/* temp - accueil seulement */
+  min-height: 0;
   float: none;
   background: #d2000a; /* temp - remplacer par image bandeau */
   background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/ETHNOCRITIQUE_LOGO_RGB_RENVERSE%CC%81_ROUGE.jpg);
-  display: none;
 }
 .path-frontpage .navbar-header {
-  display: block;
+  min-height: 332px;/* temp - accueil seulement */
 }
+
 /* logo visible dans menu latéral seulement */
 .navbar-header .navbar-brand img {
   display: none;
@@ -131,8 +131,10 @@ header {
   background-color: #d2000a; /* temp; Image doit s'insérer ici; */
   background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif) !important;
 }
-
-
+/* ACCUEIL TITRES SECTION */
+.path-frontpage .contextual-region {
+    text-align: center;
+}
 /*ACCUEIL-ACTUALITÉS*/
 .accueil-actualite {
   width: 50%;
