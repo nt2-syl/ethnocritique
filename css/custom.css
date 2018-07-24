@@ -132,7 +132,11 @@ header {
   background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif) !important;
 }
 /* ACCUEIL TITRES SECTION */
-.path-frontpage .contextual-region {
+.block-accueil-actualite,
+.block-accueil-livre,
+.block-accueil-cahier,
+.block-accueil-carnet,
+.block-accueil-evenement {
     text-align: center;
 }
 /*ACCUEIL-ACTUALITÉS*/
