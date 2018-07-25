@@ -169,7 +169,7 @@ header {
 /* footer (dans le contenu) */
 .footer-base {
   min-height: 100px;
-  background: #d1a7a9; /* Temp - Fond blanc avec blocs contenu */
+  background: #f7e9e9; /* Temp - Fond blanc avec blocs contenu */
   clear: both;
   height: 100px;
 }
