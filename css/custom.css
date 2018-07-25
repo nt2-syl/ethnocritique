@@ -69,7 +69,7 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 .block-accueil-actualite {
   background: #f7f9f9;
   margin: 0;
-  max-width: auto;
+  max-width: none;
   /* centrer .accueil-actualite, qui fait 50% */
 }
 .path-frontpage .advs-box.boxed-inverse {
