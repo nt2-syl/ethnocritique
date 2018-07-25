@@ -56,32 +56,38 @@ remplacer vert foncé
  }
 */
 
-.section-bg-color {
-  background-color: #f7f9f9;
-}
-.block-accueil-cahier .section-bg-color {
-  background-color: #ffffff;
-}
-.view-class-accueil-cahier .boxed {
-  background-color: #d2000a !important;
-}
+
 
 /* ACCUEIL */
 /* fond blanc, contenu limité, au centre */
 .block-accueil-carnet,
 .block-accueil-evenement {
-  margin: 0 auto 5em;
-  width: 100%;
-  max-width: 1200px;
-}
-/* fond gris, pleine largeur */
-.block-accueil-actualite,
-.block-accueil-livre,
-.block-accueil-cahier{
   background: #f7f9f9;
   margin: 0;
   max-width: none;
 }
+/* fond gris, pleine largeur */
+.block-accueil-actualite,
+.block-accueil-livre,
+.block-accueil-cahier {
+  background: #f7f9f9;
+  margin: 0;
+  max-width: none;
+}
+.section-bg-color {
+  background-color: #f7f9f9;
+}
+.block-accueil-carnet .view-class-accueil-carnet {
+  margin: 0 auto 5em;
+  width: 100%;
+  max-width: 1200px;
+  background: #f7f9f9;
+}
+
+.block-accueil-evenement {
+
+}
+
 /* SECTIONS */
 .view-class-actualites,
 .view-class-auteurs,
@@ -95,6 +101,12 @@ remplacer vert foncé
 }
 
 
+/*.block-accueil-cahier .section-bg-color {
+  background-color: #ffffff;
+}*/
+.view-class-accueil-cahier .boxed {
+  background-color: #d2000a !important;
+}
 .block-accueil-actualite {
   /*  .accueil-actualite, qui fait 50% est centré */
 }
@@ -102,6 +114,8 @@ remplacer vert foncé
 .path-frontpage .advs-box.boxed-inverse {
   background: #fff;
 }
+
+/* Contenant dans le bloc actualité */
 .accueil-actualite {
   width: 50%;
   margin: 0 auto;
@@ -115,6 +129,22 @@ remplacer vert foncé
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Contenant dans le bloc cahier */
+.block-accueil-cahier .section-bg-color {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+}
+.proporzional-row {
+
+}
+
+.block-accueil-carnet .view-class-accueil-carnet {
+
+}
+
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
