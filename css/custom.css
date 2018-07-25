@@ -101,13 +101,20 @@ remplacer vert foncé
 /* fond, intérieur de la boite dans Actualité */
 .path-frontpage .advs-box.boxed-inverse {
   background: #fff;
+}
+.accueil-actualite {
+  width: 50%;
+  margin: 0 auto;
   max-width: 600px; /* 50% of 1200px, which was previous max-width of parent container */
 }
 
 .block-accueil-livre {
 
 }
-
+.view-class-accueil-livre {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
@@ -169,6 +176,8 @@ header {
   background-color: #d2000a; /* temp; Image doit s'insérer ici; */
   background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif) !important;
 }
+
+
 /* ACCUEIL TITRES SECTION */
 .block-accueil-actualite,
 .block-accueil-livre,
@@ -178,10 +187,6 @@ header {
     text-align: center;
 }
 /*ACCUEIL-ACTUALITÉS*/
-.accueil-actualite {
-  width: 50%;
-  margin: 0 auto;
-}
 .accueil-actualite .niche-box-blog .block-top {
 	padding-top: 1em;
 }
