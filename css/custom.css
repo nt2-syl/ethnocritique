@@ -34,24 +34,53 @@ a {
 i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-base:not(.bg-cover), .timeline > li:hover > .timeline-badge, ul.side-menu li.active::before, #twosides-menu, .subline-bar, .accordion-list .list-group-item::before, .section-bg-color .table > tbody > tr, .advs-box-multiple div.circle, .advs-box.boxed .advs-box-content, .advs-box.boxed, .box-social-page, .advs-box-top-icon-img .icon {
   color: #d2000a !important;
 }
-.view-class-accueil-cahier .boxed {
-  color: #d2000a !important;
-}
 
-.rouge-pale {
+
+/*.rouge-pale {
   background-color: #d1a7a9 !important;
+}*/
+
+
+/* remplacer vert pale 
+[class*="col-md-"].boxed-inverse, .boxed-inverse, .section-bg-color, .section-two-blocks > .row > div:last-child, 
+.full-screen-page, .form-control, .pricing-table .list-group-item, .pricing-table, footer.footer-center .content, 
+.base-box.boxed-inverse, .advs-box.boxed-inverse, .table-striped > tbody > tr:nth-of-type(odd), 
+.section-bg-color .adv-img-down-text h2 a {
+  background-color: #f7f9f9;
 }
 
+remplacer vert foncé 
+[class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box,
+ .white .img-box.adv-img-half-content .caption, .header-bootstrap {
+  background-color: #d2000a;
+ }
+*/
+
+.section-bg-color {
+  background-color: #f7f9f9;
+}
+.block-accueil-cahier .section-bg-color {
+  background-color: #ffffff;
+}
+.view-class-accueil-cahier .boxed {
+  background-color: #d2000a !important;
+}
 
 /* ACCUEIL */
-.block-accueil-actualite,
-.block-accueil-livre,
-.block-accueil-cahier,
+/* fond blanc, contenu limité, au centre */
 .block-accueil-carnet,
 .block-accueil-evenement {
   margin: 0 auto 5em;
   width: 100%;
   max-width: 1200px;
+}
+/* fond gris, pleine largeur */
+.block-accueil-actualite,
+.block-accueil-livre,
+.block-accueil-cahier{
+  background: #f7f9f9;
+  margin: 0;
+  max-width: none;
 }
 /* SECTIONS */
 .view-class-actualites,
@@ -67,13 +96,16 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 
 
 .block-accueil-actualite {
-  background: #f7f9f9;
-  margin: 0;
-  max-width: none;
-  /* centrer .accueil-actualite, qui fait 50% */
+  /*  .accueil-actualite, qui fait 50% est centré */
 }
+/* fond, intérieur de la boite dans Actualité */
 .path-frontpage .advs-box.boxed-inverse {
   background: #fff;
+  max-width: 600px; /* 50% of 1200px, which was previous max-width of parent container */
+}
+
+.block-accueil-livre {
+
 }
 
 /**
