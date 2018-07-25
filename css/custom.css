@@ -1,7 +1,6 @@
 /*
-vert pale   f6f9f8 => d1a7a9 (d2000a avec saturation 20%)
-vert    56bdbd =>#d2000a
-
+vert pale   f6f9f8 => f7f9f9 (gris neutre)
+vert    56bdbd =>#d2000a (rouge opaque)
 */
 
 /*
@@ -66,8 +65,16 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
   
 }
 
-.contextual-region {}
 
+.block-accueil-actualite {
+  background: #f7f9f9;
+  margin: 0;
+  max-width: auto;
+  /* centrer .accueil-actualite, qui fait 50% */
+}
+.path-frontpage .advs-box.boxed-inverse {
+  background: #fff;
+}
 
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
@@ -152,17 +159,10 @@ header {
 .accueil-actualite .niche-box-blog.boxed-inverse .img-box {
 	margin: 0 -26px;/* full */
 }
-/*
-.frontpage .contextual-region > h4 {
-  text-align: center;
-}
-*/
 .view-class-accueil-livre {
   width: 100%;
   margin: 0 auto !important;
 }
-
-
 
 
 
@@ -173,9 +173,6 @@ header {
   clear: both;
   height: 100px;
 }
-
-
-
 
 
 
@@ -341,13 +338,35 @@ p img {
   display: none;
 }
 
-
-.container.content, .section-empty > .content, .section-bg-image > .content, .section-bg-video > .content, .section-bg-animation > .content, .section-slider > .content, .section-bg-color > .content {
-  padding-top: 60px;
+.container.content, {  padding-top: 60px;
 padding-bottom: 60px;
 /* was 90px 90px */
 }
+.section-empty > .content, .section-bg-image > .content, .section-bg-video > .content, .section-bg-animation > .content, .section-slider > .content, .section-bg-color > .content {
+  padding-top: 0px;
+padding-bottom: 0px;
+/* was 90px 90px */
+}
+
+/**/
 .header-title,
 .header-animation {
   height: 200px; /* was 350px*/
+}
+
+/*MENU LATÉRAL */
+header .navbar-nav > li  {
+  display: block;
+}
+.navbar-nav > li {
+  float: none;
+}
+header .navbar-nav > li > a {
+  padding: 0px 0px 10px 15px;
+  min-height: auto;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.navbar-nav > li.dropdown:hover > a:after, .nav-tabs > li.active > a:after {
+  opacity: 0;
 }
