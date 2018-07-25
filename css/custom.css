@@ -303,8 +303,8 @@ p img {
 
 
 /* LISTE ACTUALITÉS */
-.path-actualites .section-empty {
-	background-color: #d1a7a9;
+.section-empty {
+	background-color: #f7f9f9;
 }
 
 /* Default */
