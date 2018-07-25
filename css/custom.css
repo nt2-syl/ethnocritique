@@ -77,15 +77,12 @@ remplacer vert foncé
 .section-bg-color {
   background-color: #f7f9f9;
 }
-.block-accueil-carnet .view-class-accueil-carnet {
-  margin: 0 auto 5em;
+.block-accueil-carnet .view-class-accueil-carnet,
+.block-accueil-evenement .view-id-accueil-evenement {
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
   background: #f7f9f9;
-}
-
-.block-accueil-evenement {
-
 }
 
 /* SECTIONS */
@@ -99,7 +96,6 @@ remplacer vert foncé
 .view-class-evenements {
   
 }
-
 
 /*.block-accueil-cahier .section-bg-color {
   background-color: #ffffff;
@@ -137,14 +133,10 @@ remplacer vert foncé
   max-width: 1200px;
   background: #ffffff;
 }
-.proporzional-row {
-
+.proporzional-row {}
+.flexslider {
+  margin-bottom: 0px !important;
 }
-
-.block-accueil-carnet .view-class-accueil-carnet {
-
-}
-
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
