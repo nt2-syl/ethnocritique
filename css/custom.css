@@ -146,6 +146,12 @@ header {
 .accueil-actualite .niche-box-blog .block-top {
 	padding-top: 1em;
 }
+.accueil-actualite .niche-box-blog.boxed, .niche-box-blog.boxed-inverse {
+    padding: 0px 25px 70px;
+}
+.accueil-actualite .niche-box-blog.boxed-inverse .img-box {
+	margin: 0 -26px;/* full */
+}
 /*
 .frontpage .contextual-region > h4 {
   text-align: center;
@@ -167,6 +173,10 @@ header {
   clear: both;
   height: 100px;
 }
+
+
+
+
 
 
 /* Embed Media */
@@ -232,6 +242,13 @@ p img {
 .adv-img-classic-box .caption-inner h2 {
   white-space: normal;
   /*white-space: no-wrap; Ajoute ... */
+}
+
+
+
+/* LISTE ACTUALITÉS */
+.path-actualites .section-empty {
+	background-color: #d1a7a9;
 }
 
 /* Default */
@@ -322,4 +339,15 @@ p img {
 .page-node-type-cahier .full_width_content .field--name-field-numero,
 .page-node-type-cahier .full_width_content .field--name-field-date-publication-annee {
   display: none;
+}
+
+
+.container.content, .section-empty > .content, .section-bg-image > .content, .section-bg-video > .content, .section-bg-animation > .content, .section-slider > .content, .section-bg-color > .content {
+  padding-top: 20px;
+padding-bottom: 20px;
+/* was 90px 90px */
+}
+.header-title,
+.header-animation {
+  height: 200px; /* was 350px*/
 }
