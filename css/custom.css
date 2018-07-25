@@ -169,7 +169,7 @@ header {
 /* footer (dans le contenu) */
 .footer-base {
   min-height: 100px;
-  background: #f7e9e9; /* Temp - Fond blanc avec blocs contenu */
+  background: #f9f9f9; /* Temp - Fond blanc avec blocs contenu */
   clear: both;
   height: 100px;
 }
@@ -343,8 +343,8 @@ p img {
 
 
 .container.content, .section-empty > .content, .section-bg-image > .content, .section-bg-video > .content, .section-bg-animation > .content, .section-slider > .content, .section-bg-color > .content {
-  padding-top: 20px;
-padding-bottom: 20px;
+  padding-top: 60px;
+padding-bottom: 60px;
 /* was 90px 90px */
 }
 .header-title,
