@@ -142,6 +142,11 @@ remplacer vert foncé
   max-width: none;
   width: auto;
 }
+/* Extraits du cahier sur Accueil, enlever responsive */
+.gallery .img-box, .gallery .img-box img {
+  width: auto;
+  max-width: none;
+}
 
 /* Contenant dans le bloc cahier */
 .block-accueil-cahier .section-bg-color {
