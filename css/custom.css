@@ -107,9 +107,6 @@ remplacer vert foncé
   
 }
 
-/*.block-accueil-cahier .section-bg-color {
-  background-color: #ffffff;
-}*/
 .view-class-accueil-cahier .boxed {
   background-color: #d2000a !important;
 }
@@ -151,7 +148,6 @@ remplacer vert foncé
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  background: #ffffff;
 }
 .proporzional-row {}
 .flexslider {
