@@ -122,8 +122,13 @@ remplacer vert foncé
 
 }
 .view-class-accueil-livre {
-  max-width: 1200px;
-  margin: 0 auto;
+  /*max-width: 1200px;*/
+  /*margin: 0 auto;*/
+  /*width: 100%;*/
+  margin: 0 auto !important;
+}
+.view-class-accueil-livre .grid-box.row {
+  margin: auto -15px;
 }
 
 /* Contenant dans le bloc cahier */
@@ -208,6 +213,11 @@ header {
 .block-accueil-evenement {
     text-align: center;
 }
+.path-frontpage h4 {
+  padding-top: 20px;
+  /* padding-bottom: le séparateur HR sous le titre a 20 px de hauteur */
+}
+
 /*ACCUEIL-ACTUALITÉS*/
 .accueil-actualite .niche-box-blog .block-top {
 	padding-top: 1em;
@@ -218,10 +228,7 @@ header {
 .accueil-actualite .niche-box-blog.boxed-inverse .img-box {
 	margin: 0 -26px;/* full */
 }
-.view-class-accueil-livre {
-  width: 100%;
-  margin: 0 auto !important;
-}
+
 
 
 
