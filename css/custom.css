@@ -77,6 +77,16 @@ remplacer vert foncé
 .section-bg-color {
   background-color: #f7f9f9;
 }
+
+.section-empty {
+  background-color: #f7f9f9;
+}
+.section-empty .boxed-inverse, 
+.section-empty .advs-box.boxed-inverse {
+  background-color: #ffffff;
+}
+
+
 .block-accueil-carnet .view-class-accueil-carnet,
 .block-accueil-evenement .view-id-accueil-evenement {
   margin: 0 auto;
@@ -315,9 +325,7 @@ p img {
 
 
 /* LISTE ACTUALITÉS */
-.section-empty {
-	background-color: #f7f9f9;
-}
+
 
 /* Default */
 /* Sur Actualité, couvre la page entière */
