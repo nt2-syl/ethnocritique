@@ -130,6 +130,11 @@ remplacer vert foncé
 .view-class-accueil-livre .grid-box.row {
   margin: auto -15px;
 }
+/* Zoom sur livre, enlever responsive */
+.advs-box .img-box img {
+  max-width: none;
+  width: auto;
+}
 
 /* Contenant dans le bloc cahier */
 .block-accueil-cahier .section-bg-color {
