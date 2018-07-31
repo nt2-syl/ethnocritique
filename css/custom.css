@@ -35,6 +35,10 @@ a {
 i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-base:not(.bg-cover), .timeline > li:hover > .timeline-badge, ul.side-menu li.active::before, #twosides-menu, .subline-bar, .accordion-list .list-group-item::before, .section-bg-color .table > tbody > tr, .advs-box-multiple div.circle, .advs-box.boxed .advs-box-content, .advs-box.boxed, .box-social-page, .advs-box-top-icon-img .icon {
   background-color: #d2000a !important;
 }
+.btn:hover, div.adv-img-side-content .btn:hover, div.adv-img-side-content .btn:hover i, .extra-content, .load-more-maso:hover, .nav.inner.ms-rounded li a:hover, .nav.inner.ms-rounded li.active a, .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
+  border-color: #d2000a !important;
+  color: #d2000a !important;
+}
 
 
 /*.rouge-pale {
@@ -532,6 +536,29 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 /* Fixer hauteur du bloc Infos */
 .field_square_wrapper {
   min-height: 325px;
+}
+
+
+
+
+/* Liste Cahier */
+.liste_cahier_date_no,
+.liste_cahier_auteur {
+  color: #000;
+}
+/* Noeud Cahier */
+/* aligner titre EVA */
+.page-node-type-cahier .view-eva h4 {
+      text-align: center;
+}
+
+/*Champ field--name-field-responsable-cahier*/
+.advs-box h3 .field--label {
+  font-size: 14px;
+}
+.advs-box h3 .field__items {
+  font-size: 20px;
+  font-weight: normal;
 }
 
 
