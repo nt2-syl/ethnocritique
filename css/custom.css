@@ -75,12 +75,16 @@ remplacer vert foncé
   margin: 0;
   max-width: none;
 }
+
+
 .section-bg-color {
   background-color: #f7f9f9;
 }
-
+/* Contenu principal, background à l'exclusion du header et footer */
 .section-empty {
   background-color: #f7f9f9;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 .section-empty .boxed-inverse, 
 .section-empty .advs-box.boxed-inverse {
