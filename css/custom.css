@@ -33,7 +33,7 @@ a {
   color: #d2000a !important;
 }
 i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-base:not(.bg-cover), .timeline > li:hover > .timeline-badge, ul.side-menu li.active::before, #twosides-menu, .subline-bar, .accordion-list .list-group-item::before, .section-bg-color .table > tbody > tr, .advs-box-multiple div.circle, .advs-box.boxed .advs-box-content, .advs-box.boxed, .box-social-page, .advs-box-top-icon-img .icon {
-  color: #d2000a !important;
+  background-color: #d2000a !important;
 }
 
 
@@ -503,6 +503,9 @@ header .navbar-nav > li > a {
 Doit être affiché pour que le bloc soit actif en haut de page.*/
 .view-chapitre-vs-livre {
   display: none;
+}
+.field--name-field-image-couverture {
+  margin-bottom: 1em;
 }
 
 /* Responsive */
