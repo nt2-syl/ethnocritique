@@ -329,6 +329,16 @@ p img {
 .full_width_content .field {
   margin-bottom: 2em;
 }
+
+.field--name-field-lieu {
+    margin-bottom: 2em;
+    overflow: hidden;
+    max-width: 100%;
+  /*  width: 100%;
+    height: auto;
+    display: block;*/
+} 
+
 .field--label {
   font-weight: bold;
 }
