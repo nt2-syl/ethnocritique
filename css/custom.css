@@ -62,7 +62,8 @@ remplacer vert foncé
 /* fond blanc, contenu limité, au centre */
 .block-accueil-carnet,
 .block-accueil-evenement {
-  background: #f7f9f9;
+  /*background: #f7f9f9;*/
+  background: #fff;
   margin: 0;
   max-width: none;
 }
@@ -154,10 +155,29 @@ remplacer vert foncé
   width: 100%;
   max-width: 1200px;
 }
-.proporzional-row {}
+.proporzional-row {
+max-width: 1140px;
+margin: 0 auto
+}
 .flexslider {
   margin-bottom: 0px !important;
 }
+/* Mouseovers sur l'accueil */
+.adv-img-classic-box .caption-inner .big-text {
+  opacity: 0;
+}
+.adv-img-classic-box:hover .caption-inner .big-text {
+  opacity: 1;
+}
+
+
+/* Entree de carnet accueil */
+
+/* Événements accueil */
+
+
+
+
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
