@@ -499,17 +499,25 @@ header .navbar-nav > li > a {
 
 
 
+/* ne pas montrer champ vue EVA sur livre. 
+Doit être affiché pour que le bloc soit actif en haut de page.*/
+.view-chapitre-vs-livre {
+  display: none;
+}
+
 /* Responsive */
 
-.field--name-field-image-couverture img {
+.page-node-type-actualite .field--name-field-image-couverture img {
   max-width: 100%;
   height: auto;
   /* alignement blocs */
   min-height: 325px;
 }
+/* Fixer hauteur du bloc Infos */
 .field_square_wrapper {
   min-height: 325px;
 }
+
 
 /* Responsive @media */
 /* mobile */
