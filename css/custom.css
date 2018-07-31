@@ -498,7 +498,7 @@ header .navbar-nav > li > a {
 }
 
 
-
+/* noeud livre */
 /* ne pas montrer champ vue EVA sur livre. 
 Doit être affiché pour que le bloc soit actif en haut de page.*/
 .view-chapitre-vs-livre {
@@ -506,6 +506,19 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 }
 .field--name-field-image-couverture {
   margin-bottom: 1em;
+}
+
+
+
+/* noeud chapitre */
+
+
+
+/* noeud article de chapitre*/
+
+.page-node-type-article-chapitre .col-md-9 .node-field-bibliographie,
+.page-node-type-article-chapitre .col-md-9 .node-field-citation {
+  color: #676a6b;
 }
 
 /* Responsive */
