@@ -258,8 +258,10 @@ header {
 .accueil-actualite .niche-box-blog .block-top {
 	padding-top: 1em;
 }
-.accueil-actualite .niche-box-blog.boxed, .niche-box-blog.boxed-inverse {
-    padding: 0px 25px 70px;
+.accueil-actualite .niche-box-blog.boxed {
+    padding-top: 0;
+    /*0px 25px 70px sur accueil */
+    /* 25px 70px sur listes */
 }
 .accueil-actualite .niche-box-blog.boxed-inverse .img-box {
 	margin: 0 -26px;/* full */
