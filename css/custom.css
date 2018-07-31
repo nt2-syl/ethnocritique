@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
 }
 
+
 /* COULEURS */
 a {
   color: #d2000a;
@@ -86,6 +87,23 @@ remplacer vert foncé
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.container.content, {  
+  padding-top: 60px;
+  padding-bottom: 60px;
+/* was 90px 90px */
+}
+.section-empty > .content, 
+.section-bg-image > .content, 
+.section-bg-video > .content, 
+.section-bg-animation > .content, 
+.section-slider > .content, 
+.section-bg-color > .content {
+  padding-top: 0px;
+  padding-bottom: 0px;
+/* was 90px 90px */
+}
+
+
 .section-empty .boxed-inverse, 
 .section-empty .advs-box.boxed-inverse {
   background-color: #ffffff;
@@ -444,20 +462,12 @@ p img {
   display: none;
 }
 
-.container.content, {  padding-top: 60px;
-padding-bottom: 60px;
-/* was 90px 90px */
-}
-.section-empty > .content, .section-bg-image > .content, .section-bg-video > .content, .section-bg-animation > .content, .section-slider > .content, .section-bg-color > .content {
-  padding-top: 0px;
-padding-bottom: 0px;
-/* was 90px 90px */
-}
 
-/**/
+
+/* Choisir la hauteur du header arbitrairement */
 .header-title,
 .header-animation {
-  height: 200px; /* was 350px*/
+  height: 200px;
 }
 
 /*MENU LATÉRAL */
@@ -475,4 +485,48 @@ header .navbar-nav > li > a {
 }
 .navbar-nav > li.dropdown:hover > a:after, .nav-tabs > li.active > a:after {
   opacity: 0;
+}
+
+
+
+/* Responsive */
+
+.field--name-field-image-couverture img {
+  max-width: 100%;
+  height: auto;
+  /* alignement blocs */
+  min-height: 325px;
+}
+.field_square_wrapper {
+  min-height: 325px;
+}
+
+/* Responsive @media */
+/* mobile */
+@media (max-width: 460px) {
+
+
+}
+/* col-xs // 0-768 */
+@media (max-width: 768px) {
+
+
+}
+/* col-sm // 768-992 */
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/* col-md // 992-1200 */
+@media (max-width: 1200px) {
+
+}
+/* col-lg 1200+ */
+@media (min-width: 1200px) {
+
+}
+
+/* écrans larges */
+@media all and (min-width: 1200px) and (max-width: 9999px) {
+
 }
