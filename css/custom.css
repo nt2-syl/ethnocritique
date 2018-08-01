@@ -396,6 +396,10 @@ p img {
   z-index: 4;
 }
 
+/* AFFICHAGE DES CHAMPS - 
+   Avec les affichages custom, les champs qui sont dans des régions autres que le contenu 
+   doivent s'inscrire dans le template, et être cachés ici à l'affichage.
+*/
 /* AFFICHAGE DES CHAMPS - ACTUALITE / INDIVIDU / PROJET RECHERCHE */
 .full_width_content .field--name-field-laboratoire-associe,
 .full_width_content .field--name-field-subvention,
@@ -445,6 +449,7 @@ p img {
 .page-node-type-livre .full_width_content .field--name-body,
 .page-node-type-livre .full_width_content .field--name-field-auteur-e,
 .page-node-type-livre .full_width_content .field--name-field-auteur-e.field--type-text-long,
+.page-node-type-livre .full_width_content .field--name-field-credits,
 .page-node-type-livre .full_width_content .field--name-field-annee-publication {
   display: none;
 }
@@ -469,9 +474,9 @@ p img {
 }
 
 .page-node-type-cahier .full_width_content .field--name-field-responsable-cahier,
-.page-node-type-cahier .full_width_content .field--name-field-credits,
 .page-node-type-cahier .full_width_content .field--name-field-numero,
-.page-node-type-cahier .full_width_content .field--name-field-date-publication-annee {
+.page-node-type-cahier .full_width_content .field--name-field-date-publication-annee,
+.page-node-type-cahier .full_width_content .field--name-field-notions {
   display: none;
 }
 

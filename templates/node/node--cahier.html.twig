@@ -115,7 +115,11 @@ set classes = [
             <h3 class="node-field-responsable-cahier">{% if content.field_responsable_cahier %}
                 {{ content.field_responsable_cahier }}
             {% endif %}</h3>
-            <span class="extra-content">{# Manque champs taxos #}TAXONOMIE</span>
+            {% if content.field_notions %}
+              <div class="node-field-notions taxonomie-notions">
+                {{ content.field_notions }}
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
