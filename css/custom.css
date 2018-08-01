@@ -552,13 +552,11 @@ p img {
 .page-node-type-article .full_width_content .field--name-field-notions {
   display: none;
 }
-
-
-.page-node-type-laboratoire-recherche .field--name-field-portrait,
-.page-node-type-laboratoire-recherche .field--name-field-membres,
-.page-node-type-laboratoire-recherche .field--name-field-direction,
-.page-node-type-laboratoire-recherche .field--name-field-lien-s,
-.page-node-type-laboratoire-recherche .field--name-field-subvention {
+.page-node-type-laboratoire-recherche .node-view-mode-full .field--name-field-portrait,
+.page-node-type-laboratoire-recherche .node-view-mode-full .field--name-field-membres,
+.page-node-type-laboratoire-recherche .node-view-mode-full .field--name-field-direction,
+.page-node-type-laboratoire-recherche .node-view-mode-full .field--name-field-lien-s,
+.page-node-type-laboratoire-recherche .node-view-mode-full .field--name-field-subvention {
   display: none;
 }
 
