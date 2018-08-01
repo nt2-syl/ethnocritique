@@ -41,7 +41,11 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 }
 
 /* boutons Taxos : rouge sur blanc */
-.taxonomie-notions .field--item {
+.page-node-type-carnet-de-recherche .field--name-field-notions .field--label,
+.page-node-type-entree-de-carnet .field--name-field-notions .field--label {
+  color: #fff;
+}
+.field--name-field-notions .field--item a {
   border: 2px solid #d2000a !important;
   display: inline-block;
   color: #000;
@@ -50,12 +54,9 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
   font-size: 10px;
   font-weight: bold;
 }
-.page-node-type-carnet-de-recherche .taxonomie-notions .field--label {
-  color: #fff;
-}
+
 /* Inversé : blanc sur rouge */
-.page-node-type-carnet-de-recherche .taxonomie-notions .field--item a,
-.page-node-type-entree-de-carnet .taxonomie-notions .field--item a {
+.page-node-type-entree-de-carnet .field--name-field-notions .field--item a {
   border: 2px solid #fff !important;
   color: #fff;
 }
