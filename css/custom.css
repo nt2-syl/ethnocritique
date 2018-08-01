@@ -50,6 +50,10 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
     font-size: 10px;
     font-weight: bold;
 }
+.page-node-type-carnet-de-recherche .taxonomie-notions .field--item {
+    border: 2px solid #fff !important;
+    color: #fff;
+}
 
 /*.rouge-pale {
   background-color: #d1a7a9 !important;
@@ -212,7 +216,13 @@ margin: 0 auto
 /* Événements accueil */
 
 
+/* Liste Carnets */
 
+/* Noeud Carnet */
+/* Ajuster hauteur image et infos avec (div.anima) */
+.view-id-liste-carnets .col-md-8 {
+  padding: 48px 50px !important;
+}
 
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
@@ -496,7 +506,8 @@ p img {
 
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-image-couverture,
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-auteur-e,
-.page-node-type-entree-de-carnet .full_width_content .field--name-field-carnet-referent {
+.page-node-type-entree-de-carnet .full_width_content .field--name-field-carnet-referent,
+.page-node-type-cahier .full_width_content .field--name-field-notions {
   display: none;
 }
 
