@@ -50,7 +50,10 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
     font-size: 10px;
     font-weight: bold;
 }
-.page-node-type-carnet-de-recherche .taxonomie-notions .field--item {
+.page-node-type-carnet-de-recherche .taxonomie-notions .field--label {
+    color: #fff;
+}
+.page-node-type-carnet-de-recherche .taxonomie-notions .field--item a {
     border: 2px solid #fff !important;
     color: #fff;
 }
@@ -224,6 +227,12 @@ margin: 0 auto
   padding: 48px 50px !important;
 }
 
+/* Noeud Entrée Carnet */
+
+.adv-img-classic-box .caption-inner h2 {
+font-size: 22px;
+line-height: 22px;
+}
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
@@ -264,11 +273,14 @@ ENTREE CARNET
   text-decoration: underline;
 }
 /* fixer aussi bloc image */
-.page-node-type-actualite .field--name-field-image-couverture img {
+.page-node-type-actualite .field--name-field-image-couverture img{
   max-width: 100%;
   height: auto;
   /* alignement blocs */
   max-height: 375px;
+}
+.page-node-type-carnet-de-recherche .field--name-field-image-couverture img {
+  height: auto;
 }
 
 .block-infos .block-data {
