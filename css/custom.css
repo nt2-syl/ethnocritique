@@ -277,6 +277,11 @@ ENTREE CARNET
     min-height: 375px;
   }
 }
+/* exceptions */
+.page-node-type-individu .field_square_wrapper {
+  min-height: auto;
+}
+
 
 .field_square {
   color: #fff;
@@ -287,7 +292,7 @@ ENTREE CARNET
   text-decoration: underline;
 }
 /* fixer aussi bloc image */
-.page-node-type-actualite .field--name-field-image-couverture img{
+.page-node-type-actualite .field--name-field-image-couverture img {
   max-width: 100%;
   height: auto;
   /* alignement blocs */
@@ -296,6 +301,8 @@ ENTREE CARNET
 .page-node-type-carnet-de-recherche .field--name-field-image-couverture img {
   height: auto;
 }
+
+
 
 .block-infos .block-data {
   background-color: transparent;
@@ -562,6 +569,7 @@ p img {
 .page-node-type-individu .full_width_content .field--name-body {
     display: none;
 }
+
 
 /* Choisir la hauteur du header arbitrairement */
 .header-title,
