@@ -42,9 +42,12 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 
 /* boutons Taxos : rouge sur blanc */
 .page-node-type-carnet-de-recherche .field--name-field-notions .field--label,
-.page-node-type-entree-de-carnet .field--name-field-notions .field--label {
+.page-node-type-entree-de-carnet .field--name-field-notions .field--label,
+.page-node-type-cahier .field--name-field-notions .field--label,
+.page-node-type-article .field--name-field-notions .field--label{
   color: #fff;
 }
+/* sur carnet de recherche seulement */
 .field--name-field-notions .field--item a {
   border: 2px solid #d2000a !important;
   display: inline-block;
@@ -56,9 +59,17 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 }
 
 /* Inversé : blanc sur rouge */
-.page-node-type-entree-de-carnet .field--name-field-notions .field--item a {
+.page-node-type-entree-de-carnet .field--name-field-notions .field--item a,
+.page-node-type-cahier .field--name-field-notions .field--item a,
+.page-node-type-article .field--name-field-notions .field--item a  {
   border: 2px solid #fff !important;
   color: #fff;
+/*valider*/
+  display: inline-block;
+  padding: 5px 3px;
+  margin: 3px 2px;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 /*.rouge-pale {
@@ -522,7 +533,7 @@ p img {
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-image-couverture,
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-auteur-e,
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-carnet-referent,
-.page-node-type-cahier .full_width_content .field--name-field-notions {
+.page-node-type-entree-de-carnet .full_width_content .field--name-field-notions {
   display: none;
 }
 
@@ -532,8 +543,15 @@ p img {
 .page-node-type-cahier .full_width_content .field--name-field-notions {
   display: none;
 }
-
-
+.page-node-type-cahier .full_width_content .field--name-field-responsable-cahier,
+.page-node-type-cahier .full_width_content .field--name-field-numero,
+.page-node-type-cahier .full_width_content .field--name-field-date-publication-annee,
+.page-node-type-cahier .full_width_content .field--name-field-notions {
+  display: none;
+}
+.page-node-type-article .full_width_content .field--name-field-notions {
+  display: none;
+}
 
 /* Choisir la hauteur du header arbitrairement */
 .header-title,
