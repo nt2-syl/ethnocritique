@@ -35,7 +35,7 @@ a {
 i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-base:not(.bg-cover), .timeline > li:hover > .timeline-badge, ul.side-menu li.active::before, #twosides-menu, .subline-bar, .accordion-list .list-group-item::before, .section-bg-color .table > tbody > tr, .advs-box-multiple div.circle, .advs-box.boxed .advs-box-content, .advs-box.boxed, .box-social-page, .advs-box-top-icon-img .icon {
   background-color: #d2000a !important;
 }
-.btn:hover, div.adv-img-side-content .btn:hover, div.adv-img-side-content .btn:hover i, .extra-content, .load-more-maso:hover, .nav.inner.ms-rounded li a:hover, .nav.inner.ms-rounded li.active a, .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
+.field--type-entity-reference .field--item, .btn:hover, div.adv-img-side-content .btn:hover, div.adv-img-side-content .btn:hover i, .extra-content, .load-more-maso:hover, .nav.inner.ms-rounded li a:hover, .nav.inner.ms-rounded li.active a, .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
   border-color: #d2000a !important;
   color: #d2000a !important;
 }
@@ -226,6 +226,13 @@ ENTREE CARNET
   padding: 20px;
   margin-bottom: 2em;
 }
+/* TODO: Préciser Responsive avec max-width*/
+@media (min-width: 460px) {
+  .field_square_wrapper {
+    min-height: 375px;
+  }
+}
+
 .field_square {
   color: #fff;
   margin-bottom: 1em;
