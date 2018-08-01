@@ -108,32 +108,9 @@ set classes = [
   <div class="section-empty">
     <div class="container content">
       <div class="row">
-        <div class="col-md-2">
-          <div class="title-base text-right">
-            <hr />
-            {{ title_prefix }}
-            <h4>{{ node.getTitle() }}</h4>
-            {{ title_suffix }}
-          </div>
-        </div>
-        <div class="col-md-7">
+        <div class="col-md-9">
           <div{{ content_attributes }}>
             {{ content.body }}
-          </div>
-          <hr class="space s" />
-          <div class="row">
-            <div class="col-md-8">
-              <hr class="space s" />
-              <div class="tag-row">
-                <span class="minimal-blog-date"><i class="fa fa-calendar"></i> {{ node.created.value|date('d / m / Y') }}</span>
-                {% if content.field_blog_tags %}<span><i class="fa fa-bookmark"></i> {{ content.field_blog_tags }}</span>{% endif %}
-                <span class="minimal-blog-author"><i class="fa fa-pencil"></i>{% if full_name %}{{ full_name }}{% else %}{{ user_name }}{% endif %}</span>
-              </div>
-            </div>
-            <div class="col-md-4 text-right">
-              <div class="btn-group social-group">
-              </div>
-            </div>
           </div>
         </div>
           <div class="col-md-3">
