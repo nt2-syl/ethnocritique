@@ -559,6 +559,9 @@ p img {
 .page-node-type-laboratoire-recherche .node-view-mode-full .field--name-field-subvention {
   display: none;
 }
+.page-node-type-individu .full_width_content .field--name-body {
+    display: none;
+}
 
 /* Choisir la hauteur du header arbitrairement */
 .header-title,
