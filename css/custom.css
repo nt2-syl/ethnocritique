@@ -35,11 +35,21 @@ a {
 i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-base:not(.bg-cover), .timeline > li:hover > .timeline-badge, ul.side-menu li.active::before, #twosides-menu, .subline-bar, .accordion-list .list-group-item::before, .section-bg-color .table > tbody > tr, .advs-box-multiple div.circle, .advs-box.boxed .advs-box-content, .advs-box.boxed, .box-social-page, .advs-box-top-icon-img .icon {
   background-color: #d2000a !important;
 }
-.field--type-entity-reference .field--item, .btn:hover, div.adv-img-side-content .btn:hover, div.adv-img-side-content .btn:hover i, .extra-content, .load-more-maso:hover, .nav.inner.ms-rounded li a:hover, .nav.inner.ms-rounded li.active a, .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
+.btn:hover, div.adv-img-side-content .btn:hover, div.adv-img-side-content .btn:hover i, .extra-content, .load-more-maso:hover, .nav.inner.ms-rounded li a:hover, .nav.inner.ms-rounded li.active a, .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
   border-color: #d2000a !important;
   color: #d2000a !important;
 }
 
+/* boutons Taxos */
+.taxonomie-notions .field--item {
+    border: 2px solid #d2000a !important;
+    display: inline-block;
+    color: #000;
+    padding: 5px 3px;
+    margin: 3px 2px;
+    font-size: 10px;
+    font-weight: bold;
+}
 
 /*.rouge-pale {
   background-color: #d1a7a9 !important;
@@ -226,6 +236,8 @@ ENTREE CARNET
   padding: 20px;
   margin-bottom: 2em;
 }
+
+/* Fixer hauteur du bloc Infos et de l'image  */
 /* TODO: Préciser Responsive avec max-width*/
 @media (min-width: 460px) {
   .field_square_wrapper {
@@ -241,6 +253,14 @@ ENTREE CARNET
   color: #fff;
   text-decoration: underline;
 }
+/* fixer aussi bloc image */
+.page-node-type-actualite .field--name-field-image-couverture img {
+  max-width: 100%;
+  height: auto;
+  /* alignement blocs */
+  max-height: 375px;
+}
+
 .block-infos .block-data {
   background-color: transparent;
 }
@@ -536,18 +556,6 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   color: #676a6b;
 }
 
-/* Responsive */
-
-.page-node-type-actualite .field--name-field-image-couverture img {
-  max-width: 100%;
-  height: auto;
-  /* alignement blocs */
-  min-height: 325px;
-}
-/* Fixer hauteur du bloc Infos */
-.field_square_wrapper {
-  min-height: 325px;
-}
 
 
 
