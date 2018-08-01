@@ -553,6 +553,15 @@ p img {
   display: none;
 }
 
+
+.page-node-type-laboratoire-recherche .field--name-field-portrait,
+.page-node-type-laboratoire-recherche .field--name-field-membres,
+.page-node-type-laboratoire-recherche .field--name-field-direction,
+.page-node-type-laboratoire-recherche .field--name-field-lien-s,
+.page-node-type-laboratoire-recherche .field--name-field-subvention {
+  display: none;
+}
+
 /* Choisir la hauteur du header arbitrairement */
 .header-title,
 .header-animation {
