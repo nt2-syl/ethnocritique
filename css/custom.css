@@ -445,7 +445,6 @@ p img {
 .page-node-type-livre .full_width_content .field--name-body,
 .page-node-type-livre .full_width_content .field--name-field-auteur-e,
 .page-node-type-livre .full_width_content .field--name-field-auteur-e.field--type-text-long,
-.page-node-type-livre .full_width_content .field--name-field-credits,
 .page-node-type-livre .full_width_content .field--name-field-annee-publication {
   display: none;
 }
@@ -560,7 +559,10 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   font-size: 20px;
   font-weight: normal;
 }
-
+/* EVA - aligner résumé à gauche */
+.advs-box .advs-box-content p {
+  text-align: left;
+}
 
 /* Responsive @media */
 /* mobile */
