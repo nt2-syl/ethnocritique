@@ -72,6 +72,11 @@
  */
 #}
 {# Original node template #}
+{%
+set classes = [
+  'node-view-mode-' ~ view_mode|clean_class
+]
+%}
 {#
 <article{{ attributes }}>
 
@@ -130,7 +135,7 @@
     </div>
   </div>
   <div class="grid-item col-md-12 full_width_content">
-    <div{{ content_attributes }}>
+    <div{{ content_attributes.addClass(classes) }}>
       {{ content }}
     </div>
   </div>
