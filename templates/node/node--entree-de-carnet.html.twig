@@ -128,7 +128,11 @@ set classes = [
                 {{ content.field_carnet_referent }}
               </div>
             {% endif %}
-            {# TAXOS #}
+            {% if content.field_notions %}
+              <div class="node-field-notions taxonomie-notions">
+                {{ content.field_notions }}
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>

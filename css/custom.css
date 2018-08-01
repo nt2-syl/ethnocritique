@@ -40,22 +40,24 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
   color: #d2000a !important;
 }
 
-/* boutons Taxos */
+/* boutons Taxos : rouge sur blanc */
 .taxonomie-notions .field--item {
-    border: 2px solid #d2000a !important;
-    display: inline-block;
-    color: #000;
-    padding: 5px 3px;
-    margin: 3px 2px;
-    font-size: 10px;
-    font-weight: bold;
+  border: 2px solid #d2000a !important;
+  display: inline-block;
+  color: #000;
+  padding: 5px 3px;
+  margin: 3px 2px;
+  font-size: 10px;
+  font-weight: bold;
 }
 .page-node-type-carnet-de-recherche .taxonomie-notions .field--label {
-    color: #fff;
+  color: #fff;
 }
-.page-node-type-carnet-de-recherche .taxonomie-notions .field--item a {
-    border: 2px solid #fff !important;
-    color: #fff;
+/* Inversé : blanc sur rouge */
+.page-node-type-carnet-de-recherche .taxonomie-notions .field--item a,
+.page-node-type-entree-de-carnet .taxonomie-notions .field--item a {
+  border: 2px solid #fff !important;
+  color: #fff;
 }
 
 /*.rouge-pale {
@@ -554,7 +556,11 @@ header .navbar-nav > li > a {
 .navbar-nav > li.dropdown:hover > a:after, .nav-tabs > li.active > a:after {
   opacity: 0;
 }
-
+/* Color Hack! use text shadow to reverse color on icon */
+.hamburger-button i {
+  color: #d20000;
+  text-shadow: 1px 2px 0px rgba(255, 255, 255, 1);
+}
 
 /* noeud livre */
 /* ne pas montrer champ vue EVA sur livre. 
