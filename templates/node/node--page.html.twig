@@ -105,11 +105,15 @@ set classes = [
 {# Copied from node--blog.html.twig (style2) #}
 {% if page %}
   <div class="section-empty">
+    <div class="container content">
+      <div class="row">
   <div class="grid-item col-md-12 full_width_content">
       <div{{ content_attributes.addClass(classes) }}>
     {{ content }}
         </div>
   </div>
+  </div>
+      </div>
   </div>
 {% else %}
   <div class="grid-item col-md-12">
