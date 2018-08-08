@@ -279,7 +279,25 @@ function minimal_preprocess_node(&$variables) {
     if(\Drupal::routeMatch()->getParameter('node')){
         $node = \Drupal::routeMatch()->getParameter('node');
         $ntype = $node->getType();
-        if($ntype == 'blog_post'){
+        $table_of_contents_map = array(
+          'article_chapitre' => 'block_3',
+          'chapitre' => 'block_1',
+          'livre' => 'block_2',
+        );
+        if (array_key_exists($ntype, $table_of_contents_map)) {
+          $args = [$node->nid->value];
+          $view = \Drupal\views\Views::getView('table_matieres_article_livre');
+          // @see https://drupal.stackexchange.com/a/259795
+          if (is_object($view)) {
+            $view->setArguments($args);
+            $view->setDisplay($table_of_contents_map[$ntype]);
+            $view->preExecute();
+            $view->execute();
+            $variables['table_of_contents'] = $view->buildRenderable(
+            $table_of_contents_map[$ntype], $args);
+          }
+        }
+         if($ntype == 'blog_post'){
             //related posts start
             //kint($node->field_category);
             $tids = array();
