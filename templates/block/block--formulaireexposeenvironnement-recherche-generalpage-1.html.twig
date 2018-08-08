@@ -1,0 +1,49 @@
+\{% if region == 'top_menu' or region == 'bottom_menu' or region == 'right_menu'%}
+  <div {{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <h4>{{ label }}</h4>
+      <hr class="space s" />
+    {% endif %}
+    {{ title_suffix }}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  </div>
+{% elseif region == 'breadcrumb'%}
+  {% set classes = ['breadcrumb', 'b', 'white', 'right-side'] %}
+  <ol {{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <h4>{{ label }}</h4>
+      <hr class="space s" />
+    {% endif %}
+    {{ title_suffix }}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  </ol>
+{% elseif region == 'sidebar' %}
+  <div {{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <p class="list-group-item active">{{ label }}</p>
+    {% endif %}
+    {{ title_suffix }}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  </div>
+{% else %}
+  <div {{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+    <h4>{{ label }}</h4>
+    <hr class="space s" />
+    {% endif %}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+    <i class="icon icon-search"></i>
+</div>
+{% endif %}

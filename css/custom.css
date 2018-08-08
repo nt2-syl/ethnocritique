@@ -77,15 +77,15 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 }*/
 
 
-/* remplacer vert pale 
-[class*="col-md-"].boxed-inverse, .boxed-inverse, .section-bg-color, .section-two-blocks > .row > div:last-child, 
-.full-screen-page, .form-control, .pricing-table .list-group-item, .pricing-table, footer.footer-center .content, 
-.base-box.boxed-inverse, .advs-box.boxed-inverse, .table-striped > tbody > tr:nth-of-type(odd), 
+/* remplacer vert pale
+[class*="col-md-"].boxed-inverse, .boxed-inverse, .section-bg-color, .section-two-blocks > .row > div:last-child,
+.full-screen-page, .form-control, .pricing-table .list-group-item, .pricing-table, footer.footer-center .content,
+.base-box.boxed-inverse, .advs-box.boxed-inverse, .table-striped > tbody > tr:nth-of-type(odd),
 .section-bg-color .adv-img-down-text h2 a {
   background-color: #f7f9f9;
 }
 
-remplacer vert foncé 
+remplacer vert foncé
 [class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box,
  .white .img-box.adv-img-half-content .caption, .header-bootstrap {
   background-color: #d2000a;
@@ -122,16 +122,16 @@ remplacer vert foncé
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.container.content, {  
+.container.content, {
   padding-top: 60px;
   padding-bottom: 60px;
 /* was 90px 90px */
 }
-.section-empty > .content, 
-.section-bg-image > .content, 
-.section-bg-video > .content, 
-.section-bg-animation > .content, 
-.section-slider > .content, 
+.section-empty > .content,
+.section-bg-image > .content,
+.section-bg-video > .content,
+.section-bg-animation > .content,
+.section-slider > .content,
 .section-bg-color > .content {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -139,7 +139,7 @@ remplacer vert foncé
 }
 
 
-.section-empty .boxed-inverse, 
+.section-empty .boxed-inverse,
 .section-empty .advs-box.boxed-inverse {
   background-color: #ffffff;
 }
@@ -162,7 +162,7 @@ remplacer vert foncé
 .view-class-livres,
 .view-class-projets,
 .view-class-evenements {
-  
+
 }
 
 .view-class-accueil-cahier .boxed {
@@ -411,7 +411,7 @@ p img {
   /*  width: 100%;
     height: auto;
     display: block;*/
-} 
+}
 
 .field--label {
   font-weight: bold;
@@ -466,8 +466,8 @@ p img {
   z-index: 4;
 }
 
-/* AFFICHAGE DES CHAMPS - 
-   Avec les affichages custom, les champs qui sont dans des régions autres que le contenu 
+/* AFFICHAGE DES CHAMPS -
+   Avec les affichages custom, les champs qui sont dans des régions autres que le contenu
    doivent s'inscrire dans le template, et être cachés ici à l'affichage.
 */
 /* AFFICHAGE DES CHAMPS - ACTUALITE / INDIVIDU / PROJET RECHERCHE */
@@ -600,7 +600,7 @@ header .navbar-nav > li > a {
 }
 
 /* noeud livre */
-/* ne pas montrer champ vue EVA sur livre. 
+/* ne pas montrer champ vue EVA sur livre.
 Doit être affiché pour que le bloc soit actif en haut de page.*/
 .view-chapitre-vs-livre {
   display: none;
@@ -660,7 +660,7 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 .media-view-mode-video-embed {
   max-width: 50%;
 }
-.media-view-mode-image-embed-pleine-largeur, 
+.media-view-mode-image-embed-pleine-largeur,
 .media-view-mode-image-embed-demi-largeur,
 .media-view-mode-audio-embed,
 .media-view-mode-video-embed {
@@ -670,7 +670,7 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   padding-top: 10px;
   margin-bottom: 2em;
 }
-.embedded-entity .field--name-field-media-image, 
+.embedded-entity .field--name-field-media-image,
 .embedded-entity .field--name-field-legende-credits {
   display: inline-block;
 }
@@ -714,4 +714,16 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 /* écrans larges */
 @media all and (min-width: 1200px) and (max-width: 9999px) {
 
+}
+
+i.icon {
+  height: 16px;
+  width:  16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.icon-search {
+  background-image: url('../search.svg');
 }
