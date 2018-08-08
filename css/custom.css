@@ -655,11 +655,15 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   max-width: 100%;
 }
 
-.media-view-mode-image-embed-demi-largeur {
+.media-view-mode-image-embed-demi-largeur,
+.media-view-mode-audio-embed,
+.media-view-mode-video-embed {
   max-width: 50%;
 }
 .media-view-mode-image-embed-pleine-largeur, 
-.media-view-mode-image-embed-demi-largeur {
+.media-view-mode-image-embed-demi-largeur,
+.media-view-mode-audio-embed,
+.media-view-mode-video-embed {
   border-bottom: 4px solid #e3e0db;
   border-top: 4px solid #e3e0db;
   padding-bottom: 10px;
