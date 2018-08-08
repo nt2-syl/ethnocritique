@@ -650,6 +650,38 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   text-align: left;
 }
 
+/* MEDIA EMBED */
+.media-view-mode-image-embed-pleine-largeur {
+  max-width: 100%;
+}
+
+.media-view-mode-image-embed-demi-largeur {
+  max-width: 50%;
+}
+.media-view-mode-image-embed-pleine-largeur, 
+.media-view-mode-image-embed-demi-largeur {
+  border-bottom: 4px solid #e3e0db;
+  border-top: 4px solid #e3e0db;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 2em;
+}
+.embedded-entity .field--name-field-media-image, 
+.embedded-entity .field--name-field-legende-credits {
+  display: inline-block;
+}
+.embedded-entity .field--name-field-media-image {
+  margin-bottom: 0.5em;
+}
+.embedded-entity .field--name-field-legende-credits {
+  line-height: 1.25;
+  font-size: 10px;
+  display: inline;
+  float: none;
+  margin-bottom: 0;
+}
+
+
 /* Responsive @media */
 /* mobile */
 @media (max-width: 460px) {
