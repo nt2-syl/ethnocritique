@@ -723,3 +723,11 @@ i.icon {
 .icon-search {
   background-image: url('../search.svg');
 }
+ 
+.mi-menu .sidebar-nav {
+    border-left-color: #d2000a !important;
+    padding-left: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+}
