@@ -730,8 +730,8 @@ i.icon {
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-    top: 47px;
-    right: 51px;
+  top: 47px;
+  right: 51px;
 }
 
 .icon-search {
@@ -744,4 +744,8 @@ i.icon {
     text-transform: uppercase;
     font-weight: 600;
     color: #000;
+}
+
+#block-minimal-powered {
+  display: none;
 }
