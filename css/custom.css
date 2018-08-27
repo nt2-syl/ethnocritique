@@ -256,6 +256,12 @@ margin: 0 auto
 font-size: 22px;
 line-height: 22px;
 }
+/* En cas d'image brisée ou manquante, conserver le format grille */
+.view-entree-de-carnet-vs-carnet .grid-item .img-box:not([class*="row-"]), 
+.view-entree-de-carnet-vs-carnet .grid-item .box, .grid-item .base-box {
+    min-height: 307px;
+}
+
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
