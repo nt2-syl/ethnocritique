@@ -121,12 +121,11 @@ set classes = [
           <div class="field_square_wrapper">
             {% if content.field_date_debut %}
               <div class="field_square node-field-date-debut">
+              <div class="field--label">Date(s)</div>
                 {{ content.field_date_debut }}
-              </div>
-            {% endif %}
-            {% if content.field_date_fin %}
-              <div class="field_square node-field-date-fin">
-                {{ content.field_date_fin }}
+                {% if content.field_date_fin %}
+                  - {{ content.field_date_fin }}
+                {% endif %}
               </div>
             {% endif %}
             {% if content.field_organisation %}
