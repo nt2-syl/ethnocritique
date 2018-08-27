@@ -665,6 +665,19 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   text-align: left;
 }
 
+/* LISTE AUTEURS */
+.img-box.circle img {
+  max-width: 100%;
+  height: auto;
+}
+.img-box.circle:before {
+  transform: scale(1);
+}
+.img-box {
+  overflow: visible;
+}
+
+
 /* MEDIA EMBED */
 .media-view-mode-image-embed-pleine-largeur {
   max-width: 100%;
