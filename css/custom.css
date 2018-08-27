@@ -451,6 +451,12 @@ p img {
 /* LISTE ACTUALITÉS */
 
 
+
+/* NOEUD ACTUALITÉ */
+/* Combiner date de début et date de fin */
+.node-field-date-debut .field--item {
+  display: inline;
+}
 /* Default */
 /* Sur Actualité, couvre la page entière */
 #preloader {
