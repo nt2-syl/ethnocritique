@@ -170,7 +170,9 @@ remplacer vert foncé
 /* fond, intérieur de la boite dans Actualité */
 .path-frontpage .advs-box.boxed-inverse {
   background: #fff;
+  padding: 0 25px 40px;
 }
+/*.niche-box-blog.boxed, .niche-box-blog.boxed-inverse*/
 
 /* Contenant dans le bloc actualité */
 .accueil-actualite {
@@ -432,10 +434,7 @@ p img {
   margin-bottom: 1em;
 }
 
-/* SEARCH */
-#edit-search-api-fulltext {
-  width: 100%;
-}
+
 
 /* Carousel livre */
 .adv-img-classic-box .caption-inner {
@@ -712,12 +711,27 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 
 }
 
+
+
+/* SEARCH */
+#edit-search-api-fulltext {
+  width: 100%;
+}
+.minimal-side-menu form input[type=submit] {
+  /**text-indent: -9999px;*/
+  padding: 0;
+  font-size: 0;
+}
+
 i.icon {
   height: 16px;
   width:  16px;
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
+  position: absolute;
+    top: 47px;
+    right: 51px;
 }
 
 .icon-search {
