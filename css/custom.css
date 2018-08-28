@@ -7,6 +7,7 @@ GENERAL
 */
 body {
   margin: 0 auto;
+  min-height: 1000px; /* éviter fond noir hors du body */
 }
 
 /* COULEURS */
@@ -170,6 +171,9 @@ remplacer vert foncé
 .view-class-projets,
 .view-class-evenements {
 
+}
+.view-class-auteurs .views-field-nothing {
+  margin-bottom: 2em;
 }
 
 .view-class-accueil-cahier .boxed {
