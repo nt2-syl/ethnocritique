@@ -791,13 +791,13 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   width: 100%;
 }
 .minimal-side-menu form input[type=submit] {
-    padding: 0;
-    font-size: 0;
-    color: #fff !important;
-    width: 30px;
-    height: 26px;
-    vertical-align: top;
-    background: transparent !important;
+  padding: 0;
+  font-size: 0;
+  color: #fff !important;
+  width: 30px;
+  height: 26px;
+  vertical-align: top;
+  background: transparent !important;
 }
 .minimal-side-menu form input[type=submit]:hover {
     color: #fff !important;
@@ -810,9 +810,9 @@ i.icon {
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-top: 15px;
-    right: 26px;
-    z-index: -1;
+  top: 15px;
+  right: 26px;
+  z-index: 0;
 }
 
 .icon-search {
@@ -820,11 +820,11 @@ top: 15px;
 }
  
 .mi-menu .sidebar-nav {
-    border-left-color: #d2000a !important;
-    padding-left: 40px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #000;
+  border-left-color: #d2000a !important;
+  padding-left: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
 }
 
 #block-minimal-powered {
@@ -847,11 +847,11 @@ top: 15px;
   font-size: 1.1225em;
 }
 .path-recherche .col-lg-9 nav {
-margin-top: 2em;
-position: absolute;
-bottom: 0;
-clear: both;
-top: 0;
+  margin-top: 2em;
+  position: absolute;
+  bottom: 0;
+  clear: both;
+  top: 0;
 }
 ul.js-pager__items {}
 ul.js-pager__items li {
@@ -861,9 +861,9 @@ ul.js-pager__items li {
 #edit-actions {
   float: right;
   vertical-align: top;
-position: absolute;
-right: 0;
-top: -3px;
+  position: absolute;
+  right: 0;
+  top: -3px;
 }
 /* réinitialiser la recherche : caché */
 .block-id-block-contenta5c5561a-d056-4cf3-a776-8857d378043b {
@@ -871,5 +871,5 @@ top: -3px;
 }
 
 .accueil-actualite .advs-box .img-box img {
-    max-width: 572px;
+  max-width: 601px;
 }
