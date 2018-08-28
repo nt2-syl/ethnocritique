@@ -869,3 +869,7 @@ top: -3px;
 .block-id-block-contenta5c5561a-d056-4cf3-a776-8857d378043b {
   display: none;
 }
+
+.accueil-actualite .advs-box .img-box img {
+    max-width: 572px;
+}
