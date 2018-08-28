@@ -172,9 +172,20 @@ remplacer vert foncé
 .view-class-evenements {
 
 }
-.view-class-auteurs .views-field-nothing {
+/* SECTION EVENEMENTS  */
+.view-class-evenements .sub-text,
+.adv-img-classic-box .caption-inner p.sub-text {
+    margin-top: 10px;
+    height: 30px;
+    font-weight: 900;
+}
+
+
+/* SECTION AUTEURS   */
+.view-class-auteurs .col-md-4 {
   margin-bottom: 2em;
 }
+
 
 .view-class-accueil-cahier .boxed {
   background-color: #d2000a !important;
@@ -239,6 +250,8 @@ margin: 0 auto
 .adv-img-classic-box:hover .caption-inner .big-text {
   opacity: 1;
 }
+
+
 
 
 /* Entree de carnet accueil */
