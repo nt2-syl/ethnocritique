@@ -846,13 +846,14 @@ top: 15px;
 .path-recherche .views-field-name{
   font-size: 1.1225em;
 }
-ul.js-pager__items {
+.path-recherche .col-lg-9 nav {
 margin-top: 2em;
 position: absolute;
 bottom: 0;
 clear: both;
 top: 0;
 }
+ul.js-pager__items {}
 ul.js-pager__items li {
   list-style: none;
   display: inline-block;
