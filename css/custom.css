@@ -175,10 +175,11 @@ remplacer vert foncé
 /* SECTION EVENEMENTS  */
 .view-class-evenements .sub-text,
 .adv-img-classic-box .caption-inner p.sub-text {
-    margin-top: 10px;
-    height: 30px;
     font-weight: 900;
     color: #d2000a;
+}
+.view-class-evenements .img-box h2 {
+  margin-bottom: 10px;
 }
 .grid-item .img-box:not([class*="row-"]), 
 .grid-item .box, .grid-item .base-box {
@@ -191,7 +192,18 @@ remplacer vert foncé
   margin-bottom: 2em;
 }
 
+/* noeud auteur */
+.page-node-type-individu {
 
+}
+.page-node-type-individu .col-md-4 {
+  margin-left: -15px;
+  margin-bottom: 15px;
+}
+.page-node-type-individu .views-field-title {
+  font-weight: bold;
+  font-size: 1.25em;
+}
 .view-class-accueil-cahier .boxed {
   background-color: #d2000a !important;
 }
