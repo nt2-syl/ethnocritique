@@ -202,7 +202,7 @@ remplacer vert foncé
 }
 .page-node-type-individu .views-field-title {
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.1525em;
 }
 .view-class-accueil-cahier .boxed {
   background-color: #d2000a !important;
@@ -793,7 +793,12 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 .minimal-side-menu form input[type=submit] {
   /**text-indent: -9999px;*/
   padding: 0;
-  font-size: 0;
+  font-size: 8px;
+  color: #fff !important;
+
+}
+.minimal-side-menu form input[type=submit]:hover {
+    color: #fff !important;
 }
 
 i.icon {
@@ -803,8 +808,9 @@ i.icon {
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-  top: 47px;
-  right: 51px;
+top: 15px;
+    right: 26px;
+    z-index: -1;
 }
 
 .icon-search {
