@@ -68,7 +68,7 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 /* Inversé : blanc sur rouge */
 .page-node-type-entree-de-carnet .field--name-field-notions .field--item a,
 .page-node-type-cahier .field--name-field-notions .field--item a,
-.page-node-type-article .field--name-field-notions .field--item a  {
+.page-node-type-article .field--name-field-notions .field--item a {
   border: 2px solid #fff !important;
   color: #fff;
 /*valider*/
@@ -98,8 +98,6 @@ remplacer vert foncé
   background-color: #d2000a;
  }
 */
-
-
 
 /* ACCUEIL */
 /* fond blanc, contenu limité, au centre */
@@ -133,12 +131,9 @@ remplacer vert foncé
   padding-top: 0;
   padding-bottom: 0;
 }
-
-
 .container.content {
   padding-top: 45px;
   padding-bottom: 45px;
-/* was 90px 90px */
 }
 .section-empty > .content,
 .section-bg-image > .content,
@@ -151,12 +146,10 @@ remplacer vert foncé
 /* was 90px 90px */
 }
 
-
 .section-empty .boxed-inverse,
 .section-empty .advs-box.boxed-inverse {
   background-color: #ffffff;
 }
-
 
 .block-accueil-carnet .view-class-accueil-carnet,
 .block-accueil-evenement .view-id-accueil-evenement {
@@ -180,16 +173,16 @@ remplacer vert foncé
 /* SECTION EVENEMENTS  */
 .view-class-evenements .sub-text,
 .adv-img-classic-box .caption-inner p.sub-text {
-    font-weight: 900;
-    color: #d2000a;
+  font-weight: 900;
+  color: #d2000a;
 }
 .view-class-evenements .img-box h2 {
   margin-bottom: 10px;
 }
 .grid-item .img-box:not([class*="row-"]), 
 .grid-item .box, .grid-item .base-box {
-   /* height: 100%;*/
-    min-height: 227px;
+  /* height: 100%;*/
+  min-height: 227px;
 }
 
 /* SECTION AUTEURS  */
@@ -198,9 +191,7 @@ remplacer vert foncé
 }
 
 /* noeud auteur */
-.page-node-type-individu {
-
-}
+.page-node-type-individu {}
 .page-node-type-individu .col-md-4 {
   margin-left: -15px;
   margin-bottom: 15px;
@@ -215,9 +206,78 @@ remplacer vert foncé
   margin-bottom: 10px;
 }
 
+/* SECTION CAHIERS*/
+.view-class-cahiers h4 {
+  text-transform: none;
+  font-weight: 700;
+  color: #272b2b;
+  font-size: 30px;
+  line-height: 21px;
+}
+.liste_cahier_date_no, .liste_cahier_auteur {
+  font-weight: bold;
+}
+/* PAGE CAHIER */
+.page-node-type-cahier .section-bg-color .col-md-4 {
+  padding-left: 0;
+}
+.section-bg-color {
+  margin-bottom: 1em;
+}
+.view-article-vs-cahier .advs-box .btn:after {
+  display: none;
+}
+.page-node-type-cahier .advs-box-top-icon-img.boxed-inverse .advs-box-content {
+  padding: 30px 40px !important;
+}
 
 
+/* noeud chapitre */
 
+/* noeud article de chapitre*/
+.page-node-type-article-chapitre .col-md-9 .node-field-bibliographie,
+.page-node-type-article-chapitre .col-md-9 .node-field-citation {
+  color: #676a6b;
+}
+
+/* Liste Cahier */
+.liste_cahier_date_no,
+.liste_cahier_auteur {
+  color: #000;
+}
+/* Noeud Cahier */
+/* aligner titre EVA */
+.page-node-type-cahier .view-eva h4 {
+  text-align: center;
+}
+
+/*Champ field--name-field-responsable-cahier*/
+.advs-box h3 .field--label {
+  font-size: 14px;
+}
+.advs-box h3 .field__items {
+  font-size: 20px;
+  font-weight: normal;
+}
+/* EVA - aligner résumé à gauche */
+.advs-box .advs-box-content p {
+  text-align: left;
+}
+
+/* LISTE AUTEURS */
+.img-box.circle img {
+  max-width: 100%;
+  height: auto;
+}
+.img-box.circle:before {
+  transform: scale(1);
+}
+.img-box {
+  overflow: visible;
+}
+
+
+/* accueil */
 .view-class-accueil-cahier .boxed {
   background-color: #d2000a !important;
 }
@@ -268,8 +328,8 @@ remplacer vert foncé
   max-width: 1200px;
 }
 .proporzional-row {
-max-width: 1140px;
-margin: 0 auto
+  max-width: 1140px;
+  margin: 0 auto
 }
 .flexslider {
   margin-bottom: 0px !important;
@@ -281,9 +341,6 @@ margin: 0 auto
 .adv-img-classic-box:hover .caption-inner .big-text {
   opacity: 1;
 }
-
-
-
 
 /* Entree de carnet accueil */
 
@@ -301,13 +358,13 @@ margin: 0 auto
 /* Noeud Entrée Carnet */
 
 .adv-img-classic-box .caption-inner h2 {
-font-size: 22px;
-line-height: 22px;
+  font-size: 22px;
+  line-height: 22px;
 }
 /* En cas d'image brisée ou manquante, conserver le format grille */
 .view-entree-de-carnet-vs-carnet .grid-item .img-box:not([class*="row-"]), 
 .view-entree-de-carnet-vs-carnet .grid-item .box, .grid-item .base-box {
-    min-height: 307px;
+  min-height: 307px;
 }
 
 /**
@@ -370,8 +427,6 @@ ENTREE CARNET
   height: auto;
 }
 
-
-
 .block-infos .block-data {
   background-color: transparent;
 }
@@ -411,7 +466,7 @@ header {
 .block-accueil-cahier,
 .block-accueil-carnet,
 .block-accueil-evenement {
-    text-align: center;
+  text-align: center;
 }
 .path-frontpage h4 {
   padding-top: 20px;
@@ -423,15 +478,13 @@ header {
 	padding-top: 1em;
 }
 .accueil-actualite .niche-box-blog.boxed {
-    padding-top: 0;
-    /*0px 25px 70px sur accueil */
-    /* 25px 70px sur listes */
+  padding-top: 0;
+  /*0px 25px 70px sur accueil */
+  /* 25px 70px sur listes */
 }
 .accueil-actualite .niche-box-blog.boxed-inverse .img-box {
 	margin: 0 -26px;/* full */
 }
-
-
 
 
 /* footer (dans le contenu) */
@@ -441,7 +494,6 @@ header {
   clear: both;
   height: 100px;
 }
-
 
 
 /* Embed Media */
@@ -473,12 +525,12 @@ p img {
 }
 
 .field--name-field-lieu {
-    margin-bottom: 2em;
-    overflow: hidden;
-    max-width: 100%;
+  margin-bottom: 2em;
+  overflow: hidden;
+  max-width: 100%;
   /*  width: 100%;
-    height: auto;
-    display: block;*/
+  height: auto;
+  display: block;*/
 }
 
 .field--label {
@@ -499,12 +551,9 @@ p img {
 .advs-box-side .livre_body,
 .path-livres .livre_body {}
 
-
 .field--name-field-bibliographie .field--item {
   margin-bottom: 1em;
 }
-
-
 
 /* Carousel livre */
 .adv-img-classic-box .caption-inner {
@@ -516,11 +565,7 @@ p img {
   /*white-space: no-wrap; Ajoute ... */
 }
 
-
-
 /* LISTE ACTUALITÉS */
-
-
 
 /* NOEUD ACTUALITÉ */
 /* Combiner date de début et date de fin */
@@ -641,9 +686,8 @@ p img {
   display: none;
 }
 .page-node-type-individu .full_width_content .field--name-body {
-    display: none;
+  display: none;
 }
-
 
 /* Choisir la hauteur du header arbitrairement */
 .header-title,
@@ -681,59 +725,6 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 }
 .field--name-field-image-couverture {
   margin-bottom: 1em;
-}
-
-
-
-/* noeud chapitre */
-
-
-
-/* noeud article de chapitre*/
-
-.page-node-type-article-chapitre .col-md-9 .node-field-bibliographie,
-.page-node-type-article-chapitre .col-md-9 .node-field-citation {
-  color: #676a6b;
-}
-
-
-
-
-
-/* Liste Cahier */
-.liste_cahier_date_no,
-.liste_cahier_auteur {
-  color: #000;
-}
-/* Noeud Cahier */
-/* aligner titre EVA */
-.page-node-type-cahier .view-eva h4 {
-      text-align: center;
-}
-
-/*Champ field--name-field-responsable-cahier*/
-.advs-box h3 .field--label {
-  font-size: 14px;
-}
-.advs-box h3 .field__items {
-  font-size: 20px;
-  font-weight: normal;
-}
-/* EVA - aligner résumé à gauche */
-.advs-box .advs-box-content p {
-  text-align: left;
-}
-
-/* LISTE AUTEURS */
-.img-box.circle img {
-  max-width: 100%;
-  height: auto;
-}
-.img-box.circle:before {
-  transform: scale(1);
-}
-.img-box {
-  overflow: visible;
 }
 
 
@@ -803,7 +794,9 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 
 }
 
-.page-node-type-article-chapitre .field_square_wrapper { min-height: auto; }
+.page-node-type-article-chapitre .field_square_wrapper { 
+  min-height: auto; 
+}
 
 
 
