@@ -920,10 +920,15 @@ ul.js-pager__items li {
 .field_square_wrapper {
   background-color: #777;
 }
-
-/*img {
+/* Hypothese */
+.top-area img {
     max-width: 67%;
-}*/
+}
+/* hypothese : image + petite sauf accueil */ 
+.path-frontpage .top-area img {
+    max-width: 100%;
+}
+
 .flexslider.nav-inner {
   margin-bottom: 45px !important;
 }
