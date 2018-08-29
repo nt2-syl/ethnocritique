@@ -879,6 +879,9 @@ ul.js-pager__items li {
   list-style: none;
   display: inline-block;
 }
+.path-recherche .views-row {
+  padding-bottom: 2em;
+}
 #edit-actions {
   float: right;
   vertical-align: top;
