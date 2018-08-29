@@ -5,9 +5,9 @@ vert    56bdbd =>#d2000a (rouge opaque)
 /*
 GENERAL
 */
+html,body{min-height:100%;height: 100%;}
 body {
   margin: 0 auto;
-  min-height: 1000px; /* éviter fond noir hors du body */
 }
 
 /* COULEURS */
@@ -204,6 +204,15 @@ remplacer vert foncé
   font-weight: bold;
   font-size: 1.1525em;
 }
+/* SECTION LABORATOIRES  */
+.view-class-laboratoires .sub-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+
 .view-class-accueil-cahier .boxed {
   background-color: #d2000a !important;
 }
@@ -349,6 +358,8 @@ ENTREE CARNET
   height: auto;
   /* alignement blocs */
   max-height: 375px;
+  /* TODO : autre méthode pour égaliser bloc */
+  /* brise sur image moins haute */
 }
 .page-node-type-carnet-de-recherche .field--name-field-image-couverture img {
   height: auto;
@@ -881,6 +892,12 @@ ul.js-pager__items li {
 .text-right {
     text-align: left;
 }
+
+/* Hypothese : bloc rouge 
+.field_square_wrapper {
+  background-color: #d2000a;
+} */
+/* vs Hypothese : bloc gris */
 .field_square_wrapper {
   background-color: #777;
 }
