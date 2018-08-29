@@ -213,9 +213,14 @@ remplacer vert foncé
   color: #272b2b;
   font-size: 30px;
   line-height: 21px;
+  padding-bottom: 1em;
 }
-.liste_cahier_date_no, .liste_cahier_auteur {
+.liste_cahier_date_no, 
+.liste_cahier_auteur {
   font-weight: bold;
+}
+.liste_cahier_auteur {
+  color: #d2000a;
 }
 /* PAGE CAHIER */
 .page-node-type-cahier .section-bg-color .col-md-4 {
@@ -688,7 +693,9 @@ p img {
 .page-node-type-individu .full_width_content .field--name-body {
   display: none;
 }
-
+.page-node-type-chapitre .section-empty .node-field-livre-referent {
+  display: none;
+}
 /* Choisir la hauteur du header arbitrairement */
 .header-title,
 .header-animation {
@@ -903,3 +910,6 @@ ul.js-pager__items li {
 /*img {
     max-width: 67%;
 }*/
+.flexslider.nav-inner {
+  margin-bottom: 45px !important;
+}
