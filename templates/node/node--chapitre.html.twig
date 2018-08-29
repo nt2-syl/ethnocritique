@@ -108,15 +108,7 @@ set classes = [
   <div class="section-empty">
     <div class="container content">
       <div class="row">
-        <div class="col-md-2">
-          <div class="title-base text-right">
-            <hr />
-            {{ title_prefix }}
-            <h4>{{ node.getTitle() }}</h4>
-            {{ title_suffix }}
-          </div>
-        </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
           <div{{ content_attributes }}>
             {% if content.field_livre_referent %}
               <div class="field_square node-field-livre-referent">
