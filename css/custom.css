@@ -913,3 +913,21 @@ ul.js-pager__items li {
 .flexslider.nav-inner {
   margin-bottom: 45px !important;
 }
+
+
+/* Table des matières*/
+.full_width_content .block-id-views-blocktable-matieres-article-livre-block-3 {
+  display: none;
+}
+.mi-menu .sidebar-nav {
+    border-left-color: #d2000a !important;
+    padding-left: 20px;
+    text-transform: none;
+    font-weight: normal;
+}
+.view-id-table-matieres-article-livre.view-display-id-block-2 {
+  padding-left: 20px;
+}
+.view-id-table-matieres-article-livre.view-display-id-block-1 {
+  padding-left: 20px;
+}
