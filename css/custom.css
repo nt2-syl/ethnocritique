@@ -874,7 +874,12 @@ i.icon {
   clear: both;
   top: 0;*/
 }
-.path-recherche ul.js-pager__items {}
+.path-auteurs ul.js-pager__items,
+.path-recherche ul.js-pager__items {
+  clear: both;
+}
+
+.path-auteurs ul.js-pager__items li,
 .path-recherche ul.js-pager__items li {
   list-style: none;
   display: inline-block;
