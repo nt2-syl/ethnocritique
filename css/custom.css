@@ -875,7 +875,9 @@ i.icon {
   top: 0;*/
 }
 .path-auteurs ul.js-pager__items,
-.path-recherche ul.js-pager__items {
+.path-recherche ul.js-pager__items,
+.path-recherche .col-lg-9 nav,
+.view-class-auteurs nav {
   clear: both;
 }
 
