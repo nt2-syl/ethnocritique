@@ -972,3 +972,10 @@ i.icon {
     text-decoration: none;
 }
 /* Improve: Button custom on/off */
+
+.media-view-mode-image-embed-demi-largeur, .media-view-mode-audio-embed, .media-view-mode-video-embed {
+    max-width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
