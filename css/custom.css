@@ -179,8 +179,8 @@ remplacer vert foncé
 .view-class-evenements .img-box h2 {
   margin-bottom: 10px;
 }
-.grid-item .img-box:not([class*="row-"]), 
-.grid-item .box, .grid-item .base-box {
+.view-class-evenements .grid-item .img-box:not([class*="row-"]), 
+.view-class-evenements .grid-item .box, .grid-item .base-box {
   /* height: 100%;*/
   min-height: 227px;
 }
