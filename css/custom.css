@@ -184,6 +184,9 @@ remplacer vert foncé
   /* height: 100%;*/
   min-height: 227px;
 }
+.path-evenements .grid-item > div {
+  padding-bottom: 2em;
+}
 
 /* SECTION AUTEURS  */
 .view-class-auteurs .col-md-4 {
@@ -876,22 +879,26 @@ i.icon {
 }
 .path-auteurs ul.js-pager__items,
 .path-recherche ul.js-pager__items,
-.path-recherche .col-lg-9 nav,
-.view-class-auteurs nav {
+.path-recherche .col-lg-9 nav {
   clear: both;
 }
-.view-class-auteurs nav {
+.view-class-auteurs nav,
+.view-class-evenements nav {
     clear: both;
 }
 
 .path-auteurs ul.js-pager__items li,
-.path-recherche ul.js-pager__items li {
+.path-recherche ul.js-pager__items li,
+.path-evenements ul.js-pager__items li {
   list-style: none;
   display: inline-block;
 }
 .path-recherche .views-row {
   padding-bottom: 2em;
 }
+
+
+
 #edit-actions {
   float: right;
   vertical-align: top;
