@@ -355,6 +355,7 @@ remplacer vert foncé
 /* Événements accueil */
 
 
+
 /* Liste Carnets */
 
 /* Noeud Carnet */
@@ -375,6 +376,17 @@ remplacer vert foncé
   min-height: 307px;
 }
 
+
+/** Noeuds Laboratoire */
+/* Marge autour des logos */
+.page-node-type-laboratoire-recherche .field--name-field-portrait {
+  padding: 10px;
+}
+.view-projet-recherche-vs-laboratoire-recherche .views-row {
+  width: 33%;
+  padding-right: 10px;
+  /* todo cols col-md-4 */
+}
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
@@ -405,11 +417,10 @@ ENTREE CARNET
     min-height: 375px;
   }
 }
-/* exceptions */
+/* Exceptions */
 .page-node-type-individu .field_square_wrapper {
   min-height: auto;
 }
-
 
 .field_square {
   color: #fff;
@@ -622,11 +633,11 @@ p img {
   display: none;
 }
 /* AFFICHAGE DES CHAMPS - LABO RECHERCHE */
-.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-membres,
-.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-direction,
-.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-lien-s,
-.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-subvention,
-.page-node-type-laboratoire-recherche .col-md-7 .field--name-field-portrait {
+.page-node-type-laboratoire-recherche .full_width_content .field--name-field-membres,
+.page-node-type-laboratoire-recherche .full_width_content .field--name-field-direction,
+.page-node-type-laboratoire-recherche .full_width_content .field--name-field-lien-s,
+.page-node-type-laboratoire-recherche .full_width_content .field--name-field-subvention,
+.page-node-type-laboratoire-recherche .full_width_content .field--name-field-portrait {
   display: none;
 }
 
@@ -736,7 +747,9 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 .field--name-field-image-couverture {
   margin-bottom: 1em;
 }
-
+.view-id-chapitres-d-un-livre .flexslider .slides > li {
+  margin-right: 20px;
+}
 
 /* MEDIA EMBED */
 .media-view-mode-image-embed-pleine-largeur {
