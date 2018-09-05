@@ -786,11 +786,17 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   float: none;
   margin-bottom: 0;
 }
-audio, canvas, progress, video {
+.embedded-entity audio, 
+.embedded-entity canvas, 
+.embedded-entity progress, 
+.embedded-entity video {
   /*  display: inline-block;
     vertical-align: baseline; */
     width: 100%;
 }
+/* Ne pas agrandir sur noeud Video ou Audio */
+/* Ne pas agrandir dans Evenement 
+.field--name-field-media  */
 
 /* Responsive @media */
 /* mobile */
