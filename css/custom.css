@@ -752,6 +752,7 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 }
 
 /* MEDIA EMBED */
+
 .media-view-mode-image-embed-pleine-largeur {
   max-width: 100%;
 }
@@ -785,7 +786,11 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   float: none;
   margin-bottom: 0;
 }
-
+audio, canvas, progress, video {
+  /*  display: inline-block;
+    vertical-align: baseline; */
+    width: 100%;
+}
 
 /* Responsive @media */
 /* mobile */
