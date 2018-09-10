@@ -13,10 +13,12 @@ body {
   margin: 0 auto;
   min-height:100%;
   height: 100%;
-  color: #000;
 }
 
 /* COULEURS */
+body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p {
+  color: #000;
+}
 a {
   color: #d2000a;
 }
