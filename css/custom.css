@@ -1048,3 +1048,20 @@ ul.minimal-primary-tabs li {
   padding-bottom: 2em;
   padding-left: 1em;
 }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 1px solid #777;
+}
+.view-article-vs-chapitre {
+ font-weight: bold;
+}
+.view-article-vs-chapitre .views-row {
+  padding-top: 1em;
+}
+.view-article-vs-chapitre .advs-box-top-icon.boxed {
+  padding: 70px 25px !important;
+}
+.view-article-vs-chapitre .views-row {
+  margin-left: -15px;
+}
+
+
