@@ -170,24 +170,30 @@ remplacer vert foncé
 .view-class-laboratoires,
 .view-class-livres,
 .view-class-projets,
-.view-class-evenements {
+.view-class-evenements,
+.view-class-cours {
 
 }
 /* SECTION EVENEMENTS  */
 .view-class-evenements .sub-text,
+.view-class-cours .sub-text,
 .adv-img-classic-box .caption-inner p.sub-text {
   font-weight: 900;
   color: #d2000a;
 }
-.view-class-evenements .img-box h2 {
+.view-class-evenements .img-box h2,
+.view-class-cours .img-box h2 {
   margin-bottom: 10px;
 }
 .view-class-evenements .grid-item .img-box:not([class*="row-"]), 
-.view-class-evenements .grid-item .box, .grid-item .base-box {
+.view-class-evenements .grid-item .box, .grid-item .base-box,
+.view-class-cours .grid-item .img-box:not([class*="row-"]), 
+.view-class-cours .grid-item .box, .grid-item .base-box {
   /* height: 100%;*/
   min-height: 227px;
 }
-.path-evenements .grid-item > div {
+.path-evenements .grid-item > div,
+.path-cours .grid-item > div {
   padding-bottom: 2em;
 }
 
@@ -925,13 +931,15 @@ i.icon {
   clear: both;
 }
 .view-class-auteurs nav,
-.view-class-evenements nav {
+.view-class-evenements nav,
+.view-class-cours nav {
     clear: both;
 }
 
 .path-auteurs ul.js-pager__items li,
 .path-recherche ul.js-pager__items li,
-.path-evenements ul.js-pager__items li {
+.path-evenements ul.js-pager__items li,
+.path-cours ul.js-pager__items li {
   list-style: none;
   display: inline-block;
 }
@@ -1055,7 +1063,7 @@ ul.minimal-primary-tabs li {
  font-weight: bold;
 }
 .view-article-vs-chapitre .views-row {
-  padding-top: 1em;
+  margin-top: 1em;
 }
 .view-article-vs-chapitre .advs-box-top-icon.boxed {
   padding: 70px 25px !important;
