@@ -302,16 +302,15 @@ remplacer vert foncé
 }
 /*.niche-box-blog.boxed, .niche-box-blog.boxed-inverse*/
 
-/* Contenant dans le bloc actualité */
-.accueil-actualite {
+/* Contenant dans le bloc actualité, présentation du site */
+.accueil-actualite,
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
   width: 50%;
   margin: 0 auto;
   max-width: 600px; /* 50% of 1200px, which was previous max-width of parent container */
 }
 
-.block-accueil-livre {
-
-}
+.block-accueil-livre {}
 .view-class-accueil-livre {
   /*max-width: 1200px;*/
   /*margin: 0 auto;*/
