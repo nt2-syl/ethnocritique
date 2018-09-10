@@ -309,7 +309,14 @@ remplacer vert foncé
   margin: 0 auto;
   max-width: 600px; /* 50% of 1200px, which was previous max-width of parent container */
 }
-
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 h4,
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 hr {
+  display: none;
+}
+.quote-author a {
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
 .block-accueil-livre {}
 .view-class-accueil-livre {
   /*max-width: 1200px;*/
