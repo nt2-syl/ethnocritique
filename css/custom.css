@@ -724,6 +724,10 @@ p img {
 .page-node-type-chapitre .section-empty .node-field-livre-referent {
   display: none;
 }
+
+.full_width_content .block-id-views-blocktable-matieres-article-livre-block-3 {
+  display: none;
+}
 /* Choisir la hauteur du header arbitrairement */
 .header-title,
 .header-animation {
