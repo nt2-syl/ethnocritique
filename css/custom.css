@@ -382,10 +382,12 @@ remplacer vert foncé
 /* En cas d'image brisée ou manquante, conserver le format grille */
 .view-entree-de-carnet-vs-carnet .grid-item .img-box:not([class*="row-"]), 
 .view-entree-de-carnet-vs-carnet .grid-item .box, .grid-item .base-box {
-  min-height: 307px;
+  min-height: 245px;
 }
 
-
+.view-entree-de-carnet-vs-carnet .grid-item .gallery .img-box {
+    width: 100%;
+}
 /** Noeuds Laboratoire */
 /* Marge autour des logos */
 .page-node-type-laboratoire-recherche .field--name-field-portrait {
@@ -1008,7 +1010,10 @@ font-weight: bold;
   font-size: 1.25rem;
   font-weight: bold;
 }
-
+.view-id-table-matieres-article-livre .view-display-id-block-1 .views-field-title {
+  font-size: 1.0rem;
+  font-weight: normal;
+}
 
 /* Accordion */
 .field-group-accordion-wrapper {
