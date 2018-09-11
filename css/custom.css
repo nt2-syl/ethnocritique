@@ -319,9 +319,11 @@ remplacer vert foncé
 .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 hr {
   display: none;
 }
+.quote-author {
+  margin-bottom: 2em;
+}
 .quote-author a {
   text-transform: uppercase;
-  margin-bottom: 2em;
 }
 .block-accueil-livre {}
 .view-class-accueil-livre {
