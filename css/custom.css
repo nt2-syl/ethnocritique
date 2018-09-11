@@ -103,19 +103,23 @@ remplacer vert foncé
 */
 
 /* ACCUEIL */
-/* fond blanc, contenu limité, au centre */
+/* fond gris, pleine largeur */
+.block-accueil-actualite,
+.block-accueil-evenement,
 .block-accueil-livre,
-.block-accueil-carnet {
-  /*background: #f7f9f9;*/
-  background: #fff;
+ {
+  background: #f7f9f9;
   margin: 0;
   max-width: none;
 }
-/* fond gris, pleine largeur */
-.block-accueil-actualite,
-.block-accueil-cahier,
-.block-accueil-evenement {
-  background: #f7f9f9;
+
+/* fond blanc, contenu limité, au centre */
+/* Bloc présentation (par défaut) */
+.block-accueil-carnet,
+.block-accueil-cahier
+ {
+  /*background: #f7f9f9;*/
+  background: #fff;
   margin: 0;
   max-width: none;
 }
@@ -508,6 +512,7 @@ header {
 .block-accueil-carnet,
 .block-accueil-evenement {
   text-align: center;
+  clear: both;
 }
 .path-frontpage h4 {
   padding-top: 20px;
