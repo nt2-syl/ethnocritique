@@ -524,6 +524,9 @@ header {
 .accueil-actualite .niche-box-blog.boxed-inverse .img-box {
 	margin: 0 -26px;/* full */
 }
+.niche-box-blog .block-infos {
+  padding-top: 20px;
+}
 
 
 /* footer (dans le contenu) */
