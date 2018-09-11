@@ -794,8 +794,7 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   margin-bottom: 1em;
 }
 .view-id-chapitres-d-un-livre .flexslider .slides > li {
-  margin-right: 20px;
-  width: 225px !important;
+    padding-right: 12px !important;
 }
 
 /* MEDIA EMBED */
