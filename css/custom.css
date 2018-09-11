@@ -794,9 +794,12 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   margin-bottom: 1em;
 }
 .view-id-chapitres-d-un-livre .flexslider .slides > li {
-    padding-right: 12px !important;
+  padding-right: 12px !important;
 }
 
+.block-id-views-blockchapitres-d-un-livre-block-1 {
+  margin-bottom: 2em;
+}
 /* MEDIA EMBED */
 
 .media-view-mode-image-embed-pleine-largeur {
@@ -1098,5 +1101,9 @@ ul.minimal-primary-tabs li {
  /*  content: "\e61e";
  content: "\e9bd";*/
 }
-
+.flexslider {
+  background: transparent;
+  border: 4px solid #f7f9f9;
+  border-radius: 0;
+}
 
