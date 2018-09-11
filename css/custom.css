@@ -140,6 +140,10 @@ remplacer vert foncé
   padding-top: 45px;
   padding-bottom: 45px;
 }
+.view-class-accueil-livre.container.content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .section-empty > .content,
 .section-bg-image > .content,
 .section-bg-video > .content,
@@ -162,6 +166,10 @@ remplacer vert foncé
   width: 100%;
   max-width: 1200px;
   background: #f7f9f9;
+}
+.block-accueil-carnet .view-class-accueil-carnet,
+.view-id-accueil-evenement .col-md-4 {
+  margin-bottom: 2em;
 }
 
 /* SECTIONS */
@@ -357,6 +365,9 @@ remplacer vert foncé
 .proporzional-row {
   max-width: 1140px;
   margin: 0 auto
+}
+.path-frontpage .proporzional-row {
+  margin-bottom: 2em;
 }
 .flexslider {
   margin-bottom: 0px !important;
