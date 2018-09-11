@@ -206,6 +206,9 @@ remplacer vert foncé
 .path-cours .grid-item > div {
   padding-bottom: 2em;
 }
+.block-infos .bd-month {
+    font-size: 18px;
+}
 
 /* SECTION AUTEURS  */
 .view-class-auteurs .col-md-4 {
@@ -792,6 +795,7 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 }
 .view-id-chapitres-d-un-livre .flexslider .slides > li {
   margin-right: 20px;
+  width: 225px !important;
 }
 
 /* MEDIA EMBED */
