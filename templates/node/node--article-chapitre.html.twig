@@ -135,6 +135,11 @@ set classes = [
                 {{ content.field_auteur_e }}
               </div>
             {% endif %}
+            {% if content.field_notions %}
+              <div class="node-field-notions taxonomie-notions">
+                {{ content.field_notions }}
+              </div>
+            {% endif %}
           </div>
           <aside class="sidebar mi-menu fixed-area one-page-menu" data-topscroll="80" style="width: 263px;">
             <nav class="sidebar-nav">
