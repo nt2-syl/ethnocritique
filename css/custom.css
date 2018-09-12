@@ -516,7 +516,13 @@ header {
   background-color: #d2000a; /* temp; Image doit s'insérer ici; */
   background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif) !important;
 }
-
+.header-title p, .header-video p, .header-base p, .header-slider p {
+    opacity: 1 !important;
+    color: #fff;
+}
+.title-base p {
+    font-size: 18px;
+}
 
 /* ACCUEIL TITRES SECTION */
 .block-accueil-actualite,
