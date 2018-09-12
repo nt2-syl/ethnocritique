@@ -359,9 +359,11 @@ remplacer vert foncé
   width: auto;
 }
 /* Extraits du cahier sur Accueil, enlever responsive */
-.gallery .img-box, .gallery .img-box img {
-  width: auto;
-  max-width: none;
+/* Entrée de carnet sur Carnet */
+.gallery .img-box, 
+.gallery .img-box img {
+  /*width: auto;
+  max-width: none;*/
 }
 
 /* Contenant dans le bloc cahier */
@@ -1125,3 +1127,12 @@ ul.minimal-primary-tabs li {
 .page-node-type-cahier .advs-box .btn:after {
   display: none;
 }
+
+
+/** TEMP
+- image plus haute que large sur Entrée Carnet Accueil 
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+}
+*/
