@@ -995,7 +995,10 @@ i.icon {
   padding-bottom: 2em;
 }
 
-
+.path-evenements .img-box .caption {
+  font-size: 16px;
+  line-height: 24px;
+}
 
 #edit-actions {
   float: right;
