@@ -724,7 +724,8 @@ p img {
 }
 .page-node-type-article-chapitre .full_width_content .field--name-body,
 .page-node-type-article-chapitre .full_width_content .field--name-field-bibliographie,
-.page-node-type-article-chapitre .full_width_content .field--name-field-citation {
+.page-node-type-article-chapitre .full_width_content .field--name-field-citation,
+.page-node-type-article-chapitre .full_width_content .field--name-field-notions {
   display: none;
 }
 
