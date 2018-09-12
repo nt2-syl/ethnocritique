@@ -400,8 +400,8 @@ remplacer vert foncé
 /* Noeud Entrée Carnet */
 
 .adv-img-classic-box .caption-inner h2 {
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 /* En cas d'image brisée ou manquante, conserver le format grille */
