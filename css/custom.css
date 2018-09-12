@@ -225,6 +225,11 @@ remplacer vert foncé
   font-weight: bold;
   font-size: 1.1525em;
 }
+
+.page-node-type-individu .node-field-portrait img {
+    width: 100%;
+    height: auto;
+}
 /* SECTION LABORATOIRES  */
 .view-class-laboratoires .sub-text {
   font-weight: bold;
