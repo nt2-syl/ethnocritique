@@ -409,6 +409,7 @@ remplacer vert foncé
 .view-entree-de-carnet-vs-carnet .grid-item .box, 
 .view-entree-de-carnet-vs-carnet .grid-item .grid-item .base-box {
   min-height: 245px;
+  overflow: hidden;
 }
 
 .view-entree-de-carnet-vs-carnet .gallery .grid-item .img-box,
