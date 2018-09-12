@@ -49,9 +49,11 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 /* boutons Taxos : rouge sur blanc */
 .page-node-type-carnet-de-recherche .field--name-field-notions .field--label,
 .page-node-type-entree-de-carnet .field--name-field-notions .field--label,
-.page-node-type-cahier .field--name-field-notions .field--label,
 .page-node-type-article .field--name-field-notions .field--label{
   color: #fff;
+}
+.page-node-type-cahier .field--name-field-notions .field--label {
+  color: #000;
 }
 /* sur carnet de recherche seulement */
 .field--name-field-notions .field--item a {
@@ -284,6 +286,7 @@ remplacer vert foncé
 /* aligner titre EVA */
 .page-node-type-cahier .view-eva h4 {
   text-align: center;
+  padding-bottom: 2em;
 }
 
 /*Champ field--name-field-responsable-cahier*/
@@ -1122,10 +1125,6 @@ ul.minimal-primary-tabs li {
   background: transparent;
   border: 4px solid #f7f9f9;
   border-radius: 0;
-}
-.page-node-type-cahier .btn-text:after, 
-.page-node-type-cahier .advs-box .btn:after {
-  display: none;
 }
 
 
