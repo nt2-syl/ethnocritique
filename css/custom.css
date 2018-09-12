@@ -1130,6 +1130,21 @@ ul.minimal-primary-tabs li {
   border-radius: 0;
 }
 
+/*
+* taxonomy 
+*/
+
+.path-taxonomy {
+
+}
+.path-taxonomy .img-box,
+.path-taxonomy hr,
+.path-taxonomy .btn,
+.path-taxonomy .block-infos,
+.path-taxonomy .tag-row {
+  display: none;
+}
+
 
 /** TEMP
 - image plus haute que large sur Entrée Carnet Accueil 
