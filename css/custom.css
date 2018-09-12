@@ -518,7 +518,7 @@ header {
 }
 .header-title p, .header-video p, .header-base p, .header-slider p {
     opacity: 1 !important;
-    color: #fff;
+    color: #fff !important;
 }
 .title-base p {
     font-size: 18px;
