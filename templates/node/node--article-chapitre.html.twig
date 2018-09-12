@@ -124,15 +124,15 @@ set classes = [
           </div>
         </div>
         <div class="col-md-3">
-                <div class="field_square_wrapper">
-            {% if content.field_chapitre_referent %}
-              <div class="field_square node-field-chapitre-referent">
-                {{ content.field_chapitre_referent }}
-              </div>
-            {% endif %}
+          <div class="field_square_wrapper">
             {% if content.field_auteur_e %}
               <div class="field_square node-field-auteur">
                 {{ content.field_auteur_e }}
+              </div>
+            {% endif %}
+            {% if content.field_chapitre_referent %}
+              <div class="field_square node-field-chapitre-referent">
+                {{ content.field_chapitre_referent }}
               </div>
             {% endif %}
             {% if content.field_notions %}
