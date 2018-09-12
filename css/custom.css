@@ -1150,6 +1150,13 @@ ul.minimal-primary-tabs li {
   font-weight: 700;
   line-height: 24px;
 }
+.niche-box-post h2 a, .niche-box-blog h2 a, .advs-box-side-img.advs-box-blog h2 a {
+  text-transform: none;
+  font-weight: 700;
+  color: #272b2b;
+  font-size: 20px;
+  line-height: 20px;
+}
 
 /** TEMP
 - image plus haute que large sur Entrée Carnet Accueil 
