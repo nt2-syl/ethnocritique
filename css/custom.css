@@ -1141,7 +1141,8 @@ ul.minimal-primary-tabs li {
 .path-taxonomy hr,
 .path-taxonomy .btn,
 .path-taxonomy .block-infos,
-.path-taxonomy .tag-row {
+.path-taxonomy .tag-row,
+.path-taxonomy .taxonomy-term {
   display: none;
 }
 
