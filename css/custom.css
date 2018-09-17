@@ -1125,8 +1125,7 @@ ul.minimal-primary-tabs li {
 }
 
 .im-align-justifyall:before, .porfolio-bar .fa-th:before, .navbar-toggle .fa-bars:before, .hamburger-button i:before{
- /*  content: "\e61e";
- content: "\e9bd";*/
+ content: "\e9bd"; /* maison */
 }
 .flexslider {
   background: transparent;
