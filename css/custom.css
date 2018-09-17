@@ -60,17 +60,17 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 .taxonomie-fond-fonce .field--item a,
 .taxonomie-fond-blanc .field--item a {
   display: inline-block;
-  padding: 5px 3px;
-  margin: 3px 2px;
+  /*padding: 5px 3px;*/
+  /*margin: 3px 2px;*/
   font-size: 10px;
   font-weight: bold;
 }
 .taxonomie-fond-fonce .field--item a {
-  border: 2px solid #fff !important;
-  color: #fff;
+  /*border: 2px solid #fff !important;
+*/  color: #fff;
 }
 .taxonomie-fond-blanc .field--item a {
-  border: 2px solid #000!important;
+ /* border: 2px solid #000!important;*/
   color: #000;
 }
 
