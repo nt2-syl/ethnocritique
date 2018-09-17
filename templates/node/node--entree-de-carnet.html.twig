@@ -132,8 +132,18 @@ set classes = [
               </div>
             {% endif %}
             {% if content.field_notions %}
-              <div class="field_square node-field-notions taxonomie-notions">
+              <div class="field_square node-field-notions taxonomie-notions  taxonomie taxonomie-fond-fonce">
                 {{ content.field_notions }}
+              </div>
+            {% endif %}
+            {% if content.field_periode_historique %}
+              <div class="node-field-periode-historique taxonomie-periode-historique taxonomie taxonomie-fond-fonce">
+                {{ content.field_periode_historique }}
+              </div>
+            {% endif %}
+            {% if content.field_aire_geographique %}
+              <div class="node-field-aire-geographique taxonomie-aire-geographique taxonomie taxonomie-fond-fonce">
+                {{ content.field_aire_geographique }}
               </div>
             {% endif %}
           </div>
