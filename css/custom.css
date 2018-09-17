@@ -1164,7 +1164,17 @@ ul.minimal-primary-tabs li {
 
 .bibcite-reference-table td {
   vertical-align: top;
-  padding: 10px 0px;
+  padding: 10px 10px 10px 0;
+}
+.view-id-liste-reference-bibliographique .views-row {
+  margin-bottom: 2em;
+}
+.view-id-liste-reference-bibliographique .views-field-title-11 {
+  text-transform: none;
+  font-weight: 700;
+  color: #272b2b;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 /** TEMP
