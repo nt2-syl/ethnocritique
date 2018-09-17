@@ -1162,6 +1162,11 @@ ul.minimal-primary-tabs li {
   line-height: 20px;
 }
 
+.bibcite-reference-table td {
+  vertical-align: top;
+  padding: 10px 0px;
+}
+
 /** TEMP
 - image plus haute que large sur Entrée Carnet Accueil 
 .flexslider .slides img {
