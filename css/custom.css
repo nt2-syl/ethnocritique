@@ -609,11 +609,13 @@ p img {
   margin-bottom: 2em;
   overflow: hidden;
   max-width: 100%;
-  /*  width: 100%;
-  height: auto;
+   width: 100%;
+   /*  height: auto;
   display: block;*/
 }
-
+.field--name-field-lieu iframe {
+    max-width: 100%;
+}
 .field--label {
   font-weight: bold;
 }
