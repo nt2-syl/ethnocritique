@@ -114,6 +114,16 @@ set classes = [
                 {{ content.field_image_couverture }}
               </div>
             {% endif %}
+            {% if content.body %}
+              <div class="node-field-body">
+                {{ content.body }}
+              </div>
+            {% endif %}
+            {% if content.field_citation %}
+              <div class="field_square field-citation">
+                {{ content.field_citation }}
+              </div>
+            {% endif %}
         </div>
       </div>
       <div class="row">
@@ -144,18 +154,8 @@ set classes = [
                 {{ content.field_aire_geographique }}
               </div>
             {% endif %}
-            {% if content.field_citation %}
-              <div class="field_square field-citation">
-                {{ content.field_citation }}
-              </div>
-            {% endif %}
           </div>
           <div class="field_carnet_description">
-          {% if content.body %}
-              <div class="node-field-body">
-                {{ content.body }}
-              </div>
-            {% endif %}
           </div>
         </div>            
       </div>
