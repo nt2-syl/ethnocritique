@@ -1170,3 +1170,27 @@ ul.minimal-primary-tabs li {
     display: block;
 }
 */
+
+@media screen and (max-width: 96px) {
+  .block-quote.quote-1, .block-quote.quote-2 {
+      font-size: 18px;
+      font-weight: 300;
+      padding-left: 0px;
+      position: relative;
+      text-align: left;
+      line-height: 28px;
+  }
+  .block-quote, div > p.block-quote:last-child {
+      margin: 0;
+  }
+  .block-quote.quote-1:before, 
+  .block-quote.quote-2:before {
+/* cacher sur petits écrans */
+      display: none;
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+}
+
