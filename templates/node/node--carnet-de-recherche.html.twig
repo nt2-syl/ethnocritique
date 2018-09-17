@@ -119,11 +119,11 @@ set classes = [
                 {{ content.body }}
               </div>
             {% endif %}
-            {% if content.field_citation %}
-              <div class="field_square field-citation">
-                {{ content.field_citation }}
+              <div class="field-citation">
+                {% if content.group-citation-wrapper|render is not empty %}
+                    <div>{{ content.group-citation-wrapper }}</div>
+                {% endif %}
               </div>
-            {% endif %}
         </div>
       </div>
       <div class="row">

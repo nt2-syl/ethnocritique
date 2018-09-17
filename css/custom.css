@@ -656,6 +656,11 @@ p img {
   z-index: 4;
 }
 
+
+.page-node-type-carnet-de-recherche .node-field-body {
+  margin-bottom: 2em;
+}
+
 /* AFFICHAGE DES CHAMPS -
    Avec les affichages custom, les champs qui sont dans des régions autres que le contenu
    doivent s'inscrire dans le template, et être cachés ici à l'affichage.
