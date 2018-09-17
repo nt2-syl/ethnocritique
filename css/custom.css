@@ -1177,14 +1177,37 @@ ul.minimal-primary-tabs li {
   line-height: 20px;
 }
 
+/* Livres - nouvelle version */
+.advs-box-side.boxed,
+.advs-box-side.boxed-inverse,
+.advs-box-multiple .advs-box-content {
+  padding: 0px !important;
+}
+.advs-box .img-box::before {
+  overflow: hidden;
+}
+.advs-box h3 {
+  padding-top: 2em;
+}
+
+/*
+.page-node-type-individu .views-field-title,
+.view-id-liste-reference-bibliographique .views-field-title-11  {
+  font-weight: bold;
+  font-size: 1.1525em;
+  color: #d2000a;
+}
+*/
+
 /** TEMP
 - image plus haute que large sur Entrée Carnet Accueil 
 .flexslider .slides img {
     width: 100%;
+
+
     display: block;
 }
 */
-
 
 @media screen and (max-width: 960px) {
   .block-quote.quote-1, .block-quote.quote-2 {
