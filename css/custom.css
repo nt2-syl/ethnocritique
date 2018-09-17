@@ -730,7 +730,7 @@ p img {
 }
 
 .page-node-type-carnet-de-recherche .col-md-8 .field--name-field-citation,
-.page-node-type-carnet-de-recherche .col-md-8 .field--name-field-notions {
+.page-node-type-carnet-de-recherche .col-md-8 .field-group-accordion-wrapper {
   display: none;
 }
 
