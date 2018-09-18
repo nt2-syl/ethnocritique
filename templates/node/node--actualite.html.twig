@@ -123,7 +123,7 @@ set classes = [
               <div class="field_square node-field-date-debut">
               <div class="field--label">Date(s)</div>
                 {{ content.field_date_debut }}
-                {% if content.field_date_fin %}
+                {% if content.field_date_fin.value %}
                   - {{ content.field_date_fin }}
                 {% endif %}
               </div>
