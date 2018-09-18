@@ -12,7 +12,11 @@
   ~ node.field_date_publication_annee.value|date('U')|format_date('custom_cahier')
   %}
 {% elseif node.type.entity.id == 'individu' %}
-  {% set sub_title = node.field_statut.entity.name.value|render %}
+  {% set sub_title = [] %}
+  {% for item in node.field_statut %}
+    {% set sub_title = sub_title|merge([item.entity.name.value|render]) %}
+  {% endfor %}
+  {% set sub_title = sub_title|join(', ') %}
 {% elseif node.type.entity.id == 'projet_recherche' %}
   {% set sub_title = node.field_date_projet.value %}
 {% endif %}
