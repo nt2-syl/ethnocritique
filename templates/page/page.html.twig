@@ -98,10 +98,20 @@
     {% elseif footer_style == 'footer3' %}
         <div class="section-empty section-item">
             <div class="container content">
-                <div class="row">
+              <div class="row">
+                {% if page.sidebar %}
+                  <div class="col-lg-9 col-lg-push-3">
                     {{ page.content_full_bar }}
                     {{ page.content }}
-                </div>
+                  </div>
+                  <div class="col-lg-3 col-lg-pull-9">
+                    {{ page.sidebar }}
+                  </div>
+                {% else %}
+                  {{ page.content_full_bar }}
+                  {{ page.content }}
+                {% endif %}
+              </div>
             </div>
         </div>
         {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
@@ -144,11 +154,30 @@
             {% endif %}
         {% include theme_path ~ "/templates/footer/footer-minimal.html.twig" %}
     {% elseif footer_style == 'footer3' %}
-        {{ page.content_full_bar }}
-        {{ page.content }}
-        {% if page.section %}
-            {{ page.section }}
-        {% endif %}
+        <div class="section-empty section-item">
+            <div class="container content">
+              <div class="row">
+                {% if page.sidebar %}
+                  <div class="col-lg-9 col-lg-push-3">
+                    {{ page.content_full_bar }}
+                    {{ page.content }}
+                  </div>
+                  <div class="col-lg-3 col-lg-pull-9">
+                    {{ page.sidebar }}
+                  </div>
+                  {% if page.section %}
+                    {{ page.section }}
+                  {% endif %}
+                {% else %}
+                  {{ page.content_full_bar }}
+                  {{ page.content }}
+                  {% if page.section %}
+                    {{ page.section }}
+                  {% endif %}
+                {% endif %}
+              </div>
+            </div>
+        </div>
         {% include theme_path ~ "/templates/footer/footer-base.html.twig" %}
     {% elseif footer_style == 'footer4' %}
         {{ page.content_full_bar }}
