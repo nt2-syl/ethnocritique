@@ -7,8 +7,9 @@
 {% if node.type.entity.id == 'actualite' %}
   {% set sub_title = node.field_type_activite.entity.name.value|render %}
 {% elseif node.type.entity.id == 'cahier' %}
-  {% set sub_title = node.field_date_publication_annee.value|render ~ ' ' ~
-    node.field_numero.value|render
+  {% set sub_title = node.field_numero.value|render
+  ~ " // "
+  ~ node.field_date_publication_annee.value|date('U')|format_date('custom_cahier')
   %}
 {% elseif node.type.entity.id == 'individu' %}
   {% set sub_title = node.field_statut.entity.name.value|render %}
