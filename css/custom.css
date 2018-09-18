@@ -1189,22 +1189,27 @@ ul.minimal-primary-tabs li {
 }
 .path-livres .advs-box h3 {
   padding-top: 2em;
+  margin-bottom: 0;
 }
-
 .path-livres .adv-img p {
   line-height: 1.25;
 }
 /* acccueil */
-.path-frontpage .advs-box-side.boxed,
-.path-frontpage .advs-box-side.boxed-inverse,
-.path-frontpage .advs-box-multiple .advs-box-content {
+.path-frontpage .view-class-accueil-livre .advs-box-side.boxed,
+.path-frontpage .view-class-accueil-livre .advs-box-side.boxed-inverse,
+.path-frontpage .view-class-accueil-livre .advs-box-multiple .advs-box-content {
   padding: 0px !important;
 }
-.path-frontpage .advs-box .img-box::before {
+.path-frontpage .view-class-accueil-livre .advs-box .img-box::before {
   overflow: hidden;
 }
-.path-frontpage .advs-box h3 {
+.path-frontpage .view-class-accueil-livre .advs-box h3 {
   padding-top: 2em;
+  margin-bottom: 0;
+}
+
+.path-frontpage .view-class-accueil-livre .advs-box .img-box img {
+  width: 100%;
 }
 
 
