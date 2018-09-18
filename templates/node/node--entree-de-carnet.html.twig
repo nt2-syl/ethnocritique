@@ -119,8 +119,8 @@ set classes = [
         <div class="col-md-4">
           <div class="field_square_wrapper">
               <div class="field_square date_created">
-                {{ node.createdtime | date("d F Y") }}
-              </div>          
+                {{ node.createdtime|format_date('custom_entree_de_carnet') }}
+              </div>
             {% if content.field_auteur_e %}
               <div class="field_square node-field-auteur">
                 {{ content.field_auteur_e }}
