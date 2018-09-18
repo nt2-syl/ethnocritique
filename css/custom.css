@@ -1208,6 +1208,10 @@ ul.minimal-primary-tabs li {
   margin-bottom: 0;
 }
 
+.path-frontpage .view-class-accueil-livre .advs-box .img-box img {
+  width: 100%;
+}
+
 
 /*
 .page-node-type-individu .views-field-title,
