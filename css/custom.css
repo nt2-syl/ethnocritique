@@ -1255,3 +1255,45 @@ ul.minimal-primary-tabs li {
 
 }
 
+
+
+
+
+@media screen and (max-width: 767px) {
+/* grid1 col */
+.responsive .views-row {
+  width: 100%;
+  margin-left: 0;
+  clear: left;
+  }
+}
+
+@media screen (min-width: 768px) and (max-width: 1023px) {
+/* grid2 col */
+/* change grid3 to 2-column */
+.responsive .views-row {
+    width: 48.4%;
+  }
+.responsive .views-row:nth-of-type(3n+1) {
+    margin-left: 3.2%;
+    clear: none;
+  }
+.responsive .views-row:nth-of-type(2n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+/* grid3 col */
+.responsive .views-row {
+  width: 33.3%;
+}
+.responsive .views-row:nth-of-type(3n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+
+
