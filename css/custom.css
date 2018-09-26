@@ -1279,7 +1279,7 @@ ul.minimal-primary-tabs li {
 }
     
 /* à cause de .contextual, on doit utiliser 2n+2 au lieu de 2n+1*/
-.responsive .views-row:nth-of-type(2n+2) {
+.responsive .views-row:nth-of-type(2n+1) {
   clear: left;
 }
 
@@ -1288,7 +1288,7 @@ ul.minimal-primary-tabs li {
     width: 50%;
   }
        
-  .responsive  .views-row:nth-of-type(2n+2) {
+  .responsive .views-row:nth-of-type(2n+1) {
     clear: left;
   }
 }
@@ -1298,11 +1298,11 @@ ul.minimal-primary-tabs li {
     width: 33.333%;
   }
    
-  .responsive .views-row:nth-of-type(2n+2) {
+  .responsive .views-row:nth-of-type(2n+1) {
     clear: none;
   }
    
-  .responsive .views-row:nth-of-type(3n+2) {
+  .responsive .views-row:nth-of-type(3n+1) {
     clear: left;
   }
 }
