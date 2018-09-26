@@ -1248,11 +1248,6 @@ ul.minimal-primary-tabs li {
 .path-livres .adv-img p {
   line-height: 1.25;
 }
-.path-livres .advs-box p {
-  line-height: 1.33;
-}
-
-
 /* acccueil */
 .path-frontpage .view-class-accueil-livre .advs-box-side.boxed,
 .path-frontpage .view-class-accueil-livre .advs-box-side.boxed-inverse,
@@ -1429,9 +1424,6 @@ ul.minimal-primary-tabs li {
   header ul.navbar-nav {
     margin-top: 15px;
     margin: 0;
-  }
-  .navbar-brand {
-    padding: 0;
   }
 }
 
