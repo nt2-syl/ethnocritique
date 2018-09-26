@@ -23,8 +23,14 @@ Visible sur Accueil:Livres */
     padding-bottom: 0;
   }
 }
+/* Classes générales */
+.text-right {
+  text-align: left;
+}
 
-/* COULEURS */
+/**
+* COULEURS 
+*/
 body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p {
   color: #000;
 }
@@ -104,7 +110,9 @@ remplacer vert foncé
  }
 */
 
-/* ACCUEIL */
+/**
+* ACCUEIL */
+
 /* fond gris, pleine largeur */
 .block-accueil-actualite,
 .block-accueil-evenement,
@@ -519,7 +527,7 @@ header {
   /*  width: auto; */
   min-height: 0;
   float: none;
-  background: #db2022 url(/sites/ethno.aegir8.uqam.ca/files/2018-06/ETHNOCRITIQUE_LOGO_RGB_RENVERSE%CC%81_ROUGE.jpg) no-repeat 50% 0%;
+  background: #db2022 url(/sites/ethno.aegir8.uqam.ca/files/2018-06/ETHNOCRITIQUE_LOGO_RGB_RENVERSE%CC%81_ROUGE.jpg) no-repeat 50% 0% contain;
 }
 .path-frontpage .navbar-header {
   min-height: 332px;/* temp - accueil seulement */
@@ -1052,11 +1060,14 @@ ul.js-pager__items li {
 .path-bibliographie nav {
   clear: both;
 }
-
-
-.text-right {
-    text-align: left;
+.minimal-page-search form input[type=submit] {
+  margin-right: -16px;
+  margin-top: 1px;
 }
+.minimal-page-search form input[type=text] {
+  margin-bottom: 2em;
+}
+
 
 /* Hypothese : bloc rouge 
 .field_square_wrapper {
@@ -1258,7 +1269,7 @@ ul.minimal-primary-tabs li {
 }
 */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 992px) {
   .block-quote.quote-1, .block-quote.quote-2 {
       font-size: 18px;
       font-weight: 300;
@@ -1275,6 +1286,13 @@ ul.minimal-primary-tabs li {
 /* cacher sur petits écrans */
       display: none;
   }
+  .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
+    width: 100%;
+    max-width: 600px;
+    padding: 2em;
+    margin: 2em auto 0;
+  }
+
 }
 
 @media screen and (min-width: 320px) {
