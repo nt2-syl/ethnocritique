@@ -351,7 +351,8 @@ remplacer vert foncé
 /* Zoom sur livre, enlever responsive */
 .advs-box .img-box img {
   max-width: 100%;
-  width: auto;
+  /*width: auto;*/
+  width: 100%;
 }
 .accueil-actualite .advs-box .img-box img {
   max-width: 100%;
@@ -362,6 +363,11 @@ remplacer vert foncé
 .gallery .img-box img {
   /*width: auto;
   max-width: none;*/
+}
+
+/* centrer le logo dans l'espace disponible sur les listes laboratoire */
+.path-laboratoires .col-md-4 {
+  text-align: center;  
 }
 
 /* Contenant dans le bloc cahier */
@@ -1027,6 +1033,12 @@ i.icon {
 .block-id-block-contenta5c5561a-d056-4cf3-a776-8857d378043b a.btn {
   font-size: 12px;
 }
+/* Environnement de recherche : bibliographie */
+.path-bibliographie .views-exposed-form {
+  margin-bottom: 2em;
+}
+
+
 .text-right {
     text-align: left;
 }
@@ -1257,43 +1269,81 @@ ul.minimal-primary-tabs li {
 
 
 
-@media screen and (max-width: 767px) {
-/* grid1 col */
+/***
+* RESPONSIVE 
+**/
 .responsive .views-row {
   width: 100%;
-  margin-left: 0;
+  float: left;
+  padding: 0 1em 1em 0;
+}
+    
+/* à cause de .contextual, on doit utiliser 2n+2 au lieu de 2n+1*/
+.responsive .views-row:nth-of-type(2n+2) {
   clear: left;
-  }
 }
 
-@media screen (min-width: 768px) and (max-width: 1023px) {
-/* grid2 col */
-/* change grid3 to 2-column */
-.responsive .views-row {
-    width: 48.4%;
+@media screen and (min-width: 768px) {
+  .responsive .views-row {
+    width: 50%;
   }
-.responsive .views-row:nth-of-type(3n+1) {
-    margin-left: 3.2%;
+       
+  .responsive  .views-row:nth-of-type(2n+2) {
+    clear: left;
+  }
+}
+     
+@media screen and (min-width: 1024px) {
+  .responsive .views-row {
+    width: 33.333%;
+  }
+   
+  .responsive .views-row:nth-of-type(2n+2) {
     clear: none;
   }
-.responsive .views-row:nth-of-type(2n+1) {
-    margin-left: 0;
+   
+  .responsive .views-row:nth-of-type(3n+2) {
     clear: left;
   }
-
 }
 
+/***
+* RESPONSIVE, if contextual is the first row ()
+**/
+.responsive-with-contextual .views-row {
+  width: 100%;
+  float: left;
+  padding: 0 1em 1em 0;
+}
+    
+/* à cause de .contextual, on doit utiliser 2n+2 au lieu de 2n+1*/
+.responsive-with-contextual .views-row:nth-of-type(2n+2) {
+  clear: left;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-with-contextual  .views-row {
+    width: 50%;
+  }
+       
+  .responsive-with-contextual  .views-row:nth-of-type(2n+2) {
+    clear: left;
+  }
+}
+     
 @media screen and (min-width: 1024px) {
-/* grid3 col */
-.responsive .views-row {
-  width: 33.3%;
-}
-.responsive .views-row:nth-of-type(3n+1) {
-    margin-left: 0;
+  .responsive-with-contextual  .views-row {
+    width: 33.333%;
+  }
+   
+  .responsive-with-contextual  .views-row:nth-of-type(2n+2) {
+    clear: none;
+  }
+   
+  .responsive-with-contextual  .views-row:nth-of-type(3n+2) {
     clear: left;
   }
 }
-
 
 
 @media screen and (max-width: 767px) {
@@ -1312,7 +1362,7 @@ ul.minimal-primary-tabs li {
 }
 
 @media screen and (max-width: 767px) {
-  /* conserver marges sur les contenus sur petits ecrans*/
+  /* conserver marges sur les contenus sur petits ecrans */
   .vertical-row.row {
       margin: 0;
   }
