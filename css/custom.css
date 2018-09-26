@@ -1060,6 +1060,22 @@ ul.js-pager__items li {
 .path-bibliographie nav {
   clear: both;
 }
+.minimal-page-search form input[type=submit],
+#edit-submit-liste-reference-bibliographique {
+    line-height: 19px;
+    background: none;
+    border: 1px solid #5a5a5a;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #272b2b;
+    padding: 9px 35px 6px 35px;
+    transition: all .6s;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+#edit-submit-liste-reference-bibliographique,
 .minimal-page-search form input[type=submit] {
   margin-right: -16px;
   margin-top: 1px;
@@ -1228,8 +1244,11 @@ ul.minimal-primary-tabs li {
   padding-top: 2em;
   margin-bottom: 0;
 }
-.path-livres .adv-img p {
+/*.path-livres .adv-img p {
   line-height: 1.25;
+}*/
+.path-livres .advs-box p {
+  line-height: 1.33;
 }
 /* acccueil */
 .path-frontpage .view-class-accueil-livre .advs-box-side.boxed,
@@ -1399,9 +1418,22 @@ ul.minimal-primary-tabs li {
   .vertical-row.row {
     margin: 0;
   }
+   /* ne pas cacher le logo sur mobile */
+    .side-menu-fixed .brand {
+      display: block;
+  }
+  /* ne pas modifier alignement menu lateral */
+  header ul.navbar-nav {
+    margin-top: 15px;
+    margin: 0;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
   .navbar-header {
     background-size: contain;
   }
+
 }
 
 
