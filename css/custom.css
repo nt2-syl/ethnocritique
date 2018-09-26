@@ -350,8 +350,11 @@ remplacer vert foncé
 }
 /* Zoom sur livre, enlever responsive */
 .advs-box .img-box img {
-  max-width: none;
+  max-width: 100%;
   width: auto;
+}
+.accueil-actualite .advs-box .img-box img {
+  max-width: 100%;
 }
 /* Extraits du cahier sur Accueil, enlever responsive */
 /* Entrée de carnet sur Carnet */
@@ -1024,10 +1027,6 @@ i.icon {
 .block-id-block-contenta5c5561a-d056-4cf3-a776-8857d378043b a.btn {
   font-size: 12px;
 }
-
-.accueil-actualite .advs-box .img-box img {
-  max-width: 100%;
-}
 .text-right {
     text-align: left;
 }
@@ -1296,3 +1295,25 @@ ul.minimal-primary-tabs li {
 }
 
 
+
+@media screen and (max-width: 767px) {
+/* Carnets Responsive -adapter vue */
+
+/* Liste des cours, conserver 2 colonnes sur mobile vs 1 (480px seul) */
+}
+
+@media screen (min-width: 768px) and (max-width: 1023px) {
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  /* conserver marges sur les contenus sur petits ecrans*/
+  .vertical-row.row {
+      margin: 0;
+  }
+}
