@@ -15,6 +15,14 @@ body {
   min-height:100%;
   height: 100%;
 }
+/* Ne pas assumer de marges verticales pour les colonnes 
+Visible sur Accueil:Livres */
+@media screen and (max-width: 992px) {
+  [class*="col-md"] {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 /* COULEURS */
 body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p {
@@ -994,11 +1002,15 @@ i.icon {
 .view-class-cours nav {
     clear: both;
 }
-
-.path-auteurs ul.js-pager__items li,
-.path-recherche ul.js-pager__items li,
-.path-evenements ul.js-pager__items li,
-.path-cours ul.js-pager__items li {
+/*
+ENVIRONNEMENTS DE RECHERCHE 
+.path-auteurs
+.path-recherche
+.path-evenements
+.path-cours
+.path-bibliographie
+*/
+ul.js-pager__items li {
   list-style: none;
   display: inline-block;
 }
@@ -1036,6 +1048,9 @@ i.icon {
 /* Environnement de recherche : bibliographie */
 .path-bibliographie .views-exposed-form {
   margin-bottom: 2em;
+}
+.path-bibliographie nav {
+  clear: both;
 }
 
 
@@ -1361,9 +1376,12 @@ ul.minimal-primary-tabs li {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   /* conserver marges sur les contenus sur petits ecrans */
   .vertical-row.row {
-      margin: 0;
+    margin: 0;
   }
 }
+
+
+
