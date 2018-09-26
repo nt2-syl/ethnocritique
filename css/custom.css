@@ -1060,7 +1060,24 @@ ul.js-pager__items li {
 .path-bibliographie nav {
   clear: both;
 }
-.minimal-page-search form input[type=submit] {
+
+.minimal-page-search form input[type=submit],
+#edit-submit-liste-reference-bibliographique {
+    line-height: 19px;
+    background: none;
+    border: 1px solid #5a5a5a;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #272b2b;
+    padding: 9px 35px 6px 35px;
+    transition: all .6s;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.minimal-page-search form input[type=submit],
+#edit-submit-liste-reference-bibliographique {
   margin-right: -16px;
   margin-top: 1px;
 }
@@ -1397,6 +1414,15 @@ ul.minimal-primary-tabs li {
 @media screen and (max-width: 992px) {
   /* conserver marges sur les contenus sur petits ecrans */
   .vertical-row.row {
+    margin: 0;
+  }
+  /* ne pas cacher le logo sur mobile */
+    .side-menu-fixed .brand {
+      display: block;
+  }
+  /* ne pas modifier alignement menu lateral */
+  header ul.navbar-nav {
+    margin-top: 15px;
     margin: 0;
   }
 }
