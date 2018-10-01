@@ -1509,6 +1509,11 @@ ul.minimal-primary-tabs li {
   .side-menu-fixed .brand {
     padding-top: 40px;
   }*/
+
+  .view-class-accueil-cahier .grid-item {
+    padding-bottom: 2em;
+  }
+
 }
 
 .view-class-accueil-livre {
