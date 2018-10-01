@@ -1114,10 +1114,11 @@ biblio
 .top-area img {
     max-width: 67%;
 }
-/* hypothese : image + petite sauf accueil */ 
+/* hypothese : image + petite sauf accueil 
 .path-frontpage .top-area img {
     max-width: 100%;
 }
+*/ 
 
 .flexslider.nav-inner {
   margin-bottom: 45px !important;
@@ -1501,6 +1502,11 @@ ul.minimal-primary-tabs li {
     min-height: 232px;
   }
   /*332px au plus large */
+
+/**/
+.side-menu-fixed .brand {
+  padding-top: 40px;
+}
 }
 
 
