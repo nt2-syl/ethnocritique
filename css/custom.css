@@ -1102,12 +1102,17 @@ biblio
 .minimal-page-search form input[type=text] {
   margin-bottom: 2em;
 }
-.minimal-page-search, 
+
 #edit-submit-liste-reference-bibliographique {
   padding-top: 6px;
   padding-bottom: 3px;
 }
-
+#edit-submit-liste-auteurs {
+  padding-top: 6px;
+}
+.path-auteur section-empty.section-item.minimal-page-search {
+  padding-top: 2em;
+}
 
 /* Hypothese : bloc rouge 
 .field_square_wrapper {
