@@ -824,10 +824,20 @@ header .navbar-nav > li  {
 }
 header .navbar-nav > li > a {
   padding: 0px 0px 10px 15px;
-  min-height: auto;
+  min-height: 0;
   font-size: 1em;
   text-transform: uppercase;
 }
+/* Safari bug */
+.navbar-nav > li.dropdown > a:after, 
+.nav-tabs > li > a:after {
+  display: none;
+}
+/*header .navbar-nav > li > a {
+  max-height: 30px;
+}*/
+
+
 .navbar-nav > li.dropdown:hover > a:after, .nav-tabs > li.active > a:after {
   opacity: 0;
 }
@@ -1493,13 +1503,5 @@ ul.minimal-primary-tabs li {
   /*332px au plus large */
 }
 
-/* Safari bug */
-.navbar-nav > li.dropdown > a:after, 
-.nav-tabs > li > a:after {
-  display: none;
-}
-header .navbar-nav > li > a {
-  max-height: 30px;
-  min-height: none;
-}
+
 
