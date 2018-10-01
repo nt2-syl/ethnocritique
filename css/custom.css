@@ -1505,6 +1505,15 @@ ul.minimal-primary-tabs li {
   }
   /*332px au plus large */
 
+  .path-frontpage .view-class-accueil-livre .advs-box h3 {
+    padding-top: 0.5em;
+    margin-bottom: 0;
+  }
+  .path-frontpage .view-class-accueil-livre .advs-box-side .btn-text, 
+  .path-frontpage .view-class-accueil-livre .advs-box-side a.btn {
+    margin-top: 0;
+  }
+
   /*
   .side-menu-fixed .brand {
     padding-top: 40px;
