@@ -1435,13 +1435,31 @@ ul.minimal-primary-tabs li {
   }
 
 }
-
+/* mobile */
 @media (max-width:767px) {
   /* Ajuster header sur plus petits écrans */
-   .path-frontpage .navbar-header {
+  .path-frontpage .navbar-header {
     min-height: 172px;
   }
+  .accueil-actualite {
+    width: 80%;
+  }
+  .accueil-actualite .niche-box-blog .block-infos {
+    display: block;
+    width: 100%;
+    border-right: none;
+    clear: both;
+  }
+  .accueil-actualite .niche-box-blog .block-title {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  .view-class-accueil-cahier .boxed {
+    padding: 0 50px 4em;
+  }
 }
+/* tablette et + */
 @media (min-width:768px) and (max-width: 992px) {
   /* Accueil : remettre style bootstrap supprimés pour tablette, mobile */
   .block-accueil-evenement .col-md-6,
@@ -1452,6 +1470,9 @@ ul.minimal-primary-tabs li {
   .view-id-accueil-cahier .col-sm-6 {
     width: 50%;
     float: left;
+  }
+  .accueil-actualite {
+    width: 60%;
   }
   .view-class-accueil-cahier {
 
