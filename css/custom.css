@@ -152,7 +152,7 @@ remplacer vert foncé
 }
 .view-class-accueil-livre.container.content {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 2em;
 }
 .section-empty > .content,
 .section-bg-image > .content,
@@ -329,6 +329,8 @@ remplacer vert foncé
 /* accueil */
 .view-class-accueil-cahier .boxed {
   background-color: #d2000a !important;
+  padding: 50px;
+/* remplace class*="col-md-"].boxed et class*="col-sm-"].boxed */
 }
 .block-accueil-actualite {
   /*  .accueil-actualite, qui fait 50% est centré */
@@ -1503,11 +1505,14 @@ ul.minimal-primary-tabs li {
   }
   /*332px au plus large */
 
-/**/
-.side-menu-fixed .brand {
-  padding-top: 40px;
-}
+  /*
+  .side-menu-fixed .brand {
+    padding-top: 40px;
+  }*/
 }
 
+.view-class-accueil-livre {
+  padding-bottom: 2em;
+}
 
 
