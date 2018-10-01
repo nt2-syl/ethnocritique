@@ -1436,7 +1436,7 @@ ul.minimal-primary-tabs li {
 
 }
 
-@media (min-width:768px) {
+@media (max-width:767px) {
   /* Ajuster header sur plus petits écrans */
    .path-frontpage .navbar-header {
     min-height: 172px;
