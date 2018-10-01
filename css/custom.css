@@ -1436,5 +1436,26 @@ ul.minimal-primary-tabs li {
 
 }
 
+@media (min-width:768px) {
+  /* Ajuster header sur plus petits écrans */
+   .path-frontpage .navbar-header {
+    min-height: 172px;
+  }
+}
+@media (min-width:768px) and (max-width: 992px) {
+  /* Accueil : remettre style bootstrap supprimés pour tablette, mobiel */
+  .block-accueil-evenement .col-md-6,
+  .view-class-accueil-livre .col-md-6 {
+    width: 50%;
+  }
+  .view-class-accueil-cahier {
 
+  }
+  .view-class-accueil-cahier .proporzional-row .grid-list {
 
+  }
+  .path-frontpage .navbar-header {
+    min-height: 235px;
+  }
+  /*332px au plus large */
+}
