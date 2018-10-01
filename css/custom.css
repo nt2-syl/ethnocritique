@@ -245,6 +245,9 @@ remplacer vert foncé
   font-weight: bold;
   margin-bottom: 10px;
 }
+.view-class-laboratoires .img-box {
+  padding-bottom: 2em;
+}
 
 /* SECTION CAHIERS*/
 .view-class-cahiers h4 {
@@ -1030,13 +1033,17 @@ ul.js-pager__items li {
   font-size: 16px;
   line-height: 24px;
 }
-
+/* 
+LISTE AUTEURS
+recherche
+biblio
+*/
 #edit-actions {
   float: right;
   vertical-align: top;
   position: absolute;
   right: 16px;
-  top: 8px;
+  top: -4px;
 }
 .path-recherche #edit-actions {
   right: 16px;
@@ -1484,4 +1491,10 @@ ul.minimal-primary-tabs li {
     min-height: 232px;
   }
   /*332px au plus large */
+}
+
+/* Safari bug */
+.navbar-nav > li.dropdown > a:after, 
+.nav-tabs > li > a:after {
+  display: none;
 }
