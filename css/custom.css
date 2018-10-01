@@ -1097,10 +1097,15 @@ biblio
 #edit-submit-liste-reference-bibliographique,
 .minimal-page-search form input[type=submit] {
   margin-right: -16px;
-  margin-top: 1px;
+  margin-top: 4px;
 }
 .minimal-page-search form input[type=text] {
   margin-bottom: 2em;
+}
+.minimal-page-search, 
+#edit-submit-liste-reference-bibliographique {
+  padding-top: 6px;
+  padding-bottom: 3px;
 }
 
 
