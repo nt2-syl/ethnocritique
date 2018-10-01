@@ -178,7 +178,7 @@ remplacer vert foncé
   background: #f7f9f9;
 }
 .block-accueil-carnet .view-class-accueil-carnet,
-.view-id-accueil-evenement .col-md-4 {
+.view-id-accueil-evenement .grid-item {
   margin-bottom: 2em;
 }
 
@@ -221,16 +221,16 @@ remplacer vert foncé
 }
 
 /* SECTION AUTEURS  */
-.view-class-auteurs .col-md-4 {
+.view-class-auteurs .liste_auteurs_ligne {
   margin-bottom: 2em;
 }
 
 /* noeud auteur */
 .page-node-type-individu {}
-.page-node-type-individu .col-md-4 {
+/*.page-node-type-individu .col-md-4 {
   margin-left: -15px;
   margin-bottom: 15px;
-}
+}*/
 .page-node-type-individu .views-field-title {
   font-weight: bold;
   font-size: 1.1525em;
