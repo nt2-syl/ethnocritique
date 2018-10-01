@@ -1498,3 +1498,8 @@ ul.minimal-primary-tabs li {
 .nav-tabs > li > a:after {
   display: none;
 }
+header .navbar-nav > li > a {
+  max-height: 30px;
+  min-height: none;
+}
+
