@@ -1099,6 +1099,9 @@ biblio
   margin-right: -16px;
   margin-top: 4px;
 }
+#edit-submit-environnement-recherche-general {
+  margin-top: 0;
+}
 .minimal-page-search form input[type=text] {
   margin-bottom: 2em;
 }
