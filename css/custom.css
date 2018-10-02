@@ -1557,6 +1557,13 @@ ul.minimal-primary-tabs li {
     padding-bottom: 2em;
   }
 
+  .path-carnets .views-field-nothing .col-sm-4 {
+    width:33%;
+  }
+  .path-carnets .views-field-nothing .col-sm-8 {
+    width:66%;
+  }
+
 }
 
 .view-class-accueil-livre {
