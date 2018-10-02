@@ -1552,6 +1552,9 @@ ul.minimal-primary-tabs li {
   .path-livres .col-sm-6 {
       width: 50%;
   }
+    .path-livres .col-sm-6 .col-sm-6 {
+      width: 100%;
+  }
 }
 
 /* tablette et + */
@@ -1597,14 +1600,25 @@ ul.minimal-primary-tabs li {
   .view-class-accueil-cahier .grid-item {
     padding-bottom: 2em;
   }
-  .page-node-type-carnet-de-recherche  .field_square_wrapper {
+  /* Carré sur le coté devient pleine largeur dessous */
+  .page-node-type-livre .field_square_wrapper, 
+  .page-node-type-carnet-de-recherche .field_square_wrapper {
     margin-top: 2em;
     min-height: 0;
   }
 
-
 }
-
+/* Ne pas montrer les images, mais conserver les propriétés responsive de l'image */
+.page-node-type-livre .flexslider .slides img,
+.page-node-type-livre .flexslider .slides img:hover {
+  opacity: 0 !important;
+}
+.adv-img-classic-box .caption-inner .big-text {
+  opacity: 1 !important;s
+}
+.adv-img-classic-box:hover .caption-inner {
+  margin-top:-50px;
+}
 .view-class-accueil-livre {
   padding-bottom: 2em;
 }
