@@ -1094,18 +1094,11 @@ biblio
     display: inline-block;
     margin-bottom: 0;
 }
-#edit-submit-liste-reference-bibliographique,
-.minimal-page-search form input[type=submit] {
-  margin-right: -16px;
-  margin-top: 4px;
-}
-#edit-submit-environnement-recherche-general {
-  margin-top: 0;
-}
+
 .minimal-page-search form input[type=text] {
   margin-bottom: 2em;
 }
-.path-bibliographie #edit-search-api-fulltext{
+.path-bibliographie #edit-search-api-fulltext {
     height: auto;
     border-radius: 0;
     border: none;
@@ -1120,6 +1113,16 @@ biblio
     background: none;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     margin-bottom: 2em;
+}
+#edit-submit-liste-reference-bibliographique,
+.minimal-page-search form input[type=submit] {
+  margin-right: -1px;
+}
+#edit-submit-liste-reference-bibliographique{
+  margin-top: 8px;
+}
+#edit-submit-environnement-recherche-general {
+  margin-top: 0;
 }
 
 
