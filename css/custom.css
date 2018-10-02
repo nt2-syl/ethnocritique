@@ -1541,6 +1541,16 @@ ul.minimal-primary-tabs li {
   }
 
 }
+
+@media (max-width: 768px) {
+  /* supprimer override de bootstrap dans le theme */
+  .path-cours .col-md-6,
+  .path-cours .col-sm-6 {
+      width: 50%;
+      float: none;
+  }
+}
+
 /* tablette et + */
 @media (min-width:768px) and (max-width: 992px) {
   /* Accueil : remettre style bootstrap supprimés pour tablette, mobile */
