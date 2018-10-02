@@ -225,8 +225,8 @@ remplacer vert foncé
   margin-bottom: 2em;
   /*col md 4 */
   width: 33%;
-float: none;
-display: inline-block;
+  float: none;
+  display: inline-block;
 }
 
 /* noeud auteur */
@@ -1572,6 +1572,12 @@ ul.minimal-primary-tabs li {
     width: 33%;
     float: left;
   }
+   /* Carré sur le coté devient pleine largeur dessous */
+  .page-node-type-livre .field_square_wrapper, 
+  .page-node-type-carnet-de-recherche .field_square_wrapper {
+    margin-top: 2em;
+    min-height: 0;
+  }
 }
 
 /* tablette et + */
@@ -1593,17 +1599,11 @@ ul.minimal-primary-tabs li {
     width: 33%;
     float: left;
   }
-
-
   .accueil-actualite {
     width: 60%;
   }
-  .view-class-accueil-cahier {
-
-  }
-  .view-class-accueil-cahier .proporzional-row .grid-list {
-
-  }
+  .view-class-accueil-cahier {}
+  .view-class-accueil-cahier .proporzional-row .grid-list {}
   .path-frontpage .navbar-header {
     min-height: 232px;
   }
@@ -1617,12 +1617,6 @@ ul.minimal-primary-tabs li {
   .path-frontpage .view-class-accueil-livre .advs-box-side a.btn {
     margin-top: 0;
   }
-
-  /*
-  .side-menu-fixed .brand {
-    padding-top: 40px;
-  }*/
-
   .view-class-accueil-cahier .grid-item {
     padding-bottom: 2em;
   }
