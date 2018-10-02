@@ -425,7 +425,8 @@ remplacer vert foncé
 
 /* Noeud Carnet */
 /* Ajuster hauteur image et infos avec (div.anima) */
-.view-id-liste-carnets .col-md-8 {
+.view-id-liste-carnets .col-md-8,
+.view-id-liste-carnets .col-sm-8 {
   padding: 48px 50px !important;
 }
 
