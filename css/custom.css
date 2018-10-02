@@ -223,6 +223,10 @@ remplacer vert foncé
 /* SECTION AUTEURS  */
 .view-class-auteurs .liste-auteurs-ligne {
   margin-bottom: 2em;
+  /*col md 4 */
+  width: 33%;
+float: none;
+display: inline-block;
 }
 
 /* noeud auteur */
