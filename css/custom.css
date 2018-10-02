@@ -848,9 +848,10 @@ header .navbar-nav > li > a {
 .hamburger-button i {
   color: #d20000;
   text-shadow: 1px 2px 0px rgba(255, 255, 255, 1);
+  padding-left: 0;
 }
 
-/* noeud livre */
+/* Noeud livre */
 /* ne pas montrer champ vue EVA sur livre.
 Doit être affiché pour que le bloc soit actif en haut de page.*/
 .view-chapitre-vs-livre {
@@ -1487,6 +1488,20 @@ ul.minimal-primary-tabs li {
   .navbar-header {
     background-size: contain;
   }
+  .block-infos .bd-month {
+    font-size: 15px;
+  }
+  .page-node-type-actualite .field--name-body {
+    padding-top: 2em;
+  }
+  .path-carnets .views-field-nothing .col-sm-4 {
+    width:33%;
+    display: inline-block;
+  }
+  .path-carnets .views-field-nothing .col-sm-8 {
+    width:66%;
+    display: inline-block;
+  }
 
 }
 /* mobile */
@@ -1512,6 +1527,12 @@ ul.minimal-primary-tabs li {
   .view-class-accueil-cahier .boxed {
     padding: 0 50px 4em;
   }
+  /* Section presentation - degager corps de texte */
+  .col-md-12 .node-view-mode-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
 /* tablette et + */
 @media (min-width:768px) and (max-width: 992px) {
@@ -1557,12 +1578,7 @@ ul.minimal-primary-tabs li {
     padding-bottom: 2em;
   }
 
-  .path-carnets .views-field-nothing .col-sm-4 {
-    width:33%;
-  }
-  .path-carnets .views-field-nothing .col-sm-8 {
-    width:66%;
-  }
+
 
 }
 
