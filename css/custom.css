@@ -1549,6 +1549,9 @@ ul.minimal-primary-tabs li {
       width: 50%;
       float: none;
   }
+  .path-livres .col-sm-6 {
+      width: 50%;
+  }
 }
 
 /* tablette et + */
