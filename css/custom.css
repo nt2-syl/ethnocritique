@@ -963,6 +963,10 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   height: 25px;
   vertical-align: top;
   background: transparent !important;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  z-index: 1;
 }
 .minimal-side-menu form input[type=submit]:hover {
     color: #fff !important;
@@ -1552,8 +1556,17 @@ ul.minimal-primary-tabs li {
   .path-livres .col-sm-6 {
       width: 50%;
   }
-    .path-livres .col-sm-6 .col-sm-6 {
+  /* Images sont à 50%, à l'intérieur du livre, qui fait aussi 50% */
+  .path-livres .col-sm-6 .col-sm-6 {
       width: 100%;
+  }
+   .path-evenements .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+  .path-auteurs .col-sm-4 {
+    width: 33%;
+    float: left;
   }
 }
 
@@ -1565,10 +1578,19 @@ ul.minimal-primary-tabs li {
   .view-class-accueil-livre .col-md-6,
   .view-class-accueil-livre .col-sm-6,
   .view-id-accueil-cahier .col-md-6,
-  .view-id-accueil-cahier .col-sm-6 {
+  .view-id-accueil-cahier .col-sm-6,
+  .path-livres .col-sm-6 .col-sm-6,
+  .path-cours .col-sm-6,
+  .path-evenements .col-sm-6 {
     width: 50%;
     float: left;
   }
+  .path-auteurs .col-sm-4 {
+    width: 33%;
+    float: left;
+  }
+
+
   .accueil-actualite {
     width: 60%;
   }
