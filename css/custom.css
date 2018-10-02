@@ -689,8 +689,9 @@ p img {
 
 
 .page-node-type-carnet-de-recherche .node-field-body {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
+
 
 /* AFFICHAGE DES CHAMPS -
    Avec les affichages custom, les champs qui sont dans des régions autres que le contenu
@@ -1497,10 +1498,21 @@ ul.minimal-primary-tabs li {
   .path-carnets .views-field-nothing .col-sm-4 {
     width:33%;
     display: inline-block;
+    vertical-align: top;
   }
   .path-carnets .views-field-nothing .col-sm-8 {
     width:66%;
     display: inline-block;
+    vertical-align: top;
+  }
+  /* Section presentation - degager corps de texte */
+  .col-md-12 .node-view-mode-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* reserrer marge carnets */
+  .view-id-liste-carnets .col-md-8, .view-id-liste-carnets .col-sm-8 {
+    padding: 20px !important;
   }
 
 }
@@ -1526,11 +1538,6 @@ ul.minimal-primary-tabs li {
   }
   .view-class-accueil-cahier .boxed {
     padding: 0 50px 4em;
-  }
-  /* Section presentation - degager corps de texte */
-  .col-md-12 .node-view-mode-full {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
 }
@@ -1577,7 +1584,10 @@ ul.minimal-primary-tabs li {
   .view-class-accueil-cahier .grid-item {
     padding-bottom: 2em;
   }
-
+  .page-node-type-carnet-de-recherche  .field_square_wrapper {
+    margin-top: 2em;
+    min-height: 0;
+  }
 
 
 }
