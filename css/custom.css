@@ -1105,6 +1105,23 @@ biblio
 .minimal-page-search form input[type=text] {
   margin-bottom: 2em;
 }
+.path-bibliographie #edit-search-api-fulltext{
+    height: auto;
+    border-radius: 0;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    max-width: 100%;
+    color: #555555;
+    background: none;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    margin-bottom: 2em;
+}
+
 
 #edit-submit-liste-reference-bibliographique {
   padding-top: 6px;
