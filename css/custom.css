@@ -1416,37 +1416,37 @@ ul.minimal-primary-tabs li {
 /***
 * RESPONSIVE, if contextual is the first row ()
 **/
-.responsive-with-contextual .views-row {
+.responsive.contextual-region .views-row {
   width: 100%;
   float: left;
   padding: 0 1em 1em 0;
 }
     
 /* à cause de .contextual, on doit utiliser 2n+2 au lieu de 2n+1*/
-.responsive-with-contextual .views-row:nth-of-type(2n+2) {
+.responsive.contextual-region .views-row:nth-of-type(2n+2) {
   clear: left;
 }
 
 @media screen and (min-width: 768px) {
-  .responsive-with-contextual  .views-row {
+  .responsive.contextual-region .views-row {
     width: 50%;
   }
        
-  .responsive-with-contextual  .views-row:nth-of-type(2n+2) {
+  .responsive.contextual-region .views-row:nth-of-type(2n+2) {
     clear: left;
   }
 }
      
 @media screen and (min-width: 1024px) {
-  .responsive-with-contextual  .views-row {
+  .responsive.contextual-region .views-row {
     width: 33.333%;
   }
    
-  .responsive-with-contextual  .views-row:nth-of-type(2n+2) {
+  .responsive.contextual-region .views-row:nth-of-type(2n+2) {
     clear: none;
   }
    
-  .responsive-with-contextual  .views-row:nth-of-type(3n+2) {
+  .responsive.contextual-region .views-row:nth-of-type(3n+2) {
     clear: left;
   }
 }
