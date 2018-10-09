@@ -1582,6 +1582,9 @@ ul.minimal-primary-tabs li {
     margin-top: 2em !important;
     min-height: 0;
   }
+  .path-livres .col-sm-6 {
+    text-align: center;
+  }
 }
 
 /* tablette et + */
