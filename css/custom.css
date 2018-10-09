@@ -1522,6 +1522,10 @@ ul.minimal-primary-tabs li {
   .view-id-liste-carnets .col-md-8, .view-id-liste-carnets .col-sm-8 {
     padding: 20px !important;
   }
+  .path-carnets .block-minimal-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
 }
 /* mobile */
@@ -1575,7 +1579,7 @@ ul.minimal-primary-tabs li {
    /* Carré sur le coté devient pleine largeur dessous */
   .page-node-type-livre .field_square_wrapper, 
   .page-node-type-carnet-de-recherche .field_square_wrapper {
-    margin-top: 2em;
+    margin-top: 2em !important;
     min-height: 0;
   }
 }
