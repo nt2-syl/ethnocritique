@@ -1286,7 +1286,9 @@ ul.minimal-primary-tabs li {
 .view-id-liste-reference-bibliographique .views-row {
   margin-bottom: 2em;
 }
-.view-id-liste-reference-bibliographique .views-field-title-11 {
+.view-id-liste-reference-bibliographique .views-field-title-11,
+.path-recherche .views-field-title,
+.path-recherche .views-field-name {
   text-transform: none;
   font-weight: 700;
   color: #272b2b;
