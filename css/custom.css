@@ -804,6 +804,7 @@ p img {
 .page-node-type-laboratoire-recherche .node-view-mode-full .field--name-field-subvention {
   display: none;
 }
+.page-node-type-laboratoire-recherche .full_width_content .field--name-body,
 .page-node-type-individu .full_width_content .field--name-body {
   display: none;
 }
