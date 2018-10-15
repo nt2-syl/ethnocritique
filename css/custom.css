@@ -8,12 +8,13 @@ GENERAL
 html {
   min-height:100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #f7f9f9;
 }
 body {
   margin: 0 auto;
   min-height:100%;
   height: 100%;
+  background-color: #f7f9f9;
 }
 /* Ne pas assumer de marges verticales pour les colonnes 
 Visible sur Accueil:Livres */
@@ -597,7 +598,7 @@ header {
 /* footer (dans le contenu) */
 .footer-base {
   min-height: 100px;
-  background: #f9f9f9; /* Temp - Fond blanc avec blocs contenu */
+  background: #f7f9f9;
   clear: both;
   height: 100px;
 }
@@ -1064,6 +1065,12 @@ ul.js-pager__items li {
   font-size: 14px;
   line-height: 22px;
 }
+
+/* Centrer les pagers
+
+cours
+*/
+
 .path-recherche .views-row {
   padding-bottom: 2em;
 }
