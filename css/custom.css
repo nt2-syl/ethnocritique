@@ -1047,9 +1047,22 @@ ENVIRONNEMENTS DE RECHERCHE
 .path-cours
 .path-bibliographie
 */
+/* pagers: .advs-box .btn, .btn-text */
 ul.js-pager__items li {
   list-style: none;
   display: inline-block;
+  /**/
+  border-bottom: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #272b2b;
+  transition: all .5s;
+  position: relative;
+  border: none;
+  padding: 0;
+  margin-right: 45px;
+  font-size: 14px;
+  line-height: 22px;
 }
 .path-recherche .views-row {
   padding-bottom: 2em;
