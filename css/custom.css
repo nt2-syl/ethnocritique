@@ -269,6 +269,8 @@ remplacer vert foncé
 .liste_cahier_auteur {
   color: #d2000a;
 }
+
+
 /* PAGE CAHIER */
 .page-node-type-cahier .section-bg-color .col-md-4 {
   padding-left: 0;
@@ -1448,6 +1450,11 @@ ul.minimal-primary-tabs li {
   .responsive.contextual-region .views-row:nth-of-type(2n+2) {
     clear: left;
   }
+  /* séparer davantage les rangées de la liste Cahiers, responsive seulement */
+  .view-class-cahiers .views-row {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #f7f9f9;
+  }
 }
      
 @media screen and (min-width: 1024px) {
@@ -1652,8 +1659,9 @@ ul.minimal-primary-tabs li {
 .view-class-accueil-livre {
   padding-bottom: 2em;
 }
-
+/* DEBUG INFO */
 .test {
   color: #00f;
 }
+
 
