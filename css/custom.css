@@ -472,6 +472,16 @@ remplacer vert foncé
   padding-right: 10px;
   /* todo cols col-md-4 */
 }
+
+/* pas de classe sur le titre du EVA */
+.view-projet-recherche-vs-laboratoire-recherche {
+  font-weight: bold;
+}
+.view-projet-recherche-vs-laboratoire-recherche .views-row {
+  font-weight: normal;
+  padding-top: 2em;
+}
+
 /**
 * CES SECTIONS POSSÈDENT LE BANDEAU LARGE (cacher titre)
 
@@ -1140,20 +1150,20 @@ biblio
   margin-bottom: 2em;
 }
 .path-bibliographie #edit-search-api-fulltext {
-    height: auto;
-    border-radius: 0;
-    border: none;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    width: 100%;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    max-width: 100%;
-    color: #555555;
-    background: none;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    margin-bottom: 2em;
+  height: auto;
+  border-radius: 0;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  max-width: 100%;
+  color: #555555;
+  background: none;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  margin-bottom: 2em;
 }
 #edit-submit-liste-reference-bibliographique,
 .minimal-page-search form input[type=submit] {
@@ -1177,6 +1187,11 @@ biblio
 .path-auteur section-empty.section-item.minimal-page-search {
   padding-top: 2em;
 }
+
+.bibcite-reference-table td:first-child {
+  font-weight: bold;
+}
+
 
 /* Hypothese : bloc rouge 
 .field_square_wrapper {
