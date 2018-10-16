@@ -28,6 +28,14 @@ Visible sur Accueil:Livres */
 .text-right {
   text-align: left;
 }
+/* Utiliser format H4 au lieu de H2 */
+.view-eva-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
 
 /**
 * COULEURS 
@@ -243,7 +251,7 @@ remplacer vert foncé
   margin-bottom: 15px;
 }*/
 .page-node-type-individu .views-field-title {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.1525em;
 }
 
@@ -508,7 +516,7 @@ ENTREE CARNET
 .field_square_wrapper {
   background-color: #d2000a;
   padding: 20px;
-  margin-bottom: 2em;
+  margin-bottom: 2em !important;
 }
 
 /* Fixer hauteur du bloc Infos et de l'image  */
@@ -536,13 +544,14 @@ ENTREE CARNET
 }
 /* fixer aussi bloc image */
 .page-node-type-actualite .field--name-field-image-couverture img {
-  max-width: 100%;
-  height: auto;
+  /*max-width: 100%;
+  height: auto;*/
   /* alignement blocs */
-  max-height: 375px;
+  /*max-height: 375px;*/
   /* TODO : autre méthode pour égaliser bloc */
   /* brise sur image moins haute */
 }
+
 .page-node-type-carnet-de-recherche .field--name-field-image-couverture img {
   height: auto;
 }
@@ -571,6 +580,15 @@ header {
 .path-frontpage .navbar-nav {
   padding-top: 30px;
 }
+.navbar-nav {
+  padding-left: 1em;
+  padding-top: 1em;
+}
+.minimal-side-menu #edit-search-api-fulltext {
+  width: 73%;
+  margin-left: 2em;
+}
+
 /* logo visible dans menu latéral seulement */
 .navbar-header .navbar-brand img {
   display: none;
@@ -886,10 +904,8 @@ header .navbar-nav > li > a {
 .navbar-nav > li.dropdown:hover > a:after, .nav-tabs > li.active > a:after {
   opacity: 0;
 }
-/* Color Hack! use text shadow to reverse color on icon */
 .hamburger-button i {
-  color: #d20000;
-  text-shadow: 1px 2px 0px rgba(255, 255, 255, 1);
+  color: #000;
   padding-left: 0;
 }
 
