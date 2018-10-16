@@ -471,7 +471,7 @@ remplacer vert foncé
 /** Noeuds Laboratoire */
 /* Marge autour des logos */
 .page-node-type-laboratoire-recherche .field--name-field-portrait {
-  padding: 10px;
+  padding: 0px;
 }
 .view-projet-recherche-vs-laboratoire-recherche .views-row {
   width: 33%;
@@ -568,6 +568,9 @@ header {
   min-height: 332px;/* temp - accueil seulement */
 }
 
+.path-frontpage .navbar-nav {
+  padding-top: 30px;
+}
 /* logo visible dans menu latéral seulement */
 .navbar-header .navbar-brand img {
   display: none;
@@ -857,11 +860,18 @@ header .navbar-nav > li  {
 .navbar-nav > li {
   float: none;
 }
+
+.navbar-nav {
+
+}
 header .navbar-nav > li > a {
-  padding: 0px 0px 10px 15px;
+  padding: 10px 0px 10px 15px;
   min-height: 0;
-  font-size: 1em;
   text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 1.42857143;
 }
 /* Safari bug */
 .navbar-nav > li.dropdown > a:after, 
@@ -1717,6 +1727,10 @@ ul.minimal-primary-tabs li {
 }
 .view-class-accueil-livre {
   padding-bottom: 2em;
+}
+.page-node-type-laboratoire-recherche .field--name-field-portrait img {
+  max-width: 100%;
+  height: auto;
 }
 /* DEBUG INFO */
 .test {
