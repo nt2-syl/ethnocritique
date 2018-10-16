@@ -288,6 +288,7 @@ remplacer vert foncé
 .page-node-type-cahier .section-bg-color .advs-box.boxed-inverse,
 .page-node-type-cahier .section-bg-color .advs-box.boxed-inverse:hover {
   transition: none !important;
+  transform: translateY(-0px) !important;
   box-shadow: none !important;
 }
 
