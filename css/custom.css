@@ -1187,7 +1187,7 @@ biblio
 }
 #edit-submit-liste-auteurs {
   padding-top: 6px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 .path-auteur section-empty.section-item.minimal-page-search {
   padding-top: 2em;
