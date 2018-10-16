@@ -1643,6 +1643,11 @@ ul.minimal-primary-tabs li {
   .path-livres .col-sm-6 {
     text-align: center;
   }
+
+  .page-node-type-evenement .full_width_content {
+    padding-top: 2em;
+  }
+
 }
 
 /* tablette et + */
