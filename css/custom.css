@@ -428,6 +428,13 @@ remplacer vert foncé
   width: 100%;
   max-width: 1200px;
 }
+.block-accueil-cahier .img-box.thumbnail {
+  padding: 0;
+}
+.view-id-accueil-cahier .grid-item {
+  padding-bottom: 15px;
+}
+
 .proporzional-row {
   max-width: 1140px;
   margin: 0 auto
@@ -1041,7 +1048,7 @@ i.icon {
   display: block;
   position: absolute;
   top: 15px;
-  right: 26px;
+  right: 51px;
   z-index: 0;
 }
 
@@ -1373,6 +1380,7 @@ ul.minimal-primary-tabs li {
 .view-id-liste-reference-bibliographique .views-row {
   margin-bottom: 2em;
 }
+
 .view-id-liste-reference-bibliographique .views-field-title-11,
 .path-recherche .views-field-title,
 .path-recherche .views-field-name {
@@ -1421,15 +1429,6 @@ ul.minimal-primary-tabs li {
   width: 100%;
 }
 
-
-/*
-.page-node-type-individu .views-field-title,
-.view-id-liste-reference-bibliographique .views-field-title-11  {
-  font-weight: bold;
-  font-size: 1.1525em;
-  color: #d2000a;
-}
-*/
 
 /** TEMP
 - image plus haute que large sur Entrée Carnet Accueil 
