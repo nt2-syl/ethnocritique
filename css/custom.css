@@ -285,6 +285,11 @@ remplacer vert foncé
 .page-node-type-cahier .advs-box-top-icon-img.boxed-inverse .advs-box-content {
   padding: 30px 40px !important;
 }
+.page-node-type-cahier .section-bg-color .advs-box.boxed-inverse,
+.page-node-type-cahier .section-bg-color .advs-box.boxed-inverse:hover {
+  transition: none !important;
+  box-shadow: none !important;
+}
 
 
 /* noeud chapitre */
@@ -602,8 +607,9 @@ header {
   clear: both;
   height: 100px;
 }
-
-
+footer .content {
+  border-top: none !important;
+}
 /* Embed Media */
 /* Manque classes */
 
