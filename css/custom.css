@@ -259,6 +259,10 @@ remplacer vert foncé
     width: 100%;
     height: auto;
 }
+.full_width_content .view-eva {
+  padding-bottom: 2em;
+}
+
 /* SECTION LABORATOIRES  */
 .view-class-laboratoires .sub-text {
   font-weight: bold;
