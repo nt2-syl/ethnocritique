@@ -1065,11 +1065,15 @@ ENVIRONNEMENTS DE RECHERCHE
 .path-cours
 .path-bibliographie
 */
+
+ul.js-pager__items {
+  text-align: center;
+}
+
 /* pagers: .advs-box .btn, .btn-text */
 ul.js-pager__items li {
   list-style: none;
   display: inline-block;
-  /**/
   border-bottom: none;
   font-weight: 700;
   text-transform: uppercase;
