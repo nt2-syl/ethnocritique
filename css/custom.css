@@ -128,6 +128,14 @@ remplacer vert foncé
 /**
 * ACCUEIL */
 
+/* Présentation */
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960  {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.quote-author a {
+  color: #000;
+}
 /* fond gris, pleine largeur */
 .block-accueil-actualite,
 .block-accueil-evenement,
@@ -146,6 +154,35 @@ remplacer vert foncé
   margin: 0;
   max-width: none;
 }
+.block-accueil-actualite,
+.block-accueil-evenement,
+.block-accueil-livre,
+.block-accueil-carnet,
+.block-accueil-cahier {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.block-accueil-actualite h4,
+.block-accueil-evenement h4,
+.block-accueil-livre h4,
+.block-accueil-carnet h4,
+.block-accueil-cahier h4 {
+  padding-bottom: 55px;
+}
+/* ACCUEIL TITRES SECTION */
+.block-accueil-actualite,
+.block-accueil-livre,
+.block-accueil-cahier,
+.block-accueil-carnet,
+.block-accueil-evenement {
+  text-align: center;
+  clear: both;
+}
+.path-frontpage h4 {
+  padding-top: 0px;
+  /* padding-bottom: le séparateur HR sous le titre a 20 px de hauteur */
+}
+
 
 .section-bg-color {
   background-color: #f7f9f9;
@@ -433,6 +470,7 @@ remplacer vert foncé
 }
 .view-id-accueil-cahier .grid-item {
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .proporzional-row {
@@ -618,19 +656,6 @@ header {
     font-size: 18px;
 }
 
-/* ACCUEIL TITRES SECTION */
-.block-accueil-actualite,
-.block-accueil-livre,
-.block-accueil-cahier,
-.block-accueil-carnet,
-.block-accueil-evenement {
-  text-align: center;
-  clear: both;
-}
-.path-frontpage h4 {
-  padding-top: 20px;
-  /* padding-bottom: le séparateur HR sous le titre a 20 px de hauteur */
-}
 
 /*ACCUEIL-ACTUALITÉS*/
 .accueil-actualite .niche-box-blog .block-top {
