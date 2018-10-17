@@ -404,8 +404,14 @@ remplacer vert foncé
 .advs-box h3 .field__items,
 .page-node-type-actualite .field--name-field-date-debut .field--item,
 .page-node-type-carnet-de-recherche .field--name-field-responsable-carnet .field--item, 
-.page-node-type-entree-de-carnet .field--name-field-auteur-e,
-.page-node-type-entree-de-carnet .date_created  {
+.page-node-type-entree-de-carnet .field--name-field-auteur-e .field--item,
+.page-node-type-entree-de-carnet .date_created,
+.page-node-type-livre .field--name-field-auteur-e .field--item,
+.page-node-type-article-chapitre .field--name-field-auteur-e .field--item,
+.page-node-type-evenement .field--name-field-date-debut .field--item,
+.page-node-type-evenement .field--name-field-date-fin .field--item,
+.page-node-type-laboratoire-recherche .field--name-field-direction  .field--item,
+.page-node-type-projet-recherche .field--name-field-laboratoire-associe  .field--item {
   font-size: 20px;
   font-weight: normal;
 }
