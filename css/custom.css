@@ -399,11 +399,18 @@ remplacer vert foncé
 }
 
 /* Modèle pour titre en vedette */
+/* .advs-box h3 .field__items = cahier/auteur */ 
 .titre-vedette,
-.advs-box h3 .field__items {
+.advs-box h3 .field__items,
+.page-node-type-actualite .field--name-field-date-debut .field--item,
+.page-node-type-carnet-de-recherche .field--name-field-responsable-carnet .field--item, 
+.page-node-type-entree-de-carnet .field--name-field-auteur-e,
+.page-node-type-entree-de-carnet .date_created  {
   font-size: 20px;
   font-weight: normal;
 }
+
+
 /* EVA - aligner résumé à gauche */
 .advs-box .advs-box-content p {
   text-align: left;
