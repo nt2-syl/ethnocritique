@@ -129,10 +129,6 @@ remplacer vert foncé
 * ACCUEIL */
 
 /* Présentation */
-.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960  {
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
 .quote-author a {
   color: #000;
 }
@@ -162,6 +158,17 @@ remplacer vert foncé
   padding-top: 90px;
   padding-bottom: 90px;
 }
+/* Compenser les marges sous les éléments de la grille */
+.block-accueil-evenement,
+.block-accueil-cahier,
+.block-accueil-livre {
+  padding-bottom: 70px;
+}
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960  {
+  padding-top: 90px;
+  padding-bottom: 0px;
+}
+
 .block-accueil-actualite h4,
 .block-accueil-evenement h4,
 .block-accueil-livre h4,
@@ -182,7 +189,26 @@ remplacer vert foncé
   padding-top: 0px;
   /* padding-bottom: le séparateur HR sous le titre a 20 px de hauteur */
 }
-
+/* annuler les espaceurs, les marges sont gérées au niveau des blocs */
+.path-frontpage hr.space.s,
+.path-frontpage hr.space.m {
+    height: 0px;
+}
+/* Contenant dans le bloc actualité, présentation du site */
+.accueil-actualite,
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
+  width: 50%;
+  margin: 0 auto;
+  max-width: 600px; /* 50% of 1200px, which was previous max-width of parent container */
+}
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
+  padding: 0em;
+  margin: 0em auto 0;
+}
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 h4,
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 hr {
+  display: none;
+}
 
 .section-bg-color {
   background-color: #f7f9f9;
@@ -229,7 +255,6 @@ remplacer vert foncé
   max-width: 1200px;
   background: #f7f9f9;
 }
-.block-accueil-carnet .view-class-accueil-carnet,
 .view-id-accueil-evenement .grid-item {
   margin-bottom: 2em;
 }
@@ -410,19 +435,12 @@ remplacer vert foncé
 }
 /*.niche-box-blog.boxed, .niche-box-blog.boxed-inverse*/
 
-/* Contenant dans le bloc actualité, présentation du site */
-.accueil-actualite,
-.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
-  width: 50%;
-  margin: 0 auto;
-  max-width: 600px; /* 50% of 1200px, which was previous max-width of parent container */
-}
-.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 h4,
-.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 hr {
-  display: none;
-}
+
 .quote-author {
   margin-bottom: 2em;
+}
+.path-frontpage .quote-author {
+  margin-bottom: 0em;
 }
 .quote-author a {
   text-transform: uppercase;
@@ -1485,8 +1503,8 @@ ul.minimal-primary-tabs li {
   .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
     width: 100%;
     max-width: 600px;
-    padding: 2em;
-    margin: 2em auto 0;
+    /*padding: 2em;
+    margin: 2em auto 0;*/
   }
 
 }
