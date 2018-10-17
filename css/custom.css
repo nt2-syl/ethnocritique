@@ -1293,7 +1293,10 @@ biblio
 .bibcite-reference-table td:first-child {
   font-weight: bold;
 }
-
+/* séparateurs pour 2 derniers champs */
+.bibcite-reference-table tr:nth-last-child(2) {
+  border-top: 1px solid #000;
+}
 
 /* Hypothese : bloc rouge 
 .field_square_wrapper {
