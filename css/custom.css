@@ -391,10 +391,15 @@ remplacer vert foncé
   padding-bottom: 2em;
 }
 
+/* Modèle pour label */
 /*Champ field--name-field-responsable-cahier*/
+.label-dans-carre,
 .advs-box h3 .field--label {
   font-size: 14px;
 }
+
+/* Modèle pour titre en vedette */
+.titre-vedette,
 .advs-box h3 .field__items {
   font-size: 20px;
   font-weight: normal;
