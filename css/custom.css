@@ -1022,6 +1022,16 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
     vertical-align: baseline; */
     width: 100%;
 }
+/* Médias sur Evenements, sur cours */
+.field--name-field-media audio, 
+.field--name-field-media canvas, 
+.field--name-field-media progress, 
+.field--name-field-media video {
+  /*  display: inline-block;
+    vertical-align: baseline; */
+    width: 100%;
+}
+
 /* Ne pas agrandir sur noeud Video ou Audio */
 /* Ne pas agrandir dans Evenement 
 .field--name-field-media  */
