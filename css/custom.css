@@ -739,9 +739,14 @@ p img {
 .field--name-field-lieu iframe {
     max-width: 100%;
 }
+/* labels : section contenu seulement, sections infos non modifiés */
 .field--label {
   font-weight: bold;
 }
+.full_width_content .field--label {
+  text-transform: uppercase;
+}
+/* Wishlist: icône flèche sur les labels et marge à gauche */
 
 /* Espacer rangées dans les sections */
 .row.vertical-row,
