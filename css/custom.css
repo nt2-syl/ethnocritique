@@ -378,7 +378,7 @@ remplacer vert foncé
 .page-node-type-article-chapitre .col-md-9 .node-field-citation {
   color: #676a6b;
 }
-.page-node-type-article-chapitre .field--name-field-biblio {
+.page-node-type-chapitre .field--name-field-biblio {
   clear: both;
 }
 
