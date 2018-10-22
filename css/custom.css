@@ -1137,7 +1137,7 @@ i.icon {
 }
 
 /* appliquer de articles-chapitre sur chapitre vers livre carousel chapitres*/
-.view-id-chapitres-d-un-livre .icon {
+.view-id-chapitres-d-un-livre i.icon {
   font-size: 35px;
   line-height: 46px;
   margin: -90px 0 0 -45px;
