@@ -1225,6 +1225,7 @@ ENVIRONNEMENTS DE RECHERCHE
 
 ul.js-pager__items {
   text-align: center;
+  z-index: 0;
 }
 
 /* pagers: .advs-box .btn, .btn-text */
