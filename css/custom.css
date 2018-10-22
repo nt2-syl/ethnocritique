@@ -796,6 +796,13 @@ p img {
   white-space: normal;
   /*white-space: no-wrap; Ajoute ... */
 }
+/* Gris foncé au repos, gris pâle au survol */
+.page-node-type-livre .adv-img-classic-box .caption {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+.page-node-type-livre .adv-img-classic-box .caption:hover {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
 
 /* LISTE ACTUALITÉS */
 
