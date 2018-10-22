@@ -1190,10 +1190,22 @@ i.icon {
   clear: both;
   top: 0;*/
 }
+/*
+.path-carnets ul.js-pager__items,
+.path-projets ul.js-pager__items,
+.path-evenements ul.js-pager__items,
+.path-laboratoires ul.js-pager__items,
+.path-bibliographie ul.js-pager__items,
+.path-recherche ul.js-pager__items,
+*/
+
+.path-actualites ul.js-pager__items,
 .path-auteurs ul.js-pager__items,
 .path-recherche ul.js-pager__items,
 .path-projets ul.js-pager__items,
-.path-livres ul.js-pager__items,
+.path-livres ul.js-pager__items {
+  clear: both;
+}
 .path-recherche .col-lg-9 nav {
   clear: both;
 }
