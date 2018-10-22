@@ -253,6 +253,13 @@ remplacer vert foncé
   max-width: 1200px;
   background: #f7f9f9;
 }
+.block-accueil-livre .view-class-accueil-livre {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  background: #f7f9f9;
+}
+
 .view-id-accueil-evenement .grid-item {
   margin-bottom: 2em;
 }
@@ -1873,4 +1880,7 @@ ul.minimal-primary-tabs li {
   color: #00f;
 }
 
+.side-menu-container .container {
+  width: 90%;
+}
 
