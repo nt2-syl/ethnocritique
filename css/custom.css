@@ -586,9 +586,12 @@ remplacer vert foncé
   padding: 0px;
 }
 .view-projet-recherche-vs-laboratoire-recherche .views-row {
-  width: 33%;
-  padding-right: 10px;
+  /*width: 33%;
+  padding-right: 10px;*/
   /* todo cols col-md-4 */
+}
+.view-projet-recherche-vs-laboratoire-recherche h4 {
+  padding-top: 2em;
 }
 
 /* pas de classe sur le titre du EVA */
@@ -1378,9 +1381,9 @@ biblio
   border-top: 1px solid #000;
 }
 
-.view-id-liste-reference-bibliographique .views-field-author {
+/*.view-id-liste-reference-bibliographique .views-field-author {
   font-weight: bold;
-}
+}*/
 
 /* Hypothese : bloc rouge 
 .field_square_wrapper {
