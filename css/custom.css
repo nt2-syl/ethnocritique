@@ -1378,6 +1378,10 @@ biblio
   border-top: 1px solid #000;
 }
 
+.view-id-liste-reference-bibliographique .views-field-author {
+  font-weight: bold;
+}
+
 /* Hypothese : bloc rouge 
 .field_square_wrapper {
   background-color: #d2000a;
