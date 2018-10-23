@@ -522,6 +522,11 @@ remplacer vert foncé
   margin-left: -15px;
   margin-right: 15px;
 }
+.view-class-accueil-cahier .proporzional-row .col-xs-12.boxed-white {
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .proporzional-row {
   max-width: 1200px;
