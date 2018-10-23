@@ -1229,7 +1229,8 @@ i.icon {
 }
 .view-class-auteurs nav,
 .view-class-evenements nav,
-.view-class-cours nav {
+.view-class-cours nav,
+.view-class-projets nav {
     clear: both;
 }
 /*
