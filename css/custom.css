@@ -1952,3 +1952,6 @@ ul.minimal-primary-tabs li {
 .img-box-front.i-center {
   position: relative;
 }
+.img-scale-up:hover img {
+  transform: scale(1.0) rotate(0deg) !important;
+}
