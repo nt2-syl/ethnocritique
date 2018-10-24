@@ -795,11 +795,11 @@ p img {
   font-weight: bold;
 }
 .full_width_content .field--label {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .view-article-vs-chapitre {
-	text-transform: capitalize;
+	text-transform: uppercase;
 	text-align: center;
 }
 .view-article-vs-chapitre .views-row {
