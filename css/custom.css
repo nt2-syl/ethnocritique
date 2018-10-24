@@ -1376,21 +1376,24 @@ biblio
 .minimal-page-search form input[type=submit] {
   margin-right: -1px;
 }
-#edit-submit-liste-reference-bibliographique{
-  margin-top: 8px;
-}
+
+/*edit-search-api-fulltext*/
+
+/* Harmoniser champs recherche */
 #edit-submit-environnement-recherche-general {
-  margin-top: 0;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  margin-top: 7px;
 }
-
-
 #edit-submit-liste-reference-bibliographique {
   padding-top: 6px;
   padding-bottom: 3px;
+  margin-top: 8px;
 }
 #edit-submit-liste-auteurs {
   padding-top: 6px;
-  margin-top: 5px;
+  padding-bottom: 3px;
+  margin-top: 8px;
 }
 .path-auteur section-empty.section-item.minimal-page-search {
   padding-top: 3em;
