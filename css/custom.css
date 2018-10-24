@@ -1338,7 +1338,8 @@ biblio
   clear: both;
 }
 .minimal-page-search form input[type=submit],
-#edit-submit-liste-reference-bibliographique {
+#edit-submit-liste-reference-bibliographique,
+.path-bibliographie #edit-search-api-fulltext {
     line-height: 19px;
     background: none;
     border: 1px solid #5a5a5a;
@@ -1356,7 +1357,7 @@ biblio
 .minimal-page-search form input[type=text] {
   margin-bottom: 2em;
 }
-.path-bibliographie #edit-search-api-fulltext {
+/*.path-bibliographie #edit-search-api-fulltext {
   height: auto;
   border-radius: 0;
   border: none;
@@ -1371,7 +1372,22 @@ biblio
   background: none;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   margin-bottom: 2em;
+}*/
+.path-bibliographie #edit-search-api-fulltext {
+  height: auto;
+  border: 1px solid #000;
+  width: 80%;
+  padding: 0;
+  font-size: 14px;
+  line-height: 2;
+  max-width: 100%;
+  color: #555555;
+  background: none;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  margin-bottom: 2em;
 }
+
+
 #edit-submit-liste-reference-bibliographique,
 .minimal-page-search form input[type=submit] {
   margin-right: -1px;
@@ -1400,6 +1416,7 @@ biblio
   border: 1px solid #000;
   line-height: 2;
   max-width: 80%;
+  padding: 0;
 }
 
 .path-auteur section-empty.section-item.minimal-page-search {
