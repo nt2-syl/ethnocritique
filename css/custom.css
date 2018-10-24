@@ -1907,3 +1907,48 @@ ul.minimal-primary-tabs li {
 .test {
   color: #00f;
 }
+
+/* Règles pour remplacer img-box par img-box-front */
+
+.block-accueil-cahier .img-box-front.thumbnail {
+  padding: 0;
+}
+.grid-item .img-box-front:not([class*="row-"]){
+  height: 100%;
+}
+.img-box-front.thumbnail:before {
+  margin: 15.4px;
+}
+.gallery .img-box-front {
+  width: 100%;
+  display: block;
+}
+.gallery .img-box-front img {
+  width: 100%;
+  display:block;
+}
+.img-box-front:hover img {
+  opacity: 0.8 !important
+}
+.img-box-front img {
+  transition: all .3s, margin-top 1ms, width 1ms, max-width 1ms, margin-left 1ms !important;
+  outline: 1px solid transparent;
+  animation: all .3s !important;
+  position: relative;
+}
+.img-box-front img {
+  z-index:2;
+}
+.img-box-front:hover:before {
+  right:0;
+  top:0;
+  left:0;
+  bottom:0;
+  opacity:1;
+  transition:none;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.img-box-front.i-center {
+  position: relative;
+}
