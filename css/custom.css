@@ -218,8 +218,8 @@ remplacer vert foncé
 /* Contenu principal, background à l'exclusion du header et footer */
 .section-empty {
   background-color: #f7f9f9;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 /*Éviter doubles marges*/
 .section-empty .section-empty {
@@ -227,12 +227,12 @@ remplacer vert foncé
   padding-bottom: 0;
 }
 .container.content {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 .view-class-accueil-livre.container.content {
   padding-top: 0;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 .section-empty > .content,
 .section-bg-image > .content,
@@ -367,8 +367,8 @@ remplacer vert foncé
 .page-node-type-cahier .section-bg-color .col-md-4 {
   padding-left: 0;
 }
-.section-bg-color {
-  margin-bottom: 1em;
+.page-node-type-cahier .section-bg-color {
+  margin-bottom: 3em;
 }
 .view-article-vs-cahier .advs-box .btn:after {
   display: none;
@@ -600,7 +600,7 @@ remplacer vert foncé
   /* todo cols col-md-4 */
 }
 .view-projet-recherche-vs-laboratoire-recherche h4 {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 /* pas de classe sur le titre du EVA */
@@ -609,7 +609,7 @@ remplacer vert foncé
 }
 .view-projet-recherche-vs-laboratoire-recherche .views-row {
   font-weight: normal;
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 /**
@@ -676,7 +676,7 @@ ENTREE CARNET
   background-color: transparent;
 }
 .page-node-type-carnet-de-recherche .field--name-field-image-couverture {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 /* MENU */
 header {
@@ -1380,7 +1380,7 @@ biblio
   margin-top: 5px;
 }
 .path-auteur section-empty.section-item.minimal-page-search {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 .bibcite-reference-table td:first-child {
@@ -1555,7 +1555,7 @@ ul.minimal-primary-tabs li {
   overflow: hidden;
 }
 .path-livres .advs-box h3 {
-  padding-top: 2em;
+  padding-top: 3em;
   margin-bottom: 0;
 }
 /*.path-livres .adv-img p {
@@ -1574,7 +1574,7 @@ ul.minimal-primary-tabs li {
   overflow: hidden;
 }
 .path-frontpage .view-class-accueil-livre .advs-box h3 {
-  padding-top: 2em;
+  padding-top: 3em;
   margin-bottom: 0;
 }
 
@@ -1747,7 +1747,7 @@ ul.minimal-primary-tabs li {
     font-size: 15px;
   }
   .page-node-type-actualite .field--name-body {
-    padding-top: 2em;
+    padding-top: 3em;
   }
   .path-carnets .views-field-nothing .col-sm-4 {
     width:33%;
