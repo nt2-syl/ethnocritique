@@ -183,6 +183,10 @@ remplacer vert foncé
   text-align: center;
   clear: both;
 }
+.block-accueil-cahier .boxed {
+  text-align: left;
+}
+
 .path-frontpage h4 {
   padding-top: 0px;
   /* padding-bottom: le séparateur HR sous le titre a 20 px de hauteur */
@@ -1903,8 +1907,3 @@ ul.minimal-primary-tabs li {
 .test {
   color: #00f;
 }
-/*
-.side-menu-container .container {
-  width: 90%;
-}
-*/
