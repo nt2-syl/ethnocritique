@@ -1383,18 +1383,25 @@ biblio
 #edit-submit-environnement-recherche-general {
   padding-top: 6px;
   padding-bottom: 3px;
-  margin-top: 7px;
+  margin-top: 2px;
 }
 #edit-submit-liste-reference-bibliographique {
   padding-top: 6px;
   padding-bottom: 3px;
-  margin-top: 8px;
+  margin-top: 3px;
 }
 #edit-submit-liste-auteurs {
   padding-top: 6px;
   padding-bottom: 3px;
-  margin-top: 8px;
+  margin-top: 3px;
 }
+
+.minimal-page-search form input[type=text] {
+  border: 1px solid #000;
+  line-height: 2;
+  max-width: 80%;
+}
+
 .path-auteur section-empty.section-item.minimal-page-search {
   padding-top: 3em;
 }
