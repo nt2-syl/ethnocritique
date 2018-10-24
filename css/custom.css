@@ -795,8 +795,18 @@ p img {
   font-weight: bold;
 }
 .full_width_content .field--label {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
+
+.view-article-vs-chapitre {
+	text-transform: capitalize;
+	text-align: center;
+}
+.view-article-vs-chapitre .views-row {
+	text-transform: initial;
+}
+
+
 /* Wishlist: icône flèche sur les labels et marge à gauche */
 
 /* Espacer rangées dans les sections */
@@ -1037,7 +1047,9 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 .view-id-chapitres-d-un-livre .flexslider .slides > li {
   padding-right: 12px !important;
 }
-
+.view-id-chapitres-d-un-livre .big-text {
+  padding-top: 2em;
+}
 .block-id-views-blockchapitres-d-un-livre-block-1 {
   margin-bottom: 2em;
 }
@@ -1480,6 +1492,16 @@ ul.minimal-primary-tabs li {
 .view-article-vs-chapitre {
  font-weight: bold;
 }
+/* Chapitre: Article d'un chapitre : fixer hauteur minimum */
+.view-article-vs-chapitre .grid-item.col-md-4 {
+  min-height: 355px;
+}
+.page-node-type-chapitre .field--name-field-biblio {
+	padding-top: 2em;
+}
+
+
+
 .view-article-vs-chapitre .views-row {
   margin-top: 1em;
 }
