@@ -253,6 +253,10 @@ remplacer vert foncé
   max-width: 1200px;
   background: #f7f9f9;
 }
+.view-id-accueil-evenement {
+  padding-left: 0;
+  padding-right: 0;
+}
 .block-accueil-livre .view-class-accueil-livre {
   width: 100%;
   max-width: 1200px;
