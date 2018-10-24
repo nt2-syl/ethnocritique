@@ -783,7 +783,7 @@ p img {
   margin-bottom: 2em;
   overflow: hidden;
   max-width: 100%;
-   width: 100%;
+  width: 100%;
    /*  height: auto;
   display: block;*/
 }
@@ -1494,9 +1494,10 @@ ul.minimal-primary-tabs li {
 }
 /* Chapitre: Article d'un chapitre : fixer hauteur minimum */
 .view-article-vs-chapitre .grid-item.col-md-4 {
-  min-height: 355px;
+
 }
-.page-node-type-chapitre .field--name-field-biblio {
+.page-node-type-chapitre .field--name-field-biblio,
+.page-node-type-chapitre .field--name-field-livre-referent {
 	padding-top: 2em;
 }
 
@@ -1507,6 +1508,7 @@ ul.minimal-primary-tabs li {
 }
 .view-article-vs-chapitre .advs-box-top-icon.boxed {
   padding: 70px 25px !important;
+  min-height: 300px;
 }
 .view-article-vs-chapitre .views-row {
   margin-left: -15px;
