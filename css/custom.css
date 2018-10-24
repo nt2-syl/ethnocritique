@@ -526,6 +526,7 @@ remplacer vert foncé
   margin-left: -15px;
   margin-right: 15px;
 }
+.view-class-accueil-cahier .proporzional-row .col-SM-4.boxed,
 .view-class-accueil-cahier .proporzional-row .col-xs-12.boxed {
   padding-right: 0;
   margin-left: 0;
@@ -1902,8 +1903,8 @@ ul.minimal-primary-tabs li {
 .test {
   color: #00f;
 }
-
+/*
 .side-menu-container .container {
   width: 90%;
 }
-
+*/
