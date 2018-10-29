@@ -1046,6 +1046,10 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 .field--name-field-image-couverture {
   margin-bottom: 1em;
 }
+.page-node-type-cahier .field--name-field-image-couverture {
+  margin-bottom: 0em;
+}
+
 .view-id-chapitres-d-un-livre .flexslider .slides > li {
   padding-right: 12px !important;
 }
