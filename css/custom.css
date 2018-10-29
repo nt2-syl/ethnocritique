@@ -370,9 +370,7 @@ remplacer vert foncé
 .page-node-type-cahier .section-bg-color {
   margin-bottom: 3em;
 }
-.view-article-vs-cahier .advs-box .btn:after {
-  display: none;
-}
+
 .page-node-type-cahier .advs-box-top-icon-img.boxed-inverse .advs-box-content {
   padding: 30px 40px !important;
   min-height: 225px;
@@ -384,7 +382,13 @@ remplacer vert foncé
   box-shadow: none !important;
   min-height: 375px;
 }
-
+/* Articles sur cahier */
+.view-article-vs-cahier .advs-box .btn:after {
+  display: none;
+}
+.view-article-vs-cahier .views-row {
+  margin-bottom: 2em;
+}
 
 /* noeud chapitre */
 
