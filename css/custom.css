@@ -406,6 +406,7 @@ remplacer vert foncé
   clear: both;
 }
 
+
 /* Liste Cahier */
 .liste_cahier_date_no,
 .liste_cahier_auteur {
@@ -1515,6 +1516,9 @@ font-weight: bold;
 .view-id-table-matieres-article-livre .view-display-id-block-1 .views-field-title {
   font-size: 1.0rem;
   font-weight: normal;
+}
+.page-node-type-article-chapitre .fixed-area  {
+  width: auto !important;
 }
 
 /* Accordion */
