@@ -1191,7 +1191,7 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 .minimal-side-menu form input[type=submit]:hover {
     color: #fff !important;
 }
-/* */
+/* La hauteur de l'icône dans le bloc Recherche est lié au menu latéral*/
 i.icon {
   height: 16px;
   width:  16px;
@@ -1199,7 +1199,7 @@ i.icon {
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-  top: 15px;
+  top: 7px;
   right: 51px;
   z-index: 0;
 }
