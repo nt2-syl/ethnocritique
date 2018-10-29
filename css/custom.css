@@ -345,6 +345,10 @@ remplacer vert foncé
   padding-bottom: 2em;
 }
 
+.view-class-laboratoires .img-box img {
+  max-width: 100% !important;
+}
+
 /* SECTION CAHIERS*/
 .view-class-cahiers h4 {
   text-transform: none;
