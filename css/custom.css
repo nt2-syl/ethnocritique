@@ -578,6 +578,10 @@ remplacer vert foncé
   font-size: 16px;
   line-height: 16px;
 }
+.page-node-type-carnet-de-recherche .node-field-body {
+  margin-bottom: 3em;
+}
+
 
 /* En cas d'image brisée ou manquante, conserver le format grille */
 .view-entree-de-carnet-vs-carnet .grid-item .img-box:not([class*="row-"]), 
@@ -591,6 +595,7 @@ remplacer vert foncé
 .view-entree-de-carnet-vs-carnet .gallery .grid-item img {
   width: 100%;
 }
+
 /** Noeuds Laboratoire */
 /* Marge autour des logos */
 .page-node-type-laboratoire-recherche .field--name-field-portrait {
@@ -863,11 +868,6 @@ p img {
 /**/
 .page-node-type-page .full_width_content {
   z-index: 4;
-}
-
-
-.page-node-type-carnet-de-recherche .node-field-body {
-  margin-bottom: 1em;
 }
 
 
