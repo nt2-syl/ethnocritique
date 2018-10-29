@@ -2015,3 +2015,12 @@ ul.minimal-primary-tabs li {
   width: 100%;
   padding-top: 2em;
 }
+
+/* image responsive non distorsionnée - 
+article chapitre: body: hauteur libre
+*/
+.page-node-type-article-chapitre .field--name-field-media-image img {
+    max-width: 100%;
+    height: auto;
+}
+
