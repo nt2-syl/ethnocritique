@@ -811,7 +811,9 @@ p img {
 .field--label {
   font-weight: bold;
 }
-.full_width_content .field--label {
+/*section-empty = .chapitre .field--name-field-livre-referent .field--label */
+.full_width_content .field--label,
+.section-empty .field--label {
   text-transform: uppercase;
 }
 
@@ -992,7 +994,7 @@ p img {
 .page-node-type-individu .full_width_content .field--name-body {
   display: none;
 }
-.page-node-type-chapitre .section-empty .node-field-livre-referent {
+.page-node-type-chapitre .full_width_content .node-field-livre-referent {
   display: none;
 }
 /*.view-id-table-matieres-article-livre.view-display-id-block-3 {
