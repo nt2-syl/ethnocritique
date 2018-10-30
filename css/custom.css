@@ -994,7 +994,7 @@ p img {
 .page-node-type-individu .full_width_content .field--name-body {
   display: none;
 }
-.page-node-type-chapitre .full_width_content .node-field-livre-referent {
+.page-node-type-chapitre .full_width_content .field--name-field-livre-referent {
   display: none;
 }
 /*.view-id-table-matieres-article-livre.view-display-id-block-3 {
@@ -1559,11 +1559,12 @@ ul.minimal-primary-tabs li {
 .view-article-vs-chapitre .grid-item.col-md-4 {
 
 }
-.page-node-type-chapitre .field--name-field-biblio,
-.page-node-type-chapitre .field--name-field-livre-referent {
+.page-node-type-chapitre .field--name-field-biblio{
 	padding-top: 2em;
 }
-
+.page-node-type-chapitre .field--name-field-livre-referent {
+  padding-bottom: 2em;
+}
 
 
 .view-article-vs-chapitre .views-row {
