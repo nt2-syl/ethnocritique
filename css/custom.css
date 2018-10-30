@@ -1562,7 +1562,8 @@ ul.minimal-primary-tabs li {
 .page-node-type-chapitre .field--name-field-biblio{
 	padding-top: 2em;
 }
-.page-node-type-chapitre .field--name-field-livre-referent {
+.page-node-type-chapitre .field--name-field-livre-referent,
+.page-node-type-chapitre .field--name-body {
   padding-bottom: 2em;
 }
 

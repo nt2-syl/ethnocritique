@@ -18,7 +18,14 @@
   {% endfor %}
   {% set sub_title = sub_title|join(', ') %}
 {% elseif node.type.entity.id == 'projet_recherche' %}
+  {# subtitle #}
+  {# If date, date_fin: '2018-09-10 // 2018-09-21' #}
+  {# else: '2018-09-10' #}
+  {% if node.field_date_projet_fin.value %}
+    {% set sub_title = node.field_date_projet.value  ~ " // " ~ node.field_date_projet_fin.value %}
+  {% else %}
   {% set sub_title = node.field_date_projet.value %}
+  {% endif %}
 {% endif %}
 <div class="header-title white" style="background-image:url({{ image_bg_url }});">
   <div class="container">
