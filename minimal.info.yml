@@ -15,6 +15,7 @@ regions:
 #  search: 'Header search'
 #  search_top_menu: 'Search Top Menu'
   header: 'Header'
+  description: 'Description'
 #  top_menu: 'Top menu'
 #  main_menu: 'Main menu'
 #  bottom_menu: 'Bottom menu'

@@ -2055,4 +2055,13 @@ article chapitre: body: hauteur libre
     max-width: 100%;
     height: auto;
 }
-
+/* Description de la section */
+.description {
+  font-size: 18px;
+  opacity: 1 !important;
+  color: #fff !important;
+  margin: 0;
+  font-weight: 400;
+  animation: faderightTitle 1.5s;
+  text-align: center;
+}
