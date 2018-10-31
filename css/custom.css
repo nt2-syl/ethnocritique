@@ -323,7 +323,8 @@ remplacer vert foncé
   margin-left: -15px;
   margin-bottom: 15px;
 }*/
-.page-node-type-individu .views-field-title {
+.page-node-type-individu .views-field-title,
+.page-node-type-individu .views-field-bibcite-year {
   font-weight: normal;
   font-size: 1.1525em;
 }
