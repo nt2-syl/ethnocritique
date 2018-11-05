@@ -24,7 +24,7 @@
   {% if node.field_date_projet_fin.value %}
     {% set sub_title = node.field_date_projet.value|date('Y')  ~ " // " ~ node.field_date_projet_fin.value|date('Y') %}
   {% else %}
-  {% set sub_title = node.field_date_projet.value %}
+  {% set sub_title = node.field_date_projet.value|date('Y') %}
   {% endif %}
 {% endif %}
 <div class="header-title white" style="background-image:url({{ image_bg_url }});">
