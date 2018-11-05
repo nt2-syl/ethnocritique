@@ -2070,10 +2070,10 @@ article chapitre: body: hauteur libre
   animation: faderightTitle 1.5s;
   text-align: center;
 }
-/* Accordéon - espace parasitaire si contenu vide 
+/* Accordéon - espace parasitaire si contenu vide */
 .ui-accordion .ui-accordion-content.ui-accordion-content-active {
     padding: 0 2.2em;
-}*/
+}
 /* classe .container inappropriée */
 .page-node-type-individu .view-eva .container {
   width: auto;
