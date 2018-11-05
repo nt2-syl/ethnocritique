@@ -19,10 +19,10 @@
   {% set sub_title = sub_title|join(', ') %}
 {% elseif node.type.entity.id == 'projet_recherche' %}
   {# subtitle #}
-  {# If date, date_fin: '2018-09-10 // 2018-09-21' #}
-  {# else: '2018-09-10' #}
+  {# If date, date_fin: '2018 // 2020' #}
+  {# else: '2018' #}
   {% if node.field_date_projet_fin.value %}
-    {% set sub_title = node.field_date_projet.value  ~ " // " ~ node.field_date_projet_fin.value %}
+    {% set sub_title = node.field_date_projet.value|date('Y')  ~ " // " ~ node.field_date_projet_fin.value|date('Y') %}
   {% else %}
   {% set sub_title = node.field_date_projet.value %}
   {% endif %}
