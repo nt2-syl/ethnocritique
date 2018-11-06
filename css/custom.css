@@ -2088,3 +2088,17 @@ article chapitre: body: hauteur libre
     color: #fff;
     text-decoration: none;
 }
+/* todo:supprimer transition */
+
+.view-id-accueil-evenement .views-row:first-child {
+	padding-left: 0;
+	padding-right: 30px;
+}
+/*.view-id-accueil-evenement .views-row:first-child {
+	padding-left: 0;
+}*/
+
+/* tablette et +*/
+.view-id-accueil-evenement .views-row:last-child {
+	padding-right: 0;
+}
