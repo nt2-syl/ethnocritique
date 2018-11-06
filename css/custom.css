@@ -2090,7 +2090,7 @@ article chapitre: body: hauteur libre
 }
 /* todo:supprimer transition */
 
-.view-id-accueil-evenement .views-row:first-child {
+.view-id-accueil-evenement .views-row {
 	padding-left: 0;
 	padding-right: 30px;
 }
