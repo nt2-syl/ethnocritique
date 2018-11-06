@@ -499,8 +499,8 @@ remplacer vert foncé
 }
 .view-class-accueil-livre {
   padding-bottom: 2em;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 /*
 .view-class-accueil-livre .grid-box.row {
