@@ -2084,3 +2084,7 @@ article chapitre: body: hauteur libre
   padding-top: 2em;
   padding-bottom: 2em;
 }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color: #fff;
+    text-decoration: none;
+}
