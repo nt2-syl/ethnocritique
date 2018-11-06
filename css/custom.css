@@ -497,9 +497,24 @@ remplacer vert foncé
   /*width: 100%;*/
   margin: 0 auto !important;
 }
+.view-class-accueil-livre {
+  padding-bottom: 2em;
+  padding-left: 0;
+  padding-right: 0;
+}
+/*
 .view-class-accueil-livre .grid-box.row {
   margin: auto -15px;
+}*/
+
+/* tablette et +*/
+.view-class-accueil-livre.grid-box > .grid-item:first-child {
+    padding: 0 15px 0 0;
 }
+.view-class-accueil-livre.grid-box > .grid-item:last-child {
+    padding: 0 0 0 15px;
+}
+
 /* Zoom sur livre, enlever responsive */
 .advs-box .img-box img {
   max-width: 100%;
@@ -1988,9 +2003,7 @@ ul.minimal-primary-tabs li {
 .adv-img-classic-box:hover .caption-inner {
   margin-top:-50px;
 }
-.view-class-accueil-livre {
-  padding-bottom: 2em;
-}
+
 .page-node-type-laboratoire-recherche .field--name-field-portrait img {
   max-width: 100%;
   height: auto;
