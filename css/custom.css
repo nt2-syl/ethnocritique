@@ -2074,8 +2074,13 @@ article chapitre: body: hauteur libre
 .ui-accordion .ui-accordion-content.ui-accordion-content-active {
     padding: 0 2.2em;
 }
+
 /* classe .container inappropriée */
 .page-node-type-individu .view-eva .container {
   width: auto;
 }
 
+.page-node-type-individu .view-eva {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
