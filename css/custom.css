@@ -524,6 +524,11 @@ remplacer vert foncé
 .accueil-actualite .advs-box .img-box img {
   max-width: 100%;
 }
+
+
+.path-frontpage #flexslider-1 {
+	border: none;
+}
 /* Extraits du cahier sur Accueil, enlever responsive */
 /* Entrée de carnet sur Carnet */
 .gallery .img-box, 
