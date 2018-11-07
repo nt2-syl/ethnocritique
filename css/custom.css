@@ -1690,7 +1690,8 @@ ul.minimal-primary-tabs li {
 }
 
 .path-frontpage .view-class-accueil-livre .advs-box .img-box img {
-  width: 100%;
+ /* width: 100%;*/
+  margin-left: -7px;
 }
 
 
