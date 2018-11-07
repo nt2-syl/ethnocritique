@@ -2121,3 +2121,11 @@ article chapitre: body: hauteur libre
 .view-id-accueil-evenement .views-row:last-child {
 	padding-right: 0;
 }
+
+.page-node-type-chapitre .advs-box h3 {
+  margin-bottom: 0;
+}
+
+.view-article-vs-chapitre .grid-item.col-md-4 {
+  max-height: 300px;
+}
