@@ -500,6 +500,7 @@ remplacer vert foncé
 }
 .path-frontpage .quote-author {
   margin-bottom: 0em;
+  text-align: right;
 }
 .quote-author a {
   text-transform: uppercase;
