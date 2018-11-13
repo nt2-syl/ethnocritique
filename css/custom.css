@@ -2129,3 +2129,10 @@ article chapitre: body: hauteur libre
 .view-article-vs-chapitre .grid-item.col-md-4 {
   max-height: 300px;
 }
+#block-minimal-footer li {
+  list-style: none;
+}
+#block-minimal-footer a {
+  text-transform: uppercase;
+  font-weight: bold;
+}

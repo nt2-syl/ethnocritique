@@ -21,10 +21,12 @@
   {# subtitle #}
   {# If date, date_fin: '2018 // 2020' #}
   {# else: '2018' #}
-  {% if node.field_date_projet_fin.value %}
-    {% set sub_title = node.field_date_projet.value|date('Y')  ~ " // " ~ node.field_date_projet_fin.value|date('Y') %}
-  {% else %}
-  {% set sub_title = node.field_date_projet.value|date('Y') %}
+  {% if (node.field_date_projet_debut.value or node.field_date_projet_fin.value) %}
+    {% if node.field_date_projet_fin.value %}
+      {% set sub_title = node.field_date_projet.value|date('Y')  ~ " à " ~ node.field_date_projet_fin.value|date('Y') %}
+    {% else %}
+      {% set sub_title = node.field_date_projet.value|date('Y') %}
+    {% endif %}
   {% endif %}
 {% endif %}
 <div class="header-title white" style="background-image:url({{ image_bg_url }});">
