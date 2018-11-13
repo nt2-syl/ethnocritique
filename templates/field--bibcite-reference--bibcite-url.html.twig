@@ -72,7 +72,7 @@
       <div class="field__items">
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}><a href="{{ item.content }}">{{ item.content }}</a></div>
+      <div{{ item.attributes.addClass('field--item') }}><a href="{{ item.content }}" target="_blank">{{ item.content }}</a></div>
     {% endfor %}
     {% if multiple %}
       </div>
