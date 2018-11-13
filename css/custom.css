@@ -1,6 +1,10 @@
 /*
 vert pale   f6f9f8 => f7f9f9 (gris neutre)
 vert    56bdbd =>#d2000a (rouge opaque)
+
+path-evenements = path-archives
+path-cours = path-seminaires
+
 */
 /*
 GENERAL
@@ -285,7 +289,8 @@ remplacer vert foncé
 .view-class-cours {
 
 }
-/* SECTION EVENEMENTS  */
+
+/* SECTION EVENEMENTS */
 .view-class-evenements .sub-text,
 .view-class-cours .sub-text,
 .adv-img-classic-box .caption-inner p.sub-text {
@@ -303,12 +308,12 @@ remplacer vert foncé
   /* height: 100%;*/
   min-height: 227px;
 }
-.path-evenements .grid-item > div,
-.path-cours .grid-item > div {
+.path-archives .grid-item > div,
+.path-seminaires .grid-item > div {
   padding-bottom: 2em;
 }
 .block-infos .bd-month {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* SECTION AUTEURS  */
@@ -354,7 +359,7 @@ remplacer vert foncé
   margin-left: 0 !important;
 }
 
-/* SECTION CAHIERS*/
+/* SECTION CAHIERS */
 .view-class-cahiers h4 {
   text-transform: none;
   font-weight: 700;
@@ -1116,10 +1121,6 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 
 
 /* MEDIA EMBED */
-video {
-  max-width: 100%;
-}
-
 .media-view-mode-image-embed-pleine-largeur {
   max-width: 100%;
 }
@@ -1153,12 +1154,11 @@ video {
   float: none;
   margin-bottom: 0;
 }
+/* Embed */
 .embedded-entity audio, 
 .embedded-entity canvas, 
 .embedded-entity progress, 
 .embedded-entity video {
-  /*  display: inline-block;
-    vertical-align: baseline; */
     width: 100%;
 }
 /* Médias sur Evenements, sur cours */
@@ -1166,9 +1166,14 @@ video {
 .field--name-field-media canvas, 
 .field--name-field-media progress, 
 .field--name-field-media video {
-  /*  display: inline-block;
-    vertical-align: baseline; */
     width: 100%;
+}
+/* Ne pas dépasser du cadre (ex: Video) */
+audio, 
+canvas, 
+progress, 
+video {
+  max-width: 100%;
 }
 
 /* Ne pas agrandir sur noeud Video ou Audio */
@@ -1301,7 +1306,7 @@ i.icon {
 /*
 .path-carnets ul.js-pager__items,
 .path-projets ul.js-pager__items,
-.path-evenements ul.js-pager__items,
+.path-archives ul.js-pager__items,
 .path-laboratoires ul.js-pager__items,
 .path-bibliographie ul.js-pager__items,
 .path-recherche ul.js-pager__items,
@@ -1328,7 +1333,7 @@ i.icon {
 ENVIRONNEMENTS DE RECHERCHE 
 .path-auteurs
 .path-recherche
-.path-evenements
+.path-archives
 .path-cours
 .path-bibliographie
 */
@@ -1356,7 +1361,6 @@ ul.js-pager__items li {
 }
 
 /* Centrer les pagers
-
 cours
 */
 
@@ -1364,7 +1368,7 @@ cours
   padding-bottom: 2em;
 }
 
-.path-evenements .img-box .caption {
+.path-archives .img-box .caption {
   font-size: 16px;
   line-height: 24px;
 }
@@ -1930,8 +1934,8 @@ ul.minimal-primary-tabs li {
 
 @media (max-width: 768px) {
   /* supprimer override de bootstrap dans le theme */
-  .path-cours .col-md-6,
-  .path-cours .col-sm-6 {
+  .path-seminaires .col-md-6,
+  .path-seminaires .col-sm-6 {
       width: 50%;
       float: none;
   }
@@ -1942,7 +1946,7 @@ ul.minimal-primary-tabs li {
   .path-livres .col-sm-6 .col-sm-6 {
       width: 100%;
   }
-   .path-evenements .col-sm-6 {
+   .path-archives .col-sm-6 {
     width: 50%;
     float: left;
   }
@@ -1976,8 +1980,8 @@ ul.minimal-primary-tabs li {
   .view-id-accueil-cahier .col-md-6,
   .view-id-accueil-cahier .col-sm-6,
   .path-livres .col-sm-6 .col-sm-6,
-  .path-cours .col-sm-6,
-  .path-evenements .col-sm-6 {
+  .path-seminaires .col-sm-6,
+  .path-archives .col-sm-6 {
     width: 50%;
     float: left;
   }
