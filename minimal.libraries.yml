@@ -37,7 +37,7 @@ minimal-lib:
     rip/plugins/jquery.bootgrid.min.js: {}
     rip/plugins/social.stream.min.js: {}
     rip/plugins/jquery.slimscroll.min.js: {}
-    #js/custom.js{}
+    js/custom.js: {}
   dependencies:
     - core/jquery
 
