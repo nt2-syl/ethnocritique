@@ -166,6 +166,9 @@ remplacer vert foncé
   padding-top: 90px;
   padding-bottom: 0px;
 }
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 a {
+  color: #d2000a;
+}
 
 .block-accueil-actualite h4,
 .block-accueil-evenement h4,
@@ -1018,6 +1021,11 @@ p img {
 .page-node-type-chapitre .full_width_content .field--name-field-livre-referent {
   display: none;
 }
+/* Projet de recherche */
+.page-node-type-projet-recherche .full_width_content .field--name-field-date-projet-fin {
+  display: none;
+}
+
 /*.view-id-table-matieres-article-livre.view-display-id-block-3 {
     display: block;
 }*/
@@ -1108,6 +1116,9 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 
 
 /* MEDIA EMBED */
+video {
+  max-width: 100%;
+}
 
 .media-view-mode-image-embed-pleine-largeur {
   max-width: 100%;
@@ -1372,6 +1383,11 @@ biblio
 .path-recherche #edit-actions {
   right: 16px;
   top: -3px;
+}
+.path-contact #edit-actions {
+  position: relative;
+  right: 0;
+  top: 0;
 }
 .minimal-page-search form input[type=submit]:hover {
   border-color: #d2000a !important;
@@ -2128,6 +2144,9 @@ article chapitre: body: hauteur libre
 
 .view-article-vs-chapitre .grid-item.col-md-4 {
   max-height: 300px;
+}
+#block-minimal-footer ul {
+  padding: 0;
 }
 #block-minimal-footer li {
   list-style: none;
