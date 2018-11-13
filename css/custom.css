@@ -204,12 +204,18 @@ remplacer vert foncé
     height: 0px;
 }
 /* Contenant dans le bloc actualité, présentation du site */
-.accueil-actualite,
-.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
+.accueil-actualite{
   width: 50%;
   margin: 0 auto;
   max-width: 600px; /* 50% of 1200px, which was previous max-width of parent container */
 }
+
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
   padding: 0em;
   margin: 0em auto 0;
