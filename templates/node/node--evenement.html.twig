@@ -142,6 +142,11 @@ set classes = [
                 {{ content.field_fichier }}
               </div>
             {% endif %}
+            {% if content.field_notions %}
+              <div class="node-field-notions taxonomie-notions taxonomie taxonomie-fond-fonce">
+                {{ content.field_notions }}
+              </div>
+            {% endif %}
           </div>
         </div>            
       </div>
