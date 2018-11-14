@@ -2147,7 +2147,9 @@ article chapitre: body: hauteur libre
   padding-bottom: 0;
   max-width: 80%; /* eviter scroll horizontal */
 }
-
+.ui-accordion .view-eva a {
+  color: #d2000a;
+}
 /* classe .container inappropriée */
 .page-node-type-individu .view-eva .container {
   width: auto;
