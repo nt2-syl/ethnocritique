@@ -378,7 +378,7 @@ remplacer vert foncé
   font-weight: 700;
   color: #272b2b;
   font-size: 30px;
-  line-height: 21px;
+  line-height: 36px;
   padding-bottom: 1em;
 }
 .liste_cahier_date_no, 
@@ -631,12 +631,14 @@ remplacer vert foncé
   font-size: 16px;
   line-height: 16px;
 }
-.view-class-cours .adv-img-classic-box .caption-inner h2 {
-  line-height: 24px;
-}
+
 .page-node-type-carnet-de-recherche .node-field-body {
   margin-bottom: 3em;
 }
+.view-class-cours .adv-img-classic-box .caption-inner h2 {
+  line-height: 24px;
+}
+.adv-img-classic-box .caption-inner h2
 
 
 /* En cas d'image brisée ou manquante, conserver le format grille */
@@ -657,11 +659,7 @@ remplacer vert foncé
 .page-node-type-laboratoire-recherche .field--name-field-portrait {
   padding: 0px;
 }
-.view-projet-recherche-vs-laboratoire-recherche .views-row {
-  /*width: 33%;
-  padding-right: 10px;*/
-  /* todo cols col-md-4 */
-}
+
 .view-projet-recherche-vs-laboratoire-recherche h4 {
   padding-top: 3em;
 }
@@ -673,6 +671,12 @@ remplacer vert foncé
 .view-projet-recherche-vs-laboratoire-recherche .views-row {
   font-weight: normal;
   padding-top: 3em;
+  margin-left: -15px;
+}
+.view-projet-recherche-vs-laboratoire-recherche .views-row {
+  /*width: 33%;
+  padding-right: 10px;*/
+  /* todo cols col-md-4 */
 }
 
 /**
