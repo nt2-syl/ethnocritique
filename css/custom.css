@@ -318,7 +318,7 @@ remplacer vert foncé
 .view-class-cours .grid-item .box, .grid-item .base-box */
 .view-class-cours .grid-item .img-box:not([class*="row-"]), 
 .view-class-cours .grid-item .box, .grid-item .base-box {
-  min-height: 350px;
+  min-height: 227px; /*350px*/
 }
 
 .path-archives .grid-item > div,
@@ -2056,6 +2056,11 @@ ul.minimal-primary-tabs li {
 .adv-img-classic-box:hover .caption-inner {
   margin-top:-50px;
 }
+
+.view-class-cours .img-box.adv-img img {
+    opacity: 0;
+}
+
 
 .page-node-type-laboratoire-recherche .field--name-field-portrait img {
   max-width: 100%;
