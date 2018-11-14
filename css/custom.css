@@ -2136,9 +2136,15 @@ article chapitre: body: hauteur libre
   animation: faderightTitle 1.5s;
   text-align: center;
 }
+
+
 /* Accordéon - espace parasitaire si contenu vide */
 .ui-accordion .ui-accordion-content.ui-accordion-content-active {
-    padding: 2em 2.2em;
+  padding: 2em 2.2em;
+}
+.page-node-type-individu .view-eva {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* classe .container inappropriée */
@@ -2146,10 +2152,6 @@ article chapitre: body: hauteur libre
   width: auto;
 }
 
-.page-node-type-individu .view-eva {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
     color: #fff;
     text-decoration: none;
