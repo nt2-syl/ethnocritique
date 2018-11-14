@@ -1401,6 +1401,7 @@ biblio
   position: absolute;
   right: 16px;
   top: -4px;
+  max-width: 20%;
 }
 .path-recherche #edit-actions {
   right: 16px;
@@ -1445,7 +1446,9 @@ biblio
     text-transform: uppercase;
     font-weight: 700;
     color: #272b2b;
-    padding: 9px 35px 6px 35px;
+    /* padding: 9px 35px 6px 35px; */
+    padding-left: 15%;
+    padding-right: 15%;
     transition: all .6s;
     font-size: 12px;
     display: inline-block;
@@ -1513,7 +1516,7 @@ biblio
 .minimal-page-search form input[type=text] {
   border: 1px solid #000;
   line-height: 2;
-  max-width: 80%;
+  max-width: 75%;
   padding: 0;
 }
 
