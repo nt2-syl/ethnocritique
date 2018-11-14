@@ -2138,7 +2138,7 @@ article chapitre: body: hauteur libre
 }
 /* Accordéon - espace parasitaire si contenu vide */
 .ui-accordion .ui-accordion-content.ui-accordion-content-active {
-    padding: 0 2.2em;
+    padding: 2em 2.2em;
 }
 
 /* classe .container inappropriée */
@@ -2221,4 +2221,9 @@ article chapitre: body: hauteur libre
 .block-id-block-contentf9197b27-a9c0-4d89-81d8-c42c88014074 {
   padding-bottom: 3em;
   /* largeur ajustable */
+}
+
+/* Bug FF Actualités : contenir image dans l'item de la vue */
+.view-class-actualites .img-box {
+  overflow: hidden;
 }
