@@ -3,7 +3,9 @@ vert pale   f6f9f8 => f7f9f9 (gris neutre)
 vert    56bdbd =>#d2000a (rouge opaque)
 
 path-evenements = path-archives
+(On conserve view-class-evenements)
 path-cours = path-seminaires
+(On conserve view-class-cours)
 
 */
 /*
@@ -308,12 +310,17 @@ remplacer vert foncé
   margin-bottom: 10px;
 }
 .view-class-evenements .grid-item .img-box:not([class*="row-"]), 
-.view-class-evenements .grid-item .box, .grid-item .base-box,
-.view-class-cours .grid-item .img-box:not([class*="row-"]), 
-.view-class-cours .grid-item .box, .grid-item .base-box {
+.view-class-evenements .grid-item .box, .grid-item .base-box {
   /* height: 100%;*/
   min-height: 227px;
 }
+/*.view-class-cours .grid-item .img-box:not([class*="row-"]), 
+.view-class-cours .grid-item .box, .grid-item .base-box */
+.view-class-cours .grid-item .img-box:not([class*="row-"]), 
+.view-class-cours .grid-item .box, .grid-item .base-box {
+  min-height: 350px;
+}
+
 .path-archives .grid-item > div,
 .path-seminaires .grid-item > div {
   padding-bottom: 2em;
@@ -623,6 +630,9 @@ remplacer vert foncé
 .adv-img-classic-box .caption-inner h2 {
   font-size: 16px;
   line-height: 16px;
+}
+.view-class-cours .adv-img-classic-box .caption-inner h2 {
+  line-height: 24px;
 }
 .page-node-type-carnet-de-recherche .node-field-body {
   margin-bottom: 3em;
@@ -1367,9 +1377,6 @@ ul.js-pager__items li {
   line-height: 22px;
 }
 
-/* Centrer les pagers
-cours
-*/
 
 .path-recherche .views-row {
   padding-bottom: 2em;
