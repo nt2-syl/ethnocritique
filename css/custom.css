@@ -2145,6 +2145,7 @@ article chapitre: body: hauteur libre
 .page-node-type-individu .view-eva {
   padding-top: 0;
   padding-bottom: 0;
+  max-width: 80%; /* eviter scroll horizontal */
 }
 
 /* classe .container inappropriée */
