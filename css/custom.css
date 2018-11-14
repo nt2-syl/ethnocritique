@@ -2054,13 +2054,11 @@ ul.minimal-primary-tabs li {
   opacity: 1 !important;
 }
 .adv-img-classic-box:hover .caption-inner {
-  margin-top:-50px;
+  margin-top: -50px;
 }
-
 .view-class-cours .img-box.adv-img img {
-    opacity: 0;
+  opacity: 0 !important;
 }
-
 
 .page-node-type-laboratoire-recherche .field--name-field-portrait img {
   max-width: 100%;
