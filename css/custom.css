@@ -2243,3 +2243,11 @@ article chapitre: body: hauteur libre
 .view-class-actualites .grid-item {
   overflow: hidden; 
 }
+#block-logosfooter a {
+  color: #d2000a;
+  display: inline-block;
+  vertical-align: top;
+}
+#block-logosfooter p img {
+  border: none;
+}
