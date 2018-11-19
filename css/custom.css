@@ -2256,11 +2256,11 @@ article chapitre: body: hauteur libre
 }
 
 /* Bug: chemin au lieu de NodeID sur Auteurs */
-.adv-circle i,
+.adv-circle.adv-circle-center i,
 .adv-circle .caption {
-  opacity: 0;
+  opacity: 0 !important;
 }
-.liste-auteurs-ligne:hover .adv-circle i,
-.liste-auteurs-ligne:hover .adv-circle .caption {
-  opacity: 1;
+.auteur_wrapper:hover .adv-circle.adv-circle-center i,
+.auteur_wrapper:hover .adv-circle .caption  {
+  opacity: 1 !important;
 }
