@@ -1177,19 +1177,39 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   float: none;
   margin-bottom: 0;
 }
-/* Embed */
+/* Embed 
 .embedded-entity audio, 
 .embedded-entity canvas, 
 .embedded-entity progress, 
 .embedded-entity video {
     width: 100%;
-}
-/* Médias sur Evenements, sur cours */
+}*/
+/* Médias sur Evenements, sur cours 
 .field--name-field-media audio, 
 .field--name-field-media canvas, 
 .field--name-field-media progress, 
 .field--name-field-media video {
     width: 100%;
+}*/
+/* Type de contenu Audio, Video 
+.field--name-field-media-video audio, 
+.field--name-field-media-video canvas, 
+.field--name-field-media-video progress, 
+.field--name-field-media-video video,
+.field--name-field-media-audio audio, 
+.field--name-field-media-audio canvas, 
+.field--name-field-media-audio progress, 
+.field--name-field-media-audio video {
+    width: 100%;
+}*/
+
+
+/* Afficher à 100% */
+audio, 
+canvas, 
+progress, 
+video {
+  width: 100%;
 }
 /* Ne pas dépasser du cadre (ex: Video) */
 audio, 
@@ -1413,6 +1433,7 @@ biblio
   position: relative;
   right: 0;
   top: 0;
+  max-width: 100%;
 }
 .minimal-page-search form input[type=submit]:hover {
   border-color: #d2000a !important;
@@ -1876,7 +1897,6 @@ ul.minimal-primary-tabs li {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 /* Carnets Responsive -adapter vue */
 
@@ -2270,4 +2290,8 @@ article chapitre: body: hauteur libre
 .auteur_wrapper:hover .adv-circle.adv-circle-center i,
 .auteur_wrapper:hover .adv-circle .caption  {
   opacity: 1 !important;
+}
+/* Limiter l'espacement des grands titres sur Projets*/
+.view-class-projets h3 {
+  line-height: 1.1;
 }
