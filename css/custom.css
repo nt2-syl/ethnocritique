@@ -2278,8 +2278,7 @@ article chapitre: body: hauteur libre
 .block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45 h4,
 .block-id-block-content251f9209-bc1f-4a60-a8e6-edc291cfa644 h4,
 .block-id-block-contentf9197b27-a9c0-4d89-81d8-c42c88014074 h4 {
-  padding-bottom: 3em;
-  /* largeur ajustable */
+  display: none;
 }
 
 /* Bug FF Actualités : contenir image dans l'item de la vue */
