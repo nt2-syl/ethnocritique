@@ -2298,6 +2298,12 @@ article chapitre: body: hauteur libre
 #block-logosfooter p img {
   border: none;
 }
+#block-logosfooter {
+  float: right;
+}
+#block-minimal-footer {
+  float: left;
+}
 
 /* Bug: chemin au lieu de NodeID sur Auteurs */
 .adv-circle.adv-circle-center i,
