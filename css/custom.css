@@ -2232,7 +2232,7 @@ article chapitre: body: hauteur libre
   font-weight: bold;
 }
 
-/* 
+/* BLOCS DE PRÉSENTATION
 -seminaires
 -archives
  */
@@ -2264,6 +2264,20 @@ article chapitre: body: hauteur libre
 .block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45,
 .block-id-block-content251f9209-bc1f-4a60-a8e6-edc291cfa644,
 .block-id-block-contentf9197b27-a9c0-4d89-81d8-c42c88014074 {
+  padding-bottom: 3em;
+  /* largeur ajustable */
+}
+/* Cacher titres de blocs, pas possible dans l'admin */
+.block-id-block-contente6ef7e9c-06ea-4143-bb28-f388ce6515dc h4,
+.block-id-block-contentdfa52843-bc97-44aa-85f3-47da43f8695d h4,
+.block-id-block-content14f92426-94a3-4b26-838f-a20d536b63e3 h4,
+.block-id-block-content364e307b-1239-4eb5-ae22-16b4895a2331 h4,
+.block-id-block-contentcd79e650-fd4c-4b42-8e93-60df1ec0976f h4,
+.block-id-block-content97125cef-b927-4fa1-b30c-883ab68e6df9 h4,
+.block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45 h4,
+.block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45 h4,
+.block-id-block-content251f9209-bc1f-4a60-a8e6-edc291cfa644 h4,
+.block-id-block-contentf9197b27-a9c0-4d89-81d8-c42c88014074 h4 {
   padding-bottom: 3em;
   /* largeur ajustable */
 }
