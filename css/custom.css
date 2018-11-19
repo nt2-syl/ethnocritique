@@ -1586,10 +1586,17 @@ font-weight: bold;
 .view-id-table-matieres-article-livre .view-display-id-block-1 .views-field-title {
   font-size: 1.0rem;
   font-weight: normal;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+.view-id-table-matieres-article-livre a {
+
 }
 .page-node-type-article-chapitre .fixed-area  {
   width: auto !important;
 }
+
+
 
 /* Accordion */
 .field-group-accordion-wrapper {
@@ -2232,6 +2239,7 @@ article chapitre: body: hauteur libre
 }
 
 /* Bug FF Actualités : contenir image dans l'item de la vue */
-.view-class-actualites .img-box {
-  overflow: hidden;
+/* TODO - remove negative margin + size from javascript */
+.view-class-actualites .grid-item {
+  overflow: hidden; 
 }
