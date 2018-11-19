@@ -338,6 +338,8 @@ remplacer vert foncé
   display: inline-block;
 }
 
+
+
 /* noeud auteur */
 .page-node-type-individu {}
 /*.page-node-type-individu .col-md-4 {
@@ -1576,18 +1578,19 @@ biblio
   padding-left: 12px;
 }
 .view-id-table-matieres-article-livre {
-font-size: 1.5rem;
-font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .view-id-table-matieres-article-livre .views-field-view .views-field-title {
   font-size: 1.25rem;
   font-weight: bold;
+  line-height: 1.25;
+  margin-bottom: 0.75em;
 }
+
 .view-id-table-matieres-article-livre .view-display-id-block-1 .views-field-title {
   font-size: 1.0rem;
   font-weight: normal;
-  margin-bottom: 0.5em;
-  line-height: 1.5;
 }
 .view-id-table-matieres-article-livre a {
 
@@ -2250,4 +2253,14 @@ article chapitre: body: hauteur libre
 }
 #block-logosfooter p img {
   border: none;
+}
+
+/* Bug: chemin au lieu de NodeID sur Auteurs */
+.adv-circle i,
+.adv-circle .caption {
+  opacity: 0;
+}
+.liste-auteurs-ligne:hover .adv-circle i,
+.liste-auteurs-ligne:hover .adv-circle .caption {
+  opacity: 1;
 }
