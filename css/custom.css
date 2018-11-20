@@ -109,6 +109,10 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
   color: #000;
 }
 
+/* Texte Présentation */
+.h5, .h6 {
+  line-height: 1.5em;
+}
 /*.rouge-pale {
   background-color: #d1a7a9 !important;
 }*/
@@ -2324,4 +2328,5 @@ article chapitre: body: hauteur libre
 .view-class-projets h3 {
   line-height: 1.1;
 }
+
 
