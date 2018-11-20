@@ -2344,9 +2344,13 @@ article chapitre: body: hauteur libre
 }
 #block-logosfooter p img {
   border: none;
+  margin: 0;
+  padding: 0;
+  max-width: 25%;
 }
 #block-logosfooter {
   float: right;
+  max-width: 80%;
 }
 #block-minimal-footer {
   float: left;
