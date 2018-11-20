@@ -1069,7 +1069,7 @@ on ne montre pas l'image, mais on affiche le body dans .section empty
 Si le champ "type de contenu" est Événement,
 on affiche l'image en haut, puis tous les autres champs dessous
  */
-
+.page-node-type-evenement .col-md-8 .field--name-field-image-couverture,
 .page-node-type-evenement .col-md-8 .field--name-field-fichier,
 .page-node-type-evenement .col-md-8 .field--name-field-participation,
 .page-node-type-evenement .col-md-8 .field--name-field-organisation,
@@ -1077,6 +1077,9 @@ on affiche l'image en haut, puis tous les autres champs dessous
 .page-node-type-evenement .col-md-8 .field--name-field-date-fin,
 .page-node-type-evenement .col-md-8 .field--name-field-notions {
   display: none;
+}
+.template-node-field-image-couverture {
+  display: block;
 }
 
 /*.view-id-table-matieres-article-livre.view-display-id-block-3 {
@@ -1149,6 +1152,10 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
   display: none;
 }
 .field--name-field-image-couverture {
+  margin-bottom: 1em;
+}
+.page-node-type-evenement .field--name-field-image-couverture,
+.page-node-type-evenement .template-node-field-image-couverture {
   margin-bottom: 1em;
 }
 .page-node-type-cahier .field--name-field-image-couverture {
