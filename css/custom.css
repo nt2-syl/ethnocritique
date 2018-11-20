@@ -1176,7 +1176,10 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 
 
 /* MEDIA EMBED */
+/* Parti-pris : si on ne degage pas les blocs images, 
+on reste pris avec la bordure, en conflit avec le média qui suit */
 .media-view-mode-image-embed-pleine-largeur {
+  clear: both;
   max-width: 100%;
 }
 
