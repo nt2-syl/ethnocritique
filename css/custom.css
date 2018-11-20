@@ -1069,12 +1069,13 @@ on ne montre pas l'image, mais on affiche le body dans .section empty
 Si le champ "type de contenu" est Événement,
 on affiche l'image en haut, puis tous les autres champs dessous
  */
-.page-node-type-evenement .section-empty .field--name-field-fichier,
-.page-node-type-evenement .section-empty .field--name-field-participation,
-.page-node-type-evenement .section-empty .field--name-field-organisation,
-.page-node-type-evenement .section-empty .field--name-field-date-projet-debut,
-.page-node-type-evenement .section-empty .field--name-field-date-projet-fin,
-.page-node-type-evenement .section-empty .field--name-field-notions {
+.page-node-type-evenement .col-md-8 .field--name-field-image-couverture,
+.page-node-type-evenement .col-md-8 .field--name-field-fichier,
+.page-node-type-evenement .col-md-8 .field--name-field-participation,
+.page-node-type-evenement .col-md-8 .field--name-field-organisation,
+.page-node-type-evenement .col-md-8 .field--name-field-date-debut,
+.page-node-type-evenement .col-md-8 .field--name-field-date-fin,
+.page-node-type-evenement .col-md-8 .field--name-field-notions {
   display: none;
 }
 
