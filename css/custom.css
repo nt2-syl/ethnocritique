@@ -1054,6 +1054,11 @@ p img {
   display: none;
 }
 
+/* Evenement */
+.page-node-type-evenement .full_width_content .field--name-field-notions {
+  display: none;
+}
+
 /*.view-id-table-matieres-article-livre.view-display-id-block-3 {
     display: block;
 }*/
