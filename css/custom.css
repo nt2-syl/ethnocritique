@@ -2329,6 +2329,9 @@ article chapitre: body: hauteur libre
 .block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45 hr {
   display: none;
 }
+.block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .advs-box {
+  text-align: center;
+}
 /* Bug FF Actualités : contenir image dans l'item de la vue */
 /* TODO - remove negative margin + size from javascript */
 .view-class-actualites .grid-item {
