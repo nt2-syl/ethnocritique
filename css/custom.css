@@ -2305,8 +2305,6 @@ article chapitre: body: hauteur libre
 .block-id-block-content364e307b-1239-4eb5-ae22-16b4895a2331,
 .block-id-block-contentcd79e650-fd4c-4b42-8e93-60df1ec0976f,
 .block-id-block-content97125cef-b927-4fa1-b30c-883ab68e6df9,
-.block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45,
-.block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45,
 .block-id-block-content251f9209-bc1f-4a60-a8e6-edc291cfa644,
 .block-id-block-contentf9197b27-a9c0-4d89-81d8-c42c88014074 {
   padding-bottom: 3em;
@@ -2325,7 +2323,12 @@ article chapitre: body: hauteur libre
 .block-id-block-contentf9197b27-a9c0-4d89-81d8-c42c88014074 h4 {
   display: none;
 }
-
+.block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45 {
+  padding-bottom: 0;
+}
+.block-id-block-content4a752910-6bf6-46e3-a467-fb080dc47a45 hr {
+  display: none;
+}
 /* Bug FF Actualités : contenir image dans l'item de la vue */
 /* TODO - remove negative margin + size from javascript */
 .view-class-actualites .grid-item {
