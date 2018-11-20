@@ -1079,7 +1079,7 @@ header .navbar-nav > li  {
 
 }
 header .navbar-nav > li > a {
-  padding: 7px 0px 7px 15px;
+  padding: 4px 0px 4px 15px;
   min-height: 0;
   text-transform: uppercase;
   font-size: 12px;
@@ -1614,7 +1614,7 @@ contact
 }
 
 .view-id-table-matieres-article-livre .view-display-id-block-1 .views-field-title {
-  font-size: 1.0rem;
+  font-size: 1.33rem;
   font-weight: normal;
 }
 .view-id-table-matieres-article-livre a {
@@ -2305,7 +2305,7 @@ article chapitre: body: hauteur libre
   float: left;
 }
 
-/* Bug: chemin au lieu de NodeID sur Auteurs */
+/* Bug: chemin au lieu de NodeID sur Auteurs 
 .adv-circle.adv-circle-center i,
 .adv-circle .caption {
   opacity: 0 !important;
@@ -2314,7 +2314,9 @@ article chapitre: body: hauteur libre
 .auteur_wrapper:hover .adv-circle .caption  {
   opacity: 1 !important;
 }
+*/
 /* Limiter l'espacement des grands titres sur Projets*/
 .view-class-projets h3 {
   line-height: 1.1;
 }
+
