@@ -2341,6 +2341,7 @@ article chapitre: body: hauteur libre
   color: #d2000a;
   display: inline-block;
   vertical-align: top;
+  max-width: 25%;
 }
 #block-logosfooter p img {
   border: none;
