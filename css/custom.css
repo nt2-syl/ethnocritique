@@ -1078,7 +1078,7 @@ on affiche l'image en haut, puis tous les autres champs dessous
 .page-node-type-evenement .col-md-8 .field--name-field-notions {
   display: none;
 }
-.template-node-field-image-couverture {
+.template-node-field-image-couverture .field--name-field-image-couverture {
   display: block;
 }
 
