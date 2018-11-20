@@ -1662,6 +1662,7 @@ contact
 .field-group-accordion-wrapper {
   margin-top: 2em;
   margin-bottom: 2em;
+  clear: both; 
 }
 .ui-accordion .ui-accordion-header {
     background: #777;
@@ -2131,6 +2132,11 @@ ul.minimal-primary-tabs li {
 }
 .view-class-cours .img-box.adv-img img {
   opacity: 0 !important;
+}
+/* Date en rouge, plus petit */
+.view-class-cours .img-box .caption {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .page-node-type-laboratoire-recherche .field--name-field-portrait img {
