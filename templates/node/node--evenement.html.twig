@@ -109,11 +109,17 @@ set classes = [
     <div class="container content">
       <div class="row">
         <div class="col-md-8">
+          {% set cours = node.field_nature_contenu.value %}
+          {% if cours == "Cours" %}
+            {{ content }}
+          {% else %}
             {% if content.field_image_couverture %}
               <div class="node-field-image-couverture">
                 {{ content.field_image_couverture }}
               </div>
             {% endif %}
+          {% endif %}
+
         </div>
         <div class="col-md-4">
           <div class="field_square_wrapper">
@@ -154,7 +160,10 @@ set classes = [
   </div>
   <div class="grid-item col-md-12 full_width_content">
     <div{{ content_attributes.addClass(classes) }}>
-      {{ content }}
+          {% if cours == "Cours" %}
+          {% else %}
+            {{ content }}
+          {% endif %}
     </div>
   </div>
 {% else %}
