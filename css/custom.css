@@ -2346,7 +2346,8 @@ article chapitre: body: hauteur libre
   border: none;
   margin: 0;
   padding: 0;
-  max-width: 25%;
+  max-width: 100%;
+  width: 100%;
 }
 #block-logosfooter {
   float: right;
@@ -2355,7 +2356,9 @@ article chapitre: body: hauteur libre
 #block-minimal-footer {
   float: left;
 }
-
+.footer-base .container {
+  border-top: 1px solid #dedede;
+}
 /* Bug: chemin au lieu de NodeID sur Auteurs 
 .adv-circle.adv-circle-center i,
 .adv-circle .caption {
