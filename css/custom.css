@@ -1274,6 +1274,7 @@ video {
 
 }
 
+
 /* col-md // 992-1200 */
 @media (max-width: 1200px) {
 
@@ -1290,6 +1291,15 @@ video {
 
 .page-node-type-article-chapitre .field_square_wrapper { 
   min-height: auto; 
+}
+
+/*  */
+@media (max-width: 968px) {
+  /* remove default */
+  #block-minimal-footer li {
+    text-align: left;
+  }
+
 }
 
 
