@@ -2380,6 +2380,22 @@ article chapitre: body: hauteur libre
   opacity: 1 !important;
 }
 */
+.img-box .caption,
+.img-box .im-geo2-star {
+  opacity: 0;
+}
+.img-box:hover .caption,
+.img-box:hover .im-geo2-star {
+  opacity: 1;
+}
+.img-box .caption a,
+.img-box .caption p {
+  color: #fff;
+}
+.img-box:hover .circle {
+  background-color: #000000;
+}
+
 /* Limiter l'espacement des grands titres sur Projets*/
 .view-class-projets h3 {
   line-height: 1.1;
