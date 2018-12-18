@@ -1,15 +1,20 @@
 /*
-vert pale   f6f9f8 => f7f9f9 (gris neutre)
-vert    56bdbd =>#d2000a (rouge opaque)
+Thème adapté du thème premium Minimal
+Réalisé par Sylvain Aubé pour le Laboratoire NT2
 
+Couleurs principales:
+f7f9f9 (gris neutre)
+#d2000a (rouge opaque)
+
+Notes:
 path-evenements = path-archives
 (On conserve view-class-evenements)
 path-cours = path-seminaires
 (On conserve view-class-cours)
-
 */
-/*
-GENERAL
+
+/**
+* GENERAL
 */
 html {
   min-height:100%;
@@ -89,16 +94,13 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 /* commun */
 .taxonomie-fond-fonce .field--item a,
 .taxonomie-fond-blanc .field--item a {
-  /*padding: 5px 3px;*/
-  /*margin: 3px 2px;*/
-/**/
-    display: inline-block;
-    padding: 3px 6px;
-    margin: 6px 0px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 300;
+  display: inline-block;
+  padding: 3px 6px;
+  margin: 6px 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
 }
 .taxonomie-fond-fonce .field--item a {
   border: 1px solid #fff !important; 
@@ -113,28 +115,10 @@ i.circle, i.square, .social-group i.circle, .social-button i.circle, .header-bas
 .h5, .h6 {
   line-height: 1.5em;
 }
-/*.rouge-pale {
-  background-color: #d1a7a9 !important;
-}*/
-
-
-/* remplacer vert pale
-[class*="col-md-"].boxed-inverse, .boxed-inverse, .section-bg-color, .section-two-blocks > .row > div:last-child,
-.full-screen-page, .form-control, .pricing-table .list-group-item, .pricing-table, footer.footer-center .content,
-.base-box.boxed-inverse, .advs-box.boxed-inverse, .table-striped > tbody > tr:nth-of-type(odd),
-.section-bg-color .adv-img-down-text h2 a {
-  background-color: #f7f9f9;
-}
-
-remplacer vert foncé
-[class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box,
- .white .img-box.adv-img-half-content .caption, .header-bootstrap {
-  background-color: #d2000a;
- }
-*/
 
 /**
-* ACCUEIL */
+* ACCUEIL 
+*/
 
 /* Présentation */
 .quote-author a {
@@ -153,7 +137,6 @@ remplacer vert foncé
 /* Bloc présentation (par défaut) */
 .block-accueil-carnet,
 .block-accueil-cahier {
-  /*background: #f7f9f9;*/
   background: #fff;
   margin: 0;
   max-width: none;
@@ -179,7 +162,6 @@ remplacer vert foncé
 .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 a {
   color: #d2000a;
 }
-
 .block-accueil-actualite h4,
 .block-accueil-evenement h4,
 .block-accueil-livre h4,
@@ -199,29 +181,27 @@ remplacer vert foncé
 .block-accueil-cahier .boxed {
   text-align: left;
 }
-
 .path-frontpage h4 {
   padding-top: 0px;
-  /* padding-bottom: le séparateur HR sous le titre a 20 px de hauteur */
+/* padding-bottom: le séparateur HR sous le titre a 20 px de hauteur */
 }
 /* annuler les espaceurs, les marges sont gérées au niveau des blocs */
 .path-frontpage hr.space.s,
 .path-frontpage hr.space.m {
-    height: 0px;
+  height: 0px;
 }
 /* Contenant dans le bloc actualité, présentation du site */
 .accueil-actualite{
   width: 50%;
   margin: 0 auto;
-  max-width: 600px; /* 50% of 1200px, which was previous max-width of parent container */
+  max-width: 600px;
+  /* 50% of 1200px, which was previous max-width of parent container */
 }
-
 .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
 }
-
 .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
   padding: 0em;
   margin: 0em auto 0;
@@ -230,7 +210,6 @@ remplacer vert foncé
 .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 hr {
   display: none;
 }
-
 .section-bg-color {
   background-color: #f7f9f9;
 }
@@ -240,7 +219,7 @@ remplacer vert foncé
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/*Éviter doubles marges*/
+/* Éviter doubles marges */
 .section-empty .section-empty {
   padding-top: 0;
   padding-bottom: 0;
@@ -261,14 +240,11 @@ remplacer vert foncé
 .section-bg-color > .content {
   padding-top: 0px;
   padding-bottom: 0px;
-/* was 90px 90px */
 }
-
 .section-empty .boxed-inverse,
 .section-empty .advs-box.boxed-inverse {
   background-color: #ffffff;
 }
-
 .block-accueil-carnet .view-class-accueil-carnet,
 .block-accueil-evenement .view-id-accueil-evenement {
   margin: 0 auto;
@@ -315,14 +291,13 @@ remplacer vert foncé
 }
 .view-class-evenements .grid-item .img-box:not([class*="row-"]), 
 .view-class-evenements .grid-item .box, .grid-item .base-box {
-  /* height: 100%;*/
   min-height: 227px;
 }
 /*.view-class-cours .grid-item .img-box:not([class*="row-"]), 
 .view-class-cours .grid-item .box, .grid-item .base-box */
 .view-class-cours .grid-item .img-box:not([class*="row-"]), 
 .view-class-cours .grid-item .box, .grid-item .base-box {
-  min-height: 227px; /*350px*/
+  min-height: 227px;
 }
 
 .path-archives .grid-item > div,
@@ -336,20 +311,15 @@ remplacer vert foncé
 /* SECTION AUTEURS  */
 .view-class-auteurs .liste-auteurs-ligne {
   margin-bottom: 2em;
-  /*col md 4 */
+  /*col-md-4 */
   width: 33%;
   float: none;
   display: inline-block;
 }
 
 
-
-/* noeud auteur */
+/* Noeud auteur */
 .page-node-type-individu {}
-/*.page-node-type-individu .col-md-4 {
-  margin-left: -15px;
-  margin-bottom: 15px;
-}*/
 .page-node-type-individu .views-field-title,
 .page-node-type-individu .views-field-bibcite-year {
   font-weight: normal;
@@ -364,7 +334,7 @@ remplacer vert foncé
   padding-bottom: 2em;
 }
 
-/* SECTION LABORATOIRES  */
+/* SECTION LABORATOIRES */
 .view-class-laboratoires .sub-text {
   font-weight: bold;
   margin-bottom: 10px;
@@ -395,7 +365,6 @@ remplacer vert foncé
   color: #d2000a;
 }
 
-
 /* PAGE CAHIER */
 .page-node-type-cahier .section-bg-color .col-md-4 {
   padding-left: 0;
@@ -403,7 +372,6 @@ remplacer vert foncé
 .page-node-type-cahier .section-bg-color {
   margin-bottom: 3em;
 }
-
 .page-node-type-cahier .advs-box-top-icon-img.boxed-inverse .advs-box-content {
   padding: 30px 40px !important;
   min-height: 225px;
@@ -423,9 +391,9 @@ remplacer vert foncé
   margin-bottom: 2em;
 }
 
-/* noeud chapitre */
+/* Noeud chapitre */
 
-/* noeud article de chapitre*/
+/* Noeud article de chapitre*/
 .page-node-type-article-chapitre .col-md-9 .node-field-bibliographie,
 .page-node-type-article-chapitre .col-md-9 .node-field-citation {
   color: #676a6b;
@@ -434,21 +402,20 @@ remplacer vert foncé
   clear: both;
 }
 
-
 /* Liste Cahier */
 .liste_cahier_date_no,
 .liste_cahier_auteur {
   color: #000;
 }
 /* Noeud Cahier */
-/* aligner titre EVA */
+/* Aligner titre EVA */
 .page-node-type-cahier .view-eva h4 {
   text-align: center;
   padding-bottom: 2em;
 }
 
 /* Modèle pour label */
-/*Champ field--name-field-responsable-cahier*/
+/* Champ field--name-field-responsable-cahier*/
 .label-dans-carre,
 .advs-box h3 .field--label {
   font-size: 14px;
@@ -474,7 +441,6 @@ remplacer vert foncé
   font-weight: normal;
 }
 
-
 /* EVA - aligner résumé à gauche */
 .advs-box .advs-box-content p {
   text-align: left;
@@ -492,24 +458,20 @@ remplacer vert foncé
   overflow: visible;
 }
 
-
-/* accueil */
+/* Accueil */
 .view-class-accueil-cahier .boxed {
   background-color: #d2000a !important;
   padding: 50px;
 /* remplace class*="col-md-"].boxed et class*="col-sm-"].boxed */
 }
 .block-accueil-actualite {
-  /*  .accueil-actualite, qui fait 50% est centré */
+  /* .accueil-actualite, qui fait 50% est centré */
 }
-/* fond, intérieur de la boite dans Actualité */
+/* Fond, intérieur de la boite dans Actualité */
 .path-frontpage .advs-box.boxed-inverse {
   background: #fff;
   padding: 0 25px 40px;
 }
-/*.niche-box-blog.boxed, .niche-box-blog.boxed-inverse*/
-
-
 .quote-author {
   margin-bottom: 2em;
 }
@@ -522,9 +484,6 @@ remplacer vert foncé
 }
 .block-accueil-livre {}
 .view-class-accueil-livre {
-  /*max-width: 1200px;*/
-  /*margin: 0 auto;*/
-  /*width: 100%;*/
   margin: 0 auto !important;
 }
 .view-class-accueil-livre {
@@ -532,29 +491,23 @@ remplacer vert foncé
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/*
-.view-class-accueil-livre .grid-box.row {
-  margin: auto -15px;
-}*/
 
-/* tablette et +*/
+/* tablette et + */
 .view-class-accueil-livre.grid-box > .grid-item:first-child {
-    padding: 0 15px 0 0;
+  padding: 0 15px 0 0;
 }
 .view-class-accueil-livre.grid-box > .grid-item:last-child {
-    padding: 0 0 0 15px;
+  padding: 0 0 0 15px;
 }
 
 /* Zoom sur livre, enlever responsive */
 .advs-box .img-box img {
   max-width: 100%;
-  /*width: auto;*/
   width: 100%;
 }
 .accueil-actualite .advs-box .img-box img {
   max-width: 100%;
 }
-
 
 .path-frontpage #flexslider-1 {
 	border: none;
@@ -563,8 +516,6 @@ remplacer vert foncé
 /* Entrée de carnet sur Carnet */
 .gallery .img-box, 
 .gallery .img-box img {
-  /*width: auto;
-  max-width: none;*/
 }
 
 /* centrer le logo dans l'espace disponible sur les listes laboratoire */
@@ -599,7 +550,6 @@ remplacer vert foncé
   margin-left: 0;
   margin-right: 0;
 }
-
 .proporzional-row {
   max-width: 1200px;
   margin: 0 auto
@@ -622,8 +572,6 @@ remplacer vert foncé
 
 /* Événements accueil */
 
-
-
 /* Liste Carnets */
 
 /* Noeud Carnet */
@@ -634,20 +582,18 @@ remplacer vert foncé
 }
 
 /* Noeud Entrée Carnet */
-
 .adv-img-classic-box .caption-inner h2 {
   font-size: 16px;
   line-height: 16px;
 }
-
 .page-node-type-carnet-de-recherche .node-field-body {
   margin-bottom: 3em;
 }
 .view-class-cours .adv-img-classic-box .caption-inner h2 {
   line-height: 24px;
 }
-.adv-img-classic-box .caption-inner h2
-
+/* Fix missing rule */
+.adv-img-classic-box .caption-inner h2 {}
 
 /* En cas d'image brisée ou manquante, conserver le format grille */
 .view-entree-de-carnet-vs-carnet .grid-item .img-box:not([class*="row-"]), 
@@ -656,7 +602,6 @@ remplacer vert foncé
   min-height: 245px;
   overflow: hidden;
 }
-
 .view-entree-de-carnet-vs-carnet .gallery .grid-item .img-box,
 .view-entree-de-carnet-vs-carnet .gallery .grid-item img {
   width: 100%;
@@ -667,7 +612,6 @@ remplacer vert foncé
 .page-node-type-laboratoire-recherche .field--name-field-portrait {
   padding: 0px;
 }
-
 .view-projet-recherche-vs-laboratoire-recherche h4 {
   padding-top: 3em;
 }
@@ -682,9 +626,6 @@ remplacer vert foncé
   margin-left: -15px;
 }
 .view-projet-recherche-vs-laboratoire-recherche .views-row {
-  /*width: 33%;
-  padding-right: 10px;*/
-  /* todo cols col-md-4 */
 }
 
 /**
@@ -700,9 +641,7 @@ ENTREE CARNET
 #block-minimal-page-title {
   display: none;
 }
-
 #toolbar-item-administration-tray {
-  /* z-index: */
 }
 .field_square_wrapper {
   background-color: #d2000a;
@@ -710,18 +649,17 @@ ENTREE CARNET
   margin-bottom: 2em !important;
 }
 
-/* Fixer hauteur du bloc Infos et de l'image  */
-/* TODO: Préciser Responsive avec max-width*/
+/* Fixer hauteur du bloc Infos et de l'image */
 @media (min-width: 460px) {
   .field_square_wrapper {
     min-height: 375px;
   }
 }
+
 /* Exceptions */
 .page-node-type-individu .field_square_wrapper {
   min-height: auto;
 }
-
 .field_square {
   color: #fff;
   margin-bottom: 1em;
@@ -733,15 +671,8 @@ ENTREE CARNET
 .field_square a:hover {
   text-decoration: underline;
 }
-/* fixer aussi bloc image */
-.page-node-type-actualite .field--name-field-image-couverture img {
-  /*max-width: 100%;
-  height: auto;*/
-  /* alignement blocs */
-  /*max-height: 375px;*/
-  /* TODO : autre méthode pour égaliser bloc */
-  /* brise sur image moins haute */
-}
+/* Fixer aussi bloc image */
+.page-node-type-actualite .field--name-field-image-couverture img {}
 
 .page-node-type-carnet-de-recherche .field--name-field-image-couverture img {
   height: auto;
@@ -753,13 +684,16 @@ ENTREE CARNET
 .page-node-type-carnet-de-recherche .field--name-field-image-couverture {
   margin-bottom: 3em;
 }
-/* MENU */
+
+/**
+* MENU 
+*/
 header {
   margin-left: 0 !important;
 }
+
 /* Accueil */
 .navbar-header {
-  /*  width: auto; */
   min-height: 0;
   float: none;
   background: #db2022 url(/sites/ethno.aegir8.uqam.ca/files/2018-06/ETHNOCRITIQUE_LOGO_RGB_RENVERSE%CC%81_ROUGE.jpg) no-repeat 50% 0%;
@@ -767,7 +701,6 @@ header {
 .path-frontpage .navbar-header {
   min-height: 332px;/* temp - accueil seulement */
 }
-
 .path-frontpage .navbar-nav {
   padding-top: 0px;
 }
@@ -791,13 +724,12 @@ header {
   background-image: url(/sites/ethno.aegir8.uqam.ca/files/2018-06/texture_p_1200.gif) !important;
 }
 .header-title p, .header-video p, .header-base p, .header-slider p {
-    opacity: 1 !important;
-    color: #fff !important;
+  opacity: 1 !important;
+  color: #fff !important;
 }
 .title-base p {
     font-size: 18px;
 }
-
 
 /*ACCUEIL-ACTUALITÉS*/
 .accueil-actualite .niche-box-blog .block-top {
@@ -805,8 +737,6 @@ header {
 }
 .accueil-actualite .niche-box-blog.boxed {
   padding-top: 0;
-  /*0px 25px 70px sur accueil */
-  /* 25px 70px sur listes */
 }
 .accueil-actualite .niche-box-blog.boxed-inverse .img-box {
 	margin: 0 -26px;/* full */
@@ -814,7 +744,6 @@ header {
 .niche-box-blog .block-infos {
   padding-top: 20px;
 }
-
 
 /* footer (dans le contenu) */
 .footer-base {
@@ -826,9 +755,8 @@ header {
 footer .content {
   border-top: none !important;
 }
-/* Embed Media */
-/* Manque classes */
 
+/* Embed Media */
 p img {
   /*  width: 50%; Default */
   float: right;
@@ -859,22 +787,19 @@ p img {
   overflow: hidden;
   max-width: 100%;
   width: 100%;
-   /*  height: auto;
-  display: block;*/
 }
 .field--name-field-lieu iframe {
     max-width: 100%;
 }
-/* labels : section contenu seulement, sections infos non modifiés */
+/* Labels : section contenu seulement, sections infos non modifiés */
 .field--label {
   font-weight: bold;
 }
-/*section-empty = .chapitre .field--name-field-livre-referent .field--label */
+/* section-empty = .chapitre .field--name-field-livre-referent .field--label */
 .full_width_content .field--label,
 .section-empty .field--label {
   text-transform: uppercase;
 }
-
 .view-article-vs-chapitre {
 	text-transform: uppercase;
 	text-align: center;
@@ -882,7 +807,6 @@ p img {
 .view-article-vs-chapitre .views-row {
 	text-transform: initial;
 }
-
 
 /* Wishlist: icône flèche sur les labels et marge à gauche */
 
@@ -904,7 +828,7 @@ p img {
   margin-bottom: 1em;
 }
 
-/* Carousel livre */
+/* Carousel Livre */
 .adv-img-classic-box .caption-inner {
   padding: 0 20px;
   overflow: visible;
@@ -935,11 +859,9 @@ p img {
 #preloader {
   display: none;
 }
-/**/
 .page-node-type-page .full_width_content {
   z-index: 4;
 }
-
 
 /* AFFICHAGE DES CHAMPS -
    Avec les affichages custom, les champs qui sont dans des régions autres que le contenu
@@ -981,12 +903,10 @@ p img {
 .page-node-type-laboratoire-recherche .full_width_content .field--name-field-portrait {
   display: none;
 }
-
 .col-md-8 .field--name-field-aire-geographique,
 .col-md-8 .field--name-field-periode-historique {
   display: none;
 }
-
 .page-node-type-carnet-de-recherche .col-md-8 .field--name-body,
 .page-node-type-carnet-de-recherche .col-md-8 .field--name-field-image-couverture,
 .page-node-type-carnet-de-recherche .col-md-8 .field--name-field-responsable-carnet {
@@ -998,7 +918,6 @@ p img {
 
 /* ARTICLE-CHAPITRE */
 /* Bug: le champ credit a pour classe field-auteur-e, comme le champ précédent */
-
 .page-node-type-livre .full_width_content .field--name-body,
 .page-node-type-livre .full_width_content .field--name-field-auteur-e,
 .page-node-type-livre .full_width_content .field--name-field-auteur-e.field--type-text-long,
@@ -1019,14 +938,12 @@ p img {
 .page-node-type-carnet-de-recherche .col-md-8 .field-group-accordion-wrapper {
   display: none;
 }
-
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-image-couverture,
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-auteur-e,
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-carnet-referent,
 .page-node-type-entree-de-carnet .full_width_content .field--name-field-notions {
   display: none;
 }
-
 .page-node-type-cahier .full_width_content .field--name-field-responsable-cahier,
 .page-node-type-cahier .full_width_content .field--name-field-numero,
 .page-node-type-cahier .full_width_content .field--name-field-date-publication-annee,
@@ -1060,7 +977,6 @@ p img {
 .page-node-type-projet-recherche .full_width_content .field--name-field-date-projet-fin {
   display: none;
 }
-
 /* Evenement */
 .page-node-type-evenement .full_width_content .field--name-field-notions {
   display: none;
@@ -1083,31 +999,27 @@ on affiche l'image en haut, puis tous les autres champs dessous
 .page-node-type-evenement .col-md-8 .template-node-field-image-couverture .field--name-field-image-couverture {
   display: block;
 }
-
-/*.view-id-table-matieres-article-livre.view-display-id-block-3 {
-    display: block;
-}*/
-
 .block-id-views-blocktable-matieres-article-livre-block-3 {
   display: none;
 }
+
 /* Choisir la hauteur du header arbitrairement */
 .header-title,
 .header-animation {
   height: 200px;
 }
 
-/*MENU LATÉRAL */
+/**
+* MENU LATÉRAL 
+*/
 header .navbar-nav > li  {
   display: block;
 }
 .navbar-nav > li {
   float: none;
 }
+.navbar-nav {}
 
-.navbar-nav {
-
-}
 header .navbar-nav > li > a {
   padding: 4px 0px 4px 15px;
   min-height: 0;
@@ -1122,11 +1034,6 @@ header .navbar-nav > li > a {
 .nav-tabs > li > a:after {
   display: none;
 }
-/*header .navbar-nav > li > a {
-  max-height: 30px;
-}*/
-
-
 .navbar-nav > li.dropdown:hover > a:after, .nav-tabs > li.active > a:after {
   opacity: 0;
 }
@@ -1146,8 +1053,7 @@ header .navbar-nav > li > a {
     margin-bottom: 0;
 }
 
-
-/* Noeud livre */
+/* Noeud Livre */
 /* ne pas montrer champ vue EVA sur livre.
 Doit être affiché pour que le bloc soit actif en haut de page.*/
 .view-chapitre-vs-livre {
@@ -1163,7 +1069,6 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 .page-node-type-cahier .field--name-field-image-couverture {
   margin-bottom: 0em;
 }
-
 .view-id-chapitres-d-un-livre .flexslider .slides > li {
   padding-right: 12px !important;
 }
@@ -1173,9 +1078,6 @@ Doit être affiché pour que le bloc soit actif en haut de page.*/
 .block-id-views-blockchapitres-d-un-livre-block-1 {
   margin-bottom: 2em;
 }
-
-
-
 
 /* MEDIA EMBED */
 /* Parti-pris : si on ne degage pas les blocs images, 
@@ -1240,7 +1142,6 @@ on reste pris avec la bordure, en conflit avec le média qui suit */
     width: 100%;
 }*/
 
-
 /* Afficher à 100% */
 audio, 
 canvas, 
@@ -1262,49 +1163,29 @@ video {
 
 /* Responsive @media */
 /* mobile */
-@media (max-width: 460px) {
-
-
-}
+@media (max-width: 460px) {}
 /* col-xs // 0-768 */
-@media (max-width: 768px) {
-
-
-}
+@media (max-width: 768px) {}
 /* col-sm // 768-992 */
-@media (min-width: 768px) and (max-width: 992px) {
-
-}
-
-
+@media (min-width: 768px) and (max-width: 992px) {}
 /* col-md // 992-1200 */
-@media (max-width: 1200px) {
-
-}
+@media (max-width: 1200px) {}
 /* col-lg 1200+ */
-@media (min-width: 1200px) {
-
-}
-
+@media (min-width: 1200px) {}
 /* écrans larges */
-@media all and (min-width: 1200px) and (max-width: 9999px) {
-
-}
+@media all and (min-width: 1200px) and (max-width: 9999px) {}
 
 .page-node-type-article-chapitre .field_square_wrapper { 
   min-height: auto; 
 }
 
-/*  */
+/**/
 @media (max-width: 968px) {
   /* remove default */
   #block-minimal-footer li {
     text-align: left;
   }
-
 }
-
-
 
 /* SEARCH */
 #edit-search-api-fulltext {
@@ -1324,7 +1205,7 @@ video {
   z-index: 1;
 }
 .minimal-side-menu form input[type=submit]:hover {
-    color: #fff !important;
+  color: #fff !important;
 }
 /* La hauteur de l'icône dans le bloc Recherche est lié au menu latéral*/
 i.icon {
@@ -1353,8 +1234,6 @@ i.icon {
   color: #FFFFFF !important;
   padding: 20px;
 }
-
-
 .icon-search {
   background-image: url('../search.svg');
 }
@@ -1366,7 +1245,6 @@ i.icon {
   font-weight: 600;
   color: #000;
 }
-
 #block-minimal-powered {
   display: none;
 }
@@ -1387,11 +1265,6 @@ i.icon {
   font-size: 1.1225em;
 }
 .path-recherche .col-lg-9 nav {
- /* margin-top: 2em;
-  position: absolute;
-  bottom: 0;
-  clear: both;
-  top: 0;*/
 }
 /*
 .path-carnets ul.js-pager__items,
@@ -1401,7 +1274,6 @@ i.icon {
 .path-bibliographie ul.js-pager__items,
 .path-recherche ul.js-pager__items,
 */
-
 .path-actualites ul.js-pager__items,
 .path-auteurs ul.js-pager__items,
 .path-recherche ul.js-pager__items,
@@ -1417,7 +1289,7 @@ i.icon {
 .view-class-evenements nav,
 .view-class-cours nav,
 .view-class-projets nav {
-    clear: both;
+  clear: both;
 }
 /*
 ENVIRONNEMENTS DE RECHERCHE 
@@ -1449,8 +1321,6 @@ ul.js-pager__items li {
   font-size: 14px;
   line-height: 22px;
 }
-
-
 .path-recherche .views-row {
   padding-bottom: 2em;
 }
@@ -1506,48 +1376,29 @@ contact
 .path-auteurs .views-exposed-form {
   position: relative;
 }
-
 .path-bibliographie nav {
   clear: both;
 }
 .minimal-page-search form input[type=submit],
 #edit-submit-liste-reference-bibliographique,
 .path-bibliographie #edit-search-api-fulltext {
-    line-height: 19px;
-    background: none;
-    border: 1px solid #5a5a5a;
-    border-radius: 0 !important;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #272b2b;
-    /* padding: 9px 35px 6px 35px; */
-    padding-left: 15%;
-    padding-right: 15%;
-    transition: all .6s;
-    font-size: 12px;
-    display: inline-block;
-    margin-bottom: 0;
+  line-height: 19px;
+  background: none;
+  border: 1px solid #5a5a5a;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #272b2b;
+  padding-left: 15%;
+  padding-right: 15%;
+  transition: all .6s;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 0;
 }
-
 .minimal-page-search form input[type=text] {
   margin-bottom: 2em;
 }
-/*.path-bibliographie #edit-search-api-fulltext {
-  height: auto;
-  border-radius: 0;
-  border: none;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  width: 100%;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  max-width: 100%;
-  color: #555555;
-  background: none;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  margin-bottom: 2em;
-}*/
 .path-bibliographie #edit-search-api-fulltext {
   height: auto;
   border: 1px solid #000;
@@ -1561,15 +1412,12 @@ contact
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   margin-bottom: 2em;
 }
-
-
 #edit-submit-liste-reference-bibliographique,
 .minimal-page-search form input[type=submit] {
   margin-right: -1px;
 }
 
 /*edit-search-api-fulltext*/
-
 /* Harmoniser champs recherche */
 #edit-submit-environnement-recherche-general {
   padding-top: 6px;
@@ -1586,18 +1434,15 @@ contact
   padding-bottom: 3px;
   margin-top: 3px;
 }
-
 .minimal-page-search form input[type=text] {
   border: 1px solid #000;
   line-height: 2;
   max-width: 75%;
   padding: 0;
 }
-
 .path-auteur section-empty.section-item.minimal-page-search {
   padding-top: 3em;
 }
-
 .bibcite-reference-table td:first-child {
   font-weight: bold;
 }
@@ -1605,43 +1450,32 @@ contact
 .bibcite-reference-table tr:nth-last-child(2) {
   border-top: 1px solid #000;
 }
-
-/*.view-id-liste-reference-bibliographique .views-field-author {
-  font-weight: bold;
-}*/
-
-/* Hypothese : bloc rouge 
-.field_square_wrapper {
-  background-color: #d2000a;
-} */
-/* vs Hypothese : bloc gris */
+/* Remplacer les blocs rouges par des blocs gris */
 .field_square_wrapper {
   background-color: #777;
 }
-/* Hypothese */
+/* */
 .top-area img {
-    max-width: 67%;
+  max-width: 67%;
 }
-/* hypothese : image + petite sauf accueil 
+/* Option : image + petite sauf accueil 
 .path-frontpage .top-area img {
-    max-width: 100%;
+   max-width: 100%;
 }
 */ 
-
 .flexslider.nav-inner {
   margin-bottom: 45px !important;
 }
-
 
 /* Table des matières*/
 .full_width_content .block-id-views-blocktable-matieres-article-livre-block-3 {
   display: none;
 }
 .mi-menu .sidebar-nav {
-    border-left-color: #d2000a !important;
-    padding-left: 20px;
-    text-transform: none;
-    font-weight: normal;
+  border-left-color: #d2000a !important;
+  padding-left: 20px;
+  text-transform: none;
+  font-weight: normal;
 }
 .view-id-table-matieres-article-livre.view-display-id-block-2 {
   padding-left: 12px;
@@ -1664,14 +1498,10 @@ contact
   font-size: 1.33rem;
   font-weight: normal;
 }
-.view-id-table-matieres-article-livre a {
-
-}
+.view-id-table-matieres-article-livre a {}
 .page-node-type-article-chapitre .fixed-area  {
   width: auto !important;
 }
-
-
 
 /* Accordion */
 .field-group-accordion-wrapper {
@@ -1680,18 +1510,18 @@ contact
   clear: both; 
 }
 .ui-accordion .ui-accordion-header {
-    background: #777;
+  background: #777;
 }
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
-    color: #ffffff/*{fcActive}*/;
-    text-decoration: none;
+  color: #ffffff/*{fcActive}*/;
+  text-decoration: none;
 }
 /* Improve: Button custom on/off */
 
 .media-view-mode-image-embed-demi-largeur, .media-view-mode-audio-embed, .media-view-mode-video-embed {
-    max-width: 50%;
-    float: left;
-    margin-right: 20px;
+  max-width: 50%;
+  float: left;
+  margin-right: 20px;
 }
 
 /* UI */
@@ -1707,9 +1537,7 @@ ul.minimal-primary-tabs li {
  font-weight: bold;
 }
 /* Chapitre: Article d'un chapitre : fixer hauteur minimum */
-.view-article-vs-chapitre .grid-item.col-md-4 {
-
-}
+.view-article-vs-chapitre .grid-item.col-md-4 {}
 .page-node-type-chapitre .field--name-field-biblio{
 	padding-top: 2em;
 }
@@ -1717,8 +1545,6 @@ ul.minimal-primary-tabs li {
 .page-node-type-chapitre .field--name-body {
   padding-bottom: 2em;
 }
-
-
 .view-article-vs-chapitre .views-row {
   margin-top: 1em;
 }
@@ -1729,7 +1555,6 @@ ul.minimal-primary-tabs li {
 .view-article-vs-chapitre .views-row {
   margin-left: -15px;
 }
-
 .im-align-justifyall:before, .porfolio-bar .fa-th:before, .navbar-toggle .fa-bars:before, .hamburger-button i:before{
  content: "\e9bd"; /* maison */
 }
@@ -1740,12 +1565,10 @@ ul.minimal-primary-tabs li {
 }
 
 /*
-* taxonomy 
+* Taxonomie 
 */
 
-.path-taxonomy {
-
-}
+.path-taxonomy {}
 .path-taxonomy .img-box,
 .path-taxonomy hr,
 .path-taxonomy .btn,
@@ -1774,7 +1597,6 @@ ul.minimal-primary-tabs li {
 .view-id-liste-reference-bibliographique .views-row {
   margin-bottom: 2em;
 }
-
 .view-id-liste-reference-bibliographique .views-field-title-11,
 .path-recherche .views-field-title,
 .path-recherche .views-field-name {
@@ -1799,13 +1621,10 @@ ul.minimal-primary-tabs li {
   padding-top: 3em;
   margin-bottom: 0;
 }
-/*.path-livres .adv-img p {
-  line-height: 1.25;
-}*/
 .path-livres .advs-box p {
   line-height: 1.33;
 }
-/* acccueil */
+/* Acccueil */
 .path-frontpage .view-class-accueil-livre .advs-box-side.boxed,
 .path-frontpage .view-class-accueil-livre .advs-box-side.boxed-inverse,
 .path-frontpage .view-class-accueil-livre .advs-box-multiple .advs-box-content {
@@ -1818,58 +1637,38 @@ ul.minimal-primary-tabs li {
   padding-top: 3em;
   margin-bottom: 0;
 }
-
 .path-frontpage .view-class-accueil-livre .advs-box .img-box img {
- /* width: 100%;*/
   margin-left: -7px;
 }
 
-
-/** TEMP
-- image plus haute que large sur Entrée Carnet Accueil 
-.flexslider .slides img {
-    width: 100%;
-
-
-    display: block;
-}
-*/
-
+/* Responsive (suite) */
 @media screen and (max-width: 992px) {
   .block-quote.quote-1, .block-quote.quote-2 {
-      font-size: 18px;
-      font-weight: 300;
-      padding-left: 0px;
-      position: relative;
-      text-align: left;
-      line-height: 28px;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 0px;
+    position: relative;
+    text-align: left;
+    line-height: 28px;
   }
   .block-quote, div > p.block-quote:last-child {
-      margin: 0;
+    margin: 0;
   }
   .block-quote.quote-1:before, 
   .block-quote.quote-2:before {
 /* cacher sur petits écrans */
-      display: none;
+    display: none;
   }
   .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 .field--name-body {
     width: 100%;
     max-width: 600px;
-    /*padding: 2em;
-    margin: 2em auto 0;*/
   }
-
 }
 
-@media screen and (min-width: 320px) {
-
-}
-
-
-
+@media screen and (min-width: 320px) {}
 
 /***
-* RESPONSIVE 
+* RESPONSIVE - règles générales 
 **/
 .responsive .views-row {
   width: 100%;
@@ -1882,6 +1681,7 @@ ul.minimal-primary-tabs li {
   clear: left;
 }
 
+/* Responsive (suite) */
 @media screen and (min-width: 768px) {
   .responsive .views-row {
     width: 50%;
@@ -1907,7 +1707,8 @@ ul.minimal-primary-tabs li {
 }
 
 /***
-* RESPONSIVE, if contextual is the first row ()
+* RESPONSIVE: exception 
+* if contextual is the first row () ...
 **/
 .responsive.contextual-region .views-row {
   width: 100%;
@@ -1920,11 +1721,11 @@ ul.minimal-primary-tabs li {
   clear: left;
 }
 
+/* Responsive (suite) */
 @media screen and (min-width: 768px) {
   .responsive.contextual-region .views-row {
     width: 50%;
   }
-       
   .responsive.contextual-region .views-row:nth-of-type(2n+2) {
     clear: left;
   }
@@ -1950,7 +1751,7 @@ ul.minimal-primary-tabs li {
 }
 
 @media screen and (max-width: 767px) {
-/* Carnets Responsive -adapter vue */
+/* Carnets Responsive */
 
   /* Accueil - Présentation - Marge minimum sur petits écrans */
   .block-id-block-content7f23797e-5957-44d4-9931-3781b687d960 {
@@ -1962,14 +1763,9 @@ ul.minimal-primary-tabs li {
   }
 }
 
-@media screen (min-width: 768px) and (max-width: 1023px) {
+@media screen (min-width: 768px) and (max-width: 1023px) {}
 
-
-}
-
-@media screen and (min-width: 1024px) {
-
-}
+@media screen and (min-width: 1024px) {}
 
 @media screen and (max-width: 992px) {
   /* conserver marges sur les contenus sur petits ecrans */
@@ -1977,10 +1773,10 @@ ul.minimal-primary-tabs li {
     margin: 0;
   }
    /* ne pas cacher le logo sur mobile */
-    .side-menu-fixed .brand {
-      display: block;
+  .side-menu-fixed .brand {
+    display: block;
   }
-  /* ne pas modifier alignement menu lateral */
+  /* ne pas modifier alignement menu latéral */
   header ul.navbar-nav {
     margin-top: 15px;
     margin: 0;
@@ -2007,7 +1803,7 @@ ul.minimal-primary-tabs li {
     display: inline-block;
     vertical-align: top;
   }
-  /* Section presentation - degager corps de texte */
+  /* Section présentation - degager corps de texte */
   .col-md-12 .node-view-mode-full {
     padding-left: 15px;
     padding-right: 15px;
@@ -2022,7 +1818,7 @@ ul.minimal-primary-tabs li {
   }
 
 }
-/* mobile */
+
 @media (max-width:767px) {
   /* Ajuster header sur plus petits écrans */
   .path-frontpage .navbar-header {
@@ -2113,7 +1909,7 @@ ul.minimal-primary-tabs li {
   .path-frontpage .navbar-header {
     min-height: 232px;
   }
-  /*332px au plus large */
+  /* Note: 332px au plus large */
 
   .path-frontpage .view-class-accueil-livre .advs-box h3 {
     padding-top: 0.5em;
@@ -2134,6 +1930,7 @@ ul.minimal-primary-tabs li {
   }
 
 }
+
 /* Ne pas montrer les images, mais conserver les propriétés responsive de l'image */
 .page-node-type-livre .flexslider .slides img,
 .page-node-type-livre .flexslider .slides img:hover {
@@ -2153,18 +1950,17 @@ ul.minimal-primary-tabs li {
   font-size: 14px;
   line-height: 21px;
 }
-
 .page-node-type-laboratoire-recherche .field--name-field-portrait img {
   max-width: 100%;
   height: auto;
 }
-/* DEBUG INFO */
+/* DEBUG INFO 
 .test {
   color: #00f;
 }
+*/
 
 /* Règles pour remplacer img-box par img-box-front */
-
 .block-accueil-cahier .img-box-front.thumbnail {
   padding: 0;
 }
@@ -2217,11 +2013,11 @@ ul.minimal-primary-tabs li {
 }
 
 /* image responsive non distorsionnée - 
-article chapitre: body: hauteur libre
+Article Chapitre: body: hauteur libre
 */
 .page-node-type-article-chapitre .field--name-field-media-image img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 /* Description de la section */
 .description {
@@ -2233,7 +2029,6 @@ article chapitre: body: hauteur libre
   animation: faderightTitle 1.5s;
   text-align: center;
 }
-
 
 /* Accordéon - espace parasitaire si contenu vide */
 .ui-accordion .ui-accordion-content.ui-accordion-content-active {
@@ -2253,28 +2048,22 @@ article chapitre: body: hauteur libre
 }
 
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
-/* todo:supprimer transition */
 
 .view-id-accueil-evenement .views-row {
 	padding-left: 0;
 	padding-right: 30px;
 }
-/*.view-id-accueil-evenement .views-row:first-child {
-	padding-left: 0;
-}*/
 
-/* tablette et +*/
+/* tablette et + */
 .view-id-accueil-evenement .views-row:last-child {
 	padding-right: 0;
 }
-
 .page-node-type-chapitre .advs-box h3 {
   margin-bottom: 0;
 }
-
 .view-article-vs-chapitre .grid-item.col-md-4 {
   max-height: 300px;
 }
@@ -2345,7 +2134,7 @@ article chapitre: body: hauteur libre
   text-align: center;
 }
 /* Bug FF Actualités : contenir image dans l'item de la vue */
-/* TODO - remove negative margin + size from javascript */
+/* Remove negative margin + size from Javascript */
 .view-class-actualites .grid-item {
   overflow: hidden; 
 }
@@ -2397,12 +2186,11 @@ article chapitre: body: hauteur libre
 .view-class-auteurs .img-box:hover .circle {
   background-color: #000000;
 }
-h5,h6 {
+h5,
+h6 {
   line-height: 1.5;
 }
 /* Limiter l'espacement des grands titres sur Projets*/
 .view-class-projets h3 {
   line-height: 1.1;
 }
-
-
