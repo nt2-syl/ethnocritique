@@ -464,6 +464,7 @@ remplacer vert foncé
 .page-node-type-entree-de-carnet .field--name-field-auteur-e .field--item,
 .page-node-type-entree-de-carnet .date_created,
 .page-node-type-livre .field--name-field-auteur-e .field--item,
+.page-node-type-livre .field--name-field-annee-publication .field--item,
 .page-node-type-article-chapitre .field--name-field-auteur-e .field--item,
 .page-node-type-evenement .field--name-field-date-debut .field--item,
 .page-node-type-evenement .field--name-field-date-fin .field--item,
