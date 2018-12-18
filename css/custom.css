@@ -455,10 +455,11 @@ remplacer vert foncé
 }
 
 /* Modèle pour titre en vedette */
-/* .advs-box h3 .field__items = cahier/auteur */ 
+/* .advs-box h3 .field__items = cahier/auteur */
 .titre-vedette,
 .advs-box h3 .field__items,
 .page-node-type-actualite .field--name-field-date-debut .field--item,
+.page-node-type-actualite .field--name-field-date-fin .field--item,
 .page-node-type-carnet-de-recherche .field--name-field-responsable-carnet .field--item, 
 .page-node-type-entree-de-carnet .field--name-field-auteur-e .field--item,
 .page-node-type-entree-de-carnet .date_created,
